@@ -1,7 +1,14 @@
 ---@diagnostic disable: undefined-global
--- NODES
 
-local mod = get_mod("ENLocalizationFIXAIO")
+-- Check the length of the text in the game and adjust it so that the descriptions do not extend the card beyond the screen.
+-- If you can't shorten it, you can simply hide the least useful line by adding "--" before that line.
+-- Extended descriptions have a lower priority than the main description, imho.
+
+-- If you added/changed something, then you need to duplicate/change the same entry in the list below.
+-- For example, you change "ED_CritChncBst_rgb" to "ED_CritChncBst_rgb_urlang", then at the bottom you need to find (CTRL+F) the "ED_CritChncBst_rgb" entries and also rename them from "ED_CritChncBst_rgb = ED_CritChncBst_rgb," to "ED_CritChncBst_rgb_urlang = ED_CritChncBst_rgb_urlang,".
+-- If you add a new entry (ex. MyEntry_rgb), just duplicate it in the list below (MyEntry_rgb = MyEntry_rgb,).
+
+local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
@@ -62,11 +69,11 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Stacks additively with Ogryn's Aura \"Stay Close!\" and Toughness Regeneration Speed from Curios.",
 		"- Increases the base amount of Coherency Toughness Regenerated (CTR) per Allies per second:",
 		"_______________________________",
-		"Allies:	|CTR:		|After 5 seconds:",
-		"0	|0.00 -> 0.00	|0.00",
-		"1	|3.75 -> 4.13	|20.63 (HUD: 21)",
-		"2	|5.63 -> 6.19	|30.94 (HUD: 31)",
-		"3	|7.50 -> 8.25	|41.25 (HUD: 42)",
+		"Allies: | CTR:                 | After 5 seconds:",
+		"        0 | 0.00 -> 0.00    | 0.00",
+		"         1 | 3.75 -> 4.13      | 20.63 (HUD: 21)",
+		"        2 | 5.63 -> 6.19      | 30.94 (HUD: 31)",
+		"        3 | 7.50 -> 8.25     | 41.25 (HUD: 42)",
 		"_______________________________",
 	}, "\n"), enhdesc_col) -- Veteran
 
@@ -179,6 +186,23 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"-- ZEALOT: Stacks additively with \"I Shall Not Fall\".",
 	}, "\n"), enhdesc_col) -- Psyker, Ogryn, Veteran, Zealot
 
+-- In the list below, you also need to add a new entry or change an old one.
 return {
-	ED_TghnsBst_L_rgb = ED_TghnsBst_L_rgb, ED_TghnsBst_M_rgb = ED_TghnsBst_M_rgb, ED_TghnsDmgRed_LM_rgb = ED_TghnsDmgRed_LM_rgb, ED_PerilRes_rgb = ED_PerilRes_rgb, ED_InspiringP_rgb = ED_InspiringP_rgb, ED_RangDmgBst_rgb = ED_RangDmgBst_rgb, ED_HeathBst_L_rgb = ED_HeathBst_L_rgb, ED_HeathBst_M_rgb = ED_HeathBst_M_rgb, ED_CritChncBst_rgb = ED_CritChncBst_rgb, ED_MoveSpdBst_rgb = ED_MoveSpdBst_rgb, ED_MeleeDmgBst_L_M_rgb = ED_MeleeDmgBst_L_M_rgb, ED_StaminaBst_rgb = ED_StaminaBst_rgb, ED_SuppressionBst_rgb = ED_SuppressionBst_rgb, ED_ReloadBst_rgb = ED_ReloadBst_rgb, ED_StamRegenBst_rgb = ED_StamRegenBst_rgb, ED_RendingBst_rgb = ED_RendingBst_rgb, ED_HMeleeDmgBst_LM_rgb = ED_HMeleeDmgBst_LM_rgb,
+	ED_TghnsBst_L_rgb = ED_TghnsBst_L_rgb,
+	ED_TghnsBst_M_rgb = ED_TghnsBst_M_rgb,
+	ED_TghnsDmgRed_LM_rgb = ED_TghnsDmgRed_LM_rgb,
+	ED_PerilRes_rgb = ED_PerilRes_rgb,
+	ED_InspiringP_rgb = ED_InspiringP_rgb,
+	ED_RangDmgBst_rgb = ED_RangDmgBst_rgb,
+	ED_HeathBst_L_rgb = ED_HeathBst_L_rgb,
+	ED_HeathBst_M_rgb = ED_HeathBst_M_rgb,
+	ED_CritChncBst_rgb = ED_CritChncBst_rgb,
+	ED_MoveSpdBst_rgb = ED_MoveSpdBst_rgb,
+	ED_MeleeDmgBst_L_M_rgb = ED_MeleeDmgBst_L_M_rgb,
+	ED_StaminaBst_rgb = ED_StaminaBst_rgb,
+	ED_SuppressionBst_rgb = ED_SuppressionBst_rgb,
+	ED_ReloadBst_rgb = ED_ReloadBst_rgb,
+	ED_StamRegenBst_rgb = ED_StamRegenBst_rgb,
+	ED_RendingBst_rgb = ED_RendingBst_rgb,
+	ED_HMeleeDmgBst_LM_rgb = ED_HMeleeDmgBst_LM_rgb,
 }

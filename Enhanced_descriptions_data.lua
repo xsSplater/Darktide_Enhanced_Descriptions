@@ -1,5 +1,8 @@
 ---@diagnostic disable: undefined-global, undefined-field
-local mod = get_mod("ENLocalizationFIXAIO")
+
+			-- ============ DO NOT DO ANYTHING ABOVE! ============ --
+
+local mod = get_mod("Enhanced_descriptions")
 
 local options = {
 	name = mod:localize("mod_name"),
@@ -7,32 +10,6 @@ local options = {
 	is_togglable = true,
 	options = {
 		widgets = {
-			{name = mod:localize("enable_curious_file"),
-				setting_id = "enable_curious_file",
-				default_value = true,
-				type = "checkbox",
-				description = mod:localize("enable_curious_file_description"),
-				
-				change = function(new_value)
-					mod:set("enable_curious_file", new_value)
-				end,
-				get = function()
-					return mod:get("enable_curious_file") or true
-				end
-			},
-			{name = mod:localize("enable_talents_file"),
-				setting_id = "enable_talents_file",
-				default_value = true,
-				type = "checkbox",
-				description = mod:localize("enable_talents_file_description"),
-				
-				change = function(new_value)
-					mod:set("enable_talents_file", new_value)
-				end,
-				get = function()
-					return mod:get("enable_talents_file") or true
-				end
-			},
 			{name = mod:localize("enable_menus_file"),
 				setting_id = "enable_menus_file",
 				default_value = true,
@@ -46,6 +23,19 @@ local options = {
 					return mod:get("enable_menus_file") or true
 				end
 			},
+			{name = mod:localize("enable_curious_file"),
+				setting_id = "enable_curious_file",
+				default_value = true,
+				type = "checkbox",
+				description = mod:localize("enable_curious_file_description"),
+				
+				change = function(new_value)
+					mod:set("enable_curious_file", new_value)
+				end,
+				get = function()
+					return mod:get("enable_curious_file") or true
+				end
+			},
 			{name = mod:localize("enable_weapons_file"),
 				setting_id = "enable_weapons_file",
 				default_value = true,
@@ -57,6 +47,19 @@ local options = {
 				end,
 				get = function()
 					return mod:get("enable_weapons_file") or true
+				end
+			},
+			{name = mod:localize("enable_talents_file"),
+				setting_id = "enable_talents_file",
+				default_value = true,
+				type = "checkbox",
+				description = mod:localize("enable_talents_file_description"),
+				
+				change = function(new_value)
+					mod:set("enable_talents_file", new_value)
+				end,
+				get = function()
+					return mod:get("enable_talents_file") or true
 				end
 			},
 			{setting_id = "enhanced_descriptions_",
@@ -192,5 +195,6 @@ table.insert(options.options.widgets, create_option_set("note", "terminal_text_w
 table.insert(options.options.widgets, create_option_set("numbers", "ui_hud_yellow_super_light"))
 table.insert(options.options.widgets, create_option_set("variables", "ui_hud_yellow_super_light"))
 table.insert(options.options.widgets, create_option_set("warning", "item_rarity_6"))
+table.insert(options.options.widgets, create_option_set("talents", "ui_input_color"))
 
 return options

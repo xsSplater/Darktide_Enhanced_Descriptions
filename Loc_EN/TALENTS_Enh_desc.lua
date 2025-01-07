@@ -1,9 +1,21 @@
 ---@diagnostic disable: undefined-global
-local mod = get_mod("ENLocalizationFIXAIO")
+local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
-local ppp______ppp = "\n+++-------------------------------------------------+++"
+
+
+			-- ============ DO NOT DO ANYTHING ABOVE! ============ --
+
+-- Check the length of the text in the game and adjust it so that the descriptions do not extend the card beyond the screen.
+-- If you can't shorten it, you can simply hide the least useful line by adding "--" before that line.
+-- Extended descriptions have a lower priority than the main description, imho.
+
+-- If you added/changed something, then you need to duplicate/change the same entry in the list below.
+-- For example, you change "ED_PSY_Blitz_0_rgb" to "ED_PSY_Blitz_0_rgb_urlang", then at the bottom you need to find (CTRL+F) the "ED_PSY_Blitz_0_rgb" entries and also rename them from "ED_PSY_Blitz_0_rgb = ED_PSY_Blitz_0_rgb," to "ED_PSY_Blitz_0_rgb_urlang = ED_PSY_Blitz_0_rgb_urlang,".
+-- If you add a new entry (ex. MyEntry_rgb), just duplicate it in the list below (MyEntry_rgb = MyEntry_rgb,).
+
+local ppp___ppp = "\n+++-------------------------------------------------+++"
 local become_invis_drop_all_enemy_aggro = "- Become Invisible dropping all enemy aggro: Melee enemies reaggro immediately to another target if possible, firing Ranged enemies stop shooting, then reaggro if possible."
 local can_be_refr_dur_active_dur = "- Can be refreshed during active duration."
 local doesnt_stack_aura_psy = "- Doesn't Stack with the same Aura from another Psyker."
@@ -19,13 +31,13 @@ local z_eff_of_this_tougn_rep = "- The effectiveness of this Toughness Replenish
 local z_ghost_hitnrun_n_stripp = "- \"The Ghost\", \"Hit and Run\" and \"Stripped Down\" Weapon Blessings can proc this Talent (only against Ranged attacks)."
 
 --[+ ++ENHANCED DESCRIPTIONS++ +]--
-local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
+local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not translate this line!
 
 --[+ ++PSYKER++ +]--
 --[+ +BLITZ+ +]--
 	--[+ Blitz 0 - Brain Burst +]--
 	local ED_PSY_Blitz_0_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Cannot Crit.",
 		"- Base Damage: 900.",
 		"- Always scores a Weakspot hit.",
@@ -35,7 +47,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Blitz 1 - Brain Rupture +]--
 	local ED_PSY_Blitz_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Cannot Crit.",
 		"- Base Damage: 1350.",
 		"- Always scores a Weakspot hit.",
@@ -48,7 +60,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Blitz 1-1 - Kinetic Resonance +]--
 	local ED_PSY_Blitz_1_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Reduces Brain Rupture's charge time for both primary and secondary attacks.",
 		"- Charge time reduction Stacks additively with \"Empowered Psionics\" buff and Celerity Stimm.",
 		"- Stacks multiplicatively with related buffs from \"By Crack of Bone\", \"Becalming Eruption\", \"Empyric Resolve\", \"Inner Tranquility\", \"Reality Anchor\", small Peril Resistance nodes, Combat Stimm, and the \"Enhanced Blitz\" mutator.",
@@ -56,14 +68,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Blitz 1-2 - Kinetic Flayer +]--
 	local ED_PSY_Blitz_1_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- \"Brain Rupture\" attacks triggered by the Talent benefit from \"Empowered Psionics'\" Damage buff without consuming a Stack.",
 		"{#color(255, 35, 5)}- There is currently a bug: When Peril is above 97%, the Talent triggers and a 15-second Cooldown begins, but the enemy does NOT receive Damage at all.{#reset()}",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 2 - Smite +]--
 	local ED_PSY_Blitz_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Cannot crit.",
 		"- Max range: 15 meters.",
 		"- Targets only torso hitzone.",
@@ -76,7 +88,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Blitz 2-1 - Lightning Storm +]--
 	local ED_PSY_Blitz_2_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		-- "- Increases max jumps from 1 to 2.",
 		"- Applies both to Smite's primary and secondary actions.",
 		"- Increases the Max radius within which \"Smite\" can chain to another target from 5 to 6 meters.",
@@ -85,7 +97,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Blitz 2-2 - Enfeeble +]--
 	local ED_PSY_Blitz_2_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		-- "- The debuff is being applied as long as the enemy is actively affected by \"Smite\".",
 		"- Stacks multiplicatively with other Damage taken debuffs like \"Empyric Shock\" or Ogryn's \"Soften Them Up\", \"Valuable Destruction\" or Veteran's \"Focus Target!\", with Damage buffs, and with Power level buffs from Weapon Blessings.",
 		"- Doesn't Stack with the same debuff applied by another Psyker.",
@@ -94,7 +106,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Blitz 2-3 - Charged Strike +]--
 	local ED_PSY_Blitz_2_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- 8 base Damage per tick.",
 		"- The Damage window lasts up to 2 seconds.",
 		"- The Electrocuted state lasts until 2 seconds after the last Damage tick.",
@@ -104,7 +116,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Blitz 3 - Assail +]--
 	local ED_PSY_Blitz_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Can Crit. Cleave up to 2 enemies.",
 		"- Costs 1 ammo and recharges it every 3 seconds.",
 		-- "- Very low Damage against Carapace and low against Unyielding.",
@@ -115,14 +127,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Blitz 3-1 - Ethereal Shards +]--
 	local ED_PSY_Blitz_3_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- If \"Empowered Psionics\" is active, this is doubled, up to 6 targets.",
 		"- Carapace cannot be Cleaved by default.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 3-2 - Quick Shards +]--
 	local ED_PSY_Blitz_3_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Reduces projectile recharge time from 3 to 2.1 seconds per projectile.",
 		"- Does not interact with the \"Enhanced Blitz\" mutator.",
 	}, "\n"), enhdesc_col)
@@ -130,7 +142,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 --[+ +AURA+ +]--
 	--[+ Aura 0 - The Quickening +]--
 	local ED_PSY_Aura_0_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks additively with Combat Ability Regeneration from Curios and the mission mutators that reduce Ability Cooldowns by 20%.",
 		"- This Reduces the Max Cooldown of \"Venting Shriek\"/\"Psykinetic's Wrath\" to 27.75 seconds, for \"Scrier's Gaze\" to 23.125 seconds, and for \"Telekine Shield\" to 37 seconds.",
 		doesnt_stack_aura_psy,
@@ -138,14 +150,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Aura 1 - Kinetic Presence +]--
 	local ED_PSY_Aura_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		stacks_add_w_oth_dmg,
 		doesnt_stack_aura_psy,
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 2 - Seer's Presence +]--
 	local ED_PSY_Aura_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks additively with Combat Ability Regeneration from Curios and the mission mutators that reduce Ability Cooldowns by 20%.",
 		"- This Reduces the Cooldowns of \"Venting Shriek\"/\"Psykinetic's Wrath\" to 27 seconds, for \"Scrier's Gaze\" to 22.5 seconds, and for \"Telekine Shield\" to 36 seconds.",
 		doesnt_stack_aura_psy,
@@ -153,7 +165,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Aura 3 - Prescience +]--
 	local ED_PSY_Aura_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Applies to all attacks that can Crit.",
 		"- Stacks additively with other sources of Crit Chance.",
 		doesnt_stack_aura_psy,
@@ -162,7 +174,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 --[+ +ABILITIES+ +]--
 	--[+ Ability 0 - Psykinetic's Wrath +]--
 	local ED_PSY_Ability_0_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Can be used to prevent Psyker's self-explode.",
 		"- The Warp wave passes through objects and spreads up to 30 meters. So you can drop the Pox Hound from an Ally through the wall.",
 		"- Stuns enemies within a 5 meter radius in front of Psyker.",
@@ -170,7 +182,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 1 - Venting Shriek +]--
 	local ED_PSY_Ability_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Always targets torso hitzone.",
 		"- Can be used while exploding thereby preventing Psyker's self-explode.",
 		"- The Warp wave passes through objects and spreads up to 30 meters.",
@@ -182,18 +194,18 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 1-1 - Becalming Eruption +]--
 	local ED_PSY_Ability_1_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks multiplicatively with related Peril Cost Reduction buffs from \"By Crack of Bone\", \"Empyric Resolve\", \"Inner Tranquility\", \"Kinetic Resonance\", small Peril Resistance nodes, and Combat Stimm.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-2 - Warp Rupture +]--
 	local ED_PSY_Ability_1_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Has same armor Damage modifier against all armor types, loses Damage with range.",
 		"- Base Damage dealt scales with Peril:",
 		"_______________________________",
-		"Peril:    0%|   25%|   50%|   75%|   100%",
-		"Dmg:   100|    125|    150|    175|    200",
+		"Peril:           0%|  25%|  50%|  75%|  100%",
+		"Damage:   100|   125|    150|   175|   200",
 		"_______________________________",
 		"- Damage is affected by Damage buffs: ",
 		"-- from Talents: \"Disrupt Destiny\", \"Empyrean Empowerment\", \"Empyric Shock\" (while debuffed), \"Malefic Momentum\", \"Kinetic Presence\" (vs Elites), \"Perfect Timing\", and \"\".Warp Rider\".",
@@ -204,7 +216,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 1-3 - Warp Creeping Flames +]--
 	local ED_PSY_Ability_1_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- The amount of Soulblaze Stacks applied to enemies scales with Peril:",
 		"_______________________________",
 		"Stacks: 1|      2|        3|       4|       5|       6",
@@ -221,7 +233,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 2 - Telekine Shield +]--
 	local ED_PSY_Ability_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Shield Health: 20.",
 		"- Dimensions: 6 meters wide, 3.5 meters high.",
 		"- Max placement range: 10 meters.",
@@ -237,13 +249,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 2-1 - Bolstered Shield +]--
 	local ED_PSY_Ability_2_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- The Cooldown of the second charge only starts after the first charge finished Cooldown.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-2 - Enervating Threshold +]--
 	local ED_PSY_Ability_2_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Deals no Damage.",
 		"- Applies Stagger every 0.55 seconds.",
 		"- Electrocution effect lasts for 3 seconds.",
@@ -256,7 +268,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 2-3 - Telekine Dome +]--
 	local ED_PSY_Ability_2_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Sphere has a radius of 6 meters.",
 		"- Protects from enemy attacks at all degrees.",
 		"- Has the same properties as the flat shield.",
@@ -267,7 +279,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 2-4 - Sanctuary +]--
 	local ED_PSY_Ability_2_4_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- This replenishment effect can Stack if multiple spheres overlap.",
 		z_eff_of_this_tougn_rep,
 		stacks_mult_w_other_dmg_red_buffs,
@@ -275,7 +287,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 3 - Scrier's Gaze +]--
 	local ED_PSY_Ability_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- While Ability is in overcharging phase Cooldown is paused. However, its remaining cooldown can still be actively reduced by proccing \"Psykinetic's Aura\" or using a Concentration Stimm.",
 		"- Its Maximum Cooldown can be Reduced by \"Seer's Presence\", \"Warp Siphon\", Combat Ability Regeneration from Curios, and by the mission mutators that reduce Ability Cooldowns by 20%.",
 		"- After overcharging has ended, grants a 1.5 seconds grace period in which Peril-generating actions can be executed without triggering Psyker's self-explosion.",
@@ -283,14 +295,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	-- [+ Ability 3-1 - Endurance +]--
 	local ED_PSY_Ability_3_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Does not linger after overcharging phase.",
 		stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
 
 	-- [+ Ability 3-2 - Precognition +]--
 	local ED_PSY_Ability_3_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks additively with other Weakspot and Finesse Damage buffs.",
 		"- Can proc multiple times per attack when Cleaving.",
 		"- These stacking Damage buffs are active immediately during the overcharging phase.",
@@ -298,14 +310,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 3-3 - Warp Speed +]--
 	local ED_PSY_Ability_3_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Does not linger after overcharging phase.",
 		"- Stacks additively with movement speed buffs from \"Disrupt Destiny\", \"Mettle\", the small Movement speed node, and Weapon Blessings like \"Rev it Up\".",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-4 - Reality Anchor +]--
 	local ED_PSY_Ability_3_4_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Does not linger after overcharging phase.",
 		"- Stacks multiplicatively with Peril cost reduction buffs from \"By Crack of Bone\", \"Empyric Resolve\", \"Kinetic Resonance\", small Peril Resistance nodes, and Combat Stimm.",
 		"- Can stack with \"Inner Tranquility\" only if Psyker regains Warp charges while overcharging.",
@@ -313,7 +325,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 3-5 - Warp Unbound +]--
 	local ED_PSY_Ability_3_5_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- After overcharging has ended, allows Psyker to execute Peril-generating actions while at 100% Peril for 10 seconds without triggering the self-explosion.",
 		"- Note that when this 10 seconds duration ends, Scrier's Gaze's base grace period still applies, providing another 1.5 seconds of the same effect.",
 	}, "\n"), enhdesc_col)
@@ -321,7 +333,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 --[+ +KEYSTONES+ +]--
 	--[+ Keystone 1 - Warp Siphon +]--
 	local ED_PSY_Keystone_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		can_be_refr_dur_active_dur,
 		"- Interacts with Combat Ability Regeneration from Curios and other Maximum Cooldown Reductions from \"Seer's Presence\" or the mission mutators that reduce Ability cooldowns by 20%.",
 		"- For example, when Psyker with \"Seer's Presence\" aura (-0.1), 4 Warp charges and 12% Combat Ability Regeneration (-0.12) from Curios uses \"Telekine Shield\", its Maximum cooldown of 40 seconds is first reduced by Curio stat and aura to 40+40x(-0.1-0.12)=31.2 seconds. This Max Cooldown is then considered by Warp Siphon and further reduced by the Warp charge-based reduction to 31.2-31.2x(0.075x4)=21.84 seconds (HUD rounds: 22 seconds).",
@@ -330,46 +342,46 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Keystone 1-1 - Inner Tranquility +]--
 	local ED_PSY_Keystone_1_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks linearly with itself (1 Warp charge = 6% Peril Cost Reduction, 2 = 12%, 3 = 18%, etc) and multiplicatively with other Peril Cost Reduction buffs from \"By Crack of Bone\", \"Empyric Resolve\", \"Kinetic Resonance\", small Peril Resistance nodes, and Combat Stimm.",
 		"- Because all Warp charges are dropped when using a Combat Ability, the Talent cannot immediately Stack with \"Becalming Eruption\" and \"Reality Anchor\" (unless Psyker regains Warp charges during their active duration).",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-2 - Essence Harvest +]--
 	local ED_PSY_Keystone_1_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Does not increase the amount of Toughness replenished.",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-3 - Empyrean Empowerment +]--
 	local ED_PSY_Keystone_1_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		stacks_add_w_oth_dmg,
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-4 - In Fire Reborn +]--
 	local ED_PSY_Keystone_1_4_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- You gain a Warp charge when an enemy who is currently affected by Soulblaze is killed either by Soulblaze, by Psyker, or by an ally.",
 		"- This effect has no range limit and benefits all Psykers who have this talent equipped.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-5 - Psychic Vampire +]--
 	local ED_PSY_Keystone_1_5_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- If multiple Psykers are in Coherency with each other, all of them get a Warp charge when the Talent procs for one of them.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-6 - Warp Battery +]--
 	local ED_PSY_Keystone_1_6_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Increases the Max amount of Warp charges Psyker can hold from 4 to 6.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2 - Empowered Psionics - Empowered Brain Rupture +]--
 	local ED_PSY_Keystone_2_0_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		-- "- Consumes Stacks when attack connects with an enemy.",
 		"- Stacks additively with other applicable Damage buffs.",
 		"- Stacking additively with \"Kinetic Resonance\", and multiplicatively/additively with Celerity Stimm's two charge time reductions.",
@@ -378,7 +390,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Keystone 2 - Empowered Psionics - Empowered Smite +]--
 	local ED_PSY_Keystone_2_0_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		-- "- Consumes Stacks when releasing.",
 		"- Stacks additively with other applicable Damage buffs.",
 		"- Stacks multiplicatively with related buff from Celerity Stimm.",
@@ -387,7 +399,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Keystone 2 - Empowered Psionics - Empowered Assail +]--
 	local ED_PSY_Keystone_2_0_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		-- "- Consumes Stacks per thrown projectile.",
 		"- Allows casting at 100% Peril.",
 		"- Double the number of targets.",
@@ -398,7 +410,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Keystone 2-2 - Psychic Leeching +]--
 	local ED_PSY_Keystone_2_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Procs when \"Brain Rupture\" hits, when \"Smite\" starts casting or after charging, and when \"Assail\" spawns a projectile.",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
@@ -411,7 +423,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Keystone 3 - Disrupt Destiny +]--
 	local ED_PSY_Keystone_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Dealing damage to Marked enemies refreshes the Talent's duration.",
 		"- Valid targets are: Dreg/Scab Bruisers, Dreg/Scab Stalkers, Scab Shooters, Ragers, Gunners, Shotgunners and Maulers.",
 		"- Stacks additively with Movement Speed buffs from \"Mettle\", \"Warp Speed\", Movement Speed node and Weapon Blessings like \"Rev it Up\".",
@@ -424,7 +436,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Keystone 3-2 - Purloin Providence +]--
 	local ED_PSY_Keystone_3_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- There is a 2% chance that the Talent procs on the same kill alongside \"Battle Meditation\" removing 25% Peril total.",
 	}, "\n"), enhdesc_col)
 
@@ -433,14 +445,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Keystone 3-4 - Cruel Fortune +]--
 	local ED_PSY_Keystone_3_4_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Procs on Melee, Ranged, \"Brain Rupture\" or \"Assail\" attacks.",
 	}, "\n"), enhdesc_col)
 
 --[+ +PASSIVES+ +]--
 	--[+ Passive 1 - Soulstealer +]--
 	local ED_PSY_Passive_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- If the warp attack is a Melee attack, the Talent's amount of 7.5% is added to Psyker's base 5% of Maximum Toughness gained on Melee kill.",
 		"-- For example, a Psyker with 96 Max Toughness killing two enemies with an activated Force sword attack replenishes 96x(0.1+0.15)=24 Toughness.",
 		z_eff_of_this_tougn_rep,
@@ -449,7 +461,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 2 - Mettle +]--
 	local ED_PSY_Passive_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Procs only once per Critical attack regardless of how many enemies have been hit.",
 		z_eff_of_this_tougn_rep,
 		"- Always generates 1 Stack per Critical attack regardless of how many enemies have been hit.",
@@ -459,7 +471,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 3 - Quietude +]--
 	local ED_PSY_Passive_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Replenishes 0.5% of Maximum Toughness per 1% Peril Quelled.",
 		"- Procs on both active or passive quelling.",
 		"- For example, a Psyker with 109 Maximum Toughness Quelling down from 59% true Peril to 0% Peril, replenishes 59x(109x0.005)=32.15 Toughness (HUD rounds up: 33).",
@@ -468,7 +480,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 4 - Warp Expenditure +]--
 	local ED_PSY_Passive_4_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Replenishes 0.25% of maximum Toughness per 1% Peril generated.",
 		"- Peril Cost Reduction buffs from \"Becalming Eruption\", \"Inner Tranquility\", \"Kinetic Resonance\", \"Reality Anchor\" and Peril Resistance nodes Reduce this Talent's efficiency!",
 		"- For example, a Psyker with 90 Max Toughness who generates 44% Peril, replenishes 44x(90x0.0025)=9.9 Toughness. However, the same Psyker generating 44% Peril with 15% Peril Cost Reduction from 3 small Peril Resistance nodes, replenishes only 44x(90x0.0025x0.95^3)=8.488 Toughness instead.",
@@ -476,7 +488,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 5 - Perilous Combustion +]--
 	local ED_PSY_Passive_5_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks are applied at a distance of up to 4 meters from the killed enemy.",
 		"- Does not proc on Elites or Specials killed by Psyker's Soulblaze Damage ticks.",
 		"- Does proc on Burn or Bleed tick kills.",
@@ -491,7 +503,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 6 - Perfect Timing +]--
 	local ED_PSY_Passive_6_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Hitting enemies with a Critical Melee, Ranged, or Assail attack grants Stacks.",
 		"- Generates multiple Stacks per attack when Cleaving.",
 		"- Stacks can be refreshed during active duration.",
@@ -501,7 +513,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 7 - Battle Meditation +]--
 	local ED_PSY_Passive_7_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Removes 10% Peril from the current Peril amount.",
 		"- Has a 10% chance to proc when enemies die to Psyker's Melee and Ranged attacks, Damaging abilities, DoTs, and when pushed over ledges into map kill boxes by Psyker.",
 		"- Procs additionally to \"By Crack of Bone\" and \"Tranquility Through Slaughter\".",
@@ -510,7 +522,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 8 - Wildfire +]--
 	local ED_PSY_Passive_8_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Whenever an Enemy who is affected by at least 2 Stacks of Soulblaze dies, it spreads to valid targets within a 5 meters radius.",
 		"- Targets do not receive Soulblaze Stacks caused by the Talent if they already have 4 Stacks or more on them.",
 		"- Valid targets can receive Soulblaze Stacks up to a Maximum of 4 that are caused by the Talent.",
@@ -527,7 +539,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 9 - Psykinetic's Aura +]--
 	local ED_PSY_Passive_9_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- This is 1.5 seconds for \"Venting Shriek\"/\"Psykinetic's Wrath\", 1.25 seconds for \"Scrier's Gaze\", and 2 seconds for \"Telekine Shield\".",
 		"- Does not Stack with the same Talent of another Psyker (each Psyker procs their own Talent spreading the cooldown reduction separately).",
 		"- Procs additionally to Concentration Stimm's remaining cooldown reduction effect of 3 seconds per second.",
@@ -536,13 +548,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 10 - Mind in Motion +]--
 	local ED_PSY_Passive_10_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Does not interact with Movement Speed buffs.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 11 - Malefic Momentum +]--
 	local ED_PSY_Passive_11_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		stacks_add_w_oth_dmg,
 		"- The 8 seconds duration of each buff starts on respective kills and can be refreshed during active duration.",
 		warp_attc_refers_to,
@@ -550,7 +562,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 12 - Channeled Force +]--
 	local ED_PSY_Passive_12_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Increases the Damage of staff Primary attacks after executing a charged secondary attack (at least 95% charged) with any Force Staff.",
 		can_be_refr_dur_active_dur,
 		"- Stacks additively with other Damage buffs.",
@@ -558,7 +570,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 13 - Perilous Assault +]--
 	local ED_PSY_Passive_13_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- This reduces the time of Wielding actions when swapping item slots (weapons, Blitz abilities, stimms, med packs, ammo crates, books, etc):",
 		"_______________________________",
 		"Peril:     0|  20|  40|  50|  60|  80|  100",
@@ -570,20 +582,20 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 14 - Lightning Speed +]--
 	local ED_PSY_Passive_14_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks additively with related Attack Speed buff from Celerity Stimm.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 15 - Souldrinker +]--
 	local ED_PSY_Passive_15_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Critical hit chance cannot be refreshed during active duration.",
 		"- Maximum Toughness is replenished with each actual enemy death.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 16 - Empyric Shock +]--
 	local ED_PSY_Passive_16_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Applies a debuff to enemies that increases the Damage they take from Warp attacks.",
 		can_be_refr_dur_active_dur,
 		"- Can be applied through shields.",
@@ -595,14 +607,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 17 - By Crack of Bone +]--
 	local ED_PSY_Passive_17_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Removing Peril can proc multiple times per swing when Cleaving. Procs additionally to \"Battle Meditation\" and \"Purloin Providence\".",
 		"- Reducing Peril Stacks multiplicatively with Peril Cost Reduction buffs from \"Becalming Eruption\", \"Empyric Resolve\", \"Inner Tranquility\", \"Kinetic Resonance\", \"Reality Anchor\", small Peril Resistance nodes, and Combat Stimm.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 18 - Warp Splitting +]--
 	local ED_PSY_Passive_18_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Scaling proportionally with Peril.",
 		"- Increases the Maximum hit mass limit of attacks (Melee, Ranged, \"Assail\") by up to 100%, thereby allowing attacks to Cleave more enemies.",
 		"- Stacks additively with \"Ethereal Shards\" and \"Empowered Psionics\", and with related buffs from Weapon Blessings \"Devastating Strike\", \"Savage Sweep\", and \"Wrath\".",
@@ -612,7 +624,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 19 - Unlucky for Some +]--
 	local ED_PSY_Passive_19_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- When Psyker goes down, replenishes Toughness to Allies in Coherency.",
 		"- Does not proc when the Ally or Psyker dies.",
 		z_eff_of_this_tougn_rep,
@@ -620,7 +632,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 20 - One with the Warp +]--
 	local ED_PSY_Passive_20_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		stacks_mult_w_other_dmg_red_buffs,
 		"- Always grants a minimum of 10% Toughness Damage Reduction regardless of current Peril amount:",
 		"_______________________________",
@@ -632,7 +644,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 21 - Empathic Evasion +]--
 	local ED_PSY_Passive_21_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Hitting enemies with a Critical Melee, Ranged, or \"Assail\" attack puts Psyker into \"Dodging state\" against Ranged attacks for 1 second.",
 		can_be_refr_dur_active_dur,
 		"- This effect is mechanically the same as the one provided by Weapon Blessings \"Ghost\", \"Hit and Run\", and \"Stripped Down\".",
@@ -640,7 +652,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 22 - Anticipation +]--
 	local ED_PSY_Passive_22_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Increases Psyker's base Dodge linger time from 0.2 seconds to 0.3 seconds.",
 		"- \"Dodge linger time\" refers to the time window in which a character is still considered to be in \"Dodging state\" against a Melee attack after a Dodge has technically ended. This makes the Dodge window more forgiving in regard to player input timing.",
 		"- Also adds one effective Dodge at all times.",
@@ -649,20 +661,20 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 23 - Solidity +]--
 	local ED_PSY_Passive_23_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Applies only to active quelling, passive quelling is unaffected.",
 		"- Stacks multiplicatively during calculation with the Quelling buff from Celerity Stimm.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 24 - Puppet Master +]--
 	local ED_PSY_Passive_24_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Increases base Coherency radius from 8 to 12 meters.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 25 - Warp Rider +]--
 	local ED_PSY_Passive_25_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		stacks_add_w_oth_dmg,
 		"_______________________________",
 		"Peril:       0|  20|  40|  50|  60|  80|  100",
@@ -673,7 +685,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 26 - Crystalline Will +]--
 	local ED_PSY_Passive_26_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Instead of knocking down Psyker on self-explosion, converts one Health Segment to full Corruption.",
 		"- Always converts one Segment regardless whether the Segment in question is already partially Corrupted or not.",
 		"- Also reduces the overall time of the self-explosion from 3 to 1.13 seconds.",
@@ -686,7 +698,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 27 - Kinetic Deflection +]--
 	local ED_PSY_Passive_27_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- The efficiency of the Stamina Cost-to-Peril conversion is increased by Peril Cost Reduction buffs from \"Becalming Eruption\", \"By Crack of Bone\", \"Empyric Resolve\", \"Inner Tranquility\", \"Reality Anchor\" and small Peril Resistance nodes.",
 		"- Also increased by Block Cost Reduction buffs from Block Efficiency from Curios, Melee weapon perks, and \"Deflector\" Weapon Blessing (also against Ranged attacks), and by Stamina Cost Reduction buff from Celerity Stimm.",
 		"- All sources of Peril Cost Reduction, Block Cost Reduction, and Stamina Cost Reduction Stack multiplicatively with themselves and each other.",
@@ -694,7 +706,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 28 - Tranquility Through Slaughter +]--
 	local ED_PSY_Passive_28_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Critical hits with regular ranged attacks remove 4% Peril from the current Peril amount.",
 		"- Procs when hitting shields.",
 		"- Procs only once per shot regardless of how many enemies have been hit.",
@@ -704,7 +716,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 29 - Empyric Resolve +]--
 	local ED_PSY_Passive_29_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Reduces the amount of peril generated by 40%.",
 		"- Stacks multiplicatively with Peril Cost Reduction buffs from \"Becalming Eruption\", \"By Crack of Bone\", \"Inner Tranquility\", \"Kinetic Resonance\", \"Reality Anchor\", small Peril Resistance nodes, and Combat Stimm.",
 		"- Also reduces the amount of any Toughness replenished from Melee kills and Talents by 30%.",
@@ -714,7 +726,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 30 - Penetration of the Soul +]--
 	local ED_PSY_Passive_30_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- While at or above 75% true Peril, grants 10% Rending to Warp attacks boosting Damage against armor types Carapace, Flak, Maniac, Unyielding.",
 		"- Only affects Psyker's own Damage.",
 		"- Stacks additively with other Rending buffs and with Brittleness debuffs that are applied to enemies.",
@@ -724,7 +736,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 31 - True Aim +]--
 	local ED_PSY_Passive_31_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Generates 1 Weakspot Stack per Weakspot hit with Melee, Ranged, \"Assail\" and \"Brain Rupture\"/\"Brain Burst\" attacks.",
 		"- Cleaving attacks (e.g. Voidstrike Staff charged shots into density) can accumulate up to 5 Weakspot Stacks at once but do not consume the guaranteed Crit right away.",
 		"- Weakspot Stacks last until consumed.",
@@ -734,7 +746,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Passive 32 - Surety of Arms +]--
 	-- 
 	local ED_PSY_Passive_32_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Increases Reload animation speed by 25%.",
 		"- Stacks additively with Reload speed buffs from Weapon Blessings.",
 		"- Upon Reload, generates up to 25% Peril based on the percentage of reloaded ammo in clip. ",
@@ -748,7 +760,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 --[+ +BLITZ+ +]--
 	--[+ Blitz 0 - Stun Grenade +]--
 	local ED_ZEA_Blitz_0_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Fuse time: 1.5 seconds.",
 		"- Explosion radius: 8 meters.",
 		"- Electrocution:",
@@ -763,7 +775,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	
 	--[+ Blitz 1 - Stunstorm Grenade +]--
 	local ED_ZEA_Blitz_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"-- Explosion radius is increased to 12 meters.",
 		"- Fuse time: 1.5 seconds.",
 		"- Electrocution:",
@@ -778,7 +790,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	
 	--[+ Blitz 2 - Immolation Grenade +]--
 	local ED_ZEA_Blitz_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Fuse time: 1.7 seconds.",
 		"- Fire patch: Lasts 15 seconds. Radius 5 meters. Enemies avoid it.",
 		"- Burn (inside fire patch): Stacks once. Ticks every 0.875 seconds. Ignores Bulwark and Void shields.",
@@ -789,7 +801,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Blitz 3 - Blades of Faith +]--
 	local ED_ZEA_Blitz_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Quick Throw.",
 		"- Ammo: Replenishes 1 knife per melee Elite or Special kill. 2 knives per small ammo pickup. 6 knives per big ammo pickup. All knives per ammo crate.",
 		"- The knife flies along a curving trajectory.",
@@ -809,27 +821,27 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Aura 0 - The Emperors's Will +]--
 	--[+ Aura 1 - Benediction +]--
 	local ED_ZEA_Aura_0_n_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		stacks_mult_w_other_dmg_red_buffs,
 		"- Does not Stack with the same Aura from another Zealot.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 2 - Beacon of Purity +]--
 	local ED_ZEA_Aura_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- This rate is strong enough to counter a Grimoire's Corruption Damage tick rate. However, the initial 40 Corruption Damage per book cannot be removed.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 3 - Loner +]--
 	local ED_ZEA_Aura_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks additively with \"Fortitude in Fellowship\", and during calculation multiplicatively with Toughness Regeneration Speed from Curios and related buffs from Veteran's small Talent node \"Inspiring Presence\" or Ogryn's aura \"Stay Close!\".",
 		"- Note that the proc conditions for Coherency Toughness Regeneration still apply.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 0 - Chastise the Wicked +]--
 	local ED_ZEA_Ability_0_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Dash Range:",
 		"-- Base: 7 meters.",
 		"-- Aimed: up to 21 meters.",
@@ -839,7 +851,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 1 - Fury of the Faithful +]--
 	local ED_ZEA_Ability_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Dash:",
 		"-- Range: Base: 7 meters. Aimed(hold button): up to 21 meters.",
 		"-- Cannot be activated while jumping or falling.",
@@ -855,13 +867,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 1-1 - Redoubled Zeal +]--
 	local ED_ZEA_Ability_1_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- The Cooldown of the Second charge only starts after the First charge finished its Cooldown.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-2 - Invocation of Death +]--
 	local ED_ZEA_Ability_1_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- This results in a total Cooldown Reduction of 12 seconds per proc (4 seconds from Base rate + 4x2 seconds from Talent)",
 		can_be_refr_dur_active_dur,
 		"- Procs additionally to Concentration Stimm's remaining Cooldown Reduction effect of 3 seconds per second.",
@@ -870,7 +882,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 2 - Chorus of Spiritual Fortitude +]--
 	local ED_ZEA_Ability_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Radius: 10 meters.",
 		"- Immunity to Stuns and Invulnerability can be refreshed during active duration.",
 		"- \"Invulnerability\" means that player Health can't fall below 1. Players can still lose any Health above 1.",
@@ -883,7 +895,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 2-1 - Holy Cause +]--
 	local ED_ZEA_Ability_2_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Allies get the buff as long as they are in Coherency when the buff is triggered.",
 		stacks_mult_w_other_dmg_red_buffs,
 		"- Does not Stack with the same Talent from another Zealot.",
@@ -891,7 +903,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 2-2 - Banishing Light +]--
 	local ED_ZEA_Ability_2_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- This talent does three things:",
 		"-- 1. It enables pulses to Stagger non-suppressible enemies within 10 meters. Against Monstrosities and Captains/Twins within 4 meters, a forced Stagger is applied on the 1st, 3rd, 5th, and 7th pulse. Against all other non-Suppressible enemies within 4 meters, a forced Stagger is applied every pulse. Forced Stagger lasts 2 seconds.",
 		"-- 2. It enables each pulse to Suppress all suppressible enemies within 10 meters. Each pulse applies very high Suppression with an increased, randomly chosen Suppression decay delay.",
@@ -901,7 +913,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 2-3 - Ecclesiarch's Call +]--
 	local ED_ZEA_Ability_2_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Allies get the buff as long as they are in Coherency when the buff is triggered.",
 		stacks_add_w_oth_dmg,
 		"- Does not Stack with the same Talent from another Zealot.",
@@ -909,7 +921,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 2-4 - Martyr's Purpose +]--
 	local ED_ZEA_Ability_2_4_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Does not proc while downed.",
 		"- For example, if Zealot has 55 seconds of Chorus of Spiritual Fortitude's 60 seconds Cooldown remaining and takes 80 Health Damage, then the remaining 55 seconds are reduced by 60x(80x0.01)=48 to 7 seconds.",
 		"- Procs additionally to Concentration Stimm's Cooldown Reduction effect of 3 seconds per second.",
@@ -918,7 +930,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 3 - Shroudfield +]--
 	local ED_ZEA_Ability_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		become_invis_drop_all_enemy_aggro,
 		"- You can still take Damage during Invisibility.",
 		"- Stealth breaks on: hitting enemies with a Melee attack, any Ranged attack, throwing a grenade (quickthrow, aimed or underhand), finishing a Rescue/Revive/Pull up/Free from net action, throwing knives only break Stealth when they hit a target.",
@@ -933,7 +945,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 3-2 - Perfectionist +]--
 	local ED_ZEA_Ability_3_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- The Finesse buff Stacks additively with other related buffs.",
 		"- The backstab Damage buff Stacks additively with related buffs from \"Backstabber\" and \"Shroudfield\", and multiplicatively during calculation with other Damage buffs and Power level buffs from Weapon Blessings.",
 		"- Also increases Shroudfield's maximum cooldown from 30 to 37.5 seconds.",
@@ -942,7 +954,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 3-3 - Invigorating Revelation +]--
 	local ED_ZEA_Ability_3_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- When Invisibility ends, replenishes 8% of Maximum Toughness per second for 5 seconds.",
 		red_both_tghns_n_health_dmg,
 		stacks_mult_w_other_dmg_red_buffs,
@@ -951,7 +963,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 3-4 - Pious Cut-Throat +]--
 	local ED_ZEA_Ability_3_4_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Has a 0.2 seconds internal Cooldown.",
 		"- This is 6 seconds for \"Fury of the Faithful\" and \"Shroudfield\" (7.5 seconds with \"Perfectionist\"), and 12 seconds for \"Chorus of Spiritual Fortitude\".",
 		"- \"Backstabbing\" refers to Melee attacks executed from within a specific angle behind an enemy's back.",
@@ -963,7 +975,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 --[+ +KEYSTONES+ +]--
 	--[+ Keystone 1 - Blazing Piety +]--
 	local ED_ZEA_Keystone_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- After 8 seconds without a kill, considers Zealot as being out of combat. While out of combat, drops Stacks of \"Fury\" over time. While out of combat, starts dropping current Stacks of Fury one by one at a decelerating rate.",
 		"- The active Fury duration can be refreshed by killing enemies.",
 		"- Stacks additively with other sources of Crit Chance.",
@@ -971,7 +983,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Keystone 1-1 - Stalwart +]--
 	local ED_ZEA_Keystone_1_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- When reaching 25 Stacks of Fury, does two things:",
 		"-- 1. Replenishes 50% of Maximum Toughness immediately. Then, while maintaining 25 Stacks of Fury, also replenishes 2% of Max Toughness per kill.",
 		"--- Stacks additively with Zealot's base 5% Max Toughness gained on melee kill.",
@@ -982,27 +994,27 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Keystone 1-2 - Fury Rising +]--
 	local ED_ZEA_Keystone_1_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Can generate multiple Stacks per Critical Attack when Cleaving.",
 		"- Also procs on Critical Attacks against shields.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-3 - Infectious Zeal +]--
 	local ED_ZEA_Keystone_1_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		can_be_refr_dur_active_dur,
 		"- Does not Stack with the same Talent from another Zealot.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-4 - Righteous Warrior +]--
 	local ED_ZEA_Keystone_1_4_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Increases Critical Strike Chance for all attacks that can Crit, additionally to \"Blazing Piety's\" base 15% Crit Chance. (+25% total)",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2 - Martyrdom +]--
 	local ED_ZEA_Keystone_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- A Segment counts as missing if it is fully depleted or fully converted by Corruption.",
 		"- On Heresy/Damnation, Zealot can have up to 7 total Health Segments (2 base, +3 from Curios, +2 from \"Faith's Fortitude\") thereby setting the effective Max Stack count to 6.",
 		"- Per stack, increases the Damage of Melee Attacks by 8% (up to +48% on Heresy/Damnation, up to +56% below)",
@@ -1011,7 +1023,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Keystone 2-1 - I Shall Not Fall +]--
 	local ED_ZEA_Keystone_2_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Each missing Health Segment grants 6.5% Toughness Damage Reduction (up to 39% on Heresy/Damnation, up to 45.5% below).",
 		"- Stacks additively with small Toughness Damage Reduction nodes.",
 		"- The sum Stacks multiplicatively with other Damage Reduction buffs.",
@@ -1019,14 +1031,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Keystone 2-2 - Maniac +]--
 	local ED_ZEA_Keystone_2_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Each missing Health Segment increases Melee weapon Attack animation Speed by 4% (up to +24% on Heresy/Damnation, up to +28% below).",
 		"- Stacks additively with other Attack Speed buffs.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 3 - Inexorable Judgement +]--
 	local ED_ZEA_Keystone_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Sprinting generates stacks twice as fast.",
 		"- Hitting an enemy with a Melee or Ranged Attack drops all current Momentum Stacks.",
 		"- Per dropped stack of \"Momentum\", increases Melee and Ranged weapon attack animation speed by 1% and any Damage by 1% for 6 seconds.",
@@ -1038,13 +1050,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Keystone 3-1 - Retributor's Stance +]--
 	local ED_ZEA_Keystone_3_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 3-2 - Inebriate's Poise +]--
 	local ED_ZEA_Keystone_3_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Additionally generates 3 Momentum Stacks on successfully Dodging enemy Melee or Ranged attacks (except Gunners, Reaper, Sniper), and disabler attacks (Pox Hound jump, Trapper net, Mutant grab).",
 		succss_dodge_means,
 		z_ghost_hitnrun_n_stripp,
@@ -1054,7 +1066,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 --[+ +PASSIVES+ +]--
 	--[+ Passive 1 - Disdain +]--
 	local ED_ZEA_Passive_1_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Can generate multiple Stacks per swing.",
 		"- Stacks last until consumed.",
 		stacks_add_w_oth_dmg,
@@ -1063,7 +1075,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 2 - Backstabber +]--
 	local ED_ZEA_Passive_2_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Enables backstabbing.",
 		"- Stacks additively with backstab Damage buffs from \"Shroudfield\" (and \"Perfectionist\").",
 		"- Multiplicatively during calculation with other Damage buffs and Power level buffs from Weapon Blessings.",
@@ -1072,7 +1084,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 3 - Anoint in Blood +]--
 	local ED_ZEA_Passive_3_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- While the Ranged weapon is equipped, increases any Damage by 25% against Enemies within a 12.5 meters radius.",
 		stacks_add_w_oth_dmg,
 		"Beyond 12.5 meters, the Damage buff decreases linearly until it loses its effect at 30 meters:",
@@ -1086,7 +1098,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 4 - Scourge +]--
 	local ED_ZEA_Passive_4_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Critical hits with Melee attacks (including Melee special actions of Ranged weapons) apply 2 Stacks of Bleed to enemies.",
 		"- Can't apply Bleed through shields.",
 		"- Bleed:",
@@ -1100,7 +1112,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 5 - Enemies Within, Enemies Without +]--
 	local ED_ZEA_Passive_5_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Proximity check ignores map geometry.",
 		"- The replenishment is inactive while Zealot is hanging from a ledge and while disabled by Mutants, Pox Hounds, Trapper, Daemonhost, Chaos Spawn, or Beast of Nurgle.",
 		"- Does not interact with Coherency Toughness Regeneration.",
@@ -1109,16 +1121,16 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 6 - Fortitude in Fellowship +]--
 	local ED_ZEA_Passive_6_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Adds a flat 50% to the Coherency factor that scales the amount of Coherency Toughness Regenerated per ally in Coherency.",
 		"- This buff Stacks additively with \"Loner\", and during calculation multiplicatively with Toughness Regeneration Speed from Curios, Veteran's small Talent node \"Inspiring Presence\", and Ogryn's aura \"Stay Close!\".",
 		"- Increases Zealot's base amount of Coherency Toughness Regenerated:",
 		"_______________________________",
-		"Allies: | CTR:	          | After 5 seconds:",
-		"         0|  0.00 -> 3.75 | 18.75(HUD:~19)",
-		"          1|  3.75 -> 7.50  | 37.50(HUD:~38)",
-		"         2|  5.63 -> 9.38 | 46.88(HUD:~47)",
-		"         3|  7.50 -> 11.25 | 56.25(HUD:~57)",
+		"Allies: | CTR:                 | After 5 seconds:",
+		"        0 |  0.00 -> 3.75    | 18.75(HUD:~19)",
+		"         1 |  3.75 -> 7.50    | 37.50(HUD:~38)",
+		"        2 |  5.63 -> 9.38   | 46.88(HUD:~47)",
+		"        3 |  7.50 -> 11.25   | 56.25(HUD:~57)",
 		"_______________________________",
 		"(*CTR = Coherency Toughness Regenerated)",
 		"- Note that because of how the Toughness Coherency Regen rate modifier is applied During Calculation, this Talent enables Coherency Toughness Regeneration for Zealot even with no Allies in Coherency.",
@@ -1126,20 +1138,20 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 7 - Purge the Unclean +]--
 	local ED_ZEA_Passive_7_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks additively with the same Damage buffs from Weapon Perks, and during calculation multiplicatively with other Damage buffs and Power level buffs from Weapon Blessings.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 8 - Blood Redemption +]--
 	local ED_ZEA_Passive_8_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Increases the Zealot's base Maximum Toughness gained on Melee kill from 5% to 7.5%.",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 9 - Bleed for the Emperor +]--
 	local ED_ZEA_Passive_9_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Procs only on Health Damage.",
 		"- If the amount of incoming Health Damage is high enough to deplete one of Zealot's Health segments, the Talent then reduces this Health Damage amount by 40%.",
 		stacks_mult_w_other_dmg_red_buffs,
@@ -1148,14 +1160,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 10 - Vicious Offering +]--
 	local ED_ZEA_Passive_10_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		z_eff_of_this_tougn_rep,
 		"- For example, with 120 max Toughness, Zealot would replenish 120x(0.05+0.1)=18 Toughness per Heavy Melee kill.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 11 - The Voice of Terra +]--
 	local ED_ZEA_Passive_11_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- When killing enemies with Ranged attacks (including \"Blades of Faith\"), replenishes 4% of Maximum Toughness. ",
 		"- Procs additionally to Weapon Blessings like \"Inspiring Barrage\", \"Reassuringly Accurate\", \"Gloryhunter\".",
 		z_eff_of_this_tougn_rep,
@@ -1163,14 +1175,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 12 - Restoring Faith +]--
 	local ED_ZEA_Passive_12_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Procs only on Health Damage (also while in downed state).",
 		"- Can track up to 10 instances of Damage taken and restores the correct amount of Health when taking Damage while already restoring.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 13 - Second Wind +]--
 	local ED_ZEA_Passive_13_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Has a 0.5 seconds internal Cooldown.",
 		z_eff_of_this_tougn_rep,
 		procs_on_succss_dodging,
@@ -1180,7 +1192,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 14 - Enduring Faith +]--
 	local ED_ZEA_Passive_14_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Critical hits with Melee or Ranged attacks (including attacks with weapon special actions) grant 50% Toughness Damage Reduction for 4 seconds.",
 		can_be_refr_dur_active_dur,
 		stacks_mult_w_other_dmg_red_buffs,
@@ -1188,7 +1200,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 15 - The Emperor's Bullet +]--
 	local ED_ZEA_Passive_15_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- When ammo in clip reaches 0, increases Melee Stagger strength by 30% and Melee weapon Attack animation Speed by 10% for 5 seconds. ",
 		"- The Attack Speed buff Stacks additively with related buffs from \"Faithful Frenzy\", \"Fury of the Faithful\", \"Inexorable Judgement\", \"Maniac\", and Celerity Stimm; ",
 		"- The Stagger buff Stacks additively with related buffs from \"Grievous Wounds\", \"Hammer of Faith\", \"Punishment\", and Weapon Blessings , and multiplicatively with Power level buffs from Weapon Blessings.",
@@ -1196,7 +1208,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 16 - Dance of Death +]--
 	local ED_ZEA_Passive_16_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks additively with related buffs from \"Run 'n' Gun\" and \"Powderburn\" Weapon Blessings.",
 		procs_on_succss_dodging,
 		succss_dodge_means,
@@ -1205,7 +1217,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 17 - Duellist +]--
 	local ED_ZEA_Passive_17_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks additively with other Weakspot and Finesse Damage buffs, and multiplicatively with Power level buffs from Weapon Blessings. ",
 		procs_on_succss_dodging,
 		succss_dodge_means,
@@ -1214,7 +1226,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 18 - Until Death +]--
 	local ED_ZEA_Passive_18_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- If not on cooldown, prevents incoming Damage from lowering Zealot's current Health below 1 HP by granting Invulnerability for 5 seconds. ",
 		"- \"Invulnerability\" means that Zealot's Health cannot be reduced below 1. Zealot can still lose any Health above 1 while Invulnerable (e.g. by taking hits while being healed by a medical crate).",
 		"- Does not prevent death from instakills like when thrown out of bounds into a map killbox.",
@@ -1222,13 +1234,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 19 - Unremitting +]--
 	local ED_ZEA_Passive_19_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks multiplicatively with Sprint efficiency Perks from Curios, Ranged and Melee weapons, and Celerity Stimm.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 20 - Shield of Contempt +]--
 	local ED_ZEA_Passive_20_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		red_both_tghns_n_health_dmg,
 		"- Procs only on Health Damage (also while in downed state).",
 		"- Always procs for Zealot if conditions are met.",
@@ -1244,7 +1256,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 21 - Thy Wrath be Swift +]--
 	local ED_ZEA_Passive_21_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Grants immunity to Stuns and Slowdowns from both Melee and Ranged attacks.",
 		"- Also lets Zealot move through Fire patches without hindrance.",
 		"- The Movement Speed buff procs only on Health Damage taken.",
@@ -1254,7 +1266,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 22 - Good Balance +]--
 	local ED_ZEA_Passive_22_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		red_both_tghns_n_health_dmg,
 		"- Can be refreshed during active duration.",
 		stacks_mult_w_other_dmg_red_buffs,
@@ -1265,7 +1277,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 23 - Desperation +]--
 	local ED_ZEA_Passive_23_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"When Stamina reaches 0 as a result of Sprinting, Pushing or Blocking enemy Melee attacks, increases the Damage of Melee attacks by 20% for 5 seconds.",
 		can_be_refr_dur_active_dur,
 		stacks_add_w_oth_dmg,
@@ -1274,14 +1286,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 24 - Holy Revenant +]--
 	local ED_ZEA_Passive_24_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- During Until Death's 5 second duration, leeches 0.7% of non-Melee Damage and 2.1% of Melee Damage dealt to enemies.",
 		"- When Until Death ends, converts the leeched amount to Health, up to 25% of Zealot's Maximum Health.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 25 - Sainted Gunslinger +]--
 	local ED_ZEA_Passive_25_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Melee kills grant Stacks (up to 5).",
 		"- Stacks last until consumed by Reloading or by Loading special ammo (Combat Shotguns).",
 		"- Per Stack, increases Reload animation Speed by 6%.",
@@ -1291,7 +1303,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 26 - Hammer of Faith +]--
 	local ED_ZEA_Passive_26_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Increases Stagger strength for both Melee and Ranged attacks.",
 		"- Also applies to Melee special actions of Ranged weapons.",
 		"- Stacks additively with related buffs from \"Grievous Wounds\", \"Punishment\" or \"The Emperor's Bullet\".",
@@ -1299,7 +1311,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 27 - Grievous Wounds +]--
 	local ED_ZEA_Passive_27_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Increases the Stagger strength on Weakspot hits with Melee attacks by 50%.",
 		"- Also applies to Melee special actions of Ranged weapons.",
 		"- Stacks additively with related buffs from \"Hammer of Faith\", \"Punishment\" or \"The Emperor's Bullet\".",
@@ -1307,7 +1319,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 28 - Ambuscade +]--
 	local ED_ZEA_Passive_28_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Enables Flanking.",
 		"- Increases damage by 30% when flanking.",
 		"- Stacks additively with the \"Raking Fire\" Weapon Blessing, and multiplicatively with other Damage buffs and Power level buffs from Weapon Blessings.",
@@ -1316,7 +1328,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 29 - Punishment +]--
 	local ED_ZEA_Passive_29_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Hitting three or more enemies with Melee attacks grants Stacks (up to 5).",
 		"- Stacks last for 5 seconds and can be refreshed during active duration.",
 		"- Per stack, increases the stagger strength of melee and ranged attacks by 5%.",
@@ -1326,13 +1338,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 30 - Faithful Frenzy +]--
 	local ED_ZEA_Passive_30_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks additively with related buffs from \"Fury of the Faithful\", \"Inexorable Judgement\", \"Maniac\", \"The Emperor's Bullet\" and Celerity Stimm.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 31 - Sustained Assault +]--
 	local ED_ZEA_Passive_31_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Hitting enemies with Melee attacks (including Melee special actions of Ranged weapons) grants Stacks (up to 5).",
 		"- Stacks additively with Stagger buffs from \"Grievous Wounds\", \"Hammer of Faith\", \"The Emperor's Bullet\" and Weapon Blessings, and multiplicatively with Power level buffs from Weapon Blessings.",
 		"- Per Stack, increases Melee Damage by 4%.",
@@ -1341,7 +1353,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 32 - The Master's Retribution +]--
 	local ED_ZEA_Passive_32_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- If not on Cooldown, releases a push that Staggers the attacker (if possible) when taking a Melee hit.",
 		"- The push has a range of 2.75 meters and a rather narrow effective push angle (~22°).",
 		"- Always applies to the direct attacker (if possible).",
@@ -1353,34 +1365,181 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Passive 33 - Faith's Fortitude +]--
 	local ED_ZEA_Passive_33_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Stacks additively with extra Wounds from Curios.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 34 - Swift Certainty +]--
 	local ED_ZEA_Passive_34_rgb = iu_actit(table.concat({
-		ppp______ppp,
+		ppp___ppp,
 		"- Always increases Sprinting Speed by 5%. This Sprint Speed buff Stacks multiplicatively with Movement Speed buffs from \"Shroudfield\", \"Thy Wrath be Swift\", the small Movement Speed node, and Weapon Blessings like \"Rev It Up\". ",
 		"- Also allows Zealot to stay in Sprint Dodging state when Stamina is depleted. Usually, when Dodging shooting enemies by Sprinting around them with an angle (the angle between Zealot's look direction and the position of the enemy has to be at least 70°), the enemy will ultimately start hitting the player as soon as Stamina reaches 0. The Talent preserves the Sprint Dodging capability regardless of whether Zealot has Stamina or not. ",
 		"Sprint Dodging does not fulfill proc condition of \"Dance of Death\", \"Duellist\", \"Good Balance\", \"Inebriate's Poise\", and \"Second Wind\".",
 	}, "\n"), enhdesc_col)
 
+-- In the list below, you also need to add a new entry or change an old one.
 return {
-	ED_PSY_Blitz_0_rgb = ED_PSY_Blitz_0_rgb, ED_PSY_Blitz_1_rgb = ED_PSY_Blitz_1_rgb, ED_PSY_Blitz_1_1_rgb = ED_PSY_Blitz_1_1_rgb, ED_PSY_Blitz_1_2_rgb = ED_PSY_Blitz_1_2_rgb, ED_PSY_Blitz_2_rgb = ED_PSY_Blitz_2_rgb, ED_PSY_Blitz_2_1_rgb = ED_PSY_Blitz_2_1_rgb, ED_PSY_Blitz_2_2_rgb = ED_PSY_Blitz_2_2_rgb, ED_PSY_Blitz_2_3_rgb = ED_PSY_Blitz_2_3_rgb, ED_PSY_Blitz_3_rgb = ED_PSY_Blitz_3_rgb, ED_PSY_Blitz_3_1_rgb = ED_PSY_Blitz_3_1_rgb, ED_PSY_Blitz_3_2_rgb = ED_PSY_Blitz_3_2_rgb,
+	ED_PSY_Blitz_0_rgb = ED_PSY_Blitz_0_rgb,
+	ED_PSY_Blitz_1_rgb = ED_PSY_Blitz_1_rgb,
+	ED_PSY_Blitz_1_1_rgb = ED_PSY_Blitz_1_1_rgb,
+	ED_PSY_Blitz_1_2_rgb = ED_PSY_Blitz_1_2_rgb,
+	ED_PSY_Blitz_2_rgb = ED_PSY_Blitz_2_rgb,
+	ED_PSY_Blitz_2_1_rgb = ED_PSY_Blitz_2_1_rgb,
+	ED_PSY_Blitz_2_2_rgb = ED_PSY_Blitz_2_2_rgb,
+	ED_PSY_Blitz_2_3_rgb = ED_PSY_Blitz_2_3_rgb,
+	ED_PSY_Blitz_3_rgb = ED_PSY_Blitz_3_rgb,
+	ED_PSY_Blitz_3_1_rgb = ED_PSY_Blitz_3_1_rgb,
+	ED_PSY_Blitz_3_2_rgb = ED_PSY_Blitz_3_2_rgb,
 
-	ED_PSY_Aura_0_rgb = ED_PSY_Aura_0_rgb, ED_PSY_Aura_1_rgb = ED_PSY_Aura_1_rgb, ED_PSY_Aura_2_rgb = ED_PSY_Aura_2_rgb, ED_PSY_Aura_3_rgb = ED_PSY_Aura_3_rgb,
+	ED_PSY_Aura_0_rgb = ED_PSY_Aura_0_rgb,
+	ED_PSY_Aura_1_rgb = ED_PSY_Aura_1_rgb,
+	ED_PSY_Aura_2_rgb = ED_PSY_Aura_2_rgb,
+	ED_PSY_Aura_3_rgb = ED_PSY_Aura_3_rgb,
 
-	ED_PSY_Ability_0_rgb = ED_PSY_Ability_0_rgb, ED_PSY_Ability_1_rgb = ED_PSY_Ability_1_rgb, ED_PSY_Ability_1_1_rgb = ED_PSY_Ability_1_1_rgb, ED_PSY_Ability_1_2_rgb = ED_PSY_Ability_1_2_rgb, ED_PSY_Ability_1_3_rgb = ED_PSY_Ability_1_3_rgb, ED_PSY_Ability_2_rgb = ED_PSY_Ability_2_rgb, ED_PSY_Ability_2_1_rgb = ED_PSY_Ability_2_1_rgb, ED_PSY_Ability_2_2_rgb = ED_PSY_Ability_2_2_rgb, ED_PSY_Ability_2_3_rgb = ED_PSY_Ability_2_3_rgb, ED_PSY_Ability_2_4_rgb = ED_PSY_Ability_2_4_rgb, ED_PSY_Ability_3_rgb = ED_PSY_Ability_3_rgb, ED_PSY_Ability_3_1_rgb = ED_PSY_Ability_3_1_rgb, ED_PSY_Ability_3_2_rgb = ED_PSY_Ability_3_2_rgb, ED_PSY_Ability_3_3_rgb = ED_PSY_Ability_3_3_rgb, ED_PSY_Ability_3_4_rgb = ED_PSY_Ability_3_4_rgb, ED_PSY_Ability_3_5_rgb = ED_PSY_Ability_3_5_rgb,
+	ED_PSY_Ability_0_rgb = ED_PSY_Ability_0_rgb,
+	ED_PSY_Ability_1_rgb = ED_PSY_Ability_1_rgb,
+	ED_PSY_Ability_1_1_rgb = ED_PSY_Ability_1_1_rgb,
+	ED_PSY_Ability_1_2_rgb = ED_PSY_Ability_1_2_rgb,
+	ED_PSY_Ability_1_3_rgb = ED_PSY_Ability_1_3_rgb,
+	ED_PSY_Ability_2_rgb = ED_PSY_Ability_2_rgb,
+	ED_PSY_Ability_2_1_rgb = ED_PSY_Ability_2_1_rgb,
+	ED_PSY_Ability_2_2_rgb = ED_PSY_Ability_2_2_rgb,
+	ED_PSY_Ability_2_3_rgb = ED_PSY_Ability_2_3_rgb,
+	ED_PSY_Ability_2_4_rgb = ED_PSY_Ability_2_4_rgb,
+	ED_PSY_Ability_3_rgb = ED_PSY_Ability_3_rgb,
+	ED_PSY_Ability_3_1_rgb = ED_PSY_Ability_3_1_rgb,
+	ED_PSY_Ability_3_2_rgb = ED_PSY_Ability_3_2_rgb,
+	ED_PSY_Ability_3_3_rgb = ED_PSY_Ability_3_3_rgb,
+	ED_PSY_Ability_3_4_rgb = ED_PSY_Ability_3_4_rgb,
+	ED_PSY_Ability_3_5_rgb = ED_PSY_Ability_3_5_rgb,
 
-	ED_PSY_Keystone_1_rgb = ED_PSY_Keystone_1_rgb, ED_PSY_Keystone_1_1_rgb = ED_PSY_Keystone_1_1_rgb, ED_PSY_Keystone_1_2_rgb = ED_PSY_Keystone_1_2_rgb, ED_PSY_Keystone_1_3_rgb = ED_PSY_Keystone_1_3_rgb, ED_PSY_Keystone_1_4_rgb = ED_PSY_Keystone_1_4_rgb, ED_PSY_Keystone_1_5_rgb = ED_PSY_Keystone_1_5_rgb, ED_PSY_Keystone_1_6_rgb = ED_PSY_Keystone_1_6_rgb, ED_PSY_Keystone_2_rgb = ED_PSY_Keystone_2_rgb, ED_PSY_Keystone_2_0_1_rgb = ED_PSY_Keystone_2_0_1_rgb, ED_PSY_Keystone_2_0_2_rgb = ED_PSY_Keystone_2_0_2_rgb, ED_PSY_Keystone_2_0_3_rgb = ED_PSY_Keystone_2_0_3_rgb, ED_PSY_Keystone_2_1_rgb = ED_PSY_Keystone_2_1_rgb, ED_PSY_Keystone_2_2_rgb = ED_PSY_Keystone_2_2_rgb, ED_PSY_Keystone_2_3_rgb = ED_PSY_Keystone_2_3_rgb, ED_PSY_Keystone_2_4_rgb = ED_PSY_Keystone_2_4_rgb, ED_PSY_Keystone_3_rgb = ED_PSY_Keystone_3_rgb, ED_PSY_Keystone_3_1_rgb = ED_PSY_Keystone_3_1_rgb, ED_PSY_Keystone_3_2_rgb = ED_PSY_Keystone_3_2_rgb, ED_PSY_Keystone_3_3_rgb = ED_PSY_Keystone_3_3_rgb, ED_PSY_Keystone_3_4_rgb = ED_PSY_Keystone_3_4_rgb,
+	ED_PSY_Keystone_1_rgb = ED_PSY_Keystone_1_rgb,
+	ED_PSY_Keystone_1_1_rgb = ED_PSY_Keystone_1_1_rgb,
+	ED_PSY_Keystone_1_2_rgb = ED_PSY_Keystone_1_2_rgb,
+	ED_PSY_Keystone_1_3_rgb = ED_PSY_Keystone_1_3_rgb,
+	ED_PSY_Keystone_1_4_rgb = ED_PSY_Keystone_1_4_rgb,
+	ED_PSY_Keystone_1_5_rgb = ED_PSY_Keystone_1_5_rgb,
+	ED_PSY_Keystone_1_6_rgb = ED_PSY_Keystone_1_6_rgb,
+	ED_PSY_Keystone_2_rgb = ED_PSY_Keystone_2_rgb,
+	ED_PSY_Keystone_2_0_1_rgb = ED_PSY_Keystone_2_0_1_rgb,
+	ED_PSY_Keystone_2_0_2_rgb = ED_PSY_Keystone_2_0_2_rgb,
+	ED_PSY_Keystone_2_0_3_rgb = ED_PSY_Keystone_2_0_3_rgb,
+	ED_PSY_Keystone_2_1_rgb = ED_PSY_Keystone_2_1_rgb,
+	ED_PSY_Keystone_2_2_rgb = ED_PSY_Keystone_2_2_rgb,
+	ED_PSY_Keystone_2_3_rgb = ED_PSY_Keystone_2_3_rgb,
+	ED_PSY_Keystone_2_4_rgb = ED_PSY_Keystone_2_4_rgb,
+	ED_PSY_Keystone_3_rgb = ED_PSY_Keystone_3_rgb,
+	ED_PSY_Keystone_3_1_rgb = ED_PSY_Keystone_3_1_rgb,
+	ED_PSY_Keystone_3_2_rgb = ED_PSY_Keystone_3_2_rgb,
+	ED_PSY_Keystone_3_3_rgb = ED_PSY_Keystone_3_3_rgb,
+	ED_PSY_Keystone_3_4_rgb = ED_PSY_Keystone_3_4_rgb,
 
-	ED_PSY_Passive_1_rgb = ED_PSY_Passive_1_rgb, ED_PSY_Passive_2_rgb = ED_PSY_Passive_2_rgb, ED_PSY_Passive_3_rgb = ED_PSY_Passive_3_rgb, ED_PSY_Passive_4_rgb = ED_PSY_Passive_4_rgb, ED_PSY_Passive_5_rgb = ED_PSY_Passive_5_rgb, ED_PSY_Passive_6_rgb = ED_PSY_Passive_6_rgb, ED_PSY_Passive_7_rgb = ED_PSY_Passive_7_rgb, ED_PSY_Passive_8_rgb = ED_PSY_Passive_8_rgb, ED_PSY_Passive_9_rgb = ED_PSY_Passive_9_rgb, ED_PSY_Passive_10_rgb = ED_PSY_Passive_10_rgb, ED_PSY_Passive_11_rgb = ED_PSY_Passive_11_rgb, ED_PSY_Passive_12_rgb = ED_PSY_Passive_12_rgb, ED_PSY_Passive_13_rgb = ED_PSY_Passive_13_rgb, ED_PSY_Passive_14_rgb = ED_PSY_Passive_14_rgb, ED_PSY_Passive_15_rgb = ED_PSY_Passive_15_rgb, ED_PSY_Passive_16_rgb = ED_PSY_Passive_16_rgb, ED_PSY_Passive_17_rgb = ED_PSY_Passive_17_rgb, ED_PSY_Passive_18_rgb = ED_PSY_Passive_18_rgb, ED_PSY_Passive_19_rgb = ED_PSY_Passive_19_rgb, ED_PSY_Passive_20_rgb = ED_PSY_Passive_20_rgb, ED_PSY_Passive_21_rgb = ED_PSY_Passive_21_rgb, ED_PSY_Passive_22_rgb = ED_PSY_Passive_22_rgb, ED_PSY_Passive_23_rgb = ED_PSY_Passive_23_rgb, ED_PSY_Passive_24_rgb = ED_PSY_Passive_24_rgb, ED_PSY_Passive_25_rgb = ED_PSY_Passive_25_rgb, ED_PSY_Passive_26_rgb = ED_PSY_Passive_26_rgb, ED_PSY_Passive_27_rgb = ED_PSY_Passive_27_rgb, ED_PSY_Passive_28_rgb = ED_PSY_Passive_28_rgb, ED_PSY_Passive_29_rgb = ED_PSY_Passive_29_rgb, ED_PSY_Passive_30_rgb = ED_PSY_Passive_30_rgb, ED_PSY_Passive_31_rgb = ED_PSY_Passive_31_rgb, ED_PSY_Passive_32_rgb = ED_PSY_Passive_32_rgb,
+	ED_PSY_Passive_1_rgb = ED_PSY_Passive_1_rgb,
+	ED_PSY_Passive_2_rgb = ED_PSY_Passive_2_rgb,
+	ED_PSY_Passive_3_rgb = ED_PSY_Passive_3_rgb,
+	ED_PSY_Passive_4_rgb = ED_PSY_Passive_4_rgb,
+	ED_PSY_Passive_5_rgb = ED_PSY_Passive_5_rgb,
+	ED_PSY_Passive_6_rgb = ED_PSY_Passive_6_rgb,
+	ED_PSY_Passive_7_rgb = ED_PSY_Passive_7_rgb,
+	ED_PSY_Passive_8_rgb = ED_PSY_Passive_8_rgb,
+	ED_PSY_Passive_9_rgb = ED_PSY_Passive_9_rgb,
+	ED_PSY_Passive_10_rgb = ED_PSY_Passive_10_rgb,
+	ED_PSY_Passive_11_rgb = ED_PSY_Passive_11_rgb,
+	ED_PSY_Passive_12_rgb = ED_PSY_Passive_12_rgb,
+	ED_PSY_Passive_13_rgb = ED_PSY_Passive_13_rgb,
+	ED_PSY_Passive_14_rgb = ED_PSY_Passive_14_rgb,
+	ED_PSY_Passive_15_rgb = ED_PSY_Passive_15_rgb,
+	ED_PSY_Passive_16_rgb = ED_PSY_Passive_16_rgb,
+	ED_PSY_Passive_17_rgb = ED_PSY_Passive_17_rgb,
+	ED_PSY_Passive_18_rgb = ED_PSY_Passive_18_rgb,
+	ED_PSY_Passive_19_rgb = ED_PSY_Passive_19_rgb,
+	ED_PSY_Passive_20_rgb = ED_PSY_Passive_20_rgb,
+	ED_PSY_Passive_21_rgb = ED_PSY_Passive_21_rgb,
+	ED_PSY_Passive_22_rgb = ED_PSY_Passive_22_rgb,
+	ED_PSY_Passive_23_rgb = ED_PSY_Passive_23_rgb,
+	ED_PSY_Passive_24_rgb = ED_PSY_Passive_24_rgb,
+	ED_PSY_Passive_25_rgb = ED_PSY_Passive_25_rgb,
+	ED_PSY_Passive_26_rgb = ED_PSY_Passive_26_rgb,
+	ED_PSY_Passive_27_rgb = ED_PSY_Passive_27_rgb,
+	ED_PSY_Passive_28_rgb = ED_PSY_Passive_28_rgb,
+	ED_PSY_Passive_29_rgb = ED_PSY_Passive_29_rgb,
+	ED_PSY_Passive_30_rgb = ED_PSY_Passive_30_rgb,
+	ED_PSY_Passive_31_rgb = ED_PSY_Passive_31_rgb,
+	ED_PSY_Passive_32_rgb = ED_PSY_Passive_32_rgb,
 
-	ED_ZEA_Blitz_0_rgb = ED_ZEA_Blitz_0_rgb, ED_ZEA_Blitz_1_rgb = ED_ZEA_Blitz_1_rgb, ED_ZEA_Blitz_1_1_rgb = ED_ZEA_Blitz_1_1_rgb, ED_ZEA_Blitz_1_2_rgb = ED_ZEA_Blitz_1_2_rgb, ED_ZEA_Blitz_2_rgb = ED_ZEA_Blitz_2_rgb, ED_ZEA_Blitz_2_1_rgb = ED_ZEA_Blitz_2_1_rgb, ED_ZEA_Blitz_2_2_rgb = ED_ZEA_Blitz_2_2_rgb, ED_ZEA_Blitz_2_3_rgb = ED_ZEA_Blitz_2_3_rgb, ED_ZEA_Blitz_3_rgb = ED_ZEA_Blitz_3_rgb, ED_ZEA_Blitz_3_1_rgb = ED_ZEA_Blitz_3_1_rgb, ED_ZEA_Blitz_3_2_rgb = ED_ZEA_Blitz_3_2_rgb, ED_ZEA_Aura_0_n_1_rgb = ED_ZEA_Aura_0_n_1_rgb, ED_ZEA_Aura_2_rgb = ED_ZEA_Aura_2_rgb, ED_ZEA_Aura_3_rgb = ED_ZEA_Aura_3_rgb,
+	ED_ZEA_Blitz_0_rgb = ED_ZEA_Blitz_0_rgb,
+	ED_ZEA_Blitz_1_rgb = ED_ZEA_Blitz_1_rgb,
+	ED_ZEA_Blitz_1_1_rgb = ED_ZEA_Blitz_1_1_rgb,
+	ED_ZEA_Blitz_1_2_rgb = ED_ZEA_Blitz_1_2_rgb,
+	ED_ZEA_Blitz_2_rgb = ED_ZEA_Blitz_2_rgb,
+	ED_ZEA_Blitz_2_1_rgb = ED_ZEA_Blitz_2_1_rgb,
+	ED_ZEA_Blitz_2_2_rgb = ED_ZEA_Blitz_2_2_rgb,
+	ED_ZEA_Blitz_2_3_rgb = ED_ZEA_Blitz_2_3_rgb,
+	ED_ZEA_Blitz_3_rgb = ED_ZEA_Blitz_3_rgb,
+	ED_ZEA_Blitz_3_1_rgb = ED_ZEA_Blitz_3_1_rgb,
+	ED_ZEA_Blitz_3_2_rgb = ED_ZEA_Blitz_3_2_rgb,
+	ED_ZEA_Aura_0_n_1_rgb = ED_ZEA_Aura_0_n_1_rgb,
+	ED_ZEA_Aura_2_rgb = ED_ZEA_Aura_2_rgb,
+	ED_ZEA_Aura_3_rgb = ED_ZEA_Aura_3_rgb,
 
-	ED_ZEA_Ability_0_rgb = ED_ZEA_Ability_0_rgb, ED_ZEA_Ability_1_rgb = ED_ZEA_Ability_1_rgb, ED_ZEA_Ability_1_1_rgb = ED_ZEA_Ability_1_1_rgb, ED_ZEA_Ability_1_2_rgb = ED_ZEA_Ability_1_2_rgb, ED_ZEA_Ability_2_rgb = ED_ZEA_Ability_2_rgb, ED_ZEA_Ability_2_1_rgb = ED_ZEA_Ability_2_1_rgb, ED_ZEA_Ability_2_2_rgb = ED_ZEA_Ability_2_2_rgb, ED_ZEA_Ability_2_3_rgb = ED_ZEA_Ability_2_3_rgb, ED_ZEA_Ability_2_4_rgb = ED_ZEA_Ability_2_4_rgb, ED_ZEA_Ability_3_rgb = ED_ZEA_Ability_3_rgb, ED_ZEA_Ability_3_2_rgb = ED_ZEA_Ability_3_2_rgb, ED_ZEA_Ability_3_3_rgb = ED_ZEA_Ability_3_3_rgb, ED_ZEA_Ability_3_4_rgb = ED_ZEA_Ability_3_4_rgb,
+	ED_ZEA_Ability_0_rgb = ED_ZEA_Ability_0_rgb,
+	ED_ZEA_Ability_1_rgb = ED_ZEA_Ability_1_rgb,
+	ED_ZEA_Ability_1_1_rgb = ED_ZEA_Ability_1_1_rgb,
+	ED_ZEA_Ability_1_2_rgb = ED_ZEA_Ability_1_2_rgb,
+	ED_ZEA_Ability_2_rgb = ED_ZEA_Ability_2_rgb,
+	ED_ZEA_Ability_2_1_rgb = ED_ZEA_Ability_2_1_rgb,
+	ED_ZEA_Ability_2_2_rgb = ED_ZEA_Ability_2_2_rgb,
+	ED_ZEA_Ability_2_3_rgb = ED_ZEA_Ability_2_3_rgb,
+	ED_ZEA_Ability_2_4_rgb = ED_ZEA_Ability_2_4_rgb,
+	ED_ZEA_Ability_3_rgb = ED_ZEA_Ability_3_rgb,
+	ED_ZEA_Ability_3_2_rgb = ED_ZEA_Ability_3_2_rgb,
+	ED_ZEA_Ability_3_3_rgb = ED_ZEA_Ability_3_3_rgb,
+	ED_ZEA_Ability_3_4_rgb = ED_ZEA_Ability_3_4_rgb,
 
-	ED_ZEA_Keystone_1_rgb = ED_ZEA_Keystone_1_rgb, ED_ZEA_Keystone_1_1_rgb = ED_ZEA_Keystone_1_1_rgb, ED_ZEA_Keystone_1_2_rgb = ED_ZEA_Keystone_1_2_rgb, ED_ZEA_Keystone_1_3_rgb = ED_ZEA_Keystone_1_3_rgb, ED_ZEA_Keystone_1_4_rgb = ED_ZEA_Keystone_1_4_rgb, ED_ZEA_Keystone_2_rgb = ED_ZEA_Keystone_2_rgb, ED_ZEA_Keystone_2_1_rgb = ED_ZEA_Keystone_2_1_rgb, ED_ZEA_Keystone_2_2_rgb = ED_ZEA_Keystone_2_2_rgb, ED_ZEA_Keystone_3_rgb = ED_ZEA_Keystone_3_rgb, ED_ZEA_Keystone_3_1_rgb = ED_ZEA_Keystone_3_1_rgb, ED_ZEA_Keystone_3_2_rgb = ED_ZEA_Keystone_3_2_rgb,
+	ED_ZEA_Keystone_1_rgb = ED_ZEA_Keystone_1_rgb,
+	ED_ZEA_Keystone_1_1_rgb = ED_ZEA_Keystone_1_1_rgb,
+	ED_ZEA_Keystone_1_2_rgb = ED_ZEA_Keystone_1_2_rgb,
+	ED_ZEA_Keystone_1_3_rgb = ED_ZEA_Keystone_1_3_rgb,
+	ED_ZEA_Keystone_1_4_rgb = ED_ZEA_Keystone_1_4_rgb,
+	ED_ZEA_Keystone_2_rgb = ED_ZEA_Keystone_2_rgb,
+	ED_ZEA_Keystone_2_1_rgb = ED_ZEA_Keystone_2_1_rgb,
+	ED_ZEA_Keystone_2_2_rgb = ED_ZEA_Keystone_2_2_rgb,
+	ED_ZEA_Keystone_3_rgb = ED_ZEA_Keystone_3_rgb,
+	ED_ZEA_Keystone_3_1_rgb = ED_ZEA_Keystone_3_1_rgb,
+	ED_ZEA_Keystone_3_2_rgb = ED_ZEA_Keystone_3_2_rgb,
 
-	ED_ZEA_Passive_1_rgb = ED_ZEA_Passive_1_rgb, ED_ZEA_Passive_2_rgb = ED_ZEA_Passive_2_rgb, ED_ZEA_Passive_3_rgb = ED_ZEA_Passive_3_rgb, ED_ZEA_Passive_4_rgb = ED_ZEA_Passive_4_rgb, ED_ZEA_Passive_5_rgb = ED_ZEA_Passive_5_rgb, ED_ZEA_Passive_6_rgb = ED_ZEA_Passive_6_rgb, ED_ZEA_Passive_7_rgb = ED_ZEA_Passive_7_rgb, ED_ZEA_Passive_8_rgb = ED_ZEA_Passive_8_rgb, ED_ZEA_Passive_9_rgb = ED_ZEA_Passive_9_rgb, ED_ZEA_Passive_10_rgb = ED_ZEA_Passive_10_rgb, ED_ZEA_Passive_11_rgb = ED_ZEA_Passive_11_rgb, ED_ZEA_Passive_12_rgb = ED_ZEA_Passive_12_rgb, ED_ZEA_Passive_13_rgb = ED_ZEA_Passive_13_rgb, ED_ZEA_Passive_14_rgb = ED_ZEA_Passive_14_rgb, ED_ZEA_Passive_15_rgb = ED_ZEA_Passive_15_rgb, ED_ZEA_Passive_16_rgb = ED_ZEA_Passive_16_rgb, ED_ZEA_Passive_17_rgb = ED_ZEA_Passive_17_rgb, ED_ZEA_Passive_18_rgb = ED_ZEA_Passive_18_rgb, ED_ZEA_Passive_19_rgb = ED_ZEA_Passive_19_rgb, ED_ZEA_Passive_20_rgb = ED_ZEA_Passive_20_rgb, ED_ZEA_Passive_21_rgb = ED_ZEA_Passive_21_rgb, ED_ZEA_Passive_22_rgb = ED_ZEA_Passive_22_rgb, ED_ZEA_Passive_23_rgb = ED_ZEA_Passive_23_rgb, ED_ZEA_Passive_24_rgb = ED_ZEA_Passive_24_rgb, ED_ZEA_Passive_25_rgb = ED_ZEA_Passive_25_rgb, ED_ZEA_Passive_26_rgb = ED_ZEA_Passive_26_rgb, ED_ZEA_Passive_27_rgb = ED_ZEA_Passive_27_rgb, ED_ZEA_Passive_28_rgb = ED_ZEA_Passive_28_rgb, ED_ZEA_Passive_29_rgb = ED_ZEA_Passive_29_rgb, ED_ZEA_Passive_30_rgb = ED_ZEA_Passive_30_rgb, ED_ZEA_Passive_31_rgb = ED_ZEA_Passive_31_rgb, ED_ZEA_Passive_32_rgb = ED_ZEA_Passive_32_rgb, ED_ZEA_Passive_33_rgb = ED_ZEA_Passive_33_rgb, ED_ZEA_Passive_34_rgb = ED_ZEA_Passive_34_rgb,
+	ED_ZEA_Passive_1_rgb = ED_ZEA_Passive_1_rgb,
+	ED_ZEA_Passive_2_rgb = ED_ZEA_Passive_2_rgb,
+	ED_ZEA_Passive_3_rgb = ED_ZEA_Passive_3_rgb,
+	ED_ZEA_Passive_4_rgb = ED_ZEA_Passive_4_rgb,
+	ED_ZEA_Passive_5_rgb = ED_ZEA_Passive_5_rgb,
+	ED_ZEA_Passive_6_rgb = ED_ZEA_Passive_6_rgb,
+	ED_ZEA_Passive_7_rgb = ED_ZEA_Passive_7_rgb,
+	ED_ZEA_Passive_8_rgb = ED_ZEA_Passive_8_rgb,
+	ED_ZEA_Passive_9_rgb = ED_ZEA_Passive_9_rgb,
+	ED_ZEA_Passive_10_rgb = ED_ZEA_Passive_10_rgb,
+	ED_ZEA_Passive_11_rgb = ED_ZEA_Passive_11_rgb,
+	ED_ZEA_Passive_12_rgb = ED_ZEA_Passive_12_rgb,
+	ED_ZEA_Passive_13_rgb = ED_ZEA_Passive_13_rgb,
+	ED_ZEA_Passive_14_rgb = ED_ZEA_Passive_14_rgb,
+	ED_ZEA_Passive_15_rgb = ED_ZEA_Passive_15_rgb,
+	ED_ZEA_Passive_16_rgb = ED_ZEA_Passive_16_rgb,
+	ED_ZEA_Passive_17_rgb = ED_ZEA_Passive_17_rgb,
+	ED_ZEA_Passive_18_rgb = ED_ZEA_Passive_18_rgb,
+	ED_ZEA_Passive_19_rgb = ED_ZEA_Passive_19_rgb,
+	ED_ZEA_Passive_20_rgb = ED_ZEA_Passive_20_rgb,
+	ED_ZEA_Passive_21_rgb = ED_ZEA_Passive_21_rgb,
+	ED_ZEA_Passive_22_rgb = ED_ZEA_Passive_22_rgb,
+	ED_ZEA_Passive_23_rgb = ED_ZEA_Passive_23_rgb,
+	ED_ZEA_Passive_24_rgb = ED_ZEA_Passive_24_rgb,
+	ED_ZEA_Passive_25_rgb = ED_ZEA_Passive_25_rgb,
+	ED_ZEA_Passive_26_rgb = ED_ZEA_Passive_26_rgb,
+	ED_ZEA_Passive_27_rgb = ED_ZEA_Passive_27_rgb,
+	ED_ZEA_Passive_28_rgb = ED_ZEA_Passive_28_rgb,
+	ED_ZEA_Passive_29_rgb = ED_ZEA_Passive_29_rgb,
+	ED_ZEA_Passive_30_rgb = ED_ZEA_Passive_30_rgb,
+	ED_ZEA_Passive_31_rgb = ED_ZEA_Passive_31_rgb,
+	ED_ZEA_Passive_32_rgb = ED_ZEA_Passive_32_rgb,
+	ED_ZEA_Passive_33_rgb = ED_ZEA_Passive_33_rgb,
+	ED_ZEA_Passive_34_rgb = ED_ZEA_Passive_34_rgb,
 }
