@@ -2,7 +2,7 @@ My sincere thanks to comrad deluxghost for the opportunity to make this mod!
 [![Enhanced Descriptions](https://staticdelivery.nexusmods.com/mods/4943/images/headers/210_1703189302.jpg)](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
 
 # Enhanced Descriptions
-## version: 2.5
+## version: 2.52
 ## Enhanced Descriptions - Merged mod. Included TALENTS, CURIOS, WEAPON PERKS and BLESSINGS.
 
 ### At the moment I am transferring the Russian version into this mod.
