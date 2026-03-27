@@ -5,11 +5,15 @@
 local mod = get_mod("Enhanced_descriptions")
 
 -- <<<CODE_REVEALER>>>
--- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_buff_cooldown_on_melee_kills"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
+-- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_zealot_stamina_cost_multiplier_delay_aura_description"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
 -- <<</CODE_REVEALER>>>
 
 -- Кэш утилит
 mod._utils_cache = nil
+mod._language_cache = {
+	current_lang = nil,
+	forced_lang = nil
+}
 
 -- Функция для получения утилит с кэшированием
 function mod.get_utils()
@@ -95,15 +99,15 @@ mod.SUPPORTED_LANGUAGES = {
 	"en",			-- English
 	"ru",			-- Russian
 	"fr",			-- French
-	"zh-cn",		-- Chinese Simplified
 	"zh-tw",		-- Chinese Traditional
-	-- "de",		-- German
-	-- "it",		-- Italian
-	-- "ja",		-- Japanese
-	-- "ko",		-- Korean
-	-- "pl",		-- Polish
-	-- "pt-br",		-- Portuguese (Brazil)
-	-- "es",		-- Spanish
+	"zh-cn",		-- Chinese Simplified
+	"de",			-- German
+	"it",			-- Italian
+	"ja",			-- Japanese
+	"ko",			-- Korean
+	"pl",			-- Polish
+	"pt-br",		-- Portuguese (Brazil)
+	"es",			-- Spanish
 }
 
 -- Карта языков для файлов
@@ -111,8 +115,8 @@ local LANGUAGE_FILE_MAP = {
 	["en"] =		"en",
 	["ru"] =		"ru",
 	["fr"] =		"fr",
-	["zh-cn"] =		"zh_cn",
 	["zh-tw"] =		"tw",
+	["zh-cn"] =		"zh_cn",
 	["de"] =		"de",
 	["it"] =		"it",
 	["ja"] =		"ja",
@@ -128,8 +132,8 @@ local function get_language_name(lang_code)
 		["en"] =	"English",
 		["ru"] =	"Russian",
 		["fr"] =	"French",
-		["zh-cn"] =	"Chinese Simplified",
 		["zh-tw"] =	"Chinese Traditional",
+		["zh-cn"] =	"Chinese Simplified",
 		["de"] =	"German",
 		["it"] =	"Italian",
 		["ja"] =	"Japanese",
@@ -225,8 +229,12 @@ local FIXES = {
 
 	--[+ ARBITES - АРБИТРЕС +]--
 		--[+ ABILITY 1 - Castigator's Stance +]--
-		loc_talent_adamant_stance_ability_alt_description = {
+		loc_talent_adamant_stance_ability_power_description = {
 			damage_taken =						MFF.fixes.all_plus
+		},
+		--[+ KEYSTONE 5-2 - Terminal Decree +]--
+		loc_talent_adamant_terminus_warrant_support_desc = {
+			toughness =							MFF.fixes.all_plus
 		},
 		--[+ Passive 16 - Canine Morale +]--
 		loc_talent_adamant_pinning_dog_kills_buff_allies_description = {
@@ -253,7 +261,7 @@ local FIXES = {
 
 	--[+ HIVE SCUM - ОТРЕБЬЕ УЛЬЯ +]--
 		--[+ ABILITY 2 - Rampage! +]--
-		loc_talent_broker_ability_punk_rage_desc_2 = {
+		loc_talent_broker_ability_punk_rage_desc_3 = {
 			damage_taken =						MFF.fixes.all_plus
 		},
 		--[+ KEYSTONE 3 - Chemical Dependency +]--
@@ -284,6 +292,14 @@ local FIXES = {
 		--[+ Passive 42 - Toxic Renewal +]--
 		loc_talent_broker_toughness_on_toxined_kill_desc = {
 			toughness =							MFF.fixes.all_plus
+		},
+		--[+ Barrage I-IV / Tank +]--
+		loc_talent_stat_damage_taken_multiplier = {
+			damage_taken_multiplier =			MFF.fixes.all_plus
+		},
+		--[+ Regain +]--
+		loc_talent_buff_toughness_during_stimm = {
+			toughness_amount =					MFF.fixes.all_plus
 		},
 }
 
@@ -387,12 +403,32 @@ function mod.load_colors_keywords(language)
 end
 
 function mod.get_current_language_colors()
-	if not Managers or not Managers.localization then
-		return {}, {}, "en"
+	-- Если уже есть кэшированный язык и он не изменился
+	if mod._color_cache.numbers and mod._color_cache.keywords and 
+	   mod._language_cache.current_lang and mod._language_cache.forced_lang then
+		local current_override = mod:get("language_override")
+		if current_override == mod._language_cache.forced_lang then
+			return {mod._color_cache.numbers, mod._color_cache.keywords, mod._language_cache.current_lang}
+		end
 	end
-
-	local current_lang = Managers.localization._language or "en"
-
+	
+	local current_lang = "en"
+	local language_override = mod:get("language_override")
+	
+	-- Определяем язык
+	if language_override and language_override ~= "auto" then
+		-- Принудительный язык из настроек
+		current_lang = language_override
+		mod._language_cache.forced_lang = language_override
+	else
+		-- Автоматически определяем язык игры
+		if Managers and Managers.localization then
+			current_lang = Managers.localization._language or "en"
+		end
+		mod._language_cache.forced_lang = "auto"
+	end
+	
+	-- Проверяем поддержку языка
 	local is_supported = false
 	for _, lang in ipairs(mod.SUPPORTED_LANGUAGES) do
 		if lang == current_lang then
@@ -402,21 +438,19 @@ function mod.get_current_language_colors()
 	end
 
 	if not is_supported then
-		-- Преобразуем список поддерживаемых языков в их названия
 		local supported_names = {}
 		for _, lang in ipairs(mod.SUPPORTED_LANGUAGES) do
 			table.insert(supported_names, get_language_name(lang))
 		end
 		local supported_list = table.concat(supported_names, ", ")
 		
-		-- Также получаем читаемое название текущего языка
 		local current_lang_name = get_language_name(current_lang)
 		
 		mod:warning(
 [[Sorry!
 {#color(255, 35, 5)} Localization for '%s' is not available!{#reset()}
 Currently supported languages: {#color(124, 252, 0)}%s{#reset()}.]],
-			current_lang_name, -- Используем название вместо кода
+			current_lang_name,
 			supported_list
 		)
 		current_lang = "en"
@@ -425,6 +459,11 @@ Currently supported languages: {#color(124, 252, 0)}%s{#reset()}.]],
 	local numbers = mod.load_colors_numbers()
 	local keywords = mod.load_colors_keywords(current_lang)
 
+	-- Кэшируем
+	mod._color_cache.numbers = numbers
+	mod._color_cache.keywords = keywords
+	mod._language_cache.current_lang = current_lang
+
 	return {numbers, keywords, current_lang}
 end
 
@@ -432,9 +471,11 @@ function mod.clear_color_cache()
 	mod._color_cache.numbers = nil
 	mod._color_cache.keywords = nil
 	mod._color_cache.current_lang = nil
-	mod.clear_utils_cache()	 -- Очищаем кэш утилит
+	mod._language_cache.current_lang = nil
+	mod._language_cache.forced_lang = nil
+	mod.clear_utils_cache()		-- Очищаем кэш утилит
 
-	mod:info("Color cache and utils cache cleared")
+	mod:info("Color cache, language cache and utils cache cleared")
 end
 
 mod:hook(LocalizationManager, "localize", function(func, self, loc_key, no_cache, context)
@@ -499,6 +540,23 @@ local function load_all_templates()
 end
 
 local function should_load_template(template, current_lang)
+	local language_override = mod:get("language_override")
+
+	-- Если выбран конкретный язык, игнорируем другие
+	if language_override and language_override ~= "auto" then
+		if template.locales then
+			for _, locale in ipairs(template.locales) do
+				if locale == language_override then
+					return true
+				end
+			end
+			return false
+		end
+		-- Если шаблон без указания языков, загружаем для любого принудительного языка
+		return true
+	end
+
+	-- Автоматический режим
 	if not template.locales then
 		return true
 	end
@@ -534,6 +592,13 @@ mod.reload_templates = function()
 	end
 
 	local current_lang = Managers.localization._language or "en"
+	local language_override = mod:get("language_override")
+	
+	-- Используем принудительный язык если указан
+	if language_override and language_override ~= "auto" then
+		current_lang = language_override
+	end
+	
 	local all_templates = load_all_templates()
 	register_template_fixes(all_templates, current_lang)
 
@@ -635,9 +700,10 @@ local function on_setting_changed(setting_id)
 		mod.clear_color_cache()
 		mod.reload_templates()
 		mod:notify("Colors updated")
-	elseif string.find(setting_id, "enable_") then
+	elseif string.find(setting_id, "enable_") or setting_id == "language_override" then
+		mod.clear_color_cache()	 -- Очищаем кэш языка
 		mod.reload_templates()
-		mod:notify("Modules reloaded")
+		mod:notify("Language and modules reloaded")
 	end
 end
 

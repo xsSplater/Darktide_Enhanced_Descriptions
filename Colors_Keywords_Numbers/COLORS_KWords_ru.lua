@@ -8,7 +8,7 @@ local InputUtils = require("scripts/managers/input/input_utils")
 local CONFIG = {
 	bleed_text_colour = {
 		krovotechenie =		"кровотечение",					-- Таланты
-		krovotecheniem =		"кровотечением",					-- Таланты
+		krovotecheniem =	"кровотечением",				-- Таланты
 		krovotechenia =		"кровотечения",					-- Таланты, Благословения
 	},
 	brittleness_text_colour = {
@@ -67,9 +67,13 @@ local CONFIG = {
 		krit_udarom =		"критическим ударом",			-- Таланты, Благословения
 		krit_udary =		"критические удары",			-- Таланты
 		krit_udarami =		"критическими ударами",			-- Благословения
+		krit_udarah =		"критических ударах",			-- Таланты
+		krit_udara =		"критического удара",			-- Таланты
 		krit_udare =		"критическом ударе",			-- Таланты, Благословения
+		krit_udar_uron =	"урон критического удара",		-- Таланты
 		krit_udara_uron =	"урону критического удара",		-- Таланты, Благословения
 
+		Krt_uron =			"Крит. урон",					-- Таланты
 		krit_uron =			"критический урон",				-- Таланты, Примечания внизу
 		krit_uronu =		"критическому урону",			-- Таланты, Благословения
 
@@ -112,6 +116,7 @@ local CONFIG = {
 		ran =				"ран",							-- Таланты
 		ranu =				"рану",							-- Таланты
 		rany =				"раны",							-- Таланты
+		Zdorovie =			"Здоровье",						-- Таланты
 		zdorovie =			"здоровье",						-- Таланты
 		zdoroviem =			"здоровьем",					-- Таланты
 		zdoroviu =			"здоровью",						-- Таланты, Редкости
@@ -281,7 +286,7 @@ local CONFIG = {
 			Focus =				"Концентрации",
 			Forceful =			"Неудержимости",
 
-			Shout =				"Крик",						-- Hive Scum
+			Shout =				"Крик",						-- Отребье
 		},
 		focust_text_colour = {
 			Focus_Target =		"Важной цели",
@@ -295,7 +300,7 @@ local CONFIG = {
 
 			Meleejust =			"Судьи-рукопашника",		-- Арбитрес
 
-			Exhausted =			"Истощение",				-- Hive Scum
+			Exhausted =			"Истощение",				-- Отребье
 		},
 		rangedspec_text_colour = {
 			Rangedspec =		"Специалиста-стрелка",
@@ -351,9 +356,10 @@ local CONFIG = {
 		Desperady =			"Сорвиголовы",
 
 -- ИСКУПЛЕНИЯ
-		Base_tut_p =		"Базовое обучение",
+		Base_tut_p =		"Базовое руководство",
 		Curio_p =			"Реликвий",
 		Omnissia_p =		"Святилище Омниссии",
+		PthOTrst_p =		"Пути доверия",
 		Prologue_p =		"Пролог",
 		Sir_melk_p =		"Реквизиториум сира Мелка",
 
@@ -502,6 +508,7 @@ local function create_phrs_ru(colors_ru)
 
 	return {
 		Can_appl_thr_shlds =		Dot_green.." Накладывается через щиты.",
+		Can_appl_thr_shldsb =		Dot_green.." Накладывается через щит бастиона.",
 		Can_be_refr =				Dot_green.." Обновляется во время действия. ",
 		Can_be_refr_drop_1 =		Dot_green.." Заряды обновляются во время действия и сбрасываются по одному. ",
 		Can_proc_mult = 			Dot_green.." Может срабатывать несколько раз за удар при "..CKWord("рассечении", "rassechenii_rgb_ru").." нескольких врагов.\n",
@@ -528,7 +535,7 @@ local function create_phrs_ru(colors_ru)
 -- Огрин
 		Doesnt_Stack_Ogr_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("Огрина", "cls_ogra_rgb_ru")..".",
 		Doesnt_Stack_Ogr_abil =		Dot_red.." Не суммируется с эффектом такого же таланта другого "..CKWord("Огрина", "cls_ogra_rgb_ru")..".",
--- Hive Scum
+-- Отребье
 		Doesnt_Stack_Scm_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("Отребья Улья", "cls_scma_rgb_ru")..".",
 		Doesnt_Stack_Scm_eff =		Dot_red.." Не суммируется с таким же ослаблением от другого "..CKWord("Отребья Улья", "cls_scma_rgb_ru")..".",
 	}
