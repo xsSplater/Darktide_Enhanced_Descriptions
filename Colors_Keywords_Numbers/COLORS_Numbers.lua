@@ -34,6 +34,7 @@ local CONFIG = {
 		dmgvsprsd_var =			"{damage_vs_suppressed}",
 		dmgvsstgr_var =			"{vs_stagger:%s}",
 		dur_var =				"{duration:%s}",
+		enemy_count =			"{enemy_count}",
 		explosion_rad_var =		"{explosion_radius:%s}",
 		extrahits_var =			"{extra_hits:%s}",
 		fin_var =				"{finesse:%s}",
@@ -81,6 +82,7 @@ local CONFIG = {
 		time_var =				"{time:%s}",
 		time_wind =				"{time_window}",
 		value_var =				"{value:%s}",
+		viscosity_target =		"{viscosity_target}",
 		warpchrg_var =			"{warp_charge:%s}",
 		wkspdmg_var =			"{weakspot_damage:%s}",
 		weapsprd_var =			"{weapon_spread:%s}",
@@ -273,6 +275,7 @@ local CONFIG = {
 		pc_5 =		"5%",
 		pc_6 =		"6%",
 
+		pc_7 =		"7%",
 		pc_7_5 =	"7.5%",
 
 		pc_8 =		"8%",

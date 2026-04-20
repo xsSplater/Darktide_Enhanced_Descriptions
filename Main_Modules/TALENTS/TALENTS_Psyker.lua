@@ -611,12 +611,12 @@ local psyker_localizations = {
 		en = Dot_green.." You can now hold up to {max_stacks:%s} Stacks of {talent_name:%s}.",
 		ru = Dot_green.." Вы теперь можете набирать до {max_stacks:%s} зарядов таланта {talent_name:%s}.", -- Заряженный -- руоф Зарядка
 	},
-	--[+ KEYSTONE 3 - Disrupt Destiny +]--	26.03.2026
+	--[+ KEYSTONE 3 - Disrupt Destiny +]--	12.04.2026
 	["loc_talent_psyker_marked_enemies_passive_updated_desc"] = { -- radius: 40, toughness: 10%, move_speed: +20%, move_speed_duration: 2.5, bonus_duration 4, base_damage: +1%, crit_damage: +2%, weakspot_damage: +2.5%, bonus_stacks: 15 -- m->meters, s->seconds, +colors
 		en = "Every second, Enemies within {radius:%s} meters have a chance of being "..CKWord("Marked", "Psy_Mark_rgb")..".\n"
 			.."\n"
 			.."On Killing a "..CKWord("Marked", "Psy_Mark_rgb").." Enemy:\n"
-			..Dot_green.." "..CNumb("10", "n_10_rgb").." "..CKWord("Toughness", "Toughness_rgb").." restored per second, up to {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {move_speed_duration:%s} seconds,\n"
+			..Dot_green.." "..CNumb("10%", "pc_10_rgb").." "..CKWord("Toughness", "Toughness_rgb").." restored per second, up to {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {move_speed_duration:%s} seconds,\n"
 			..Dot_green.." {move_speed:%s} Movement Speed is granted for {move_speed_duration:%s} seconds,\n"
 			..Dot_green.." "..CNumb("1", "n_1_rgb").." Stack of "..CKWord("Precision", "Precision_rgb").." is added for {bonus_duration} seconds.\n"
 			.."\n"
@@ -632,7 +632,7 @@ local psyker_localizations = {
 		ru = "Каждую секунду враги в радиусе {radius:%s} метров могут быть "..CKWord("отмечены", "Psy_Mark_rgb_ru")..".\n" -- Прерывание судьбы -- руоф Разрушенная судьба
 			.."\n"
 			.."При убийстве "..CKWord("отмеченного", "Psy_Mark_ogo_rgb_ru").." врага вы получаете:\n"
-			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." за {move_speed_duration:%s} секунды,\n"
+			..Dot_green.." "..CNumb("10%", "pc_10_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду, вплоть до {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." за {move_speed_duration:%s} секунды,\n"
 			..Dot_green.." {move_speed:%s} к скорости передвижения на {move_speed_duration:%s} секунды и\n"
 			..Dot_green.." "..CNumb("1", "n_1_rgb").." заряд "..CKWord("меткости", "Precision_rgb_ru").." на {bonus_duration} секунд.\n"
 			.."\n"

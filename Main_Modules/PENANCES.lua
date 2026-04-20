@@ -36,3453 +36,2014 @@ local penances_localizations = {
 
 --[+ ++PENANCES - ИСКУПЛЕНИЯ++ +]--
 	--[+ Lowerbody +]--
-	-- ["loc_item_type_gear_lowerbody"] = {
-		-- en = "Lower body",
-		-- ru = "Ноги", -- руоф Нижняя часть тела
-		-- fr = "",
-		-- ["zh-tw"] = "下半身",
-		-- ["zh-cn"] = "被动",
-	-- },
-	--[+ Private Game +]--
-	-- ["loc_private_tag_name1"] = {
-		-- en = "",
-		-- ru = "Закрытая игра", -- Закрытая игра
-		-- fr = "",
-		-- ["zh-tw"] = "私人遊戲",
-		-- ["zh-cn"] = "",
-	-- },
-	--[+ Penance can only be completed in a private game +]--
-	-- ["loc_private_tag_description"] = {
-		-- en = "",
-		-- ru = "Искупление может быть выполнено только в закрытой игре. Закрытую игру можно создать только в компании с минимум ещё одним игроком.", -- Искупление может быть выполнено только в закрытой игре
-		-- fr = "",
-		-- ["zh-tw"] = "\n該苦修限定在私人遊戲完成！\n注意：私人遊戲需要另一名玩家共同組隊。",
-		-- ["zh-cn"] = "",
-	-- },
+	["loc_item_type_gear_lowerbody"] = {
+		ru = "Ноги", -- руоф Нижняя часть тела
+		["zh-tw"] = "下半身",
+		["zh-cn"] = "被动",
+	},
+	--[+ Private Game +]-- руоф Закрытая игра
+	["loc_private_tag_name"] = {
+		["zh-tw"] = "私人遊戲",
+	},
+		--[+ Penance can only be completed in a private game +]-- руоф Искупление может быть выполнено только в закрытой игре
+		["loc_private_tag_description"] = {
+			ru = "Искупление может быть выполнено только в закрытой игре. Закрытую игру можно создать только в компании с минимум ещё одним игроком.",
+			["zh-tw"] = "\n"
+				.."該苦修限定在私人遊戲完成！\n"
+				.."注意：私人遊戲需要另一名玩家共同組隊。",
+		},
 
 --[+ ++MISSIONS TYPES - ТИПЫ МИССИЙ++ +]--
-	-- ["loc_mission_type_01_name"] = {
-		-- en = "",
-		-- ru = "Налёт",
-		-- fr = "",
-		-- ["zh-tw"] = "突襲",
-		-- ["zh-cn"] = "",
-	-- },
-	-- ["loc_mission_type_02_name"] = {
-		-- en = "",
-		-- ru = "Убийство",
-		-- fr = "",
-		-- ["zh-tw"] = "刺殺",
-		-- ["zh-cn"] = "",
-	-- },
+	["loc_mission_type_01_name"] = {
+		-- en = "Raid",
+		ru = "Налёт",
+		["zh-tw"] = "突襲",
+	},
+	["loc_mission_type_02_name"] = {
+		-- en = "Assassination",
+		["zh-tw"] = "刺殺",
+	},
 	-- ["loc_mission_type_03_name"] = {
-		-- en = "",
-		-- ru = "Расследование",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
+		-- en = "Investigation",
 	-- },
-	-- ["loc_mission_type_04_name"] = {
-		-- en = "",
-		-- ru = "Диверсия",
-		-- fr = "",
-		-- ["zh-tw"] = "擾亂",
-		-- ["zh-cn"] = "",
-	-- },
+	["loc_mission_type_04_name"] = {
+		-- en = "Disruption",
+		["zh-tw"] = "擾亂",
+	},
 	-- ["loc_mission_type_05_name"] = {
-		-- en = "",
-		-- ru = "Атака",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
+		-- en = "Strike",
 	-- },
-	-- ["loc_mission_type_06_name"] = {
-		-- en = "",
-		-- ru = "Шпионаж",
-		-- fr = "",
-		-- ["zh-tw"] = "諜報",
-		-- ["zh-cn"] = "",
-	-- },
-	-- ["loc_mission_type_07_name"] = {
-		-- en = "",
-		-- ru = "Ремонт",
-		-- fr = "",
-		-- ["zh-tw"] = "修復",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- ["loc_code"] = {
-		-- en = "",
-		-- ru = "",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- ["loc_code"] = {
-		-- en = "",
-		-- ru = "",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- ["loc_code"] = {
-		-- en = "",
-		-- ru = "",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- ["loc_code"] = {
-		-- en = "",
-		-- ru = "",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- ["loc_code"] = {
-		-- en = "",
-		-- ru = "",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- ["loc_code"] = {
-		-- en = "",
-		-- ru = "",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- ["loc_code"] = {
-		-- en = "",
-		-- ru = "",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- ["loc_code"] = {
-		-- en = "",
-		-- ru = "",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- ["loc_code"] = {
-		-- en = "",
-		-- ru = "",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	-- },
-
-
-
--- --[+ ++ACCOUNT - УЧЁТНАЯ ЗАПИСЬ++ +]--
-	-- --[+ Account - Учётная запись +]-- руоф Учетная запись
-	-- ["loc_achievement_category_account_label"] = {
-		-- en = "",
-		-- ru = "Учётная запись",
-		-- fr = "",
-		-- ["zh-tw"] = "帳戶",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- --[+ Two's Company - Двое – компания... +]-- руоф А двое лучше
-	-- ["loc_achievement_multi_class_1_name"] = {
-		-- en = "",
-		-- ru = "Двое – компания...",
-		-- fr = "",
-		-- ["zh-tw"] = "雙人搭檔",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- --[+ Like a four-leaf clover - Как четырёхлистный клевер +]-- Фантастическая четверка
-	-- ["loc_achievement_multi_class_2_name"] = {
-		-- en = "",
-		-- ru = "Как четырёхлистный клевер",
-		-- fr = "",
-		-- ["zh-tw"] = "四葉草式幸運",
-		-- ["zh-cn"] = "",
-	-- },
-
-	--[+ Reach Trust Level 30 with 1-4 classes. +]-- Получить уровень доверия 30 следующими классами: 1-4.
-	["loc_achievement_multi_class_x_description"] = {
-		en = "Reach Trust Level "..CNumb("30", "n_30_rgb").." with "..CNumb("{target}", "target_rgb").." classes.",
-		-- ru = "Достигните "..CNumb("30", "n_30_rgb").." уровня доверия "..CNumb("{target}", "target_rgb").." классами.",
-		-- fr = "",
-		-- ["zh-tw"] = "將 "..CNumb("{target}", "target_rgb").." 個職業，都達到信任等級 "..CNumb("30", "n_30_rgb").." 。",
-		-- ["zh-cn"] = "",
+	["loc_mission_type_06_name"] = {
+		-- en = "Espionage",
+		["zh-tw"] = "諜報",
+	},
+	["loc_mission_type_07_name"] = {
+		-- en = "Repair",
+		ru = "Ремонт",
+		["zh-tw"] = "修復",
 	},
 
-	--[+ Circles of Trust - Круги доверия (1-6) +]-- руоф Круг доверия (1-6)
-	-- ["loc_achievement_path_of_trust_1_name"] = {
-		-- en = "Circles of Trust (1)",
-		-- ru = "Круги доверия (1)",
-		-- fr = "",
-		-- ["zh-tw"] = "互信團體 (1)",
-		-- ["zh-cn"] = "",
-	-- },
-	-- ["loc_achievement_path_of_trust_2_name"] = {
-		-- en = "Circles of Trust (2)",
-		-- ru = "Круги доверия (2)",
-		-- fr = "",
-		-- ["zh-tw"] = "互信團體 (2)",
-		-- ["zh-cn"] = "",
-	-- },
-	-- ["loc_achievement_path_of_trust_3_name"] = {
-		-- en = "Circles of Trust (3)",
-		-- ru = "Круги доверия (3)",
-		-- fr = "",
-		-- ["zh-tw"] = "互信團體 (3)",
-		-- ["zh-cn"] = "",
-	-- },
-	-- ["loc_achievement_path_of_trust_4_name"] = {
-		-- en = "Circles of Trust (4)",
-		-- ru = "Круги доверия (4)",
-		-- fr = "",
-		-- ["zh-tw"] = "互信團體 (4)",
-		-- ["zh-cn"] = "",
-	-- },
-	-- ["loc_achievement_path_of_trust_5_name"] = {
-		-- en = "Circles of Trust (5)",
-		-- ru = "Круги доверия (5)",
-		-- fr = "",
-		-- ["zh-tw"] = "互信團體 (5)",
-		-- ["zh-cn"] = "",
-	-- },
-	-- ["loc_achievement_path_of_trust_6_name"] = {
-		-- en = "Circles of Trust (6)",
-		-- ru = "Круги доверия (6)",
-		-- fr = "",
-		-- ["zh-tw"] = "互信團體 (6)",
-		-- ["zh-cn"] = "",
-	-- },
 
-	-- --[+ Complete Path of Trust chapter 6. +]-- руоф Пройти главы Пути веры: {target}.
-	["loc_achievement_path_of_trust_x_description"] = {
-		en = "Complete "..CKWord("Path of Trust", "PthOTrst_p_rgb").." chapter "..CNumb("{target}", "target_rgb")..".",
-		-- ru = "Завершите "..CNumb("{target}", "target_rgb").." главу "..CKWord("Пути доверия", "PthOTrst_p_rgb")..".",
-		-- fr = "",
-		-- ["zh-tw"] = "完成第 "..CNumb("{target}", "target_rgb").." 章的互信團體。",
-		-- ["zh-cn"] = "",
+--[+ ++ACCOUNT - УЧЁТНАЯ ЗАПИСЬ - 帳戶++ +]--
+	--[+ Account +]-- руоф Учетная запись
+	["loc_achievement_category_account_label"] = {
+		ru = "Учётная запись",
+		["zh-tw"] = "帳戶",
 	},
-
-	-- --[+ Don't Let Me Down, Criminal +]-- руоф Не подведите меня, преступники
-	--[+ Russian +]--
-	-- create_template("ach_acc_2_ext_ru",
-		-- {"loc_achievement_prologue_name"}, {"ru"},
-			-- loc_text("Не подведи меня, преступник")),
-	-- --[+ Traditional Chinese 別讓我失望，罪犯 +]--
-	-- create_template("ach_acc_2_ext_tw",
-		-- {"loc_achievement_prologue_name"}, {"zh-tw"},
-			-- loc_text("別讓我失望，罪犯")),
-
-	-- --[+ Complete the Prologue. +]-- -- руоф Закончить пролог.
-	["loc_achievement_prologue_description"] = {
-		en = "Complete the "..CKWord("Prologue", "Prologue_p_rgb")..".",
-		-- ru = "Завершите "..CKWord("Пролог", "Prologue_p_rgb_ru")..".",
-		-- fr = "",
-		-- ["zh-tw"] = "完成 "..CKWord("Prologue", "Prologue_p_rgb_tw").."。",
-		-- ["zh-cn"] = "",
+	--[+ Two's Company +]-- руоф А двое лучше
+	["loc_achievement_multi_class_1_name"] = {
+		ru = "Двое – компания...",
+		["zh-tw"] = "雙人搭檔",
 	},
-
-	-- --[+ Unconsidered Trifles +]-- руоф Непродуманные мелочи
-	-- ["loc_achievement_unlock_gadgets_name"] = {
-		-- en = "Unconsidered Trifles",
-		-- ru = "Неучтённые мелочи",
-		-- fr = "",
-		-- ["zh-tw"] = "小零碎",
-		-- ["zh-cn"] = "",
-	-- },
-
-	--[+ Unlock your first Curio slot. +]-- руоф Открыть вашу первую ячейку для устройства.
-	["loc_achievement_unlock_gadgets_description"] = {
-		en = "Unlock your first "..CKWord("Curio", "Curio_p_rgb").." slot.",
-		-- ru = "Разблокируйте вашу первую ячейку "..CKWord("Реликвий", "Curio_p_rgb_ru")..".",
-		-- fr = "",
-		-- ["zh-tw"] = "解鎖第一個 "..CKWord("", "Curio_p_rgb_tw").." 。",
-		-- ["zh-cn"] = "",
+	--[+ Like a four-leaf clover +]-- руоф Фантастическая четверка
+	["loc_achievement_multi_class_2_name"] = {
+		ru = "Как четырёхлистный клевер",
+		["zh-tw"] = "四葉草式幸運",
 	},
-
+		--[+ Reach Trust Level 30 with 1-4 classes. +]-- руоф Получить уровень доверия 30 следующими классами: 1-4.
+		["loc_achievement_multi_class_x_description"] = {
+			en = "Reach Trust Level "..CNumb("30", "n_30_rgb").." with "..CNumb("{target}", "target_rgb").." classes.",
+			ru = "Достигните "..CNumb("30", "n_30_rgb").." уровня доверия "..CNumb("{target}", "target_rgb").." классами.",
+			["zh-tw"] = "將 "..CNumb("{target}", "target_rgb").." 個職業，都達到信任等級 "..CNumb("30", "n_30_rgb").." 。",
+		},
+	--[+ Don't Let Me Down, Criminal +]-- руоф Не подведите меня, преступники
+	["loc_achievement_prologue_name"] = {
+		ru = "Не подведи меня, преступник",
+		["zh-tw"] = "別讓我失望，罪犯",
+	},
+		--[+ Complete the Prologue. +]-- руоф Закончить пролог.
+		["loc_achievement_prologue_description"] = {
+			en = "Complete the "..CKWord("Prologue", "Prologue_p_rgb")..".",
+			ru = "Пройдите "..CKWord("Пролог", "Prologue_p_rgb_ru")..".",
+			["zh-tw"] = "完成 "..CKWord("Prologue", "Prologue_p_rgb_tw").."。",
+		},
 	--[+ Call to Arms +]-- руоф К оружию!
-	-- ["loc_achievement_basic_training_name"] = {
-		-- en = "Call to Arms",
-		-- ru = "Призыв к оружию",
-		-- fr = "",
-		-- ["zh-tw"] = "戰爭召喚",
-		-- ["zh-cn"] = "",
-	-- },
-
-	--[+ Complete Basic Training. +]-- руоф Завершите базовое обучение.
-	["loc_achievement_basic_training_description"] = {
-		en = "Complete the "..CKWord("Basic Tutorial", "Base_tut_p_rgb")..".",
-		-- ru = "Завершите "..CKWord("Базовое руководство", "Base_tut_p_rgb_ru")..".",
-		-- fr = "",
-		-- ["zh-tw"] = "完成 "..CKWord("", "Psykhanium_p_rgb_tw").." 的 "..CKWord("", "Base_tut_p_rgb_tw").."。",
-		-- ["zh-cn"] = "",
+	["loc_achievement_basic_training_name"] = {
+		ru = "Призыв к оружию",
+		["zh-tw"] = "戰爭召喚",
 	},
-
+		--[+ Complete Basic Training. +]-- руоф Завершите базовое обучение.
+		["loc_achievement_basic_training_description"] = {
+			en = "Complete the "..CKWord("Basic Tutorial", "Base_tut_p_rgb")..".",
+			ru = "Пройдите "..CKWord("Базовое обучение", "Base_tut_p_rgb_ru")..".",
+			-- ["zh-tw"] = "完成 "..CKWord("", "Psykhanium_p_rgb_tw").." 的 "..CKWord("", "Base_tut_p_rgb_tw").."。",
+		},
+	--[+ Unconsidered Trifles +]-- руоф Непродуманные мелочи
+	["loc_achievement_unlock_gadgets_name"] = {
+		ru = "Неучтённые мелочи",
+		["zh-tw"] = "小零碎",
+	},
+		--[+ Unlock your first Curio slot. +]-- руоф Открыть вашу первую ячейку для диковинки.
+		["loc_achievement_unlock_gadgets_description"] = {
+			en = "Unlock your first "..CKWord("Curio", "Curio_p_rgb").." slot.",
+			ru = "Разблокируйте вашу первую ячейку "..CKWord("Реликвий", "Curio_p_rgb_ru")..".",
+			["zh-tw"] = "解鎖第一個 "..CKWord("珍品", "Curio_p_rgb_tw").." 。",
+		},
 	--[+ Well met, Whippersnapper +]-- руоф Какая приятная встреча, молокосос
-	-- ["loc_achievement_unlock_contracts_name"] = {
-		-- en = "Well met, Whippersnapper",
-		-- ru = "Рад встрече, молокосос",
-		-- fr = "",
-		-- ["zh-tw"] = "幸會，狂妄的小子",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- --[+ Unlock access to Sire Melk's Requisitorium. +]-- руоф Получить доступ к реквизиториуму сира Мелка.
-	["loc_achievement_unlock_contracts_description"] = {
-		en = "Unlock access to "..CKWord("Sire Melk's Requisitorium", "Sir_melk_p_rgb")..".",
-		-- ru = "Разблокируйте доступ в "..CKWord("Реквизиториум сира Мелка", "Sir_melk_p_rgb_ru")..".",
-		-- fr = "",
-		-- ["zh-tw"] = "解鎖 "..CKWord("", "Sir_melk_p_rgb_tw").." 。",
-		-- ["zh-cn"] = "",
+	["loc_achievement_unlock_contracts_name"] = {
+		ru = "Рад встрече, молокосос",
+		["zh-tw"] = "幸會，狂妄的小子",
 	},
-
-	-- --[+ Hail the Omnissiah! - Слава Омниссии! +]--
-	-- ["loc_achievement_unlock_crafting_name"] = {
-		-- en = "Hail the Omnissiah!",
-		-- ru = "Слава Омниссии!",
-		-- fr = "",
-		-- ["zh-tw"] = "歐姆尼賽亞萬歲！",
-		-- ["zh-cn"] = "",
-	-- },
-
-	-- --[+ Unlock access to the Shrine of the Omnissiah. +]-- руоф Откройте доступ к святилищу Омниссии.
-	["loc_achievement_unlock_crafting_description"] = {
-		en = "Unlock access to the "..CKWord("Shrine of the Omnissiah", "Omnissia_p_rgb")..".",
-		-- ru = "Разблокируйте доступ в "..CKWord("Святилище Омниссии", "Omnissia_p_rgb_ru")..".",
-		-- fr = "",
-		-- ["zh-tw"] = "解鎖 "..CKWord("", "Omnissia_p_rgb_tw").." 。",
-		-- ["zh-cn"] = "",
+		--[+ Unlock access to Sire Melk's Requisitorium. +]-- руоф Получить доступ к реквизиториуму сира Мелка.
+		["loc_achievement_unlock_contracts_description"] = {
+			en = "Unlock access to "..CKWord("Sire Melk's Requisitorium", "Sir_melk_p_rgb")..".",
+			ru = "Разблокируйте доступ в "..CKWord("Реквизиториум сира Мелка", "Sir_melk_p_rgb_ru")..".",
+			["zh-tw"] = "解鎖 "..CKWord("梅爾克領主的必備品店", "Sir_melk_p_rgb_tw").." 。",
+		},
+	--[+ Hail the Omnissiah! - Слава Омниссии! +]--
+	["loc_achievement_unlock_crafting_name"] = {
+		["zh-tw"] = "歐姆尼賽亞萬歲！",
 	},
-
--- --[+ ++CLASSES - КЛАССЫ++ +]--
-	-- --[+ +VETERAN - ВЕТЕРАН +]--
-
-	["loc_achievement_veteran_2_hard_2_description"] = {
-		-- en = "",
-		ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, поддерживайте способность "..CKWord("Стойка палача", "exec_stan_rgb_ru").." активной в течение "..CNumb("{time:%s}", "time_rgb").." секунд. Выполните это задание "..CNumb("{target}", "target_rgb").." раз.",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	},
-
-	-- create_template("ach_class_vet_0_ext_en",
-		-- {"loc_class_veteran_title"}, {"en"},
-			-- loc_text(COLORS_KWords.cls_vet_rgb)),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_0_ext_ru",
-		-- {"loc_class_veteran_title"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_vet_rgb_ru)),
-	-- --[+ Traditional Chinese 老兵 +]--
-	-- create_template("ach_class_vet_0_ext_tw",
-		-- {"loc_class_veteran_title"}, {"zh-tw"},
-			-- loc_text(COLORS_KWords_tw.cls_vet_rgb_tw)),
-
--- --[+ ПРОГРЕСС +]--
-	-- --[+ Stay Accurate - Будь точным +]-- -- руоф Держи прицел
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_7_ext_ru",
-		-- {"loc_achievement_veteran_2_easy_1_name"}, {"ru"},
-			-- loc_text("Будь точным")),
-	-- --[+ Traditional Chinese 保持精準 +]--
-	-- create_template("ach_class_vet_7_ext_tw",
-		-- {"loc_achievement_veteran_2_easy_1_name"}, {"zh-tw"},
-			-- loc_text("保持精準")),
-
-	-- --[+ Kill 350 enemies with ranged weakspot hits. +]-- -- руоф Убейте врагов (350) попаданиями по слабым местам с дальнего расстояния.
-	-- -- create_template("ach_class_vet_7_ext_desc_en",
-		-- -- {"loc_achievement_veteran_2_easy_1_description"}, {"en"},
-			-- -- loc_text("Kill "..CNumb("{target}", "target_rgb").." enemies with ranged "..CKWord("", "Weakspothits_rgb").."."..TALENTS_Enh_desc_penances.ED_Headshot_rgb)),
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_vet_7_ext_desc_ru",
-		-- -- {"loc_achievement_veteran_2_easy_1_description"}, {"ru"},
-			-- -- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов в "..CKWord("", "Weakspot_rgb_ru").." из дальнобойного оружия."..TALENTS_Enh_desc_penances_ru.ED_Headshot_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用遠端弱點攻擊擊殺350個敵人
-	-- -- create_template("ach_class_vet_7_ext_desc_tw",
-		-- -- {"loc_achievement_veteran_2_easy_1_description"}, {"zh-tw"},
-			-- -- loc_text("使用遠程武器 "..CKWord("", "Weakspot_k_dmg_rgb_tw").." "..CNumb("{target}", "target_rgb").." 名敵人。"..TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb_tw)),
-
-	-- --[+ On Target (1) +]-- -- руоф Держи прицел
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_vet_14_ext_ru",
-		-- -- {"loc_achievement_group_class_veteran_2_1_name"}, {"ru"},
-			-- -- loc_text("В прицеле (1-3)")),
-	-- --[+ Traditional Chinese 使命必達 (1) +]--
-	-- create_template("ach_class_vet_14_ext_tw",
-		-- {"loc_achievement_group_class_veteran_2_1_name"}, {"zh-tw"},
-			-- loc_text("使命必達 (1)")),
-
-	-- --[+ On Target (2) +]--
-	-- --[+ Traditional Chinese 使命必達 (2) +]--
-	-- create_template("ach_class_vet_15_ext_tw",
-		-- {"loc_achievement_group_class_veteran_2_2_name"}, {"zh-tw"},
-			-- loc_text("使命必達 (2)")),
-
-	-- --[+ On Target (3) +]--
-	-- --[+ Traditional Chinese 使命必達 (3) +]--
-	-- create_template("ach_class_vet_16_ext_tw",
-		-- {"loc_achievement_group_class_veteran_2_3_name"}, {"zh-tw"},
-			-- loc_text("使命必達 (3)")),
-
-
-	-- --[+ For The Emperor (1-3) +]-- -- руоф За императора (1-3)
-	-- --[+ Russian +]--
-	-- -- ВЕТЕРАН, ИЗУВЕР, ПСАЙКЕР, ОГРИН !!!
-	-- -- create_template("ach_red_vet_8_ext_ru",
-		-- -- {"loc_group_class_challenges_veteran_2_1-3_name", "loc_group_class_challenges_zealot_2_1-3_name", "loc_group_class_challenges_psyker_2_1-3_name", "loc_group_class_challenges_ogryn_2_1-3_name"}, {"ru"},
-			-- -- loc_text("За императора (1-3)")),
-	-- --[+ Traditional Chinese 為了皇帝(1-3) +]--
-	-- -- create_template("ach_red_vet_8_ext_tw",
-		-- -- {"loc_group_class_challenges_veteran_2_1-3_name", "loc_group_class_challenges_zealot_2_1-3_name", "loc_group_class_challenges_psyker_2_1-3_name", "loc_group_class_challenges_ogryn_2_1-3_name"}, {"zh-tw"},
-			-- -- loc_text("為了皇帝 (1-3)")),
-
-	-- --[+ Promotion Material (1) +]-- -- руоф Материалы пропаганды (1)
-	-- --[+ Russian +]--
-	-- -- ВЕТЕРАН, ИЗУВЕР, ПСАЙКЕР, ОГРИН !!!
-	-- create_template("ach_class_vet_9_ext_ru",
-		-- {"loc_group_veteran_2_rank_4_difficulty_3_name", "loc_group_zealot_2_rank_4_difficulty_3_name", "loc_group_psyker_2_rank_4_difficulty_3_name", "loc_group_ogryn_2_rank_4_difficulty_3_name"}, {"ru"},
-			-- loc_text("Задания для продвижения (1)")),
-	-- --[+ Traditional Chinese 樹立榜樣 (1) +]--
-	-- create_template("ach_class_vet_9_ext_tw",
-		-- {"loc_group_veteran_2_rank_4_difficulty_3_name", "loc_group_zealot_2_rank_4_difficulty_3_name", "loc_group_psyker_2_rank_4_difficulty_3_name", "loc_group_ogryn_2_rank_4_difficulty_3_name"}, {"zh-tw"},
-			-- loc_text("樹立榜樣 (1)")),
-
-	-- --[+ Promotion Material (2) +]-- -- руоф Материалы пропаганды (2)
-	-- --[+ Russian +]--
-	-- -- ВЕТЕРАН, ИЗУВЕР, ПСАЙКЕР, ОГРИН !!!
-	-- create_template("ach_class_vet_10_ext_ru",
-		-- {"loc_group_veteran_2_rank_5_difficulty_4_name", "loc_group_zealot_2_rank_5_difficulty_4_name", "loc_group_psyker_2_rank_5_difficulty_4_name", "loc_group_ogryn_2_rank_5_difficulty_4_name"}, {"ru"},
-			-- loc_text("Задания для продвижения (2)")),
-	-- --[+ Traditional Chinese 樹立榜樣 (2) +]--
-	-- create_template("ach_class_vet_10_ext_tw",
-		-- {"loc_group_veteran_2_rank_5_difficulty_4_name", "loc_group_zealot_2_rank_5_difficulty_4_name", "loc_group_psyker_2_rank_5_difficulty_4_name", "loc_group_ogryn_2_rank_5_difficulty_4_name"}, {"zh-tw"},
-			-- loc_text("樹立榜樣 (2)")),
-
-	-- --[+ First Steps (1-2) +]-- руоф Первые шаги (1-2)
-	-- --[+ Russian +]--
-	-- -- ВЕТЕРАН, ИЗУВЕР, ПСАЙКЕР, ОГРИН !!!
-	-- -- create_template("ach_class_vet_5_ext_ru",
-		-- -- {"loc_group_veteran_2_rank_1-2_difficulty_1-2_name", "loc_group_zealot_2_rank_1_difficulty_1-2_name", "loc_group_psyker_2_rank_1_difficulty_1-2_name", "loc_group_ogryn_2_rank_1_difficulty_1-2_name"}, {"ru"},
-			-- -- loc_text("Первые шаги (1-2)")),
-	-- --[+ Traditional Chinese 首要步驟 (1-2) +]--
-	-- -- create_template("ach_class_vet_5_ext_tw",
-		-- -- {"loc_group_veteran_2_rank_1-2_difficulty_1-2_name", "loc_group_zealot_2_rank_1_difficulty_1-2_name", "loc_group_psyker_2_rank_1_difficulty_1-2_name", "loc_group_ogryn_2_rank_1_difficulty_1-2_name"}, {"zh-tw"},
-			-- -- loc_text("首要步驟 (1-2)")),
-
-	-- --[+ Complete the following Penances as the Veteran. +]-- -- руоф Выполнить следующие искупления за Ветерана.
-	-- create_template("ach_class_vet_14_ext_desc_en",
-		-- {"loc_achievement_group_class_veteran_2_description", "loc_group_class_challenges_veteran_2_x_description", "loc_group_veteran_2_rank_4_difficulty_3_description", "loc_group_veteran_2_rank_5_difficulty_4_description", "loc_group_veteran_2_rank_1_difficulty_1_description", "loc_group_veteran_2_rank_2_difficulty_2_description"}, {"en"},
-			-- loc_text("Complete the following Penances as the "..CKWord("", "cls_vet_rgb")..".")),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_14_ext_desc_ru",
-		-- {"loc_achievement_group_class_veteran_2_description", "loc_group_class_challenges_veteran_2_x_description", "loc_group_veteran_2_rank_4_difficulty_3_description", "loc_group_veteran_2_rank_5_difficulty_4_description", "loc_group_veteran_2_rank_1_difficulty_1_description", "loc_group_veteran_2_rank_2_difficulty_2_description"}, {"ru"},
-			-- loc_text("Завершите следующие Искупления "..CKWord("", "cls_vet2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用老兵完成以下苦修。
-	-- create_template("ach_class_vet_14_ext_desc_tw",
-		-- {"loc_achievement_group_class_veteran_2_description", "loc_group_class_challenges_veteran_2_x_description", "loc_group_veteran_2_rank_4_difficulty_3_description", "loc_group_veteran_2_rank_5_difficulty_4_description", "loc_group_veteran_2_rank_1_difficulty_1_description", "loc_group_veteran_2_rank_2_difficulty_2_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_vet_rgb_tw").." 完成以下苦修。")),
-
-	-- --[+ Veteran Master of War +]-- -- руоф Ветеран — знаток войны
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_141_ext_ru",
-		-- {"loc_achievement_class_meta_name"}, {"ru"},
-			-- loc_text("{class_name} — мастер войны")),
-	-- --[+ Traditional Chinese - 戰爭大師 +]--
-	-- create_template("ach_class_vet_141_ext_tw",
-		-- {"loc_achievement_class_meta_name"}, {"zh-tw"},
-			-- loc_text("{class_name} 戰爭大師")),
-
-	-- --[+ Complete 5 out of the following Penances. +]-- -- руоф Выполните часть (5) из следующих искуплений.
-	-- create_template("ach_class_vet_14_ext_desc_en",
-		-- {"loc_achievement_class_meta_description"}, {"en"},
-			-- loc_text("Complete "..CNumb("{target}", "target_rgb").." out of the following Penances.")),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_14_ext_desc_ru",
-		-- {"loc_achievement_class_meta_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." следующих Искуплений.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 完成以下任意x個苦修。
-	-- create_template("ach_class_vet_14_ext_desc_tw",
-		-- {"loc_achievement_class_meta_description"}, {"zh-tw"},
-			-- loc_text("完成以下任意 "..CNumb("{target}", "target_rgb").." 個苦修。")),
-
-	-- --[+ Vantage Point +]-- -- руоф Точка обзора
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_3_1_ext_ru",
-		-- {"loc_achievement_missions_veteran_2_objective_1_name"}, {"ru"},
-			-- loc_text("Выгодная позиция")),
-	-- --[+ Traditional Chinese 有利地形 (1) +]--
-	-- create_template("ach_class_vet_3_1_ext_tw",
-		-- {"loc_achievement_missions_veteran_2_objective_1_name"}, {"zh-tw"},
-			-- loc_text("有利地形 (1)")),
-
-	-- --[+ As a Veteran, complete at least one Mission of each type. +]-- -- руоф Выполнить Ветераном по меньшей мере одно задание каждого типа.
-	-- create_template("ach_class_vet_3_1_ext_desc_en",
-		-- {"loc_achievement_missions_veteran_2_objective_1_description"}, {"en"},
-			-- loc_text("As a "..CKWord("", "cls_vet_rgb")..", complete at least one Mission of each type..")),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_3_1_ext_desc_ru",
-		-- {"loc_achievement_missions_veteran_2_objective_1_description"}, {"ru"},
-			-- loc_text("Завершите по одной миссии каждого типа "..CKWord("", "cls_vet2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用老兵，完成每種類型的任務至少一項。
-	-- create_template("ach_class_vet_3_1_ext_desc_tw",
-		-- {"loc_achievement_missions_veteran_2_objective_1_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_vet_rgb_tw").."，完成以下任務 "..COLORS_Numbers.n_1_rgb").." 次。")),
-
-	-- --[+ Vantage Point (2) +]-- -- руоф Точка обзора (2)
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_3_2_ext_ru",
-		-- {"loc_achievement_missions_veteran_2_objective_2_name"}, {"ru"},
-			-- loc_text("Выгодная позиция (2)")),
-	-- --[+ Traditional Chinese 有利地形 (2) +]--
-	-- create_template("ach_class_vet_3_2_ext_tw",
-		-- {"loc_achievement_missions_veteran_2_objective_2_name"}, {"zh-tw"},
-			-- loc_text("有利地形 (2)")),
-
-	-- --[+ As a Veteran, complete a Mission of each type on Uprising Threat or higher. +]-- -- руоф Выполнить Ветераном по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
-	-- create_template("ach_class_vet_3_2_ext_desc_en",
-		-- {"loc_achievement_missions_veteran_2_objective_2_description"}, {"en"},
-			-- loc_text("As a "..CKWord("", "cls_vet_rgb")..", complete a Mission of each type on "..CKWord("", "malice_rgb").." Threat or higher.")),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_3_2_ext_desc_ru",
-		-- {"loc_achievement_missions_veteran_2_objective_2_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, завершите по одной миссии каждого типа "..CKWord("", "cls_vet2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，使用老兵完成每種類型的任務至少一項。
-	-- create_template("ach_class_vet_3_2_ext_desc_tw",
-		-- {"loc_achievement_missions_veteran_2_objective_2_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_vet_rgb_tw").." ，\n在『"..CKWord("", "malice_rgb_tw").."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb").." 次。")),
-
-	-- --[+ Vantage Point (3) +]-- -- руоф Точка обзора (3)
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_3_3_ext_ru",
-		-- {"loc_achievement_missions_veteran_2_objective_3_name"}, {"ru"},
-			-- loc_text("Выгодная позиция (3)")),
-	-- --[+ Traditional Chinese 有利地形 (3) +]--
-	-- create_template("ach_class_vet_3_3_ext_tw",
-		-- {"loc_achievement_missions_veteran_2_objective_3_name"}, {"zh-tw"},
-			-- loc_text("有利地形 (3)")),
-
-	-- --[+ As a Veteran, complete a Mission of each type on Heresy Threat or higher. +]-- -- руоф Выполнить Ветераном по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
-	-- create_template("ach_class_vet_3_3_ext_desc_en",
-		-- {"loc_achievement_missions_veteran_2_objective_3_description"}, {"en"},
-			-- loc_text("As a "..CKWord("", "cls_vet_rgb")..", complete a Mission of each type on "..CKWord("", "heresy_rgb").." Threat or higher.")),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_3_3_ext_desc_ru",
-		-- {"loc_achievement_missions_veteran_2_objective_3_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, завершите по одной миссии каждого типа "..CKWord("", "cls_vet2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，使用老兵完成每種類型的任務至少一項。
-	-- create_template("ach_class_vet_3_3_ext_desc_tw",
-		-- {"loc_achievement_missions_veteran_2_objective_3_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_vet_rgb_tw").." ，\n在『"..CKWord("", "heresy_rgb_tw").."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb").." 次。")),
-
-	-- --[+ Fire Down Range +]-- -- руоф Заградительный огонь
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_12_ext_ru",
-		-- {"loc_achievement_veteran_2_medium_2_name"}, {"ru"},
-			-- loc_text("Дистанция ведения стрельбы")),
-	-- --[+ Traditional Chinese 順風射擊 +]--
-	-- create_template("ach_class_vet_12_ext_tw",
-		-- {"loc_achievement_veteran_2_medium_2_name"}, {"zh-tw"},
-			-- loc_text("順風射擊")),
-
-	-- --[+ On Malice Threat or higher, kill 100 enemies that are over 30 meters away. +]-- -- руоф При угрозе «Злоба» или выше убейте врагов (100) на расстоянии дальше 30 м.
-	-- create_template("ach_class_vet_12_ext_desc_en",
-		-- {"loc_achievement_veteran_2_medium_2_description"}, {"en"},
-			-- loc_text("On "..CKWord("", "malice_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." enemies that are over "..COLORS_Numbers.dist_rgb").." meters away.")),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_12_ext_desc_ru",
-		-- {"loc_achievement_veteran_2_medium_2_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов, находящихся на расстоянии более "..COLORS_Numbers.dist_rgb").." метров от вас.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，擊殺100個離你30公尺之外的敵人。
-	-- create_template("ach_class_vet_12_ext_desc_tw",
-		-- {"loc_achievement_veteran_2_medium_2_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度下，\n擊殺 "..CNumb("{target}", "target_rgb").." 名距離 "..COLORS_Numbers.dist_rgb").." 公尺以上的敵人。")),
-
-	-- --[+ Prove Your Worth (1-5) +]--
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_vet_4_ext_ru",
-		-- -- {"loc_missions_veteran_2_easy_difficulty_5_name"}, {"ru"},
-			-- -- loc_text("Докажи, чего стоишь (1-5)")),
-	-- --[+ Traditional Chinese 證明你的價值 (1-5) +]--
-	-- -- create_template("ach_class_vet_4_ext_tw",
-		-- -- {"loc_missions_veteran_2_easy_difficulty_5_name"}, {"zh-tw"},
-			-- -- loc_text("證明你的價值 (1-5)")),
-
-	-- --[+ Complete 1 Missions on Sedition Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
-	-- -- create_template("ach_class_vet_4_1_ext_desc_en",
-		-- -- {"loc_missions_veteran_2_easy_difficulty_1_description"}, {"en"},
-			-- -- loc_text(complete_1_mission_on_sedition_threat)),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_4_1_ext_desc_ru",
-		-- {"loc_missions_veteran_2_easy_difficulty_1_description"}, {"ru"},
-			-- loc_text(PHRS.cmpl_1_mssn_sedition_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在騷亂威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_vet_4_1_ext_desc_tw",
-		-- {"loc_missions_veteran_2_easy_difficulty_1_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_sedition_tw)),
-
-	-- --[+ Complete 1 Missions on Uprising Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Восстание» или выше.
-	-- -- create_template("ach_class_vet_4_2_ext_desc_en",
-		-- -- {"loc_missions_veteran_2_easy_difficulty_2_description"}, {"en"},
-			-- -- loc_text(complete_1_mission_on_uprising_threat)),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_4_2_ext_desc_ru",
-		-- {"loc_missions_veteran_2_easy_difficulty_2_description"}, {"ru"},
-			-- loc_text(PHRS.cmpl_1_mssn_uprising_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在起義威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_vet_4_2_ext_desc_tw",
-		-- {"loc_missions_veteran_2_easy_difficulty_2_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_uprising_tw)),
-
-	-- --[+ Complete 1 Missions on Malice Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Злоба» или выше.
-	-- -- create_template("ach_class_vet_4_3_ext_desc_en",
-		-- -- {"loc_missions_veteran_2_easy_difficulty_3_description"}, {"en"},
-			-- -- loc_text(complete_1_mission_on_malice_threat)),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_4_3_ext_desc_ru",
-		-- {"loc_missions_veteran_2_easy_difficulty_3_description"}, {"ru"},
-			-- loc_text(PHRS.cmpl_1_mssn_malice_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_vet_4_3_ext_desc_tw",
-		-- {"loc_missions_veteran_2_easy_difficulty_3_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_malice_tw)),
-
-	-- --[+ Complete 1 Missions on Heresy Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Ересь» или выше.
-	-- -- create_template("ach_class_vet_4_4_ext_desc_en",
-		-- -- {"loc_missions_veteran_2_easy_difficulty_4_description"}, {"en"},
-			-- -- loc_text(complete_1_mission_on_heresy_threat)),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_4_4_ext_desc_ru",
-		-- {"loc_missions_veteran_2_easy_difficulty_4_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссию на сложности "..CKWord("", "damnation_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_vet_4_4_ext_desc_tw",
-		-- {"loc_missions_veteran_2_easy_difficulty_4_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_heresy_tw)),
-
-	-- --[+ Complete 1 Missions on Damnation Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
-	-- -- create_template("ach_class_vet_4_5_ext_desc_en",
-		-- -- {"loc_missions_veteran_2_easy_difficulty_5_description"}, {"en"},
-			-- -- loc_text(complete_1_mission_on_damnation_threat)),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_4_5_ext_desc_ru",
-		-- {"loc_achievement_complete_missions_difficulty_5_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссию на сложности "..CKWord("", "damnation_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在詛咒威脅度或更高難度下完成1個任務
-	-- -- create_template("ach_class_vet_4_5_ext_desc_tw",
-		-- -- {"loc_missions_veteran_2_easy_difficulty_5_description"}, {"zh-tw"},
-			-- -- loc_text(PHRS.cmpl_1_mssn_damnation_tw)),
-
-	-- --[+ Through The Mud (1-6) +]-- -- руоф Из грязи (1-6)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_vet_2_ext_ru",
-		-- -- {"loc_achievement_missions_veteran_2_1_name"}, {"ru"},
-			-- -- loc_text("Из грязи в князи (1)")),
-	-- --[+ Traditional Chinese 穿越泥沼 (1) +]--
-	-- -- create_template("ach_class_vet_2_ext_tw",
-		-- -- {"loc_achievement_missions_veteran_2_1_name"}, {"zh-tw"},
-			-- -- loc_text("穿越泥沼 (1)")),
-
-	-- --[+ Complete 100 Missions as a Veteran. +]-- -- руоф Выполнить Ветераном задания: 100.
-	-- create_template("ach_class_vet_2_ext_desc_en",
-		-- {"loc_achievement_missions_veteran_2_x_description"}, {"en"},
-			-- loc_text("Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("", "cls_vet_rgb")..".")),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_2_ext_desc_ru",
-		-- {"loc_achievement_missions_veteran_2_x_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("", "cls_vet2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用老兵完成xx項任務
-	-- create_template("ach_class_vet_2_ext_desc_tw",
-		-- {"loc_achievement_missions_veteran_2_x_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_vet_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 次任務。")),
-
-	-- --[+ On Overwatch - На чеку +]-- -- руоф Под прикрытием
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_5_ext_ru",
-		-- {"loc_achievement_veteran_2_no_melee_damage_taken_name"}, {"ru"},
-			-- loc_text("На чеку")),
-	-- --[+ Traditional Chinese 掩護射擊 +]--
-	-- create_template("ach_red_vet_5_ext_tw",
-		-- {"loc_achievement_veteran_2_no_melee_damage_taken_name"}, {"zh-tw"},
-			-- loc_text("掩護射擊")),
-
-	-- --[+ Complete a full Mission on Malice Threat or higher without taking any melee damage. +]-- -- руоф При угрозе «Злоба» или выше полностью завершите задание, не получив урона в ближнем бою.
-	-- -- create_template("ach_red_vet_5_ext_desc_en",
-		-- -- {"loc_achievement_veteran_2_no_melee_damage_taken_description"}, {"en"},
-			-- -- loc_text("Complete a full Mission on "..CKWord("", "malice_rgb").." Threat or higher without taking any melee "..CKWord("", "Damage_rgb").."."..TALENTS_Enh_desc_penances.ED_No_dmg_taken_corrupt_rgb)),
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_vet_5_ext_desc_ru",
-		-- -- {"loc_achievement_veteran_2_no_melee_damage_taken_description"}, {"ru"},
-			-- -- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, завершите полностью миссию без получения урона в ближнем бою."..TALENTS_Enh_desc_penances_ru.ED_No_dmg_taken_corrupt_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡毒或更高威脅度下，
-	-- -- 在不承受任何近戰傷害的情況下完成1次完整的任務。
-	-- -- create_template("ach_red_vet_5_ext_desc_tw",
-		-- -- {"loc_achievement_veteran_2_no_melee_damage_taken_description"}, {"zh-tw"},
-			-- -- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度下，\n完成一次任務且不受到近戰傷害。"..TALENTS_Enh_desc_penances_tw.ED_No_dmg_taken_corrupt_rgb_tw)),
-
-	-- --[+ One In the Chamber +]-- -- руоф Последний патрон
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_4_ext_ru",
-		-- {"loc_achievement_veteran_2_kills_with_last_round_in_mag_name"}, {"ru"},
-			-- loc_text("Последний в обойме")),
-	-- --[+ Traditional Chinese 最後一發 +]--
-	-- create_template("ach_red_vet_4_ext_tw",
-		-- {"loc_achievement_veteran_2_kills_with_last_round_in_mag_name"}, {"zh-tw"},
-			-- loc_text("最後一發")),
-
-	-- --[+ Kill 8 enemies with the last round in your clip during a single Mission on Malice Threat or higher. +]-- -- руоф При угрозе «Злоба» или выше убейте врагов (8) последним боеприпасом в магазине за одно задание.
-	-- create_template("ach_red_vet_4_ext_desc_en",
-		-- {"loc_achievement_veteran_2_kills_with_last_round_in_mag_description"}, {"en"},
-			-- loc_text("Kill "..CNumb("{target}", "target_rgb").." enemies with the last round in your clip during a single Mission on "..CKWord("", "malice_rgb").." Threat or higher.")),
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_4_ext_desc_ru",
-		-- {"loc_achievement_veteran_2_kills_with_last_round_in_mag_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов последним патроном в обойме в течение одной миссии на сложности "..CKWord("", "malice_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 以惡毒或以上威脅度，
-	-- -- 在1次任務中用彈夾中的最後1發子彈殺死8名敵人。
-	-- create_template("ach_red_vet_4_ext_desc_tw",
-		-- {"loc_achievement_veteran_2_kills_with_last_round_in_mag_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度下，\n使用最後一發子彈擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。")),
-
-	-- --[+ Make Every Shot Count - Сделай каждый выстрел важным +]-- -- руоф Стрельба наверняка
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_7_ext_ru",
-		-- {"loc_achievement_veteran_2_no_missed_shots_empty_ammo_name"}, {"ru"},
-			-- loc_text("Сделай каждый выстрел важным")),
-	-- --[+ Traditional Chinese 彈無虛發 +]--
-	-- create_template("ach_red_vet_7_ext_tw",
-		-- {"loc_achievement_veteran_2_no_missed_shots_empty_ammo_name"}, {"zh-tw"},
-			-- loc_text("彈無虛發*")),
-
-	-- --[+ Complete a Mission on Heresy Threat or higher with no Ammo remaining, and 90% accuracy. +]-- -- руоф При угрозе «Ересь» или выше завершите задание с меткостью 90%, потратив все боеприпасы.
-	-- -- create_template("ach_red_vet_7_ext_desc_en",
-		-- -- {"loc_achievement_veteran_2_no_missed_shots_empty_ammo_description"}, {"en"},
-			-- -- loc_text("Complete a Mission on "..CKWord("", "heresy_rgb").." Threat or higher with no Ammo remaining, and "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." accuracy."..TALENTS_Enh_desc_penances.ED_No_missed_shots_rgb)),
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_vet_7_ext_desc_ru",
-		-- -- {"loc_achievement_veteran_2_no_missed_shots_empty_ammo_description"}, {"ru"},
-			-- -- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, завершите миссию с точностью "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." и потратив все боеприпасы."..TALENTS_Enh_desc_penances_ru.ED_No_missed_shots_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 以異教徒或以上威脅度完成任務，
-	-- -- 用光所有彈藥，並且保持90的精準度。
-	-- -- create_template("ach_red_vet_7_ext_desc_tw",
-		-- -- {"loc_achievement_veteran_2_no_missed_shots_empty_ammo_description"}, {"zh-tw"},
-			-- -- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度下，\n命中率在 "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." 以上，且撤離時無任何備彈"..TALENTS_Enh_desc_penances_tw.ED_No_missed_shots_rgb_tw)),
-
-	-- --[+ Fight the Good Fight (1-5) +]--
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_vet_1_ext_ru",
-		-- -- {"loc_missions_veteran_2_medium_difficulty_1-5_name"}, {"ru"},
-			-- -- loc_text("Сражайся достойно (1-5)")),
-	-- --[+ Traditional Chinese 為正義而戰 (1-5) +]--
-	-- -- create_template("ach_red_vet_1_ext_tw",
-		-- -- {"loc_missions_veteran_2_medium_difficulty_1-5_name"}, {"zh-tw"},
-			-- -- loc_text("為正義而戰 (1-5)")),
-
-	-- --[+ Complete 5 Missions on Sedition Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
-	-- create_template("ach_red_vet_1_1_ext_desc_en",
-		-- {"loc_missions_veteran_2_medium_difficulty_1_description"}, {"en"},
-			-- loc_text("Complete "..CNumb("{target}", "target_rgb").." Missions on "..CKWord("", "sedition_rgb").." Threat or higher.")),
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_1_1_ext_desc_ru",
-		-- {"loc_missions_veteran_2_medium_difficulty_1_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "sedition_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在騷亂威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_vet_1_1_ext_desc_tw",
-		-- {"loc_missions_veteran_2_medium_difficulty_1_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "sedition_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_vet2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Uprising Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Восстание» или выше.
-	-- create_template("ach_red_vet_1_2_ext_desc_en",
-		-- {"loc_missions_veteran_2_medium_difficulty_2_description"}, {"en"},
-			-- loc_text("Complete "..CNumb("{target}", "target_rgb").." Missions on "..CKWord("", "uprising_rgb").." Threat or higher.")),
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_1_2_ext_desc_ru",
-		-- {"loc_missions_veteran_2_medium_difficulty_2_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "uprising_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在起意威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_vet_1_2_ext_desc_tw",
-		-- {"loc_missions_veteran_2_medium_difficulty_2_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "uprising_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_vet2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Malice Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Злоба» или выше.
-	-- create_template("ach_red_vet_1_3_ext_desc_en",
-		-- {"loc_missions_veteran_2_medium_difficulty_3_description"}, {"en"},
-			-- loc_text("Complete "..CNumb("{target}", "target_rgb").." Missions on "..CKWord("", "malice_rgb").." Threat or higher.")),
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_1_3_ext_desc_ru",  {"loc_missions_veteran_2_medium_difficulty_3_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "malice_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_vet_1_3_ext_desc_tw",
-		-- {"loc_missions_veteran_2_medium_difficulty_3_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_vet2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Heresy Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Ересь» или выше.
-	-- create_template("ach_red_vet_1_4_ext_desc_en",
-		-- {"loc_missions_veteran_2_medium_difficulty_4_description"}, {"en"},
-			-- loc_text("Complete "..CNumb("{target}", "target_rgb").." Missions on "..CKWord("", "heresy_rgb").." Threat or higher.")),
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_1_4_ext_desc_ru",
-		-- {"loc_missions_veteran_2_medium_difficulty_4_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "heresy_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_vet_1_4_ext_desc_tw",
-		-- {"loc_missions_veteran_2_medium_difficulty_4_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_vet2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Damnation Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
-	-- create_template("ach_red_vet_1_5_ext_desc_en",
-		-- {"loc_missions_veteran_2_medium_difficulty_5_description"}, {"en"},
-			-- loc_text("Complete "..CNumb("{target}", "target_rgb").." Missions on "..CKWord("", "damnation_rgb").." Threat or higher.")),
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_1_5_ext_desc_ru",
-		-- {"loc_missions_veteran_2_medium_difficulty_5_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "damnation_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在詛咒威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_vet_1_5_ext_desc_tw",
-		-- {"loc_missions_veteran_2_medium_difficulty_5_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "damnation_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_vet2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ I Love the Militarum! (1-6) +]--
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_vet_1_ext_ru",
-		-- -- {"loc_achievement_rank_veteran_2_1_name"}, {"ru"},
-			-- --loc_text("Я люблю Милитарум! (1-6)")),
-	-- --[+ Traditional Chinese 我愛星界軍 (1-6) +]--
-	-- -- create_template("ach_class_vet_1_ext_tw",
-		-- -- {"loc_achievement_rank_veteran_2_1_name"}, {"zh-tw"},
-			-- --loc_text("我愛星界軍 (1-6)")),
-
-	-- --[+ Reach Trust Level 30 as a Veteran. +]-- -- руоф Заслужить уровень доверия 30, играя за Ветерана.
-	-- create_template("ach_class_vet_1_ext_desc_en",
-		-- {"loc_achievement_rank_veteran_2_x_description"}, {"en"},
-			-- loc_text("Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("", "cls_vet_rgb")..".")),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_1_ext_desc_ru",
-		-- {"loc_achievement_rank_veteran_2_x_description"}, {"ru"},
-			-- loc_text("Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("", "cls_vet2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用老兵達到信任等級xx。
-	-- create_template("ach_class_vet_1_ext_desc_tw",
-		-- {"loc_achievement_rank_veteran_2_x_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_vet_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。")),
-
--- --[+ СПОСОБНОСТИ - 技能 +]--
-	-- --[+ Adept Assassin - Адепт-ассасин +]-- -- руоф Искусный убийца
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_3_ext_ru",
-		-- {"loc_achievement_veteran_weapon_switch_passive_keystone_kills_name"}, {"ru"},
-			-- loc_text("Адепт-ассасин")),
-	-- --[+ Traditional Chinese 老練刺客 +]--
-	-- create_template("ach_red_vet_3_ext_tw",
-		-- {"loc_achievement_veteran_weapon_switch_passive_keystone_kills_name"}, {"zh-tw"},
-			-- loc_text("老練刺客")),
-
-	-- --[+ Kill 250 Specialist or Elites with critical weakspot hits while Weapons Specialist is active. +]-- -- руоф Убейте особых или элитных врагов (250) с помощью критических ударов по слабым местам, пока действует «Мастер оружия».
-	-- -- create_template("ach_red_vet_3_ext_desc_en",
-		-- -- {"loc_achievement_veteran_weapon_switch_passive_keystone_kills_description"}, {"en"},
-			-- -- loc_text("Kill "..CNumb("{target}", "target_rgb").." Specialist or Elites with "..CKWord("", "Crit_rgb").." "..CKWord("", "Weakspothits_rgb").." "..CKWord("", "weapspec_rgb").." is active."..TALENTS_Enh_desc_penances.ED_Headshot_rgb)),
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_vet_3_ext_desc_ru",
-		-- -- {"loc_achievement_veteran_weapon_switch_passive_keystone_kills_description"}, {"ru"},
-			-- -- loc_text("Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью критических ударов в "..CKWord("", "Weakspot_rgb_ru")..", пока действует ключевой талант "..CKWord("", "weapspec_rgb_ru").."."..TALENTS_Enh_desc_penances_ru.ED_Headshot_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在武器專家效果啟動時，
-	-- -- 使用暴擊弱點命中擊殺250名專家或精英
-	-- -- create_template("ach_red_vet_3_ext_desc_tw",
-		-- -- {"loc_achievement_veteran_weapon_switch_passive_keystone_kills_description"}, {"zh-tw"},
-			-- -- loc_text("在 "..CKWord("", "KeyStone_i_p_rgb_tw").."『"..CKWord("", "weapspec_rgb_tw").."』時，\n使用 "..CKWord("", "Crit_hits_rgb_tw").." 加上 "..CKWord("", "Weakspot_k_dmg_rgb_tw").." "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb_tw)),
-
-	-- --[+ Stay Alert +]-- -- руоф Будь начеку
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_vet_11_ext_ru",
-		-- -- {"loc_achievement_veteran_2_medium_1_name"}, {"ru"},
-			-- -- loc_text("Будь внимательным")),
-	-- --[+ Traditional Chinese 保持警惕 +]--
-	-- -- create_template("ach_class_vet_11_ext_tw",
-		-- -- {"loc_achievement_veteran_2_medium_1_name"}, {"zh-tw"},
-			-- -- loc_text("保持警惕")),
-
-	-- --[+ On Malice Threat or higher, kill 150 enemies that have been marked by Volley Fire. +]-- -- руоф При угрозе «Злоба» или выше убейте врагов (150), отмеченных «Залповым огнем».
-	-- create_template("ach_class_vet_11_ext_desc_en",
-		-- {"loc_achievement_veteran_2_medium_1_description"}, {"en"},
-			-- loc_text("On "..CKWord("", "malice_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." enemies that have been marked by "..CKWord("", "volley_fire_rgb").." or "..CKWord("", "exec_stan_rgb")..".")),
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_11_ext_desc_ru",
-		-- {"loc_achievement_veteran_2_medium_1_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов, отмеченных способностями "..CKWord("", "volley_fire_rgb_ru").." или "..CKWord("", "exec_stan_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡毒或更高威脅度下，
-	-- -- 擊殺150個被處決者姿態標記的敵人
-	-- create_template("ach_class_vet_11_ext_desc_tw",
-		-- {"loc_achievement_veteran_2_medium_1_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，擊殺 "..CNumb("{target}", "target_rgb").." 名，\n被 "..CKWord("", "AbilityModifiers_p_rgb_tw").."『"..CKWord("", "volley_fire_rgb_tw").."』或『"..CKWord("", "executioner_stance_rgb_tw").."』標記的敵人。")),
-
-	-- --[+ Be Methodical - Будь методичным +]-- -- руоф Будь собран
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_13_ext_ru",
-		-- {"loc_achievement_veteran_2_hard_2_name"}, {"ru"},
-			-- loc_text("Будь методичным")),
-	-- --[+ Traditional Chinese 有條不紊 +]--
-	-- create_template("ach_class_vet_13_ext_tw",
-		-- {"loc_achievement_veteran_2_hard_2_name"}, {"zh-tw"},
-			-- loc_text("有條不紊")),
-
-	-- --[+ On Heresy Threat or higher, keep Volley Fire active for over 20 seconds 5 times. +]-- -- руоф При угрозе «Ересь» или выше примените «Залповый огонь» в течение 20 с 5 р.
-	-- create_template("ach_class_vet_13_ext_desc_en",
-		-- {"loc_achievement_veteran_2_hard_2_description"}, {"en"},
-			-- loc_text("On "..CKWord("", "heresy_rgb").." Threat or higher, keep "..CKWord("", "exec_stan_rgb").." active for over "..COLORS_Numbers.time_rgb").." seconds "..CNumb("{target}", "target_rgb").." times.")),
-	-- --[+ Russian +]--
-
-	-- create_template("ach_class_vet_13_ext_desc_ru",
-		-- {"loc_achievement_veteran_2_hard_2_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, поддерживайте способность "..CKWord("", "exec_stan_rgb_ru").." активной в течение "..COLORS_Numbers.time_rgb").." секунд. Выполните это задание "..CNumb("{target}", "target_rgb").." раз.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，
-	-- -- 使火力齊射的啟動時間超過20秒，需要達成5次。
-	-- -- create_template("ach_class_vet_13_ext_desc_tw",
-		-- -- {"loc_achievement_veteran_2_hard_2_description"}, {"zh-tw"},
-			-- -- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，\n啟動 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "executioner_stance_rgb_tw").."』持續 "..COLORS_Numbers.time_rgb").." 秒以上。\n完成此苦修需達成 "..CNumb("{target}", "target_rgb").." 次。" .. TALENTS_Enh_desc_penances_tw.ED_On_heresy_volley_rgb_tw)),
-	
+		--[+ Unlock access to the Shrine of the Omnissiah. +]-- руоф Откройте доступ к святилищу Омниссии.
+		["loc_achievement_unlock_crafting_description"] = {
+			en = "Unlock access to the "..CKWord("Shrine of the Omnissiah", "Omnissia_p_rgb")..".",
+			ru = "Разблокируйте доступ в "..CKWord("Святилище Омниссии", "Omnissia_p_rgb_ru")..".",
+			["zh-tw"] = "解鎖 "..CKWord("歐姆尼賽亞的神龕", "Omnissia_p_rgb_tw").." 。",
+		},
+	--[+ Circle of Trust (1-6) +]-- руоф Круг доверия (1-6)
+	-- ["loc_achievement_path_of_trust_x_name"] = {
+		-- ["zh-tw"] = "互信團體 ({tier})",
 	-- },
+	--[+ Complete Path of Trust chapter 6. +]-- руоф Пройти главы Пути веры: {target}.
+		["loc_achievement_path_of_trust_x_description"] = {
+			en = "Complete "..CKWord("Path of Trust", "PthOTrst_p_rgb").." chapter "..CNumb("{target}", "target_rgb")..".",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." главу "..CKWord("Пути доверия", "PthOTrst_p_rgb_ru")..".",
+			["zh-tw"] = "完成第 "..CNumb("{target}", "target_rgb").." 章的互信團體。",
+		},
+
+
+--[+ ++CLASSES - КЛАССЫ++ +]--
+	--[+ +VETERAN - ВЕТЕРАН +]--
+	["loc_class_veteran_title"] = {
+		en = CKWord("Veteran", "cls_vet_rgb"),
+		ru = CKWord("Ветеран", "cls_vet_rgb_ru"),
+		["zh-tw"] = CKWord("老兵", "cls_vet_rgb_tw"),
+	},
+		--[+ PROGRESSION - ПРОГРЕСС - 進度 +]--
+	--[+ I Love the Militarum! (1-6) +]-- руоф Я люблю Милитарум! (1-6) -- 我愛星界軍 (1-6)
+		--[+ Reach Trust Level __ as a Veteran. +]-- руоф Заслужить уровень доверия __, играя за Ветерана.
+		["loc_achievement_rank_veteran_2_x_description"] = {
+			en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Veteran", "cls_vet_rgb")..".",
+			ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Ветераном", "cls_vet2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("老兵", "cls_vet_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+		},
+	--[+ Through The Mud (1-5) +]-- руоф Из грязи (1-5) -- 穿越泥沼 (1-5)
+		--[+ Complete 100 Missions as a Veteran. +]-- руоф Выполнить Ветераном задания: 100.
+		["loc_achievement_missions_veteran_2_x_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Veteran", "cls_vet_rgb")..".",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Ветераном", "cls_vet2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("老兵", "cls_vet_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 次任務。",
+		},
+	--[+ Vantage Point +]-- руоф Точка обзора
+	["loc_achievement_missions_veteran_2_objective_1_name"] = {
+		en = "Vantage Point (1)",
+		ru = "Выгодная позиция (1)",
+		["zh-tw"] = "有利地形 (1)",
+	},
+		--[+ As a Veteran, complete at least one Mission of each type. +]-- руоф Выполнить Ветераном по меньшей мере одно задание каждого типа.
+		["loc_achievement_missions_veteran_2_objective_1_description"] = {
+			en = "As a "..CKWord("Veteran", "cls_vet_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
+			ru = "Пройдите "..CKWord("Ветераном", "cls_vet2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
+			["zh-tw"] = "使用 "..CKWord("老兵", "cls_vet_rgb_tw").."，完成以下任務 "..CNumb("1", "n_1_rgb").." 次。",
+		},
+	--[+ Vantage Point (2) +]-- руоф Точка обзора (2)
+	["loc_achievement_missions_veteran_2_objective_2_name"] = {
+		ru = "Выгодная позиция (2)",
+		["zh-tw"] = "有利地形 (2)",
+	},
+		--[+ As a Veteran, complete a Mission of each type on Malice Threat or higher. +]--
+		["loc_achievement_missions_veteran_2_objective_2_description"] = {
+			en = "As a "..CKWord("Veteran", "cls_vet_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Ветераном", "cls_vet2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+		},
+	--[+ Vantage Point (3) +]-- руоф Точка обзора (3)
+	["loc_achievement_missions_veteran_2_objective_3_name"] = {
+		ru = "Выгодная позиция (3)",
+		["zh-tw"] = "有利地形 (3)",
+	},
+		--[+ As a Veteran, complete a Mission of each type on Heresy Threat or higher. +]--
+		["loc_achievement_missions_veteran_2_objective_3_description"] = {
+			en = "As a "..CKWord("Veteran", "cls_vet_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Heresy", "heresy_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Ветераном", "cls_vet2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
+		},
+	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5) -- 證明你的價值 (1-5)
+	--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5) -- 為正義而戰 (1-5)
+		--[+ Complete _ Missions on Sedition Threat or higher. +]-- руоф Выполните задания (_) при угрозе «Мятеж» или выше.
+		["loc_achievement_complete_missions_difficulty_1_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." Missions at any Threat Level.",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий на любом уровне сложности.",
+		},
+		--[+ Complete _ Missions on Uprising Threat or higher. +]-- руоф Выполните задания (_) при угрозе «Восстание» или выше.
+		["loc_achievement_complete_missions_difficulty_2_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." Missions on "..CKWord("Uprising", "uprising_rgb").." Threat or higher.",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий на уровне сложности "..CKWord("Восстание", "uprising_rgb_ru").." или выше.",
+		},
+		--[+ Complete _ Missions on Malice Threat or higher. +]-- руоф Выполните задания (_) при угрозе «Злоба» или выше.
+		["loc_achievement_complete_missions_difficulty_3_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." Missions on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий на уровне сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+		},
+		--[+ Complete _ Missions on Heresy Threat or higher. +]-- руоф Выполните задания (_) при угрозе «Ересь» или выше.
+		["loc_achievement_complete_missions_difficulty_4_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." Missions on "..CKWord("Heresy", "heresy_rgb").." Threat or higher.",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий на уровне сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
+		},
+		--[+ Complete _ Missions on Damnation Threat or higher. +]-- руоф Выполните задания (_) при угрозе «Проклятие» или выше.
+		["loc_achievement_complete_missions_difficulty_5_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." Missions on "..CKWord("Damnation", "damnation_rgb").." Threat or higher.",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий на уровне сложности "..CKWord("Проклятие", "damnation_rgb_ru").." или выше.",
+		},
+	--[+ First Steps (1-2) +]-- руоф Первые шаги (1-2) -- 首要步驟 (1-2)
+	--[+ Promotion Material (1) +]-- руоф Материалы пропаганды (1)
+	["loc_achievement_group_rank_4_difficulty_3_name"] = {
+		ru = "Задания для продвижения (1)",
+		["zh-tw"] = "樹立榜樣 (1)",
+	},
+	--[+ Promotion Material (2) +]-- руоф Материалы пропаганды (2)
+	["loc_achievement_group_rank_5_difficulty_4_name"] = {
+		ru = "Задания для продвижения (2)",
+		["zh-tw"] = "樹立榜樣 (2)",
+	},
+	--[+ For The Emperor (1-3) +]-- руоф За императора (1-3) -- 為了皇帝 (1-3)
+		--[+ Complete the following Penances as the Veteran. +]-- руоф Выполнить следующие искупления за Ветерана.
+		["loc_achievement_group_veteran_2_description"] = {
+			en = "Complete the following Penances as the "..CKWord("Veteran", "cls_vet_rgb")..".",
+			ru = "Выполните следующие Искупления "..CKWord("Ветераном", "cls_vet2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("老兵", "cls_vet_rgb_tw").." 完成以下苦修。",
+		},
+	--[+ Stay Accurate +]-- руоф Держи прицел
+	["loc_achievement_veteran_2_easy_1_name"] = {
+		ru = "Будь точным",
+		["zh-tw"] = "保持精準",
+	},
+	--[+ Kill 350 enemies with ranged weakspot hits. +]-- руоф Убейте врагов (350) попаданиями по слабым местам с дальнего расстояния.
+	["loc_achievement_veteran_2_easy_1_description"] = {
+		en = "Kill "..CNumb("{target}", "target_rgb").." enemies with Ranged "..CKWord("Weakspot Hits", "Weakspothits_rgb")..".\n"
+			..CNote("Weaksp_note"),
+		ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." из дальнобойного оружия.\n"
+			..CNote("Weaksp_note"),
+		["zh-tw"] = "使用遠程武器 "..CKWord("遠程弱點傷害", "Weakspot_r_dmg_rgb_tw").." "..CNumb("{target}", "target_rgb").." 名敵人。",
+	},
+	--[+ Fire Down Range +]-- -- руоф Заградительный огонь
+	["loc_achievement_veteran_2_medium_2_name"] = {
+		ru = "Дистанция ведения стрельбы",
+		["zh-tw"] = "順風射擊",
+	},
+	--[+ On Malice Threat or higher, kill 100 ranged enemies that are over 30 meters away. +]-- руоф При угрозе «Злоба» или выше убейте врагов (100) на расстоянии дальше 30 м.
+	["loc_achievement_veteran_2_medium_2_description"] = {
+		en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." ranged enemies that are over "..CNumb("{distance}", "dist_rgb").." meters away.",
+		ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов-стрелков, находящихся на расстоянии более "..CNumb("{distance}", "dist_rgb").." метров от вас.",
+		["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度下，\n"
+			.."擊殺 "..CNumb("{target}", "target_rgb").." 名距離 "..CNumb("{distance}", "dist_rgb").." 公尺以上的敵人。",
+	},
+	--[+ On Target (1-3) +]-- руоф Держи прицел (1-3) -- 使命必達 (1-3)
+		--[+ Complete the following Penances as the Veteran. +]-- руоф Выполнить следующие искупления за Ветерана.
+		["loc_achievement_group_class_veteran_2_description"] = {
+			en = "Complete the following Penances as the "..CKWord("Veteran", "cls_vet_rgb")..".",
+			ru = "Выполните следующие Искупления "..CKWord("Ветераном", "cls_vet2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("老兵", "cls_vet_rgb_tw").." 完成以下苦修。",
+		},
+	--[+ One In the Chamber +]-- руоф Последний патрон
+	["loc_achievement_veteran_2_kills_with_last_round_in_mag_name"] = {
+		ru = "Последний в обойме",
+		["zh-tw"] = "最後一發",
+	},
+		--[+ Kill 8 enemies with the last round in your clip during a single Mission on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше убейте врагов (8) последним боеприпасом в магазине за одно задание.
+		["loc_achievement_veteran_2_kills_with_last_round_in_mag_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies with the last round in your clip during a single Mission on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов последним патроном в обойме в течение одной миссии на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度下，\n"
+				.."使用最後一發子彈擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ On Overwatch +]-- руоф Под прикрытием
+	["loc_achievement_veteran_2_no_melee_damage_taken_name"] = {
+		ru = "На чеку",
+		["zh-tw"] = "掩護射擊",
+	},
+		--[+ Complete a full Mission on Malice Threat or higher without taking any melee damage. +]-- руоф При угрозе «Злоба» или выше полностью завершите задание, не получив урона в ближнем бою.
+		["loc_achievement_veteran_2_no_melee_damage_taken_description"] = {
+			en = "Complete a full Mission on "..CKWord("Malice", "malice_rgb").." Threat or higher without taking any Melee "..CKWord("Damage", "Damage_rgb")..".",
+			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, пройдите полностью миссию без получения "..CKWord("урона", "urona_rgb_ru").." в ближнем бою.",
+			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度下，\n"
+				-- .."完成一次任務且不受到近戰傷害。",
+		},
+	--[+ Make Every Shot Count +]-- руоф Стрельба наверняка
+	["loc_achievement_veteran_2_no_missed_shots_empty_ammo_name"] = {
+		["zh-tw"] = "彈無虛發",
+	},
+		--[+ Complete a Mission on Heresy Threat or higher with no Ammo remaining, and 90% accuracy. +]-- руоф При угрозе «Ересь» или выше завершите задание с меткостью 90%, потратив все боеприпасы.
+		["loc_achievement_veteran_2_no_missed_shots_empty_ammo_description"] = {
+			en = "Complete a Mission on "..CKWord("Heresy", "heresy_rgb").." Threat or higher with no Ammo remaining, and "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." accuracy.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, пройдите миссию с точностью в "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." и потратив все боеприпасы.",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度下，\n"
+				.."命中率在 "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." 以上，且撤離時無任何備彈",
+		},
+	--[+ Veteran Master of War +]-- руоф Ветеран — знаток войны
+	["loc_achievement_class_meta_name"] = {
+		-- en = "{class_name} Master of War",
+		ru = "{class_name} — Повелитель войны",
+		["zh-tw"] = "{class_name} 戰爭大師",
+	},
+		--[+ Complete 5 out of the following Penances. +]-- руоф Выполните часть (5) из следующих искуплений.
+		["loc_achievement_class_meta_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." out of the following Penances.",
+			ru = "Выполните "..CNumb("{target}", "target_rgb").." следующих Искуплений.",
+			["zh-tw"] = "完成以下任意 "..CNumb("{target}", "target_rgb").." 個苦修。",
+		},
+
+		--[+ ABILITIES - СПОСОБНОСТИ - 技能 +]--
+	--[+ Resupply Allies +]-- руоф Поделись с ближним
+	["loc_achievement_veteran_2_easy_2_name"] = {
+		ru = "Пополните припасы союзников",
+		["zh-tw"] = "補給盟友",
+	},
+		--[+ Replenish 5000 total ammunition to allies using Scavenger or Survivalist. +]-- руоф Пополните 5000 ед. боеприпасов союзникам при помощи «Собирателя»...
+		["loc_achievement_veteran_2_easy_2_fix_description"] = {
+			en = "Replenish "..CNumb("{target}", "target_rgb").." total ammunition to Allies using "..CKWord("Scavenger", "scavenger_rgb").." or "..CKWord("Survivalist", "survivalist_rgb").." Aura.",
+			ru = "Восстановите "..CNumb("{target}", "target_rgb").." боеприпасов союзникам с помощью аур "..CKWord("Сборщик", "scavenger_rgb_ru").." или "..CKWord("Выживальщик", "survivalist_rgb_ru")..".",
+			-- ["zh-tw"] = "透過 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "scavenger_rgb_tw").."』或『"..CKWord("", "survivalist_rgb_tw").."』，\n"
+				-- .."為隊友恢復 "..CNumb("{target}", "target_rgb").." 發彈藥。",
+		},
+	--[+ Unseen Predator +]-- руоф Невидимый хищник
+	["loc_achievement_veteran_infiltrate_supress_name"] = {
+		["zh-tw"] = "隱形獵手",
+	},
+		-- [+ Suppress 750 enemies using Infiltrate. +]-- руоф Подавите врагов (750) с помощью «Проникновения».
+		["loc_achievement_veteran_infiltrate_supress_description"] = {
+			en = "Suppress "..CNumb("{target}", "target_rgb").." enemies using "..CKWord("Infiltrate", "infiltr_rgb").." Ability.",
+			ru = "Подавите "..CNumb("{target}", "target_rgb").." врагов с помощью способности "..CKWord("Проникновение", "infiltr_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("滲透", "infiltr_rgb_tw").."』壓制 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ Stand up and Fight! +]-- руоф Встань и сражайся!
+	["loc_achievement_veteran_voice_of_command_toughness_given_name"] = {
+		["zh-tw"] = "站起來繼續戰鬥！",
+	},
+		--[+ Restore 7500 Toughness to yourself using Voice of Command. +]-- руоф Восстановите себе 7500 стойкости с помощью «Командного голоса».
+		["loc_achievement_veteran_voice_of_command_toughness_given_description"] = {
+			en = "Restore "..CNumb("{target}", "target_rgb").." "..CKWord("Toughness", "Toughness_rgb").." to yourself using "..CKWord("Voice of Command", "voiceoc_rgb").." Ability.",
+			ru = "Восстановите себе "..CNumb("{target}", "target_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." с помощью способности "..CKWord("Командный голос", "voiceoc_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "voiceoc_rgb_tw").."』恢復自身 "..CNumb("{target}", "target_rgb").." 點 "..CKWord("", "Toughness_rgb_tw").."。",
+		},
+	--[+ Killshot Ready +]--
+	["loc_achievement_veteran_enemies_killed_with_max_focus_fire_name"] = {
+		ru = "Смертельный выстрел готов",
+		["zh-tw"] = "射殺預備",
+	},
+		--[+ Kill 2500 enemies while at 10 stacks of Marksman's focus or more. +]-- руоф Убейте врагов (2500), имея не менее 10 зарядов «Концентрации снайпера».
+		["loc_achievement_veteran_enemies_killed_with_max_focus_fire_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies while at "..CNumb("10", "n_10_rgb").." Stacks of "..CKWord("Marksman's Focus", "snipcon_rgb").." Keystone or more.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, имея не менее "..CNumb("10", "n_10_rgb").." зарядов ключевого таланта "..CKWord("", "snipcon_rgb_ru")..".",
+			-- ["zh-tw"] = "在累積至少 "..COLORS_Numbers.n_10_rgb").." 層 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "snipcon_rgb_tw").."』的 "..CKWord("", "Focus_rgb_tw").." 時，\n"
+				-- .."擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ Armourbane +]-- руоф Бронебой
+	["loc_achievement_veteran_krak_grenade_kills_name"] = {
+		["zh-tw"] = "護甲之災",
+	},
+		--[+ Kill 500 armoured enemies using krak grenades. +]-- руоф Убейте врагов с бронёй (500) с помощью крак-гранат.
+		["loc_achievement_veteran_krak_grenade_kills_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." armoured enemies using "..CKWord("Krak Grenade", "krak_gr_rgb")..".",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." бронированных врагов, используя "..CKWord("Крак-гранату", "krak_gr_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "krak_gr_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名護甲敵人。",
+		},
+	--[+ Smoke Screen +]--
+	["loc_achievement_veteran_smoke_grenade_engulfed_name"] = {
+		ru = "Дымовая завеса",
+		["zh-tw"] = "煙幕",
+	},
+		--[+ Engulf 2000 enemies in smoke using the Smoke Grenade. +]-- руоф Окутайте дымом врагов (2000) с помощью дымовой гранаты.
+		["loc_achievement_veteran_smoke_grenade_engulfed_description"] = {
+			en = "Engulf "..CNumb("{target}", "target_rgb").." enemies in smoke using the "..CKWord("Smoke Grenade", "smok_gr_rgb")..".",
+			ru = "Окутайте дымом "..CNumb("{target}", "target_rgb").." врагов с помощью "..CKWord("Дымовой гранаты", "smok_gr_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "smok_gr_rgb_tw").."』使 "..CNumb("{target}", "target_rgb").." 名敵人陷入煙霧之中。",
+		},
+	--[+ Focus Soldier! +]-- руоф Солдат в прицеле!
+	["loc_achievement_veteran_kills_with_improved_tag_name"] = {
+		ru = "Прицелься, солдат!",
+		["zh-tw"] = "士兵，鎖定目標!",
+	},
+		--[+ Kill 500 enemies tagged by Focus Target! +]-- руоф Убейте врагов (500), отмеченных эффектом «В прицеле!».
+		["loc_achievement_veteran_kills_with_improved_tag_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies tagged by "..CKWord("Focus Target!", "fcs_trg_rgb").." Keystone.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, отмеченных с помощью ключевого таланта "..CKWord("Важная цель!", "fcs_trg_rgb_ru"),
+			-- ["zh-tw"] = "擊殺 "..CNumb("{target}", "target_rgb").." 名被 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "fcs_trg_rgb_tw").."』標記的敵人。",
+		},
+	--[+ Adept Assassin +]-- руоф Искусный убийца
+	["loc_achievement_veteran_weapon_switch_passive_keystone_kills_name"] = {
+		ru = "Адепт-ассасин",
+		["zh-tw"] = "老練刺客",
+	},
+		--[+ Kill 250 Specialist or Elites with critical weakspot hits while Weapons Specialist is active. +]-- руоф Убейте особых или элитных врагов (250) с помощью критических ударов по слабым местам, пока действует «Мастер оружия».
+		["loc_achievement_veteran_weapon_switch_passive_keystone_kills_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." Specialist or Elites with "..CKWord("Critical", "Critical_rgb").." "..CKWord("Weakspot Hits", "Weakspothits_rgb").." while "..CKWord("Weapons Specialist", "weapspec_rgb").." Keystone is active.\n"
+			..CNote("Weaksp_note"),
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью "..CKWord("критических", "kritickih_rgb_ru").." попаданий в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..", пока действует ключевой талант "..CKWord("Специалист по оружию", "weapspec_rgb_ru")..".\n"
+			..CNote("Weaksp_note"),
+			-- ["zh-tw"] = "在 "..CKWord("", "KeyStone_i_p_rgb_tw").."『"..CKWord("", "weapspec_rgb_tw").."』時，\n"
+				-- .."使用 "..CKWord("", "Crit_hits_rgb_tw").." 加上 "..CKWord("", "Weakspot_k_dmg_rgb_tw").." "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
+		},
+	--[+ Sweep and Clear +]--
+	["loc_achievement_veteran_team_damage_amplified_name"] = {
+		ru = "Выявить и зачистить",
+		["zh-tw"] = "全面掃蕩",
+	},
+		--[+ Kill 7500 enemies while affected by Fire Team. Kills made by any affected team member also count. +]-- руоф Убейте врагов (7500), находясь под действием «Огневой поддержки». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
+		["loc_achievement_veteran_team_damage_amplified_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies while affected by "..CKWord("Fire Team", "firetim_rgb").." Aura. Kills made by any affected team member also count.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, находясь под действием ауры "..CKWord("Боевая группа", "firetim_rgb_ru")..". Убийства членами команды под вашей аурой также учитываются.",
+			-- ["zh-tw"] = "在 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "firetim_rgb_tw").."』的影響下，擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。\n"
+				-- ..""..CKWord("", "Aura_i_p_rgb_tw").." 的隊友擊殺也會計算。",
+		},
+	--[+ Keep it Tight +]-- руоф Держать в секрете
+	["loc_achievement_veteran_team_movement_amplifed_name"] = {
+		ru = "Держитесь вместе",
+		["zh-tw"] = "保持陣型.",
+	},
+		--[+ Move a total of 10000 meters in coherency with your team members while under the effect of Close and Kill. +]-- руоф Переместитесь с членами команды под действием «Сплоченности» суммарно на 10000 м, пока действует эффект «Приблизиться и убить».
+		["loc_achievement_veteran_team_movement_amplifed_description"] = {
+			en = "Move a total of "..CNumb("{target}", "target_rgb").." meters in "..CKWord("Coherency", "Coherency_rgb").." with your team members while under the effect of "..CKWord("Close and Kill", "closenkill_rgb").." Aura.",
+			ru = "Переместитесь на "..CNumb("{target}", "target_rgb").." метров в "..CKWord("сплочённости", "splochennosti_rgb_ru").." с членами вашей команды под действием ауры "..CKWord("Приблизиться и убить", "closenkill_rgb_ru")..".",
+			-- ["zh-tw"] = "在與隊友保持 "..CKWord("", "Coherency_rgb_tw").." 時，\n"
+				-- .."於 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "closenkill_rgb_tw").."』效果期間內，\n"
+				-- .."移動距離達 "..CNumb("{target}", "target_rgb").." 公尺。",
+		},
+	--[+ Stay Alert +]-- руоф Будь начеку
+	["loc_achievement_veteran_2_medium_1_name"] = {
+		["zh-tw"] = "保持警惕",
+	},
+		--[+ On Malice Threat or higher, kill 150 enemies that have been marked by Executioner's Stance. +]-- руоф При угрозе «Злоба» или выше убейте врагов (150), отмеченных...
+		["loc_achievement_veteran_2_medium_1_description"] = {
+			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." enemies that have been marked by "..CKWord("Executioner's Stance", "exec_stan_rgb").." Ability.",
+			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов, отмеченных способностью "..CKWord("Стойка палача", "exec_stan_rgb_ru")..".",
+			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，擊殺 "..CNumb("{target}", "target_rgb").." 名，\n"
+				-- .."被 "..CKWord("", "AbilityModifiers_p_rgb_tw").."『"..CKWord("", "volley_fire_rgb_tw").."』或『"..CKWord("", "executioner_stance_rgb_tw").."』標記的敵人。",
+		},
+	--[+ Find your Targets +]-- руоф Поиск целей
+	["loc_achievement_veteran_2_hard_1_name"] = {
+		ru = "Найди свои цели",
+		["zh-tw"] = "尋找目標",
+	},
+		--[+ On Heresy Threat or higher, kill 2 Elite or Specialist enemies during a single Volley Fire or Executioner's Stance, 50 times. +]-- руоф При угрозе «Ересь» или выше убейте элитных врагов или специалистов (2) за одно применение «Залпового огня» 50 р.
+		["loc_achievement_veteran_2_hard_1_fix_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb_ru").." Threat or higher, kill "..CNumb("{num_enemies}", "num_enemies_rgb").." Elite or Specialist enemies during a single "..CKWord("Volley Fire", "volley_fire_rgb").." or "..CKWord("Executioner's Stance", "exec_stan_rgb").." Ability, "..CNumb("{target}", "target_rgb").." times.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "num_enemies_rgb").." элитных врага или специалиста во время непрерывного действия способностей "..CKWord("Залповый огонь", "volley_fire_rgb_ru").." или "..CKWord("Стойка палача", "exec_stan_rgb_ru")..". Выполните это задание "..CNumb("{target}", "target_rgb").." раз.",
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
+				-- .."於單次 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "volley_fire_rgb_tw").."』或『"..CKWord("", "executioner_stance_rgb_tw").."』期間，\n"
+				-- .."擊殺 "..CNumb("{target}", "num_enemies_rgb").." 名精英或專家敵人。此任務共需達成 "..CNumb("{target}", "target_rgb").." 次。",
+		},
+	--[+ Be Methodical +]-- руоф Будь собран
+	["loc_achievement_veteran_2_hard_2_name"] = {
+		ru = "Будь методичным",
+		["zh-tw"] = "有條不紊",
+	},
+		--[+ On Heresy Threat or higher, keep Volley Fire or Executioner's Stance active for over 20 seconds 5 times. +]-- руоф При угрозе «Ересь» или выше примените «Залповый огонь» в течение 20 с 5 р.
+		["loc_achievement_veteran_2_hard_2_fix_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, keep "..CKWord("Volley Fire", "volley_fire_rgb").." or "..CKWord("Executioner's Stance", "exec_stan_rgb").." Ability active for over "..CNumb("{time}", "time_rgb").." seconds, "..CNumb("{target}", "target_rgb").." times.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, поддерживайте способность "..CKWord("Залповый огонь", "volley_fire_rgb_ru").." или "..CKWord("Стойка палача", "exec_stan_rgb_ru").." активной в течение "..CNumb("{time}", "time_rgb").." секунд. Выполните это задание "..CNumb("{target}", "target_rgb").." раз.",
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
+				-- .."啟動 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "executioner_stance_rgb_tw").."』持續 "..CNumb("{time}", "time_rgb").." 秒以上。\n"
+				-- .."完成此苦修需達成 "..CNumb("{target}", "target_rgb").." 次。",
+		},
+	--[+ Marked For Death +]-- руоф Отмечены смертью
+	["loc_achievement_veteran_2_weakspot_hits_during_volley_fire_alternate_fire_name"] = {
+		ru = "Отмечены на смерть",
+		["zh-tw"] = "死亡標記",
+	},
+		--[+ During a single use of Volley Fire or Executioner's Stance, hit enemy Weak Spots 4 times using a weapon's Secondary Action, without missing a shot. +]-- руоф За однократное применение «Залпового огня» поразите слабые места врагов (4) дополнительным действием оружия, не промахнувшись.
+		["loc_achievement_veteran_2_weakspot_hits_during_volley_fire_alternate_fire_fix_description"] = {
+			en = "During a single use of "..CKWord("Volley Fire", "volley_fire_rgb").." or "..CKWord("Executioner's Stance", "exec_stan_rgb").." Ability, hit enemy "..CKWord("Weakspots", "Weakspots_rgb").." "..CNumb("{target}", "target_rgb").." times while Aiming without missing a shot.\n"
+			..CNote("Weaksp_note"),
+			ru = "За одно использование способностей "..CKWord("Залповый огонь", "volley_fire_rgb_ru").." или "..CKWord("Стойка палача", "exec_stan_rgb_ru").." поразите "..CNumb("{target}", "target_rgb").." врага прицельными выстрелами в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." не промахиваясь.\n"
+			..CNote("Weaksp_note"),
+			-- ["zh-tw"] = "於單次 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "volley_fire_rgb_tw").."』或『"..CKWord("", "executioner_stance_rgb_tw").."』期間，\n"
+				-- .."使用瞄準射擊連續命中 "..CNumb("{target}", "target_rgb").." 名敵人的 "..CKWord("", "Weakspot_rgb_tw").."，且不得中斷。",
+		},
+	--[+ Long Bomb +]-- руоф Длинный пас
+	["loc_achievement_veteran_2_unbounced_grenade_kills_name"] = {
+		-- ru = "Дальний бросок",
+		["zh-tw"] = "遠擲炸彈",
+	},
+		--[+ Hit 5 enemies with a Frag Grenade or Shredder Frag Grenade without it bouncing. +]-- руоф Убейте врагов (5) фраг-гранатой или ... так, чтобы она не отскакивала.
+		["loc_achievement_veteran_2_unbounced_grenade_kills_fix_description"] = {
+			en = "Hit "..CNumb("{target}", "target_rgb").." enemies with a "..CKWord("Frag Grenade", "frag_gr_rgb").." or "..CKWord("Shredder Frag Grenade", "shfrag_gr_rgb").." without it bouncing.",
+			ru = "Поразите "..CNumb("{target}", "target_rgb").." врагов взрывом "..CKWord("Фраг-гранаты", "frag_gr_rgb_ru").." или "..CKWord("Крошащей фраг-гранаты", "shfrag_gr_rgb_ru").." так, чтобы граната не коснулась земли.",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "frag_gr_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名敵人，且手榴彈在引爆前不得碰觸地面。",
+		},
+	--[+ Deadeye +]-- руоф Меткий глаз
+	["loc_achievement_veteran_2_elite_weakspot_kills_during_volley_fire_alternate_fire_name"] = {
+		["zh-tw"] = "神射手",
+	},
+		--[+ On Heresy Threat or higher, during a single use of Volley Fire or Executioner's Stance, kill 5 highlighted enemies with Weak Spot hits whilst using a weapon's Secondary Action. +]-- руоф При угрозе «Ересь» или выше за однократное применение «Залпового огня»  убейте выделенных врагов (5) попаданием в слабое место, используя дополнительное действие оружия.
+		["loc_achievement_veteran_2_elite_weakspot_kills_during_volley_fire_alternate_fire_fix_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, during a single use of "..CKWord("Volley Fire", "volley_fire_rgb").." or "..CKWord("Executioner's Stance", "exec_stan_rgb").." Ability, kill "..CNumb("{target}", "target_rgb").." highlighted enemies with "..CKWord("Weakspot Hits", "Weakspothits_rgb").." while using a weapon's Secondary Action.\n"
+			..CNote("Weaksp_note"),
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, на протяжении одного использования способностей "..CKWord("Залповый огонь", "volley_fire_rgb_ru").." или "..CKWord("Стойка палача", "exec_stan_rgb_ru")..", убейте прицельными выстрелами "..CNumb("{target}", "target_rgb").." подсвеченных врагов в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..".\n"
+			..CNote("Weaksp_note"),
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
+				-- .."在單次 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "volley_fire_rgb_tw").."』或『"..CKWord("", "executioner_stance_rgb_tw").."』期間，\n"
+				-- .."使用瞄準射擊 "..CKWord("", "Weakspothits_rgb_tw").." ，擊殺 "..CNumb("{target}", "target_rgb").." 名被標記的敵人。",
+		},
+
+
+--[+ +ZEALOT - ИЗУВЕР+ +]--
+	["loc_class_zealot_title"] = {
+		en = CKWord("Zealot", "cls_zea_rgb"),
+		ru = CKWord("Изувер", "cls_zea_rgb_ru"),
+		["zh-tw"] = CKWord("狂信徒", "cls_zea_rgb_tw"),
+	},
+		--[+ PROGRESSION - ПРОГРЕСС - 進度 +]--
+	--[+ Maniacal Laughter (1-6) +]-- руоф Маниакальный смех (1-6) -- 瘋狂的笑聲
+		--[+ Reach Trust Level 30 as a Zealot. +]-- руоф Заслужить уровень доверия 30, играя за Изувера.
+		["loc_achievement_rank_zealot_2_x_description"] = {
+			en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Zealot", "cls_zea_rgb")..".",
+			ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Изувером", "cls_zea2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("狂信徒", "cls_zea_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+		},
+	--[+ Doomseeker (1-5) +]-- руоф Искатель судьбы (1-5) -- 尋求毀滅者 (1-5)
+		--[+ Complete 100 Missions as a Zealot. +]-- руоф Выполнить Изувером задания: 100.
+		["loc_achievement_missions_zealot_2_x_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Zealot", "cls_zea_rgb")..".",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Изувером", "cls_zea2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("狂信徒", "cls_zea_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。",
+		},
+	--[+ Praise the God-Emperor! (1-3) +]-- руоф Хвала Богу-Императору! (1-3) -- 讚頌神皇！ (1-3)
+		--[+ As a Zealot, complete at least one Mission of each type. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа.
+		["loc_achievement_missions_zealot_2_objective_1_description"] = {
+			en = "As a "..CKWord("Zealot", "cls_zea_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
+			ru = "Пройдите "..CKWord("Изувером", "cls_zea2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
+		},
+		--[+ As a Zealot, complete a Mission of each type on Malice Threat or higher. +]--
+		["loc_achievement_missions_zealot_2_objective_2_description"] = {
+			en = "As a "..CKWord("Zealot", "cls_zea_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Изувером", "cls_zea2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+		},
+		--[+ As a Zealot, complete a Mission of each type on Heresy Threat or higher. +]--
+		["loc_achievement_missions_zealot_2_objective_3_description"] = {
+			en = "As a "..CKWord("Zealot", "cls_zea_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Heresy", "heresy_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Изувером", "cls_zea2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
+		},
+	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5) -- 證明你的價值 (1-5)
+	--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5) -- 為正義而戰 (1-5)
+	--[+ First Steps (1-2) +]-- руоф Первые шаги (1-2) -- 首要步驟 (1-2)
+	--[+ Promotion Material (1-2) +]-- руоф Материалы пропаганды (1-2) -- 樹立榜樣 (1-2)
+	--[+ For The Emperor (1-3) +]-- руоф За императора (1-3) -- 為了皇帝 (1-3)
+		--[+ Complete the following Penances as the Zealot. +]-- руоф Выполнить следующие искупления за Изувера.
+		["loc_achievement_group_zealot_2_description"] = {
+			en = "Complete the following Penances as the "..CKWord("Zealot", "cls_zea_rgb")..".",
+			ru = "Выполните следующие Искупления "..CKWord("Изувером", "cls_zea2_rgb_ru")..".",
+		},
+	--[+ Find Their Weakness +]-- руоф Узнай их слабости
+	["loc_achievement_zealot_2_medium_1_name"] = {
+		ru = "Найди их слабости",
+		["zh-tw"] = "洞悉弱點",
+	},
+		--[+ On Malice Threat or higher, kill 75 Stunned enemies with Critical Hits. +]-- руоф При угрозе «Злоба» или выше убейте оглушенных врагов (75) критическими ударами.
+		["loc_achievement_zealot_2_medium_1_description"] = {
+			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." "..CKWord("Stunned", "Stunned_rgb").." enemies with "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
+			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." "..CKWord("ошеломлённых", "oshelomlennyh_rgb_ru").." врагов "..CKWord("критическими ударами", "krit_udarami_rgb_ru")..".",
+			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
+				-- .."使用 "..CKWord("", "Crit_k_rgb_tw").." 共 "..CNumb("{target}", "target_rgb").." 名處於 "..CKWord("", "Staggered_rgb_tw").." 的敵人。",
+		},
+	--[+ Master Your Tools +]-- руоф Знай свое дело
+	["loc_achievement_zealot_2_hard_1_name"] = {
+		ru = "Знай своё дело",
+		["zh-tw"] = "掌握工具",
+	},
+		--[+ On Heresy Threat or higher, kill 75 Elite or Specialist enemies with Powered Melee Attacks (Chain or Power weapons). +]-- руоф При угрозе «Ересь» или выше убейте элитных врагов или специалистов (75) усиленными атаками в ближнем бою (цепным или психосиловым оружием).
+		["loc_achievement_zealot_2_hard_1_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." Elite or Specialist enemies with Powered Melee Attacks using a Chain or Power weapons.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов в ближнем бою специальными атаками цепного или силового оружия.",
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
+				-- .."使用特殊攻擊（鏈鋸系列、上古神刃），\n"
+				-- .."擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
+		},
+	--[+ Sainted Path (1-3) +]-- руоф Священный путь (1-3) -- 朝聖之路 (1-3)
+		--[+ Complete the following Penances as the Zealot. +]-- руоф Выполнить следующие искупления за Изувера.
+		["loc_achievement_group_class_zealot_2_description"] = {
+			en = "Complete the following Penances as the "..CKWord("Zealot", "cls_zea_rgb")..".",
+			ru = "Выполните следующие Искупления "..CKWord("Изувером", "cls_zea2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("狂信徒", "cls_zea_rgb_tw").." 完成以下苦修。",
+		},
+	--[+ Up Close and Personal +]-- руоф С близкого расстояния
+	["loc_achievement_zealot_2_not_use_ranged_attacks_name"] = {
+		ru = "Лицом к лицу",
+		["zh-tw"] = "零距離接觸",
+	},
+		--[+ Complete a full Mission on Malice Threat or higher without firing a shot. +]-- руоф При угрозе «Злоба» или выше полностью завершите задание, не сделав ни одного выстрела.
+		["loc_achievement_zealot_2_not_use_ranged_attacks_description"] = {
+			en = "Complete a full Mission on "..CKWord("Malice", "malice_rgb").." Threat or higher without firing a shot.",
+			ru = "Пройдите полностью миссию на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, не сделав ни одного выстрела.",
+			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
+				.."全程參與任務且不使用任何遠程攻擊。",
+		},
+	--[+ Just A Flesh Wound +]-- руоф Просто царапина -- 只是皮外傷
+		--[+ Complete a full mission on Heresy Threat or higher in under 20 minutes, with less than a Wound's worth of Health remaining for 75% of the time. +]--
+		["loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_description"] = {
+			en = "Complete a full mission on "..CKWord("Heresy", "heresy_rgb").." Threat or higher in under "..CNumb("{time_window}", "time_wind_rgb").." minutes, with less than a "..CKWord("Wound", "Wound_rgb")..CNumb("'s", "n__s_rgb").." worth of "..CKWord("Health", "Health_rgb").." remaining for "..CNumb("{health}%", "health_pc_rgb").." of the time.",
+			ru = "Пройдите полностью миссию на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, менее чем за "..CNumb("{time_window}", "time_wind_rgb").." минут, при этом "..CNumb("{health}%", "health_pc_rgb").." времени у вас должно быть не более одного сегмента "..CKWord("здоровья", "zdorovia_rgb_ru")..".",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，在 "..CNumb("{time_window}", "time_wind_rgb").." 分鐘內完成整場任務，\n"
+				.."且其中 "..CNumb("{health}%", "health_pc_rgb").." 的時間，只有一格 "..CKWord("最大生命", "Health_rgb_tw").."。", --??? \n
+		},
+	--[+ Zealot Master of War +]-- руоф Изувер — знаток войны
+
+		--[+ ABILITIES - СПОСОБНОСТИ - 技能 +]--
+	--[+ Control Crowds +]-- руоф Сдерживание толпы
+	["loc_achievement_zealot_2_easy_1_name"] = {
+		ru = "Контроль толп",
+		["zh-tw"] = "群體控制",
+	},
+		--[+ Stun 1500 enemies using Stun Grenades or Stunstorm Grenades. +]-- руоф Оглушите врагов (1500) оглушающими гранатами.
+		["loc_achievement_zealot_2_easy_1_fix_description"] = {
+			en = CKWord("Stun", "Stun_rgb").." "..CNumb("{target}", "target_rgb").." enemies using "..CKWord("Stun Grenades", "shock_grens1_rgb").." or "..CKWord("Stunstorm Grenades", "shock_grens_rgb")..".",
+			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." "..CNumb("{target}", "target_rgb").." врагов, используя "..CKWord("Оглушающую гранату", "shock_gren1_rgb_ru").." или "..CKWord("Оглушающе-штурмовую гранату", "shock_gren0_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "shock_gren1_rgb_tw").."』或『"..CKWord("", "shock_gren0_rgb_tw").."』，\n"
+				-- .."暈眩 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ Stay Strong +]-- руоф Будь сильным
+	["loc_achievement_zealot_2_easy_2_name"] = {
+		["zh-tw"] = "保持堅強",
+	},
+		--[+ Replenish 7500 Toughness using Chastise the Wicked or Fury of the Faithful. +]-- руоф Восстановите стойкость «Карой для нечестивых» 7500 р.
+		["loc_achievement_zealot_2_easy_2_fix_description"] = {
+			en = "Replenish "..CNumb("{target}", "target_rgb").." "..CKWord("Toughness", "Toughness_rgb").." using "..CKWord("Chastise the Wicked", "chast_wckd_rgb").." or "..CKWord("Fury of the Faithful", "fury_faithful_rgb").." Ability.",
+			ru = "Восстановите "..CNumb("{target}", "target_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru")..", используя способности "..CKWord("Кара нечестивых", "chast_wckd_rgb_ru").." или "..CKWord("Ярость верующего", "fury_faithful_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "chastise_wicked_rgb_tw").."』或『"..CKWord("", "fury_faithful_rgb_tw").."』恢復 "..CNumb("{target}", "target_rgb").." 點 "..CKWord("", "Toughness_rgb_tw").."。",
+		},
+	--[+ Unseen Assassin +]-- руоф Незримый убийца
+	["loc_achievement_zealot_elite_or_special_kills_with_shroudfield_name"] = {
+		["zh-tw"] = "隱形刺客",
+	},
+		--[+ Kill 150 Specialists or Elites by backstabbing them while using Shroudfield. +]-- руоф Убейте особых или элитных врагов (150) ответным ударом с помощью «Покрова».
+		["loc_achievement_zealot_elite_or_special_kills_with_shroudfield_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." Specialists or Elites by backstabbing them while using "..CKWord("Shroudfield", "shroudf_rgb").." Ability.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов ударом в спину под действием способности "..CKWord("Покров", "shroudf_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "shroudf_rgb_tw").."』技能期間，\n"
+				-- .."以背刺擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
+		},
+	--[+ Inspiring Oratory +]-- руоф Вдохновляющая речь
+	["loc_achievement_zealot_team_toughness_restored_with_chorus_name"] = {
+		["zh-tw"] = "激勵演說",
+	},
+		--[+ Restore 7500 toughness to other players using Chorus of Spir_I_tual Fortitude. +]-- руоф Восстановите другим игрокам 7500 стойкости с помощью «Хор духовной стойкости».
+		["loc_achievement_zealot_team_toughness_restored_with_chorus_description"] = {
+			en = "Restore "..CNumb("{target}", "target_rgb").." "..CKWord("Toughness", "Toughness_rgb").." to other players using "..CKWord("Chorus of Spiritual Fortitude", "chorusosf_rgb").." Ability.",
+			ru = "Восстановите другим игрокам "..CNumb("{target}", "target_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." с помощью способности "..CKWord("Хор духовной стойкости", "chorusosf_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "chorusosf_rgb_tw").."』，\n"
+					-- .."恢復隊友共計 "..CNumb("{target}", "target_rgb").." 點 "..CKWord("", "Toughness_rgb_tw").."。",
+		},
+	--[+ Righteous Anger +]-- руоф Праведный гнев
+	["loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_name"] = {
+		["zh-tw"] = "正義之怒",
+	},
+		--[+ Kill 2000 enemies while in Fury. +]-- руоф Убейте врагов (2000), находясь под действием «Ярости».
+		["loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies while you under the effect of "..CKWord("Fury", "fanrage_rgb").." from the "..CKWord("Blazing Piety", "blazingp_rgb").." Keystone.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, находясь под действием эффекта "..CKWord("Ярость", "fanrage_rgb_ru").." от ключевого таланта "..CKWord("Пылающая благочестивость", "blazingp_rgb_ru")..".",
+			-- ["zh-tw"] = "在『"..CKWord("", "fanrage_rgb_tw").."』發動期間，\n"
+				-- .."擊殺 "..CNumb("{target}", "target_rgb").." 名敵人，\n"
+				-- .."該效果來自 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "blazingp_rgb_tw").."』。",
+		},
+	--[+ Lethal Pursuit +]-- руоф Смертоносное преследование
+	["loc_achievement_zealot_kills_during_movement_keystone_activated_name"] = {
+		["zh-tw"] = "致命追緝",
+	},
+	--[+ Kill 250 Specialist and Elite enemies while at 15 stacks of Inexorable Judgement or above. +]-- руоф Убейте особых и элитных врагов (250), имея не менее 15 зарядов «Безжалостного приговора».
+	["loc_achievement_zealot_kills_during_movement_keystone_activated_description"] = {
+		en = "Kill "..CNumb("{target}", "target_rgb").." Specialist and Elite enemies while at "..CNumb("15", "n_15_rgb").." or more "..CKWord("Momentum", "Momentum_rgb").." Stacks from "..CKWord("Inexorable Judgement", "inexor_rgb").." Keystone.",
+		ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов, имея не менее "..CNumb("15", "n_15_rgb").." зарядов "..CKWord("Моментума", "Momentum_rgb_ru").." от ключевого таланта "..CKWord("Неумолимый приговор", "inexor_rgb_ru")..".",
+		-- ["zh-tw"] = "擁有 "..CNumb("15", "n_15_rgb").." 層『"..CKWord("", "momentum_rgb_tw").."』時，擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人，\n"
+			-- .."來源為"..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "inexor_rgb_tw").."』。",
+	},
+	--[+ Blessed be Thine Aim +]-- руоф Благословен будь твой прицел
+	["loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_name"] = {
+		ru = "Да будет благословенна цель твоя",
+		["zh-tw"] = "聖佑汝之瞄準",
+	},
+	--[+ Kill 500 Specialist and Elites using Blades of Faith. +]-- руоф Убейте особых и элитных врагов (500) с помощью «Клинков веры».
+	["loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_description"] = {
+		en = "Kill "..CNumb("{target}", "target_rgb").." Specialist and Elites using "..CKWord("Blades of Faith", "klinvery_rgb").." Blitz.",
+		ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов используя блиц "..CKWord("Клинки веры", "klinvery_rgb_ru")..".",
+		-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "klinvery_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名精英或特殊敵人。",
+	},
+	--[+ Purging Flames +]-- руоф Очищающее пламя
+	["loc_achievement_zealot_kills_with_fire_grenade_name"] = {
+		["zh-tw"] = "淨化烈焰",
+	},
+		--[+ Burn 2000 enemies using the Immolation Grenade. +]-- руоф Сожгите врагов (2000) с помощью «Жертвенной гранаты».
+		["loc_achievement_zealot_kills_with_fire_grenade_description"] = {
+			en = "Burn "..CNumb("{target}", "target_rgb").." enemies using the "..CKWord("Immolation Grenade", "fire_gren_rgb")..".",
+			ru = "Сожгите "..CNumb("{target}", "target_rgb").." врагов с помощью "..CKWord("Сжигающей гранаты", "fire_gren_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "fire_gren_rgb_tw").."』燒死 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ Behind Enemy Lines +]-- руоф В тылу врага
+	["loc_achievement_zealot_aura_backstab_kills_while_alone_name"] = {
+		["zh-tw"] = "深入敵後",
+	},
+		--[+ Kill 7500 enemies while under the effect of Zealous. Kills made by allies in coherency with you also count. +]--
+		["loc_achievement_zealot_aura_stamina_kills_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies while under the effect of "..CKWord("Zealous", "zealous_rgb").." Aura. Kills made by Allies in "..CKWord("Coherency", "Coherency_rgb").." with you also count.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов  под эффектом ауры "..CKWord("Ревностный", "zealous_rgb_ru")..". Убийства союзников, находящихся под действием "..CKWord("сплочённости", "splochennosti_rgb_ru").." с вами, тоже учитываются.",
+			-- ["zh-tw"] = "處於 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "Coherency_rgb_tw").."』狀態且未受到『"..CKWord("", "loner_rgb_tw").."』光環時，\n"
+				-- .."背刺擊殺 "..CNumb("{target}", "target_rgb").." 名遠程武器敵人。",
+		},
+	--[+ Test of Faith +]-- руоф Испытание веры
+	["loc_achievement_zealot_aura_toughness_damage_reduced_name"] = {
+		["zh-tw"] = "信仰之試",
+	},
+		--[+ Reduce a total of 1500 Toughness Damage to allies in coherency under the effect of Benediction. +]-- руоф Снизьте урон стойкости союзникам под воздействием «Сплоченности» (суммарно 1500), находясь под действием «Благословения».
+		["loc_achievement_zealot_aura_toughness_damage_reduced_description"] = {
+			en = "Reduce a total of "..CNumb("{target}", "target_rgb").." "..CKWord("Toughness Damage", "Tghns_dmg_rgb").." to Allies in "..CKWord("Coherency", "Coherency_rgb").." under the effect of "..CKWord("Benediction", "benedict_rgb").." Aura.",
+			ru = "Снизьте в общей сложности "..CNumb("{target}", "target_rgb").." "..CKWord("урона стойкости", "stoikosti_urona_rgb_ru").." союзников, находящихся под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..", с помощью ауры "..CKWord("Благословение", "benedict_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "benedict_rgb_tw").."』光環，\n"
+				-- .."與隊友處於『"..CKWord("", "Coherency_rgb_tw").."』時，減少『"..CKWord("", "Toughness_dmg_rgb_tw").."』共 "..CNumb("{target}", "target_rgb").." 點。",
+		},
+	--[+ Trust in the Emperor +]-- руоф Верьте в Императора
+	["loc_achievement_zealot_aura_corruption_healed_name"] = {
+		ru = "Верь в Императора",
+		["zh-tw"] = "相信帝皇",
+	},
+		--[+ Heal 5000 Corruption Damage to allies in coherency under the effect of Beacon of Purity. +]-- руоф Исцелите урон скверной союзникам под воздействием «Сплоченности» (5000), находясь под действием «Маяка непорочности».
+		["loc_achievement_zealot_aura_corruption_healed_description"] = {
+			en = "Heal "..CNumb("{target}", "target_rgb").." "..CKWord("Corruption Damage", "Corruptdmg_rgb").." to Allies in "..CKWord("Coherency", "Coherency_rgb").." under the effect of "..CKWord("Beacon of Purity", "beaconop_rgb").." Aura.",
+			ru = "Исцелите "..CNumb("{target}", "target_rgb").." "..CKWord("урона от порчи", "porchi_urona_rgb_ru").." союзникам под действием "..CKWord("сплочённости", "splochennosti_rgb_ru").." с помощью эффекта ауры "..CKWord("Маяк очищения", "beaconop_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "beaconop_rgb_tw").."』，並處於『"..CKWord("", "Coherency_rgb_tw").."』狀態下，\n"
+				-- .."幫隊友恢復 "..CNumb("{target}", "target_rgb").." 點『"..CKWord("", "Corruption_i_rgb_tw").."』。",
+		},
+	--[+ Channel Your Rage +]-- руоф Направь свою ярость
+	["loc_achievement_zealot_2_medium_2_name"] = {
+		["zh-tw"] = "引導憤怒",
+	},
+		--[+ On Malice Threat or higher, kill 1000 enemies with Melee Attacks whilst at at least 3 stacks of Martydom. +]-- руоф При угрозе «Злоба» или выше убейте врагов (1000) в ближнем бою, сохраняя не менее 3 ед. заряда «Мученичества».
+		["loc_achievement_zealot_2_medium_2_description"] = {
+			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." enemies with Melee Attacks while having at least "..CNumb("3", "n_3_rgb").." Stacks of "..CKWord("Martydom", "martydom_rgb").." Keystone.",
+			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов в ближнем бою, пока у вас есть хотя бы "..CNumb("3", "n_3_rgb").." заряда "..CKWord("Мученичества", "martydom_rgb_ru")..".",
+			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
+				-- .."於自身擁有 "..CNumb("3", "n_3_rgb").." 層以上 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "martydom_rgb_tw").."』時，\n"
+				-- .."以近戰擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ Have Faith +]-- руоф Не теряй веру
+	["loc_achievement_zealot_2_hard_2_name"] = {
+		ru = "Веруй",
+		["zh-tw"] = "心懷信仰",
+	},
+		--[+ On Heresy Threat or higher, using Chastise the Wicked or Fury of the Faithful, dash towards a targeted enemy that is wielding a ranged weapon, 40 times. +]-- руоф Используя «Кару для нечестивых», сделайте рывок в сторону противника с дистанционным оружием при угрозе «Ересь» и выше 40 р.
+		["loc_achievement_zealot_2_hard_2_fix_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, using "..CKWord("Chastise the Wicked", "chast_wckd_rgb").." or "..CKWord("Fury of the Faithful", "fury_faithful_rgb").." Ability, dash towards a targeted enemy that is wielding a Ranged weapon, "..CNumb("{target}", "target_rgb").." times.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, используя способности "..CKWord("Пылающая благочестивость", "chast_wckd_rgb_ru").." или "..CKWord("Ярость верующего", "fury_faithful_rgb_ru")..", сделайте рывок к врагу у которого в руках дальнобойное оружие. Выполните это задание "..CNumb("{target}", "target_rgb").." раз.",
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
+				-- .."使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "chastise_wicked_rgb_tw").."』或『"..CKWord("", "fury_faithful_rgb_tw").."』，\n"
+				-- .."衝刺靠近正在拿遠程武器的敵人旁，共需完成 "..CNumb("{target}", "target_rgb").." 次。",
+		},
+	--[+ Buying Time +]-- руоф Передышка
+	["loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_name"] = {
+		["zh-tw"] = "爭取時間",
+	},
+		--[+ Using a Stun Grenade or Stunstorm Grenades, hit an enemy sniper more than 40 metres away. +]-- руоф Поразите вражеского снайпера на расстоянии более 40 м, используя оглушающую гранату.
+		["loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_fix_description"] = {
+			en = "Using a "..CKWord("Stun Grenades", "shock_grens1_rgb").." or "..CKWord("Stunstorm Grenades", "shock_grens_rgb")..", hit an enemy sniper more than "..CNumb("{target}", "target_rgb").." meters away.",
+			ru = "Используя "..CKWord("Оглушающую гранату", "shock_gren1_rgb_ru").." или "..CKWord("Оглушающе-штурмовую гранату", "shock_gren0_rgb_ru")..", поразите вражеского снайпера на расстоянии более "..CNumb("{target}", "target_rgb").." метров.",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "shock_gren1_rgb_tw").."』或『"..CKWord("", "shock_gren0_rgb_tw").."』，\n"
+				-- .."擊中距離超過 "..CNumb("{target}", "target_rgb").." 公尺的敵方狙擊手。",
+		},
+	--[+ Abhor the Mutant +]-- руоф Презирай Мутантов
+	["loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_name"] = {
+		ru = "Презри мутанта",
+		["zh-tw"] = "憎恨變種人",
+	},
+		--[+ While Dashing with Chastise The Wicked or Fury of the Faithful, kill a Mutant with a Melee Attack. +]-- руоф Убейте мутанта атакой в ближнем бою во время рывка, пока действует «Кара для нечестивых».
+		["loc_achievement_zealot_2_kill_mutant_charger_with_melee_while_dashing_fix_description"] = {
+			en = "While Dashing with "..CKWord("Chastise the Wicked", "chast_wckd_rgb").." or "..CKWord("Fury of the Faithful", "fury_faithful_rgb").." Ability, kill a Mutant with a Melee Attack.",
+			ru = "Во время рывка, с помощью способностей "..CKWord("Пылающая благочестивость", "chast_wckd_rgb_ru").." или "..CKWord("Ярость верующего", "fury_faithful_rgb_ru")..", убейте Мутанта атакой ближнего боя.",
+			-- ["zh-tw"] = "在 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "chastise_wicked_rgb_tw").."』或『"..CKWord("", "fury_faithful_rgb_tw").."』發動時，\n"
+				-- .."以近戰攻擊擊殺一個變種人。",
+		},
+	--[+ Shocking Stuff +]-- руоф Шокирующая штучка
+	["loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_name"] = {
+		["zh-tw"] = "震撼之擊",
+	},
+		--[+ On Malice Threat or higher, kill 40 enemies stunned by your grenades, within 10s. +]-- руоф При угрозе «Злоба» или выше убейте врагов (40), оглушенных вашими гранатами, за 10 с.
+		["loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_fix_description"] = {
+			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, Kill "..CNumb("{target}", "target_rgb").." enemies "..CKWord("Stunned", "Stunned_rgb").." by your grenades, within "..CNumb("{time_window}", "time_wind_rgb").." seconds.",
+			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов, "..CKWord("оглушённых", "oglushennyh_rgb_ru").." вашими гранатами, в течение "..CNumb("{time_window}", "time_wind_rgb").." секунд.",
+			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，於 "..CNumb("{time_window}", "time_wind_rgb").." 秒內擊殺 "..CNumb("{target}", "target_rgb").." 名，\n"
+				-- .."被 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "shock_gren0_rgb_tw").."』、『"..CKWord("", "shock_gren1_rgb_tw").."』"..CKWord("", "Staggers_rgb_tw").." 的敵人。",
+		},
+	--[+ There is Nothing But the Abyss... +]-- руоф Есть только бездна...
+	["loc_achievement_zealot_2_healed_up_after_resisting_death_name"] = {
+		ru = "Нет ничего, кроме Бездны...",
+		["zh-tw"] = "唯有深淵......",
+	},
+		--[+ On Heresy threat or higher, heal to 25 Health with life gained solely from the Holy Revenant Talent. +]-- руоф При угрозе «Ересь» или выше восстановите 25% здоровья исключительно за счет таланта «Святой призрак».
+		["loc_achievement_zealot_2_healed_up_after_resisting_death_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." threat or higher, heal to "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Health", "Health_rgb").." with life gained solely from the "..CKWord("Holy Revenant", "holy_revenant_rgb").." Passive talent.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, вылечите до "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("здоровья", "zdorovia_rgb_ru").." за счёт жизни, полученной исключительно от пассивного таланта "..CKWord("Святой призрак", "holy_revenant_rgb_ru")..".",
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
+				-- .."透過 "..CKWord("", "Passive_p_rgb_tw").."『"..CKWord("", "holy_revenant_rgb_tw").."』回血，將『"..CKWord("", "Health_rgb_tw").."』恢復至 "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").."。",
+		},
 
-	-- --[+ Stand up and Fight! +]-- -- руоф Встань и сражайся!
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_13_ext_ru",
-		-- {"loc_achievement_veteran_voice_of_command_toughness_given_name"}, {"ru"},
-			-- loc_text("Встань и сражайся!")),
-	-- --[+ Traditional Chinese 站起來繼續戰鬥！ +]--
-	-- create_template("ach_class_vet_13_ext_tw",
-		-- {"loc_achievement_veteran_voice_of_command_toughness_given_name"}, {"zh-tw"},
-			-- loc_text("站起來繼續戰鬥！")),
-
-	-- --[+ Restore 7500 Toughness to yourself using Voice of Command. +]-- -- руоф Восстановите себе 7500 стойкости с помощью «Командного голоса».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_13_ext_desc_ru",
-		-- {"loc_achievement_veteran_voice_of_command_toughness_given_description"}, {"ru"},
-			-- loc_text("Восстановите себе "..CNumb("{target}", "target_rgb").." "..CKWord("", "Toughness_rgb_ru").." с помощью способности "..CKWord("", "voiceoc_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用命令戰吼恢復自身7500點韌性。
-	-- create_template("ach_class_vet_13_ext_desc_tw",
-		-- {"loc_achievement_veteran_voice_of_command_toughness_given_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "voiceoc_rgb_tw").."』恢復自身 "..CNumb("{target}", "target_rgb").." 點 "..CKWord("", "Toughness_rgb_tw").."。")),
-
-	-- --[+ Sweep and Clear +]--
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_vet_13_ext_ru",
-		-- -- {"loc_achievement_veteran_team_damage_amplified_name"}, {"ru"},
-			-- -- loc_text("Выявить и зачистить")),
-	-- --[+ Traditional Chinese +]--
-	-- -- create_template("ach_class_vet_13_ext_tw",
-		-- -- {"loc_achievement_veteran_team_damage_amplified_name"}, {"zh-tw"},
-			-- -- loc_text("全面掃蕩")),
-
-	-- --[+ Kill 7500 enemies while affected by Fire Team. Kills made by any affected team member also count. +]-- -- руоф Убейте врагов (7500), находясь под действием «Огневой поддержки». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_13_ext_desc_ru",
-		-- {"loc_achievement_veteran_team_damage_amplified_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов, находясь под действием ауры "..CKWord("", "firetim_rgb_ru")..". Убийства, совершённые любым членом команды, находящимся под действием вашей ауры, также учитываются.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在火力小分隊效果啟動時擊殺7500名敵人。
-	-- -- 由獲得效果的小隊成員造成的擊殺也算。
-	-- create_template("ach_class_vet_13_ext_desc_tw",
-		-- {"loc_achievement_veteran_team_damage_amplified_description"}, {"zh-tw"},
-			-- loc_text("在 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "firetim_rgb_tw").."』的影響下，擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。\n"..CKWord("", "Aura_i_p_rgb_tw").." 的隊友擊殺也會計算。")),
-
-	-- --[+ Armourbane +]-- -- руоф Бронебой
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_vet_8_ext_ru",
-		-- -- {"loc_achievement_veteran_krak_grenade_kills_name"}, {"ru"},
-			-- -- loc_text("Губитель брони")),
-	-- --[+ Traditional Chinese +]--
-	-- -- create_template("ach_class_vet_8_ext_tw",
-		-- -- {"loc_achievement_veteran_krak_grenade_kills_name"}, {"zh-tw"},
-			-- -- loc_text("護甲之災")),
-
-	-- --[+ Kill 500 armoured enemies using krak grenades. +]-- -- руоф Убейте врагов с бронёй (500) с помощью крак-гранат.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_8_ext_desc_ru",
-		-- {"loc_achievement_veteran_krak_grenade_kills_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." бронированных врагов, используя "..CKWord("", "krak_gr_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用穿甲手榴彈擊殺500名護甲敵人
-	-- create_template("ach_class_vet_8_ext_desc_tw",
-		-- {"loc_achievement_veteran_krak_grenade_kills_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "krak_gr_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名護甲敵人。")),
-
-	-- --[+ Keep it Tight +]-- -- руоф Держать в секрете
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_3_ext_ru",
-		-- {"loc_achievement_veteran_team_movement_amplifed_name"}, {"ru"},
-			-- loc_text("Держитесь вместе")),
-	-- --[+ Traditional Chinese 保持陣型 +]--
-	-- create_template("ach_red_vet_3_ext_tw",
-		-- {"loc_achievement_veteran_team_movement_amplifed_name"}, {"zh-tw"},
-			-- loc_text("保持陣型.")),
-
-	-- --[+ Move a total of 10000 meters in coherency with your team members while under the effect of Close and Kill. +]-- -- руоф Переместитесь с членами команды под действием «Сплоченности» суммарно на 10000 м, пока действует эффект «Приблизиться и убить».
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_3_ext_desc_ru",
-		-- {"loc_achievement_veteran_team_movement_amplifed_description"}, {"ru"},
-			-- loc_text("Переместитесь на "..CNumb("{target}", "target_rgb").." метров под действием ауры "..CKWord("", "closenkill_rgb_ru")..", находясь под действием "..CKWord("", "Coherency_rgb_ru").." с членами вашей команды.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在抵近殺敵效果啟動時，與隊友一起移動10000公尺。
-	-- create_template("ach_red_vet_3_ext_desc_tw",
-		-- {"loc_achievement_veteran_team_movement_amplifed_description"}, {"zh-tw"},
-			-- loc_text("在與隊友保持 "..CKWord("", "Coherency_rgb_tw").." 時，\n於 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "closenkill_rgb_tw").."』效果期間內，\n移動距離達 "..CNumb("{target}", "target_rgb").." 公尺。")),
-
-	-- --[+ Long Bomb +]-- -- руоф Длинный пас
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_vet_3_ext_ru",
-		-- -- {"loc_achievement_veteran_2_unbounced_grenade_kills_name"}, {"ru"},
-			-- --loc_text("Дальний бросок")),
-	-- --[+ Traditional Chinese 遠擲炸彈 +]--
-	-- -- create_template("ach_red_vet_3_ext_tw",
-		-- -- {"loc_achievement_veteran_2_unbounced_grenade_kills_name"}, {"zh-tw"},
-			-- --loc_text("遠擲炸彈")),
-
-	-- --[+ Hit 5 enemies with a Frag Grenade without it bouncing. +]-- -- руоф Убейте врагов (5) фраг-гранатой так, чтобы она не отскакивала.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_vet_3_ext_desc_ru",
-		-- -- {"loc_achievement_veteran_2_unbounced_grenade_kills_description"}, {"ru"},
-			-- -- loc_text("Поразите взрывом "..CKWord("", "frag_gr_rgb_ru").." "..CNumb("{target}", "target_rgb").." врагов так, чтобы граната ни разу не отскочила от земли."..TALENTS_Enh_desc_penances_ru.ED_Long_bomb_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用碎片手雷殺死5名敵人，且手雷沒有落地彈起。
-	-- -- create_template("ach_red_vet_3_ext_desc_tw",
-		-- -- {"loc_achievement_veteran_2_unbounced_grenade_kills_description"}, {"zh-tw"},
-			-- -- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "frag_gr_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名敵人，且手榴彈在引爆前不得碰觸地面。" .. TALENTS_Enh_desc_penances_tw.ED_Long_bomb_rgb_tw)),
-
-
-	-- --[+ Smoke Screen +]--
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_vet_3_ext_ru",
-		-- -- {"loc_achievement_veteran_smoke_grenade_engulfed_name"}, {"ru"},
-			-- -- loc_text("Дымовая завеса")),
-	-- --[+ Traditional Chinese 煙幕 +]--
-	-- -- create_template("ach_red_vet_3_ext_tw",
-		-- -- {"loc_achievement_veteran_smoke_grenade_engulfed_name"}, {"zh-tw"},
-			-- -- loc_text("煙幕")),
-
-	-- --[+ Engulf 2000 enemies in smoke using the Smoke Grenade. +]-- -- руоф Окутайте дымом врагов (2000) с помощью дымовой гранаты.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_3_ext_desc_ru",
-		-- {"loc_achievement_veteran_smoke_grenade_engulfed_description"}, {"ru"},
-			-- loc_text("Окутайте дымом "..CNumb("{target}", "target_rgb").." врагов с помощью "..CKWord("", "smok_gr_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用煙霧彈干擾2000名敵人。
-	-- create_template("ach_red_vet_3_ext_desc_tw",
-		-- {"loc_achievement_veteran_smoke_grenade_engulfed_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "smok_gr_rgb_tw").."』使 "..CNumb("{target}", "target_rgb").." 名敵人陷入煙霧之中。")),
-
-	-- --[+ Deadeye +]-- руоф Меткий глаз
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_vet_6_ext_ru",
-		-- -- {"loc_achievement_veteran_2_elite_weakspot_kills_during_volley_fire_alternate_fire_name"}, {"ru"},
-			-- -- loc_text("Меткий глаз")),
-	-- --[+ Traditional Chinese 神射手 +]--
-	-- -- create_template("ach_red_vet_6_ext_tw",
-		-- -- {"loc_achievement_veteran_2_elite_weakspot_kills_during_volley_fire_alternate_fire_name"}, {"zh-tw"},
-			-- -- loc_text("神射手")),
-
-	-- --[+ On Heresy Threat or higher, during a single use of Volley Fire, kill 5 highlighted enemies with Weak Spot hits whilst using a weapon's Secondary Action. +]-- -- руоф При угрозе «Ересь» или выше за однократное применение «Залпового огня»  убейте выделенных врагов (5) попаданием в слабое место, используя дополнительное действие оружия.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_vet_6_ext_desc_ru",
-		-- -- {"loc_achievement_veteran_2_elite_weakspot_kills_during_volley_fire_alternate_fire_description"}, {"ru"},
-			-- -- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, на протяжении одного использования способностей "..CKWord("", "volley_fire_rgb_ru").." или "..CKWord("", "exec_stan_rgb_ru")..", убейте прицельными выстрелами "..CNumb("{target}", "target_rgb").." подсвеченных врагов в "..CKWord("", "Weakspot_rgb_ru").."."..TALENTS_Enh_desc_penances_ru.ED_Headshot_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 以異教徒或以上威脅度，僅用1次火力齊射，
-	-- -- 以武器的次要動作擊中5名高亮的敵人的弱點，將其急殺。
-	-- -- create_template("ach_red_vet_6_ext_desc_tw",
-		-- -- {"loc_achievement_veteran_2_elite_weakspot_kills_during_volley_fire_alternate_fire_description"}, {"zh-tw"},
-			-- -- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，\n在單次 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "volley_fire_rgb_tw").."』或『"..CKWord("", "executioner_stance_rgb_tw").."』期間，\n使用瞄準射擊 "..CKWord("", "Weakspothits_rgb_tw").." ，擊殺 "..CNumb("{target}", "target_rgb").." 名被標記的敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb_tw)),
-
-	-- --[+ Unseen Predator +]-- руоф Невидимый хищник
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_vet_3_ext_ru",
-		-- -- {"loc_achievement_veteran_infiltrate_supress_name"}, {"ru"},
-			-- -- loc_text("Невидимый хищник")),
-	-- --[+ Traditional Chinese 隱形獵手 +]--
-	-- -- create_template("ach_red_vet_3_ext_tw",
-		-- -- {"loc_achievement_veteran_infiltrate_supress_name"}, {"zh-tw"},
-			-- -- loc_text("隱形獵手")),
-
-	-- --[+ Suppress 750 enemies using Infiltrate. +]-- -- руоф Подавите врагов (750) с помощью «Проникновения».
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_vet_3_ext_desc_ru",
-		-- -- {"loc_achievement_veteran_infiltrate_supress_description"}, {"ru"},
-			-- -- loc_text("Подавите врагов "..CNumb("{target}", "target_rgb").." с помощью способности "..CKWord("", "infiltr_rgb_ru").."."..TALENTS_Enh_desc_penances_ru.ED_Unseen_predator_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用滲透既能壓制750名敵人。
-	-- -- create_template("ach_red_vet_3_ext_desc_tw",
-		-- -- {"loc_achievement_veteran_infiltrate_supress_description"}, {"zh-tw"},
-			-- -- loc_text("使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "infiltr_rgb_tw").."』壓制 "..CNumb("{target}", "target_rgb").." 名敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Unseen_predator_rgb_tw)),
-
-	-- --[+ Marked For Death - Отмеченные на смерть +]-- -- руоф Отмечены смертью
-	-- --[+ Russian +]--
-	-- create_template("ach_red_vet_2_ext_ru",
-		-- {"loc_achievement_veteran_2_weakspot_hits_during_volley_fire_alternate_fire_name"}, {"ru"},
-			-- loc_text("Отмеченные на смерть")),
-	-- --[+ Traditional Chinese 死亡標記 +]--
-	-- create_template("ach_red_vet_2_ext_tw",
-		-- {"loc_achievement_veteran_2_weakspot_hits_during_volley_fire_alternate_fire_name"}, {"zh-tw"},
-			-- loc_text("死亡標記")),
-
-	-- --[+ During a single use of Volley Fire, hit enemy Weak Spot 4 times using a weapon's Secondary Action, without missing a shot. +]-- -- руоф За однократное применение «Залпового огня» поразите слабые места врагов (4) дополнительным действием оружия, не промахнувшись.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_vet_2_ext_desc_ru",
-		-- -- {"loc_achievement_veteran_2_weakspot_hits_during_volley_fire_alternate_fire_description"}, {"ru"},
-			-- -- loc_text("За одно использование способностей "..CKWord("", "volley_fire_rgb_ru").." или "..CKWord("", "exec_stan_rgb_ru").." поразите "..CNumb("{target}", "target_rgb").." врагов прицельными выстрелами в "..CKWord("", "Weakspot_rgb_ru").." ни разу не промахнувшись. {#color(177, 144, 0)}+++ - Стреляйте врагам в голову. +++{#reset()}"..TALENTS_Enh_desc_penances_ru.ED_Headshot_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在單次火力騎射期間使用武器的次要動作命中敵人的弱點4次，且不打偏1發子彈。
-	-- -- create_template("ach_red_vet_2_ext_desc_tw",
-		-- -- {"loc_achievement_veteran_2_weakspot_hits_during_volley_fire_alternate_fire_description"}, {"zh-tw"},
-			-- -- loc_text("於單次 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "volley_fire_rgb_tw").."』或『"..CKWord("", "executioner_stance_rgb_tw").."』期間，\n使用瞄準射擊連續命中 "..CNumb("{target}", "target_rgb").." 名敵人的 "..CKWord("", "Weakspot_rgb_tw").."，且不得中斷。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb_tw)),
-
-	-- --[+ Resupply Allies +]-- -- руоф Поделись с ближним
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_8_ext_ru",
-		-- {"loc_achievement_veteran_2_easy_2_name"}, {"ru"},
-			-- loc_text("Пополните припасы союзников")),
-	-- --[+ Traditional Chinese 補給盟友 +]--
-	-- create_template("ach_class_vet_8_ext_tw",
-		-- {"loc_achievement_veteran_2_easy_2_name"}, {"zh-tw"},
-			-- loc_text("補給盟友")),
-
-	-- --[+ Replenish 5000 total ammunition to allies using Scavenger. +]-- -- руоф Пополните 5000 ед. боеприпасов союзникам при помощи «Собирателя».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_8_ext_desc_ru",
-		-- {"loc_achievement_veteran_2_easy_2_description"}, {"ru"},
-			-- loc_text("Восстановите "..CNumb("{target}", "target_rgb").." единиц боеприпасов союзникам с помощью талантов "..CKWord("", "scavenger_rgb_ru").." или "..CKWord("", "survivalist_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用清道夫為盟友恢復5000總彈藥量。
-	-- create_template("ach_class_vet_8_ext_desc_tw",
-		-- {"loc_achievement_veteran_2_easy_2_description"}, {"zh-tw"},
-			-- loc_text("透過 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "scavenger_rgb_tw").."』或『"..CKWord("", "survivalist_rgb_tw").."』，\n為隊友恢復 "..CNumb("{target}", "target_rgb").." 發彈藥。")),
-
-	-- --[+ Find your Targets +]-- -- руоф Поиск целей
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_12_ext_ru",
-		-- {"loc_achievement_veteran_2_hard_1_name"}, {"ru"},
-			-- loc_text("Найди свои цели")),
-	-- --[+ Traditional Chinese 尋找目標 +]--
-	-- create_template("ach_class_vet_12_ext_tw",
-		-- {"loc_achievement_veteran_2_hard_1_name"}, {"zh-tw"},
-			-- loc_text("尋找目標")),
-
-	-- --[+ On Heresy Threat or higher, kill 2 Elite or Specialist enemies during a single Volley Fire, 50 times. +]-- -- руоф При угрозе «Ересь» или выше убейте элитных врагов или специалистов (2) за одно применение «Залпового огня» 50 р.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_12_ext_desc_ru",
-		-- {"loc_achievement_veteran_2_hard_1_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, убейте "..COLORS_Numbers.num_enemies_rgb").." элитных врагов или специалистов во время непрерывного действия способностей "..CKWord("", "volley_fire_rgb_ru").." или "..CKWord("", "exec_stan_rgb_ru ..". Выполните это задание "..CNumb("{target}", "target_rgb").." раз.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，
-	-- -- 在單次火力齊射期中擊殺2個精英或專家敵人，需要達成50次。
-	-- create_template("ach_class_vet_12_ext_desc_tw",
-		-- {"loc_achievement_veteran_2_hard_1_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，\n於單次 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "volley_fire_rgb_tw").."』或『"..CKWord("", "executioner_stance_rgb_tw").."』期間，\n擊殺 "..COLORS_Numbers.num_enemies_rgb").." 名精英或專家敵人。此任務共需達成 "..CNumb("{target}", "target_rgb").." 次。")),
-
-	-- --[+ Killshot Ready +]--
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_vet_8_ext_ru",
-		-- -- {"loc_achievement_veteran_enemies_killed_with_max_focus_fire_name"}, {"ru"},
-			-- --loc_text("Смертельный выстрел готов")),
-	-- --[+ Traditional Chinese 射殺預備 +]--
-	-- -- create_template("ach_class_vet_8_ext_tw",
-		-- -- {"loc_achievement_veteran_enemies_killed_with_max_focus_fire_name"}, {"zh-tw"},
-			-- --loc_text("射殺預備")),
-
-	-- --[+ Kill 2500 enemies while at 10 stacks of Marksman's focus or more. +]-- -- руоф Убейте врагов (2500), имея не менее 10 зарядов «Концентрации снайпера».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_8_ext_desc_ru",
-		-- {"loc_achievement_veteran_enemies_killed_with_max_focus_fire_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов, имея не менее "..COLORS_Numbers.n_10_rgb").." зарядов "..CKWord("", "Focus_rgb_ru").." от ключевого таланта "..CKWord("", "snipcon_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在疊加10曾獲更多層鷹眼聚焦時，擊殺2500名敵人。
-	-- create_template("ach_class_vet_8_ext_desc_tw",
-		-- {"loc_achievement_veteran_enemies_killed_with_max_focus_fire_description"}, {"zh-tw"},
-			-- loc_text("在累積至少 "..COLORS_Numbers.n_10_rgb").." 層 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "snipcon_rgb_tw").."』的 "..CKWord("", "Focus_rgb_tw").." 時，\n擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。")),
-
-	-- --[+ Focus Soldier! +]-- -- руоф Солдат в прицеле!
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_8_ext_ru",
-		-- {"loc_achievement_veteran_kills_with_improved_tag_name"}, {"ru"},
-			-- loc_text("Прицелься, солдат!")),
-	-- --[+ Traditional Chinese 士兵，鎖定目標! +]--
-	-- -- create_template("ach_class_vet_8_ext_tw",
-		-- -- {"loc_achievement_veteran_kills_with_improved_tag_name"}, {"zh-tw"},
-			-- -- loc_text("士兵，鎖定目標!")),
-
-	-- --[+ Kill 500 enemies tagged by Focus Target! +]-- -- руоф Убейте врагов (500), отмеченных эффектом «В прицеле!».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_vet_8_ext_desc_ru",
-		-- {"loc_achievement_veteran_kills_with_improved_tag_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов, отмеченных с помощью ключевого таланта "..CKWord("", "fcs_trg_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 擊殺500名被「鎖定目標！」標記的敵人
-	-- create_template("ach_class_vet_8_ext_desc_tw",
-		-- {"loc_achievement_veteran_kills_with_improved_tag_description"}, {"zh-tw"},
-			-- loc_text("擊殺 "..CNumb("{target}", "target_rgb").." 名被 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "fcs_trg_rgb_tw").."』標記的敵人。")),
-
--- --[+ +ZEALOT - ИЗУВЕР+ +]--
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_0_ext_ru",
-		-- {"loc_class_zealot_title"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_zea_rgb_ru)),
-	-- --[+ Traditional Chinese 狂信徒 +]--
-	-- create_template("ach_class_zea_0_ext_tw",
-		-- {"loc_class_zealot_title"}, {"zh-tw"},
-			-- loc_text(COLORS_KWords_tw.cls_zea_rgb_tw)),
-
--- --[+ ПРОГРЕСС - 進度 +]--
-	-- --[+ Prove Your Worth (1-5) - Докажите, чего стоите (1-5) +]-- -- руоф Докажи, чего стоишь (1-5)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_4_ext_ru",
-		-- -- {"loc_missions_zealot_2_easy_difficulty_1-5_name"}, {"ru"},
-			-- -- loc_text("Докажите, чего стоите (1-5)")),
-	-- --[+ Traditional Chinese 證明你的價值 +]--
-	-- -- create_template("ach_class_zea_4_ext_tw",
-		-- -- {"loc_missions_zealot_2_easy_difficulty_1-5_name"}, {"zh-tw"},
-			-- -- loc_text("證明你的價值 (1-5)")),
-
-	-- --[+ Complete 1 Missions on Sedition Threat or higher. -	 +]-- -- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_4_1_ext_desc_ru",
-		-- {"loc_missions_zealot_2_easy_difficulty_1_description"}, {"ru"},
-			-- loc_text(PHRS.cmpl_1_mssn_sedition_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在騷亂威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_zea_4_1_ext_desc_tw",
-		-- {"loc_missions_zealot_2_easy_difficulty_1_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_sedition_tw)),
-
-	-- --[+ Complete 1 Missions on Uprising Threat or higher. -	 +]-- -- руоф Выполните задания (1) при угрозе «Восстание» или выше.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_4_2_ext_desc_ru",
-		-- -- {"loc_missions_zealot_2_easy_difficulty_2_description"}, {"ru"},
-			-- -- loc_text(PHRS.cmpl_1_mssn_uprising_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在起義威脅度或更高難度下完成1個任務
-	-- -- create_template("ach_class_zea_4_2_ext_desc_tw",
-		-- -- {"loc_missions_zealot_2_easy_difficulty_2_description"}, {"zh-tw"},
-			-- -- loc_text(PHRS.cmpl_1_mssn_uprising_tw)),
-
-	-- --[+ Complete 1 Missions on Malice Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Злоба» или выше.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_4_3_ext_desc_ru",
-		-- -- {"loc_missions_zealot_2_easy_difficulty_3_description"}, {"ru"},
-			-- -- loc_text(PHRS.cmpl_1_mssn_malice_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下完成1個任務
-	-- -- create_template("ach_class_vet_4_3_ext_desc_tw",
-		-- -- {"loc_missions_zealot_2_easy_difficulty_3_description"}, {"zh-tw"},
-			-- -- loc_text(PHRS.cmpl_1_mssn_malice_tw)),
-
-	-- --[+ Complete 1 Missions on Heresy Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Ересь» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_4_4_ext_desc_ru",
-		-- {"loc_missions_zealot_2_easy_difficulty_4_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссию на сложности "..CKWord("", "damnation_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下完成1個任務
-	-- -- create_template("ach_class_zea_4_4_ext_desc_tw",
-		-- -- {"loc_missions_zealot_2_easy_difficulty_4_description"}, {"zh-tw"},
-			-- -- loc_text(PHRS.cmpl_1_mssn_heresy_tw)),
-
-	-- --[+ Complete 1 Missions on Damnation Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_4_5_ext_desc_ru",
-		-- -- {"loc_missions_zealot_2_easy_difficulty_5_description"}, {"ru"},
-			-- -- loc_text(PHRS.cmpl_1_mssn_damnation_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在詛咒威脅度或更高難度下完成1個任務
-	-- -- create_template("ach_class_zea_4_5_ext_desc_tw",
-		-- -- {"loc_missions_zealot_2_easy_difficulty_5_description"}, {"zh-tw"},
-			-- -- loc_text(PHRS.cmpl_1_mssn_damnation_tw)),
-
-	-- --[+ Sainted Path (1-3) - Путь святого (1-3) +]-- руоф Священный путь (1-3)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_14_ext_ru",
-		-- -- {"loc_achievement_group_class_zealot_2_1-3_name"}, {"ru"},
-			-- -- loc_text("Путь святого (1-3)")),
-	-- --[+ Traditional Chinese 朝聖之路 (1-3) +]--
-	-- -- create_template("ach_class_zea_14_ext_tw",
-		-- -- {"loc_achievement_group_class_zealot_2_1-3_name"}, {"zh-tw"},
-			-- -- loc_text("朝聖之路 (1-3)")),
-
-	-- --[+ Complete the following Penances as the Zealot -	 +]-- -- руоф Выполнить следующие искупления за Изувера.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_9_ext_desc_ru",
-		-- {"loc_group_zealot_2_rank_4_difficulty_3_description", "loc_group_zealot_2_rank_5_difficulty_4_description", "loc_group_zealot_2_rank_1_difficulty_1_description", "loc_group_zealot_2_rank_2_difficulty_2_description", "loc_achievement_group_class_zealot_2_description", "loc_group_class_challenges_zealot_2_x_description"}, {"ru"},
-			-- loc_text("Завершите следующие Искупления "..CKWord("", "cls_zea2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用狂信徒完成以下苦修
-	-- create_template("ach_class_zea_9_ext_desc_tw",
-		-- {"loc_group_zealot_2_rank_4_difficulty_3_description", "loc_group_zealot_2_rank_5_difficulty_4_description", "loc_group_zealot_2_rank_1_difficulty_1_description", "loc_group_zealot_2_rank_2_difficulty_2_description", "loc_achievement_group_class_zealot_2_description", "loc_group_class_challenges_zealot_2_x_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_zea2_rgb_tw").." 完成以下苦修。")),
-
-	-- --[+ Master Your Tools -	 +]-- -- руоф Знай свое дело
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_12_ext_ru",
-		-- {"loc_achievement_zealot_2_hard_1_name"}, {"ru"},
-			-- loc_text("Знай своё дело")),
-	-- --[+ Traditional Chinese 掌握工具 +]--
-	-- create_template("ach_class_zea_12_ext_tw",
-		-- {"loc_achievement_zealot_2_hard_1_name"}, {"zh-tw"},
-			-- loc_text("掌握工具")),
-
-	-- --[+ On Heresy Threat or higher, kill 75 Elite or Specialist enemies with Powered Melee Attacks (Chain or Power weapons). -	+]-- -- руоф При угрозе «Ересь» или выше убейте элитных врагов или специалистов (75) усиленными атаками в ближнем бою (цепным или психосиловым оружием).
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_12_ext_desc_ru",
-		-- {"loc_achievement_zealot_2_hard_1_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов в ближнем бою специальными атаками цепного или силового оружия.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，使用動力近戰攻擊（鏈鋸或動力武器）擊殺75名精英或專家敵人。
-	-- create_template("ach_class_zea_12_ext_desc_tw",
-		-- {"loc_achievement_zealot_2_hard_1_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，\n使用特殊攻擊（鏈鋸系列、上古神刃），\n擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。")),
-
-	-- --[+ Doomseeker (1-5) -	+]-- -- руоф Искатель судьбы (1-5)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_2_ext_ru",
-		-- -- {"loc_achievement_missions_zealot_2_1-5_name"}, {"ru"},
-			-- --loc_text("Искатель судьбы (1-5)")),
-	-- --[+ Traditional Chinese 尋求毀滅者 +]--
-	-- -- create_template("ach_class_zea_2_ext_tw",
-		-- -- {"loc_achievement_missions_zealot_2_1-5_name"}, {"zh-tw"},
-			-- --loc_text("尋求毀滅者 (1-5)")),
-
-	-- --[+ Complete 100 Missions as a Zealot. -  +]-- -- Выполнить Изувером задания: 100.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_2_ext_desc_ru",
-		-- {"loc_achievement_missions_zealot_2_x_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("", "cls_zea2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用狂信徒完成xx項任務
-	-- create_template("ach_class_zea_2_ext_desc_tw",
-		-- {"loc_achievement_missions_zealot_2_x_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_zea2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Maniacal Laughter (6) -	 +]-- -- руоф Маниакальный смех (6)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_1_ext_ru",
-		-- -- {"loc_achievement_rank_zealot_2_6_name"}, {"ru"},
-			-- --loc_text("Маниакальный смех (6)")),
-	-- --[+ Traditional Chinese 瘋狂的笑聲 +]--
-
-	-- --[+ Reach Trust Level 30 as a Zealot. -	 +]-- -- руоф Заслужить уровень доверия 30, играя за Изувера.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_1_ext_desc_ru",
-		-- {"loc_achievement_rank_zealot_2_x_description"}, {"ru"},
-			-- loc_text("Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("", "cls_zea2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用狂信徒達到信任等級xx
-	-- create_template("ach_class_zea_1_ext_desc_tw",
-		-- {"loc_achievement_rank_zealot_2_x_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_zea2_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。")),
-
-	-- --[+ Just A Flesh Wound - Просто царапина +]--
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_zea_7_ext_ru",
-		-- -- {"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_name"}, {"ru"},
-			-- -- loc_text("Просто царапина")),
-	-- --[+ Traditional Chinese 只是皮外傷 +]--
-	-- create_template("ach_red_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_name"}, {"zh-tw"},
-			-- loc_text("只是皮外傷")),
-
-	-- --[+ Complete a full mission on Heresy Threat or higher in under 20 minutes, with less than a Wound's worth of Health remaining for 75% of the time. (Private Game: Penance can only be completed in a private game) - +]--
-	-- --[+ Russian +]--
-	-- create_template("ach_red_zea_7_ext_desc_ru",
-		-- {"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_description"}, {"ru"},
-			-- loc_text("Завершите полностью миссию на сложности "..CKWord("", "heresy_rgb_ru").." или выше, менее чем за "..COLORS_Numbers.time_wind_rgb").." минут, при этом "..COLORS_Numbers.health_pc_rgb").." времени у вас должно быть не более одного сегмента "..CKWord("", "Wound_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端或更高威脅度下，在20分鐘內完成1次完整任務，且在75的時間內聲明職不能高於1個生命段。
-	-- create_template("ach_red_zea_7_ext_desc_tw",
-		-- {"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，在 "..COLORS_Numbers.time_wind_rgb").." 分鐘內完成整場任務，\n且其中 "..COLORS_Numbers.health_pc_rgb").." 的時間，只有一格 "..CKWord("", "Health_rgb_tw").."。\n")),
-
-	-- --[+ Up Close and Personal - С близкого расстояния +]--
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_zea_5_ext_ru",
-		-- -- {"loc_achievement_zealot_2_not_use_ranged_attacks_name"}, {"ru"},
-			-- -- loc_text("С близкого расстояния")),
-	-- --[+ Traditional Chinese 零距離接觸 +]--
-	-- create_template("ach_red_zea_5_ext_tw",
-		-- {"loc_achievement_zealot_2_not_use_ranged_attacks_name"}, {"zh-tw"},
-			-- loc_text("零距離接觸")),
-
-	-- --[+ Complete a full Mission on Malice Threat or higher without firing a shot. -	 +]-- -- При угрозе «Злоба» или выше полностью завершите задание, не сделав ни одного выстрела.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_zea_5_ext_desc_ru",
-		-- {"loc_achievement_zealot_2_not_use_ranged_attacks_description"}, {"ru"},
-			-- loc_text("Завершите полностью миссию на сложности "..CKWord("", "malice_rgb_ru").." или выше, не сделав ни одного выстрела.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端或更高威脅度下，在1槍不開的情況下完成1個完整任務。
-	-- create_template("ach_red_zea_5_ext_desc_tw",
-		-- {"loc_achievement_zealot_2_not_use_ranged_attacks_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，\n全程參與任務且不使用任何遠程攻擊。")),
-
-	-- --[+ Fight the Good Fight (1-5) - Сражайтесь достойно (1-5) +]-- руоф Сражайся достойно (1-5)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_zea_1_ext_ru",
-		-- -- {"loc_missions_zealot_2_medium_difficulty_1-5_name"}, {"ru"},
-			-- -- loc_text("Сражайтесь достойно (1-5)")),
-	-- --[+ Traditional Chinese 為正義而戰 +]--
-	-- -- create_template("ach_red_zea_1_ext_tw",
-		-- -- {"loc_missions_zealot_2_medium_difficulty_1-5_name"}, {"zh-tw"},
-			-- -- loc_text("為正義而戰 (1-5)")),
-
-	-- --[+ Complete 5 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_zea_1_1_ext_desc_ru",
-		-- {"loc_missions_zealot_2_medium_difficulty_1_description"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_zea2_rgb_ru").." завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "sedition_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在騷亂威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_zea_1_1_ext_desc_tw",
-		-- {"loc_missions_zealot_2_medium_difficulty_1_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "sedition_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_zea2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
-	-- --[+ Russian +]--	
-	-- create_template("ach_red_zea_1_2_ext_desc_ru",
-		-- {"loc_missions_zealot_2_medium_difficulty_2_description"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_zea2_rgb_ru").." завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "uprising_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在起義威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_zea_1_2_ext_desc_tw",
-		-- {"loc_missions_zealot_2_medium_difficulty_2_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "uprising_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_zea2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_zea_1_3_ext_desc_ru",
-		-- {"loc_missions_zealot_2_medium_difficulty_3_description"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_zea2_rgb_ru").." завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "malice_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_zea_1_3_ext_desc_tw",
-		-- {"loc_missions_zealot_2_medium_difficulty_3_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_zea2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_zea_1_4_ext_desc_ru",
-		-- {"loc_missions_zealot_2_medium_difficulty_4_description"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_zea2_rgb_ru").." завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "heresy_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_zea_1_4_ext_desc_tw",
-		-- {"loc_missions_zealot_2_medium_difficulty_4_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_zea2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_zea_1_5_ext_desc_ru",
-		-- {"loc_missions_zealot_2_medium_difficulty_5_description"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_zea2_rgb_ru").." завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "damnation_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在詛咒威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_zea_1_5_ext_desc_tw",
-		-- {"loc_missions_zealot_2_medium_difficulty_5_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "damnation_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_zea2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Find Their Weakness - Найди их слабости +]-- руоф Узнай их слабости
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_11_ext_ru",
-		-- {"loc_achievement_zealot_2_medium_1_name"}, {"ru"},
-			-- loc_text("Найди их слабости")),
-	-- --[+ Traditional Chinese 洞悉弱點 +]--
-	-- create_template("ach_class_zea_11_ext_tw",
-		-- {"loc_achievement_zealot_2_medium_1_name"}, {"zh-tw"},
-			-- loc_text("洞悉弱點")),
-
-	-- --[+ On Malice Threat or higher, kill 75 Stunned enemies with Critical Hits. +]-- руоф При угрозе «Злоба» или выше убейте оглушенных врагов (75) критическими ударами.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_11_ext_desc_ru",
-		-- {"loc_achievement_zealot_2_medium_1_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." "..CKWord("", "Staggered_rgb_ru").." врагов "..CKWord("", "Crit_hits_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，使用致命一擊擊殺75個被眩暈的敵人
-	-- create_template("ach_class_zea_11_ext_desc_tw",
-		-- {"loc_achievement_zealot_2_medium_1_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Crit_k_rgb_tw").." 共 "..CNumb("{target}", "target_rgb").." 名處於 "..CKWord("", "Staggered_rgb_tw").." 的敵人。")),
-
-	-- --[+ Praise the God-Emperor! (1-3) +]-- руоф Хвала Богу-Императору! (1-3)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_3_ext_ru",
-		-- -- {"loc_achievement_missions_zealot_2_objective_1-3_name"}, {"ru"},
-			-- --loc_text("Хвала Богу-Императору! (1-3)")),
-	-- --[+ Traditional Chinese 讚頌神皇！ +]--
-	-- -- create_template("ach_class_zea_3_ext_tw",
-		-- -- {"loc_achievement_missions_zealot_2_objective_1-3_name"}, {"zh-tw"},
-			-- --loc_text("讚頌神皇！ (1-3)")),
-
-	-- --[+ As a Zealot, complete a Mission of each type. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_3_1_ext_desc_ru",
-		-- {"loc_achievement_missions_zealot_2_objective_1_description"}, {"ru"},
-			-- loc_text("Завершите по одной миссии каждого типа "..CKWord("", "cls_zea2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用狂信徒，完成每種類型的任務至少一項。
-	-- create_template("ach_class_zea_3_1_ext_desc_tw",
-		-- {"loc_achievement_missions_zealot_2_objective_1_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_zea2_rgb_tw").."，完成以下任務 "..COLORS_Numbers.n_1_rgb").." 次。")),
-
-	-- --[+ As a Zealot, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_3_3_ext_desc_ru",
-		-- {"loc_achievement_missions_zealot_2_objective_2_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, завершите по одной миссии каждого типа "..CKWord("", "cls_zea2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，使用狂信徒完成每種類型的任務至少一項。
-	-- create_template("ach_class_zea_3_3_ext_desc_tw",
-		-- {"loc_achievement_missions_zealot_2_objective_2_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_zea2_rgb_tw").." ，\n在『"..CKWord("", "malice_rgb_tw").."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb").." 次。")),
-
-	-- --[+ As a Zealot, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_3_4_ext_desc_ru",
-		-- {"loc_achievement_missions_zealot_2_objective_3_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, завершите по одной миссии каждого типа "..CKWord("", "cls_zea2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，使用狂信徒完成每種類型的任務至少一項。
-	-- create_template("ach_class_zea_3_4_ext_desc_tw",
-		-- {"loc_achievement_missions_zealot_2_objective_3_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_zea2_rgb_tw").." ，\n在『"..CKWord("", "heresy_rgb_tw").."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb").." 次。")),
-
--- --[+ +СПОСОБНОСТИ+ +]--
-	-- --[+ Blessed be Thine Aim +]-- -- руоф Благословен будь твой прицел
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_7_ext_ru",
-		-- -- {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_name"}, {"ru"},
-			-- --loc_text("Благословен будь твой прицел")),
-	-- --[+ Traditional Chinese 聖佑汝之瞄準 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_name"}, {"zh-tw"},
-			-- loc_text("聖佑汝之瞄準")),
-
-	-- --[+ Kill 500 Specialist and Elites using Blades of Faith. +]-- -- руоф Убейте особых и элитных врагов (500) с помощью «Клинков веры».
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_7_ext_desc_ru",
-		-- -- {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_description"}, {"ru"},
-			-- -- loc_text("Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов используя "..CKWord("", "klinvery_rgb_ru").."."..TALENTS_Enh_desc_penances_ru.ED_Blessed_be_thine_aim_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用信仰之刃急殺500名專家或精英。
-	-- -- create_template("ach_class_zea_7_ext_desc_tw",
-		-- -- {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_description"}, {"zh-tw"},
-			-- -- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "klinvery_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名精英或特殊敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Blessed_be_thine_aim_rgb_tw)),
-
-	-- --[+ Behind Enemy Lines +]-- -- руоф В тылу врага
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_8_ext_ru",
-		-- -- {"loc_achievement_zealot_aura_backstab_kills_while_alone_name"}, {"ru"},
-			-- -- loc_text("В тылу врага")),
-	-- --[+ Traditional Chinese 深入敵後 +]--
-	-- create_template("ach_class_zea_8_ext_tw",
-		-- {"loc_achievement_zealot_aura_backstab_kills_while_alone_name"}, {"zh-tw"},
-			-- loc_text("深入敵後")),
-
-	-- --[+ Kill 200 Ranged enemies with backstab, while not in Coherency while under the effect of the Loner ability. +]-- -- руоф Убейте врагов дальнего боя (200) ударом в спину, не находясь под действием «Сплоченности».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_8_ext_desc_ru",
-		-- {"loc_achievement_zealot_aura_backstab_kills_while_alone_description"}, {"ru"},
-			-- loc_text("Убейте ударом в спину "..CNumb("{target}", "target_rgb").." врагов с дальнобойным оружием под эффектом ауры "..CKWord("", "loner_rgb_ru")..", пока вы не находитесь под действием "..CKWord("", "Coherency_rgb_ru").." с другими союзниками.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在沒有協同中沒有的情況下，使用背刺急殺200名遠程敵人。
-	-- create_template("ach_class_zea_8_ext_desc_tw",
-		-- {"loc_achievement_zealot_aura_backstab_kills_while_alone_description"}, {"zh-tw"},
-			-- loc_text("處於 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "Coherency_rgb_tw").."』狀態且未受到『"..CKWord("", "loner_rgb_tw").."』光環時，\n背刺擊殺 "..CNumb("{target}", "target_rgb").." 名遠程武器敵人。")),
-
-	-- --[+ Inspiring Oratory - Вдохновляющая речь +]--
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_8_ext_ru",
-		-- -- {"loc_achievement_zealot_team_toughness_restored_with_chorus_name"}, {"ru"},
-			-- -- loc_text("Вдохновляющая речь")),
-	-- --[+ Traditional Chinese 激勵演說 +]--
-	-- create_template("ach_class_zea_8_ext_tw",
-		-- {"loc_achievement_zealot_team_toughness_restored_with_chorus_name"}, {"zh-tw"},
-			-- loc_text("激勵演說")),
-
-	-- --[+ Restore 7500 toughness to other players using Chorus of Spir_I_tual Fortitude. +]-- -- руоф Восстановите другим игрокам 7500 стойкости с помощью «Хор духовной стойкости».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_8_ext_desc_ru",
-		-- {"loc_achievement_zealot_team_toughness_restored_with_chorus_description"}, {"ru"},
-			-- loc_text("Восстановите другим игрокам "..CNumb("{target}", "target_rgb").." "..CKWord("", "Toughness_rgb_ru").." с помощью способности "..CKWord("", "chorusosf_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用不區靈魂聖歌恢復其他玩家7500點韌性
-	-- create_template("ach_class_zea_8_ext_desc_tw",
-		-- {"loc_achievement_zealot_team_toughness_restored_with_chorus_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "chorusosf_rgb_tw").."』，\n恢復隊友共計 "..CNumb("{target}", "target_rgb").." 點 "..CKWord("", "Toughness_rgb_tw").."。")),
-
-	-- --[+ Trust in the Emperor +]-- руоф Верьте в Императора
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_8_ext_ru",
-		-- {"loc_achievement_zealot_aura_corruption_healed_name"}, {"ru"},
-			-- loc_text("Верь в Императора")),
-	-- --[+ Traditional Chinese 相信帝皇 +]--
-	-- create_template("ach_class_zea_8_ext_tw",
-		-- {"loc_achievement_zealot_aura_corruption_healed_name"}, {"zh-tw"},
-			-- loc_text("相信帝皇")),
-
-	-- --[+ Heal 5000 Corruption Damage to allies in coherency under the effect of Beacon of Purity. +]-- -- руоф Исцелите урон скверной союзникам под воздействием «Сплоченности» (5000), находясь под действием «Маяка непорочности».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_8_ext_desc_ru",
-		-- {"loc_achievement_zealot_aura_corruption_healed_description"}, {"ru"},
-			-- loc_text("Исцелите "..CNumb("{target}", "target_rgb").." урона от "..CKWord("", "Corruption_i_rgb_ru").." союзникам под действием "..CKWord("", "Coherency_rgb_ru").." с помощью эффекта ауры "..CKWord("", "beaconop_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用純潔信標的效果治療協同中盟友5000點腐敗傷害。
-	-- create_template("ach_class_zea_8_ext_desc_tw",
-		-- {"loc_achievement_zealot_aura_corruption_healed_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "beaconop_rgb_tw").."』，並處於『"..CKWord("", "Coherency_rgb_tw").."』狀態下，\n幫隊友恢復 "..CNumb("{target}", "target_rgb").." 點『"..CKWord("", "Corruption_i_rgb_tw").."』。")),
-
-	-- --[+ Stay Strong +]-- руоф Будь сильным
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_8_ext_ru",
-		-- {"loc_achievement_zealot_2_easy_2_name"}, {"ru"},
-			-- loc_text("Держись")),
-	-- --[+ Traditional Chinese 保持堅強 +]--
-	-- create_template("ach_class_zea_8_ext_tw",
-		-- {"loc_achievement_zealot_2_easy_2_name"}, {"zh-tw"},
-			-- loc_text("保持堅強")),
-
-	-- --[+ Replenish 7500 Toughness using Chastise the Wicked. +]-- -- руоф Восстановите стойкость «Карой для нечестивых» 7500 р.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_8_ext_desc_ru",
-		-- {"loc_achievement_zealot_2_easy_2_description"}, {"ru"},
-			-- loc_text("Восстановите "..CNumb("{target}", "target_rgb").." "..CKWord("", "Toughness_rgb_ru")..", используя способности "..CKWord("", "chast_wckd_rgb_ru").." или "..CKWord("", "fury_faithful_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用懲戒邪惡後恢復7500點韌性。
-	-- create_template("ach_class_zea_8_	ext_desc_tw",
-		-- {"loc_achievement_zealot_2_easy_2_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "chastise_wicked_rgb_tw").."』或『"..CKWord("", "fury_faithful_rgb_tw").."』恢復 "..CNumb("{target}", "target_rgb").." 點 "..CKWord("", "Toughness_rgb_tw").."。")),
-
-	-- --[+ There is Nothing But the Abyss... +]-- руоф Есть только бездна...
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_zea_6_ext_ru",
-		-- -- {"loc_achievement_zealot_2_healed_up_after_resisting_death_name"}, {"ru"},
-			-- --loc_text("Есть только бездна...")),
-	-- --[+ Traditional Chinese 唯有深淵...... +]--
-	-- create_template("ach_red_zea_6_ext_tw",
-		-- {"loc_achievement_zealot_2_healed_up_after_resisting_death_name"}, {"zh-tw"},
-			-- loc_text("唯有深淵......")),
-
-	-- --[+ On Heresy threat or higher, heal to 25% Health with life gained solely from the Holy Revenant Talent. +]-- -- руоф При угрозе «Ересь» или выше восстановите 25% здоровья исключительно за счет таланта «Святой призрак».
-	-- --[+ Russian +]--
-	-- create_template("ach_red_zea_6_ext_desc_ru",
-		-- {"loc_achievement_zealot_2_healed_up_after_resisting_death_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, вылечите до "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("", "Wound_rgb_ru").." за счёт жизни, полученной исключительно от таланта "..CKWord("", "holy_revenant_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- --在異端威脅度或更高難度下，使用神聖亡魂天賦恢復25生命值。
-	-- create_template("ach_red_zea_6_ext_desc_tw",
-		-- {"loc_achievement_zealot_2_healed_up_after_resisting_death_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，\n透過 "..CKWord("", "Passive_p_rgb_tw").."『"..CKWord("", "holy_revenant_rgb_tw").."』回血，將『"..CKWord("", "Health_rgb_tw").."』恢復至 "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").."。")),
-
-	-- --[+ Test of Faith +]-- руоф Испытание веры
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_7_ext_ru",
-		-- -- {"loc_achievement_zealot_aura_toughness_damage_reduced_name"}, {"ru"},
-			-- --loc_text("Испытание веры")),
-	-- --[+ Traditional Chinese 信仰之試 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_aura_toughness_damage_reduced_name"}, {"zh-tw"},
-			-- loc_text("信仰之試")),
-
-	-- --[+ Reduce a total of 1500 Toughness Damage to allies in coherency under the effect of Benediction. +]-- -- руоф Снизьте урон стойкости союзникам под воздействием «Сплоченности» (суммарно 1500), находясь под действием «Благословения».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_7_ext_desc_ru",
-		-- {"loc_achievement_zealot_aura_toughness_damage_reduced_description"}, {"ru"},
-			-- loc_text("Снизьте в общей сложности "..CNumb("{target}", "target_rgb").." "..CKWord("", "Toughness_dmg_rgb_ru").." союзников, находящихся под действием "..CKWord("", "Coherency_rgb_ru")..", с помощью ауры "..CKWord("", "benedict_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 僅用恩賜效果減少協同中的盟友1500點韌性傷害
-	-- create_template("ach_class_zea_7_ext_desc_tw",
-		-- {"loc_achievement_zealot_aura_toughness_damage_reduced_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "benedict_rgb_tw").."』光環，\n與隊友處於『"..CKWord("", "Coherency_rgb_tw").."』時，減少『"..CKWord("", "Toughness_dmg_rgb_tw").."』共 "..CNumb("{target}", "target_rgb").." 點。")),
-
-	-- --[+ Channel Your Rage +]-- руоф Направь свою ярость
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_12_ext_ru",
-		-- -- {"loc_achievement_zealot_2_medium_2_name"}, {"ru"},
-			-- -- loc_text("Направь свою ярость")),
-	-- --[+ Traditional Chinese 引導憤怒 +]--
-	-- create_template("ach_class_zea_12_ext_tw",
-		-- {"loc_achievement_zealot_2_medium_2_name"}, {"zh-tw"},
-			-- loc_text("引導憤怒")),
-
-	-- --[+ On Malice Threat or higher, kill 1000 enemies with Melee Attacks whilst at at least 3 stacks of Martydom. +]-- -- руоф При угрозе «Злоба» или выше убейте врагов (1000) в ближнем бою, сохраняя не менее 3 ед. заряда «Мученичества».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_12_ext_desc_ru",
-		-- {"loc_achievement_zealot_2_medium_2_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов в ближнем бою, пока у вас есть хотя бы "..COLORS_Numbers.n_3_rgb").." заряда "..CKWord("", "martydom_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，在疊加至少3層殉道的情況下使用近戰攻擊擊殺1000個敵人。
-	-- create_template("ach_class_zea_12_ext_desc_tw",
-		-- {"loc_achievement_zealot_2_medium_2_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，\n於自身擁有 "..COLORS_Numbers.n_3_rgb").." 層以上 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "martydom_rgb_tw").."』時，\n以近戰擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。")),
-
-	-- --[+ Have Faith +]-- руоф Не теряй веру
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_13_ext_ru",
-		-- {"loc_achievement_zealot_2_hard_2_name"}, {"ru"},
-			-- loc_text("Верь")),
-	-- --[+ Traditional Chinese 心懷信仰 +]--
-	-- create_template("ach_class_zea_13_ext_tw",
-		-- {"loc_achievement_zealot_2_hard_2_name"}, {"zh-tw"},
-			-- loc_text("心懷信仰")),
-
-	-- --[+ On Heresy Threat or higher, using Chastise the Wicked, dash towards a targeted enemy that is wielding a ranged weapon, 40 times. +]-- руоф Используя «Кару для нечестивых», сделайте рывок в сторону противника с дистанционным оружием при угрозе «Ересь» и выше 40 р.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_13_ext_desc_ru",
-		-- {"loc_achievement_zealot_2_hard_2_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, используя способности "..CKWord("", "chast_wckd_rgb_ru").." или "..CKWord("", "fury_faithful_rgb_ru ..", сделайте рывок к врагу у которого в руках дальнобойное оружие. Выполните это задание "..CNumb("{target}", "target_rgb").." раз.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，使用懲戒邪惡，衝向正在使用遠程武器敵人40次。
-	-- create_template("ach_class_zea_13_ext_desc_tw",
-		-- {"loc_achievement_zealot_2_hard_2_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "chastise_wicked_rgb_tw").."』或『"..CKWord("", "fury_faithful_rgb_tw").."』，\n衝刺靠近正在拿遠程武器的敵人旁，共需完成 "..CNumb("{target}", "target_rgb").." 次。")),
-
-	-- --[+ Unseen Assassin +]-- руоф Незримый убийца
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_7_ext_ru",
-		-- -- {"loc_achievement_zealot_elite_or_special_kills_with_shroudfield_name"}, {"ru"},
-			-- -- loc_text("Незримый убийца")),
-	-- --[+ Traditional Chinese 隱形刺客 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_elite_or_special_kills_with_shroudfield_name"}, {"zh-tw"},
-			-- loc_text("隱形刺客")),
-
-	-- --[+ Kill 150 Specialists or Elites by backstabbing them while using Shroudfield. +]-- руоф Убейте особых или элитных врагов (150) ответным ударом с помощью «Покрова».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_7_ext_desc_ru",
-		-- {"loc_achievement_zealot_elite_or_special_kills_with_shroudfield_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов ударом в спину под действием способности "..CKWord("", "shroudf_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用隱密領域背刺急殺150專家或精英
-	-- create_template("ach_class_zea_7_ext_desc_tw",
-		-- {"loc_achievement_zealot_elite_or_special_kills_with_shroudfield_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "shroudf_rgb_tw").."』技能期間，\n以背刺擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。")),
-
-	-- --[+ Purging Flames +]-- руоф Очищающее пламя
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_7_ext_ru",
-		-- -- {"loc_achievement_zealot_kills_with_fire_grenade_name"}, {"ru"},
-			-- -- loc_text("Очищающее пламя")),
-	-- --[+ Traditional Chinese 淨化烈焰 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_kills_with_fire_grenade_name"}, {"zh-tw"},
-			-- loc_text("淨化烈焰")),
-
-	-- --[+ Burn 2000 enemies using the Immolation Grenade. +]-- руоф Сожгите врагов (2000) с помощью «Жертвенной гранаты».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_7_ext_desc_ru",
-		-- {"loc_achievement_zealot_kills_with_fire_grenade_description"}, {"ru"},
-			-- loc_text("Сожгите "..CNumb("{target}", "target_rgb").." врагов с помощью "..CKWord("", "fire_gren_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用獻祭手榴彈燒死2000名敵人
-	-- create_template("ach_class_zea_7_ext_desc_tw",
-		-- {"loc_achievement_zealot_kills_with_fire_grenade_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "fire_gren_rgb_tw").."』燒死 "..CNumb("{target}", "target_rgb").." 名敵人。")),
-
-	-- --[+ Buying Time +]-- руоф Передышка
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_zea_2_ext_ru",
-		-- -- {"loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_name"}, {"ru"},
-			-- -- loc_text("Выиграй время")),
-	-- --[+ Traditional Chinese 爭取時間 +]--
-	-- create_template("ach_red_zea_2_ext_tw",
-		-- {"loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_name"}, {"zh-tw"},
-			-- loc_text("爭取時間")),
-
-	-- --[+ Using a Stun Grenade, hit an enemy sniper more than 40 metres away. +]-- руоф Поразите вражеского снайпера на расстоянии более 40 м, используя оглушающую гранату.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_zea_2_ext_desc_ru",
-		-- -- {"loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_description"}, {"ru"},
-			-- -- loc_text("Используя "..CKWord("", "shock_gren1_rgb_ru").." или "..CKWord("", "shock_gren0_rgb_ru")..", поразите вражеского снайпера на расстоянии более "..CNumb("{target}", "target_rgb").." метров."..TALENTS_Enh_desc_penances_ru.ED_Buying_time_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用眩暈手雷，集中40米外的敵方狙擊手。
-	-- -- create_template("ach_red_zea_2_ext_desc_tw",
-		-- -- {"loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_description"}, {"zh-tw"},
-			-- -- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "shock_gren1_rgb_tw").."』或『"..CKWord("", "shock_gren0_rgb_tw").."』，\n擊中距離超過 "..CNumb("{target}", "target_rgb").." 公尺的敵方狙擊手。" .. TALENTS_Enh_desc_penances_tw.ED_Buying_time_rgb_tw)),
-
-	-- --[+ Righteous Anger +]-- руоф Праведный гнев
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_7_ext_ru",
-		-- -- {"loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_name"}, {"ru"},
-			-- -- loc_text("Праведный гнев")),
-	-- --[+ Traditional Chinese 正義之怒 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_name"}, {"zh-tw"},
-			-- loc_text("正義之怒")),
-
-	-- --[+ Kill 2000 enemies while in Fury. +]-- руоф Убейте врагов (2000), находясь под действием «Ярости».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_7_ext_desc_ru",
-		-- {"loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов, находясь под действием эффекта "..CKWord("", "fanrage_rgb_ru").." от ключевого таланта "..CKWord("", "blazingp_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在狂怒狀態下擊殺2000名敵人
-	-- create_template("ach_class_zea_7_ext_desc_tw",
-		-- {"loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "fanrage_rgb_tw").."』發動期間，\n擊殺 "..CNumb("{target}", "target_rgb").." 名敵人，\n該效果來自 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "blazingp_rgb_tw").."』。")),
-
-	-- --[+ Abhor the Mutant +]-- руоф Презирай Мутантов
-	-- --[+ Russian +]--
-	-- create_template("ach_red_zea_3_ext_ru",
-		-- {"loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_name"}, {"ru"},
-			-- loc_text("Презри мутанта")),
-	-- --[+ Traditional Chinese 憎恨變種人 +]--
-	-- create_template("ach_red_zea_3_ext_tw",
-		-- {"loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_name"}, {"zh-tw"},
-			-- loc_text("憎恨變種人")),
-
-	-- --[+ While Dashing with Chastise The Wicked, kill a Mutant with a Melee Attack. +]-- руоф Убейте мутанта атакой в ближнем бою во время рывка, пока действует «Кара для нечестивых».
-	-- --[+ Russian +]--
-	-- create_template("ach_red_zea_3_ext_desc_ru",
-		-- {"loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_description"}, {"ru"},
-			-- loc_text("Во время рывка с помощью способностей "..CKWord("", "chast_wckd_rgb_ru").." или "..CKWord("", "fury_faithful_rgb_ru").." убейте Мутанта атакой ближнего боя.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用懲戒邪惡的衝刺期間，使用近戰攻擊擊殺1個變種人。
-	-- create_template("ach_red_zea_3_ext_desc_tw",
-		-- {"loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_description"}, {"zh-tw"},
-			-- loc_text("在 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "chastise_wicked_rgb_tw").."』或『"..CKWord("", "fury_faithful_rgb_tw").."』發動時，\n以近戰攻擊擊殺一個變種人。")),
-
-	-- --[+ Control Crowds +]-- руоф Сдерживание толпы
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_7_ext_ru",
-		-- {"loc_achievement_zealot_2_easy_1_name"}, {"ru"},
-			-- loc_text("Управление толпой")),
-	-- --[+ Traditional Chinese 群體控制 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_2_easy_1_name"}, {"zh-tw"},
-			-- loc_text("群體控制")),
-
-	-- --[+ Stun 1500 enemies using Stun Grenades. +]-- руоф Оглушите врагов (1500) оглушающими гранатами.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_7_ext_desc_ru",
-		-- {"loc_achievement_zealot_2_easy_1_description"}, {"ru"},
-			-- loc_text("Оглушите "..CNumb("{target}", "target_rgb").." врагов, используя "..CKWord("", "shock_gren1_rgb_ru").." или "..CKWord("", "shock_gren0_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用眩暈手雷眩暈1500個敵人
-	-- create_template("ach_class_zea_7_ext_desc_tw",
-		-- {"loc_achievement_zealot_2_easy_1_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "shock_gren1_rgb_tw").."』或『"..CKWord("", "shock_gren0_rgb_tw").."』，\n暈眩 "..CNumb("{target}", "target_rgb").." 名敵人。")),
-
-	-- --[+ Lethal Pursuit +]-- руоф Смертоносное преследование
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_zea_7_ext_ru",
-		-- -- {"loc_achievement_zealot_kills_during_movement_keystone_activated_name"}, {"ru"},
-			-- -- loc_text("Смертоносное преследование")),
-	-- --[+ Traditional Chinese 致命追緝 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_kills_during_movement_keystone_activated_name"}, {"zh-tw"},
-			-- loc_text("致命追緝")),
-
-	-- --[+ Kill 250 Specialist and Elite enemies while at 15 stacks of Inexorable Judgement or above. +]-- руоф Убейте особых и элитных врагов (250), имея не менее 15 зарядов «Безжалостного приговора».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_zea_7_ext_desc_ru",
-		-- {"loc_achievement_zealot_kills_during_movement_keystone_activated_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов, имея не менее "..COLORS_Numbers.n_15_rgb").." зарядов "..CKWord("", "momentum_rgb_ru").." от ключевого таланта "..CKWord("", "inexor_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在疊加15層或更多層命定審判時，擊殺250名專家和精英。
-	-- create_template("ach_class_zea_7_ext_desc_tw",
-		-- {"loc_achievement_zealot_kills_during_movement_keystone_activated_description"}, {"zh-tw"},
-			-- loc_text("擁有 "..COLORS_Numbers.n_15_rgb").." 層『"..CKWord("", "momentum_rgb_tw").."』時，擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人，\n來源為"..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "inexor_rgb_tw").."』。")),
-
-	-- --[+ Shocking Stuff +]-- руоф Шокирующая штучка
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_zea_4_ext_ru",
-		-- -- {"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_name"}, {"ru"},
-			-- -- loc_text("Шокирующие штуки")),
-	-- --[+ Traditional Chinese 震撼之擊 +]--
-	-- create_template("ach_red_zea_4_ext_tw",
-		-- {"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_name"}, {"zh-tw"},
-			-- loc_text("震撼之擊")),
-
-	-- --[+ On Malice Threat or higher, kill 40 enemies stunned by your grenades, within 10s. +]-- руоф При угрозе «Злоба» или выше убейте врагов (40), оглушенных вашими гранатами, за 10 с.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_zea_4_ext_desc_ru",{"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов, оглушённых вашими гранатами, в течение "..COLORS_Numbers.time_wind_rgb").." секунд.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端或更高威脅度下，在10秒內擊殺40個被你手雷眩暈的敵人。
-	-- create_template("ach_red_zea_4_ext_desc_tw",
-		-- {"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，於 "..COLORS_Numbers.time_wind_rgb").." 秒內擊殺 "..CNumb("{target}", "target_rgb").." 名，\n被 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "shock_gren0_rgb_tw").."』、『"..CKWord("", "shock_gren1_rgb_tw").."』"..CKWord("", "Staggers_rgb_tw").." 的敵人。")),
 
 -- --[+ ++PSYKER - ПСАЙКЕР++ +]--
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_0_ext_ru",
-		-- {"loc_class_psyker_title"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_psy_rgb_ru)),
-	-- --[+ Traditional Chinese 靈能者 +]--
-	-- create_template("ach_class_psy_0_ext_tw",
-		-- {"loc_class_psyker_title"}, {"zh-tw"},
-			-- loc_text(COLORS_KWords_tw.cls_psy_rgb_tw)),
+	["loc_class_psyker_title"] = {
+		en = CKWord("Psyker", "cls_psy_rgb"),
+		ru = CKWord("Псайкер", "cls_psy_rgb_ru"),
+		["zh-tw"] = CKWord("靈能者", "cls_psy_rgb_tw"),
+	},
+		--[+ PROGRESSION - ПРОГРЕСС - 進度 +]--
+	--[+ Mind over Matter (1-6) +]-- руоф Разум превыше материи (1-6) -- 心勝於物 (1-6)
+		--[+ Reach Trust Level _ as a Psyker. +]-- руоф Заслужить уровень доверия _, играя за Псайкера.
+	["loc_achievement_rank_psyker_2_x_description"] = {
+		en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Psyker", "cls_psy_rgb")..".",
+		ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Псайкером", "cls_psy2_rgb_ru")..".",
+		["zh-tw"] = "使用 "..CKWord("靈能者", "cls_psy_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+	},
+	--[+ Lifeleech (1-5) +]-- руоф Похититель жизни (1-5) -- 生命榨取 (1-5)
+		--[+ Complete _ Missions as a Psyker. +]-- руоф Выполнить Псайкером задания: _.
+		["loc_achievement_missions_psyker_2_x_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Psyker", "cls_psy_rgb")..".",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Псайкером", "cls_psy2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("靈能者", "cls_psy_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。",
+		},
+	--[+ Touch the Void (1-3) +]-- руоф Прикоснись к пустоте (1-3) -- 觸碰虛空 (1-3)
+		--[+ As a Psyker, complete at least one Mission of each type. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа.
+		["loc_achievement_missions_psyker_2_objective_1_description"] = {
+			en = "As a "..CKWord("Psyker", "cls_psy_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
+			ru = "Пройдите "..CKWord("Псайкером", "cls_psy2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
+			["zh-tw"] = "使用 "..CKWord("靈能者", "cls_psy_rgb_tw").."，完成以下任務 "..CNumb("1", "n_1_rgb").." 次。",
+		},
+		--[+ As a Psyker, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
+		["loc_achievement_missions_psyker_2_objective_2_description"] = {
+			en = "As a "..CKWord("Psyker", "cls_psy_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Псайкером", "cls_psy2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+		},
+		--[+ As a Psyker, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
+		["loc_achievement_missions_psyker_2_objective_3_description"] = {
+			en = "As a "..CKWord("Psyker", "cls_psy_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Heresy", "heresy_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Псайкером", "cls_psy2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
+		},
+	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5) -- 證明你的價值 (1-5)
+	--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5) -- 為正義而戰 (1-5)
+	--[+ First Steps (1-2) +]-- руоф Первые шаги (1-2) -- 首要步驟 (1-2)
+	--[+ Promotion Material (1) +]-- руоф Материалы пропаганды (1)
+	--[+ For The Emperor (1-3) +]-- руоф За императора (1-3) -- 為了皇帝 (1-3)
+		--[+ Complete the following Penances as the Psyker. +]-- руоф Выполнить следующие искупления за Псайкера.
+		["loc_achievement_group_psyker_2_description"] = {
+			en = "Complete the following Penances as the "..CKWord("Psyker", "cls_psy_rgb")..".",
+			ru = "Выполните следующие Искупления "..CKWord("Псайкером", "cls_psy2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("靈能者", "cls_psy_rgb_tw").." 完成以下苦修。",
+		},
+	--[+ Unleash the Warp - Высвободи варп +]-- руоф Извергни варп
+	["loc_achievement_psyker_2_medium_2_name"] = {
+		ru = "Высвободи варп",
+		["zh-tw"] = "亞空間釋放",
+	},
+		--[+ On Malice Threat or higher, kill 2500 enemies with Warp attacks. +]-- руоф При угрозе «Злоба» или выше убейте врагов (2500) варп-атаками.
+		["loc_achievement_psyker_2_medium_2_description"] = {
+			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." enemies with Warp attacks.",
+			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов варп-атаками.",
+			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
+				.."使用 "..CKWord("亞空間傷害", "Damagewrp_a_rgb_tw").." 擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ Keep Your Distance +]-- руоф Не подходи близко
+	["loc_achievement_psyker_2_hard_2_name"] = {
+		ru = "Держи дистанцию",
+		["zh-tw"] = "保持距離",
+	},
+		--[+ On Heresy Threat or higher, complete 3 full Missions without being hit in melee by an Elite enemy. +]-- руоф При угрозе «Ересь» или выше полностью выполните задание 3 р., чтобы элитный враг ни разу не попал по вам в ближнем бою.
+		["loc_achievement_psyker_2_hard_2_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, complete "..CNumb("{target}", "target_rgb").." full Missions without being hit in melee by an Elite enemy.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, пройдите полностью "..CNumb("{target}", "target_rgb").." миссии без получения ударов в ближнем бою от элитных врагов.",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
+				.."完成 "..CNumb("{target}", "target_rgb").." 場任務，且未曾被精英敵人以近戰攻擊命中。",
+		},
+	--[+ Kinetic Killer (1-3) +]-- руоф Кинетический убийца (1-3) -- 靈能殺手 (1-3)
+		--[+ Complete the following Penances as the Psyker. +]-- руоф Выполните следующие искупления за Псайкера.
+		["loc_achievement_group_class_psyker_2_description"] = {
+			en = "Complete the following Penances as the "..CKWord("Psyker", "cls_psy_rgb")..".",
+			ru = "Выполните следующие Искупления "..CKWord("Псайкером", "cls_psy2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("靈能者", "cls_psy_rgb_tw").." 完成以下苦修。",
+		},
+	--[+ Cliffhanger +]-- руоф Не подходи близко
+	["loc_achievement_psyker_2_edge_kills_last_2_sec_name"] = {
+		ru = "Неожиданный поворот",
+		["zh-tw"] = "懸崖邊緣",
+	},
+		--[+ Kill 7 enemies within 2s by knocking them off a ledge. +]-- руоф Убейте врагов (7) за 2 с., сбросив их с уступа.
+		["loc_achievement_psyker_2_edge_kills_last_2_sec_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies within "..CNumb("{time_window}", "time_wind_rgb").." seconds by knocking them off a ledge.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов в течение "..CNumb("{time_window}", "time_wind_rgb").." секунд, сбросив их с уступа.",
+			["zh-tw"] = "在 "..CNumb("{time_window}", "time_wind_rgb").." 秒內，將 "..CNumb("{target}", "target_rgb").." 名敵人推落邊緣擊殺。",
+		},
+	--[+ Psyker Master of War +]-- руоф Псайкер — знаток войны
 
--- --[+ ++PROGRESS - ПРОГРЕСС++ +]--
-	-- --[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_4_ext_ru",
-		-- -- {"loc_missions_psyker_2_easy_difficulty_1-5_name"}, {"ru"},
-			-- --loc_text("Докажите, чего стоите (1-5)")),
-	-- --[+ Traditional Chinese 證明你的價值 (1-5) +]--
-	-- -- create_template("ach_class_psy_4_ext_tw",
-		-- -- {"loc_missions_psyker_2_easy_difficulty_1-5_name"}, {"zh-tw"},
-			-- --loc_text("證明你的價值 (1-5)")),
+		--[+ ABILITIES - СПОСОБНОСТИ - 技能 +]--
+	--[+ Prioritise Targets +]-- руоф Приоритетные цели -- 優先目標
+		--[+ Kill 200 Elite or Specialist enemies with Brain Burst or Brain Rupture. +]-- руоф Убейте элитных врагов или специалистов (200) «Взрывом разума».
+			["loc_achievement_psyker_2_easy_1_fix_description"] = {
+				en = "Kill "..CNumb("{target}", "target_rgb").." Elite or Specialist enemies with "..CKWord("Brain Burst", "Brain_burst_rgb").." or "..CKWord("Brain Rupture", "Brain_rupture_rgb").." Blitz.",
+				ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью блица "..CKWord("Взрыв мозга", "bburst0_rgb_ru").." или "..CKWord("Разрыв мозга", "bburst1_rgb_ru")..".",
+				-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』或『"..CKWord("", "bburst1_rgb_tw").."』，\n"
+					-- .."擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
+			},
+	--[+ Blessed by Fate +]-- руоф Хранимый судьбой
+	["loc_achievement_psyker_2_easy_2_name"] = {
+		ru = "Благословен судьбой",
+		["zh-tw"] = "命運保佑",
+	},
+		--[+ Use Psykinetic's Wrath or Venting Shriek to survive Perils of the Warp 50 times. +]-- руоф Воспользуйтесь «Психокинетическим гневом» 50 р., чтобы не погибнуть от угозы варпа.
+		["loc_achievement_psyker_2_easy_2_tweaked_description"] = {
+			en = "Use "..CKWord("Psykinetic's Wrath", "psy_wrath_rgb").." or "..CKWord("Venting Shriek", "psy_wrath2_rgb").." Ability to survive "..CKWord("Perils of the Warp", "PerilsozWarp_rgb").." "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Используйте "..CNumb("{target}", "target_rgb").." раз способность "..CKWord("Гнев психокинетика", "psy_wrath_rgb_ru").." или "..CKWord("Сбрасывающий вопль", "psy_wrath2_rgb_ru")..", чтобы избежать самоподрыва от "..CKWord("Опасностей варпа", "Opasnostei_warpa_rgb_ru").." при превышении "..CNumb("100%", "pc_100_rgb").." уровня "..CKWord("опасности", "opasnosti_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "psy_wrath_rgb_tw").."』或『"..CKWord("", "psy_wrath2_rgb_tw").."』技能，\n"
+					-- .."成功避免因『"..CKWord("", "Peril_rgb_tw").."』超過『"..CNumb("100%", "pc_100_rgb").."』而引發靈能爆炸。",
+		},
+	--[+ Power Up +]-- руоф Полный заряд -- 能量提升
+	["loc_achievement_psyker_2_medium_1_name"] = {
+		ru = "Пик мощи",
+		["zh-tw"] = "能量提升",
+	},
+		--[+ On Malice Threat or higher, kill 100 Elite or Specialist enemies with Brain Burst or Brain Rupture while at maximum Warp Charges. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов или специалистов (100) «Взрывом разума» с максимальным количеством варп-зарядов.
+		["loc_achievement_psyker_2_medium_1_fix_description"] = {
+			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." Elite or Specialist enemies with "..CKWord("Brain Burst", "Brain_burst_rgb").." or "..CKWord("Brain Rupture", "Brain_rupture_rgb").." Blitz while at maximum Warp Charges.",
+			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью блица "..CKWord("Взрыв мозга", "bburst0_rgb_ru").." или "..CKWord("Разрыв мозга", "bburst1_rgb_ru").." пока у вас максимальное количество варп-зарядов.",
+			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
+					-- .."當自身亞空間充能達最大時，\n"
+					-- .."使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』或『"..CKWord("", "bburst1_rgb_tw").."』，\n"
+					-- .."擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
+		},
+	--[+ Shoot Fast +]-- руоф Стреляй от бедра
+	["loc_achievement_psyker_2_hard_1_name"] = {
+		ru = "Бей быстро",
+		["zh-tw"] = "快槍手",
+	},
+		--[+ On Heresy Threat or higher, kill 25 Pox Hounds, Mutants or Scab Trappers using Brain Burst or Brain Rupture before they incapacitate you or an ally. +]-- руоф При угрозе «Ересь» или выше убейте Чумных гончих, Мутантов или Скабов-Ловушечников (25) «Взрывом разума», пока они не успели обезвредить вас или союзника.
+		["loc_achievement_psyker_2_hard_1_fix_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." Pox Hounds, Mutants or Scab Trappers using "..CKWord("Brain Burst", "Brain_burst_rgb").." or "..CKWord("Brain Rupture", "Brain_rupture_rgb").." Blitz before they incapacitate you or an Ally.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." Чумных гончих, Мутантов или Ловушечников, используя блиц "..CKWord("Взрыв мозга", "bburst0_rgb_ru").." или "..CKWord("Разрыв мозга", "bburst1_rgb_ru").." до того как они вывели из строя вас или союзника.",
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
+					-- .."使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』或『"..CKWord("", "bburst1_rgb_tw").."』，\n"
+					-- .."在瘟疫獵犬、突變者或陷阱兵使你或隊友癱瘓前，\n"
+					-- .."擊殺他們，共計 "..CNumb("{target}", "target_rgb").." 次。",
+		},
+	--[+ Mind Lance - Копьё разума +]-- руоф Копье разума
+	["loc_achievement_psyker_elite_or_special_kills_with_assail_name"] = {
+		ru = "Копьё разума",
+		["zh-tw"] = "心靈之槍",
+	},
+		--[+ Kill 250 Specialists and Elites using Assail. +]-- руоф Убейте особых или элитных врагов (250) с помощью «Нападения».
+		["loc_achievement_psyker_elite_or_special_kills_with_assail_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." Specialists and Elites using "..CKWord("Assail", "Assail_rgb")..".",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью блица "..CKWord("Нападение", "Assail_rgb_ru")..".",
+			["zh-tw"] = "使用『"..CKWord("攻擊", "assail_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
+		},
+	--[+ Perilous Focus +]-- руоф Пагубная концентрация
+		--[+ Kill 40 enemies under the effects of a single Scrier's Gaze activation. +]-- руоф Убейте врагов (40), находясь под действием одного заряда «Взора Скрира».
+		["loc_achievement_psyker_kills_during_overcharge_stance_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies under the effects of a single "..CKWord("Scrier's Gaze", "Scriers_gaze_rgb").." activation.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, находясь под эффектом способности "..CKWord("Взор провидца", "Scriers_gaze_rgb_ru")..", в течение однократного её применения.",
+			-- ["zh-tw"] = "單次 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "scriersgaze_rgb_tw").."』期間，擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。", -- 於同一次賽爾凝視效果期間，擊殺40名敵人。
+		},
+	--[+ Skilled in Psykhana +]-- руоф Знаток Псайканы -- 熟練靈能
+		--[+ Kill 250 Specialists or Elites using abilities empowered by Empowered Psionics. +]-- руоф Убейте особых или элитных врагов (250) с помощью способностей, улучшенных «Усиленными псиониками».
+		["loc_achievement_psyker_kills_with_empowered_abilites_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." Specialists or Elites using Abilities empowered by "..CKWord("Empowered Psionics", "empsionics_rgb").." Keystone.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью способностей, усиленных ключевым талантом "..CKWord("Усиленные псионики", "empsionics_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "empsionics_rgb_tw").."』後的能力，\n"
+					-- .."擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
+		},
+	--[+ Defy Fate +]-- руоф Брось вызов судьбе -- 抵抗命運
+		--[+ Maintain 15 stacks or more of Disrupt Destiny for a total of 1800 seconds. +]-- руоф Удерживайте не менее 15 зарядов «Разрушенной судьбы» на протяжении 1800 с.
+		["loc_achievement_psyker_time_at_max_unnatural_description"] = {
+			en = "Maintain at least "..CNumb("15", "n_15_rgb").." "..CKWord("Precision", "Precision_rgb").." Stacks from "..CKWord("Disrupt Destiny", "disrdest_rgb").." Keystone for "..CNumb("30", "n_30_rgb").." minutes ("..CNumb("{target}", "target_rgb").." seconds).",
+			ru = "Поддерживайте не менее "..CNumb("15", "n_15_rgb").." зарядов "..CKWord("меткости", "Precision_rgb_ru").." от ключевого таланта "..CKWord("Прерывание судьбы", "disrdest_rgb_ru").." на протяжении "..CNumb("30", "n_30_rgb").." минут ("..CNumb("{target}", "target_rgb").." секунд).", -- 1800 секунд ("..CNumb("{target}", "target_rgb").." секунд)
+			-- ["zh-tw"] = "在 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "disrdest_rgb_tw").."』效果下，\n"
+					-- .."維持至少 "..CNumb("15", "n_15_rgb").." 層『"..CKWord("", "Precision_rgb_tw").."』狀態，累積達 "..CNumb("30", "n_30_rgb").." 分鐘。",
+		},
+	--[+ Mind's Aegis +]-- руоф Защита разума
+	["loc_achievement_psyker_damage_blocked_with_shield_name"] = {
+		ru = "Эгида разума",
+		["zh-tw"] = "心靈之盾",
+	},
+		--[+ Absorb 150000 Damage with Telekine Shield. +]-- руоф Поглотите урон (150000) с помощью «Телекинетического щита».
+		["loc_achievement_psyker_damage_blocked_with_shield_description"] = {
+			en = "Absorb "..CNumb("{target}", "target_rgb").." "..CKWord("Damage", "Damage_rgb").." with "..CKWord("Telekine Shield", "telekshii_rgb").." Ability.",
+			ru = "Поглотите "..CNumb("{target}", "target_rgb").." урона с помощью способности "..CKWord("Телекинетический щит", "telekshii_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "telekshii_rgb_tw").."』防護 "..CNumb("{target}", "target_rgb").." 點傷害。",
+		},
+	--[+ Overwhelming Presence +]-- руоф Подавляющее присутствие -- 壓倒性的存在
+		--[+ Kill 2500 Elite or Specialist enemies while under the effect of Kinetic Presence. Kill made by any affected team member also count. +]-- руоф Убейте особых или элитных врагов (2500), находясь под действием «Кинетического присутствия». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
+		["loc_achievement_psyker_team_elite_aura_kills_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." Elite or Specialist enemies while under the effect of "..CKWord("Kinetic Presence", "kinetpres_rgb").." Aura. Kill made by any affected team member also count.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов, находясь под действием ауры "..CKWord("", "kinetpres_rgb_ru")..". Убийства, совершённые любым членом команды, находящимся под действием эффекта ауры, тоже учитываются.",
+			-- ["zh-tw"] = "處於 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "kinetpres_rgb_tw").."』期間，\n"
+					-- .."擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。\n"
+					-- .."隊友在此光環下的擊殺也會計算。",
+		},
+	--[+ Empyric Recovery +]-- руоф Эмпирическое восстановление
+	["loc_achievement_psyker_team_cooldown_reduced_name"] = {
+		ru = "Эмпирейское восстановление",
+		["zh-tw"] = "經驗恢復",
+	},
+		--[+ Restore you or your allies' abilities a total of 2000 seconds faster, while under the effects of Seer's Presence. +]-- руоф Восстановите способности свои или союзников суммарно на 2000 с. быстрее, находясь под действием «Присутствия провидца».
+		["loc_achievement_psyker_team_cooldown_reduced_description"] = {
+			en = "Restore you or your Allies' Abilities a total of "..CNumb("{target}", "target_rgb").." seconds faster, while under the effects of "..CKWord("Seer's Presence", "seerspres_rgb").." Aura.",
+			ru = "Сократите, суммарно на "..CNumb("{target}", "target_rgb").." секунд, время восстановления способностей себе или вашим союзникам с помощью эффекта ауры "..CKWord("Присутствие провидца", "seerspres_rgb_ru")..".",
+			-- ["zh-tw"] = "透過 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "seerspres_rgb_tw").."』效果，\n"
+					-- .."為自己或隊友縮短技能冷卻時間達 "..CNumb("{target}", "target_rgb").." 秒。",
+		},
+	--[+ Lucky BLow +]-- руоф Счастливый удар -- 幸運一擊
+		--[+ Critically strike 7500 enemies while under the effects of Prescience. Critical strikes made by any affected team member also count. +]-- руоф Нанесите врагам критические удары (7500), находясь под действием «Предвидения». Критические удары любого члена команды под действием эффекта тоже учитываются.
+		["loc_achievement_psyker_team_critical_hits_description"] = {
+			en = CKWord("Critically strike", "Crtcll_strk_rgb").." "..CNumb("{target}", "target_rgb").." enemies while under the effects of "..CKWord("Prescience", "prescience_rgb").." Aura. "..CKWord("Critical strikes", "Crit_strikes_rgb").." made by any affected team member also count.",
+			ru = "Нанесите врагам "..CNumb("{target}", "target_rgb").." "..CKWord("критических ударов", "krit_udarov_rgb_ru")..", находясь под действием ауры "..CKWord("Предвидение", "prescience_rgb_ru")..". "..CKWord("Критические удары", "Krit_udary_rgb_ru").." любого члена команды, находящегося под действием эффекта ауры, тоже учитываются.",
+			-- ["zh-tw"] = "在 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "prescience_rgb_tw").."』期間，對敵人造成 "..CNumb("{target}", "target_rgb").." 次致命一擊。\n"
+					-- .."隊友在此光環下造成的致命一擊也會計算。",
+		},
+	--[+ Charged with Purpose +]-- руоф Заряженные целью -- 壓倒性的存在
+		--[+ Kill 2500 enemies stunned by your Smite. Kills made by your team members also count. +]-- руоф Убейте врагов (2500), оглушенных вашим «Сокрушением». Убийства, совершенные членами команды, тоже учитываются.
+		["loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies "..CKWord("Stunned", "Stunned_rgb").." by your "..CKWord("Smite", "Smite_rgb").." Blitz. Kills made by your team members also count.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, "..CKWord("оглушённых", "oglushennyh_rgb_ru").." вашим блицом "..CKWord("Сокрушение", "smite_rgb_ru")..". Убийства, совершённые членами вашей команды, также учитываются.",
+			-- ["zh-tw"] = "擊殺 "..CNumb("{target}", "target_rgb").." 名被 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "smite_rgb_tw").."』"..CKWord("", "Staggers_rgb_tw").." 的敵人。\n"
+					-- .."由隊友擊殺的也會計算。",
+		},
+	--[+ Not Even Close +]-- руоф Как бы не так -- 差的遠
+		--[+ Kill a pouncing Pox Hound with Brain Burst or Brain Rupture. +]-- руоф Убейте с помощью «Взрыва разума» Чумную Гончую, когда она набрасывается на вас.
+		["loc_achievement_psyker_2_smite_hound_mid_leap_fix_description"] = {
+			en = "Kill a pouncing Pox Hound with "..CKWord("Brain Burst", "Brain_burst_rgb").." or "..CKWord("Brain Rupture", "Brain_rupture_rgb").." Blitz.",
+			ru = "Убейте, прыгнувшую Чумную гончую, с помощью блица "..CKWord("Взрыв мозга", "bburst0_rgb_ru").." или "..CKWord("Разрыв мозга", "bburst1_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』或『"..CKWord("", "bburst1_rgb_tw").."』，\n"
+					-- .."擊殺猛撲中的瘟疫獵犬。",
+		},
+	--[+ Warp Battery +]-- руоф Варп-аккумулятор -- 亞空間電池
+		--[+ While on Malice Threat or higher, in a single session maintain maximum Warp Charges for 120s. +]-- руоф При угрозе «Злоба» или выше в режиме одиночной игры поддерживайте максимум варп-зарядов в течение 120 с.
+		["loc_achievement_psyker_2_stay_at_max_souls_for_duration_description"] = {
+			en = "While on "..CKWord("Malice", "malice_rgb").." Threat or higher, in a single session maintain maximum Warp Charges for "..CNumb("{target}", "target_rgb").." seconds.",
+			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, в течение одной миссии сохраняйте максимальное количество зарядов варпа в течение "..CNumb("{target}", "target_rgb").." секунд.",
+			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，於單場任務中持續維持最高層數亞空間充能 "..CNumb("{target}", "target_rgb").." 秒。",
+		},
+	--[+ Going Out With a Bang +]-- руоф Эффектный выход
+	["loc_achievement_psyker_2_perils_of_the_warp_elite_kills_name"] = {
+		ru = "Взрывной финал",
+		["zh-tw"] = "赫然死亡",
+	},
+		--[+ While on Malice Threat or higher, kill 1 elite enemies with a single Perils of the Warp explosion. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов (1) за однократное применение угрозы от взрыва варпа.
+		["loc_achievement_psyker_2_perils_of_the_warp_elite_kills_description"] = {
+			en = "While on "..CKWord("Malice", "malice_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." elite enemies with a single "..CKWord("Perils of the Warp", "PerilsozWarp_rgb").." explosion.",
+			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." элитного врага с помощью самоподрыва от "..CKWord("Опасностей варпа", "Opasnostei_warpa_rgb_ru").." при превышении "..CNumb("100%", "pc_100_rgb").." уровня "..CKWord("опасности", "opasnosti_rgb_ru")..".",
+			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
+					-- .."利用因『"..CKWord("", "Peril_rgb_tw").."』超過『"..CNumb("100%", "pc_100_rgb").."』而引發的靈能爆炸，\n"
+					-- .."擊殺 "..CNumb("{target}", "target_rgb").." 名精英敵人。",
+		},
+	--[+ Pick n' Mix +]-- руоф Выбирай и смешивай -- 每樣來點
+		--[+ While on Heresy Threat or higher, use Brain Burst to kill 4 different Elite or Specialist enemies within 12s. +]-- руоф При угрозе «Ересь» или выше используйте «Взрыв разума», чтобы убить различных врагов (4) ранга элита или специалист за 12 с.
+		["loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_description_rework"] = {
+			en = "While on "..CKWord("Heresy", "heresy_rgb").." Threat or higher, use "..CKWord("Brain Burst", "Brain_burst_rgb").." Blitz to kill "..CNumb("{target}", "target_rgb").." different Elite or Specialist enemies within "..CNumb("{time_window}", "time_wind_rgb").." seconds.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, используйте блиц "..CKWord("Взрыв мозга", "bburst0_rgb_ru")..", чтобы убить "..CNumb("{target}", "target_rgb").." разных элитных врагов или специалистов в течение "..CNumb("{time_window}", "time_wind_rgb").." секунд.",
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』，\n"
+					-- .."在 "..CNumb("{time_window}", "time_wind_rgb").." 秒內擊殺 "..CNumb("{target}", "target_rgb").." 種不同的精英或專家敵人。",
+		},
+	--[+ Malleus Monstronum +]-- руоф Маллеус Монстронум -- 憎惡之錘
+		--[+ On Heresy Threat or higher, kill a Monstrosity after damaging 50% of its health with your Brain Burst or Brain Rupture. +]--
+		["loc_achievement_psyker_2_kill_boss_solo_with_smite_fix_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, kill a Monstrosity after damaging "..CNumb("50%", "pc_50_rgb").." of its "..CKWord("Health", "Health_rgb").." with your "..CKWord("Brain Burst", "Brain_burst_rgb").." or "..CKWord("Brain Rupture", "Brain_rupture_rgb").." Blitz.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте Монстра после того, как вы нанесли ему не менее "..CNumb("50%", "pc_50_rgb").." урона "..CKWord("здоровью", "zdoroviu_rgb_ru").." с помощью блица "..CKWord("Взрыв мозга", "bburst0_rgb_ru").." или "..CKWord("Разрыв мозга", "bburst1_rgb_ru")..".",
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
+					-- .."使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』或『"..CKWord("", "bburst1_rgb_tw").."』，\n"
+					-- .."對巨獸造成不少於 "..CNumb("50%", "pc_50_rgb").." 的生命值傷害，並將其擊殺。",
+		},
 
-	-- --[+ Complete 1 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_4_1_ext_desc_ru",
-		-- {"loc_missions_psyker_2_easy_difficulty_1_description"}, {"ru"},
-			-- loc_text(PHRS.cmpl_1_mssn_sedition_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在騷亂威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_psy_4_1_ext_desc_tw",
-		-- {"loc_missions_psyker_2_easy_difficulty_1_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_sedition_tw)),
 
-	-- --[+ Complete 1 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Восстание» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_4_2_ext_desc_ru",
-		-- {"loc_missions_psyker_2_easy_difficulty_2_description"}, {"ru"},
-			-- loc_text(PHRS.cmpl_1_mssn_uprising_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在起義威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_psy_4_2_ext_desc_tw",
-		-- {"loc_missions_psyker_2_easy_difficulty_2_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_uprising_tw)),
-
-	-- --[+ Complete 1 Missions on Malice Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Злоба» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_4_3_ext_desc_ru",
-		-- {"loc_missions_psyker_2_easy_difficulty_3_description"}, {"ru"},
-			-- loc_text(PHRS.cmpl_1_mssn_malice_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_psy_4_3_ext_desc_tw",
-		-- {"loc_missions_psyker_2_easy_difficulty_3_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_malice_tw)),
-
-	-- --[+ Complete 1 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Ересь» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_4_4_ext_desc_ru",
-		-- {"loc_missions_psyker_2_easy_difficulty_4_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссию на сложности "..CKWord("", "damnation_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_psy_4_4_ext_desc_tw",
-		-- {"loc_missions_psyker_2_easy_difficulty_4_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_heresy_tw)),
-
-	-- --[+ Complete 1 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_4_5_ext_desc_ru",
-		-- -- {"loc_missions_psyker_2_easy_difficulty_5_description"}, {"ru"},
-			-- -- loc_text(PHRS.cmpl_1_mssn_damnation_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在詛咒威脅度或更高難度下完成1個任務
-	-- -- create_template("ach_class_psy_4_5_ext_desc_tw",
-		-- -- {"loc_missions_psyker_2_easy_difficulty_5_description"}, {"zh-tw"},
-			-- -- loc_text(PHRS.cmpl_1_mssn_damnation_tw)),
-
-	-- --[+ Kinetic Killer (1-3) +]-- руоф Кинетический убийца (1-3)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_14_ext_ru",
-		-- -- {"loc_achievement_group_class_psyker_2_1-3_name"}, {"ru"},
-			-- --loc_text("Кинетический убийца (1-3)")),
-	-- --[+ Traditional Chinese 靈能殺手 (1-3) +]--
-	-- -- create_template("ach_class_psy_14_ext_tw",
-		-- -- {"loc_achievement_group_class_psyker_2_1-3_name"}, {"zh-tw"},
-			-- --loc_text("靈能殺手 (1-3)")),
-
-	-- --[+ Complete the following Penances as the Psyker. +]-- руоф Выполните следующие искупления за Псайкера.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_psy_8_ext_desc_ru",
-		-- {"loc_group_class_challenges_psyker_2_x_description", "loc_achievement_group_class_psyker_2_description", "loc_group_psyker_2_rank_4_difficulty_3_description", "loc_group_psyker_2_rank_5_difficulty_4_description", "loc_group_psyker_2_rank_1_difficulty_1_description","loc_group_psyker_2_rank_2_difficulty_2_description"}, {"ru"},
-			-- loc_text("Завершите следующие Искупления "..CKWord("", "cls_psy2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用靈能者完成以下苦修
-	-- create_template("ach_red_psy_8_ext_desc_tw",
-		-- {"loc_group_psyker_2_rank_4_difficulty_3_description", "loc_group_psyker_2_rank_5_difficulty_4_description", "loc_group_psyker_2_rank_1_difficulty_1_description", "loc_group_psyker_2_rank_2_difficulty_2_description", "loc_achievement_group_class_psyker_2_description", "loc_group_class_challenges_psyker_2_x_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_psy2_rgb_tw").." 完成以下苦修。")),
-
-	-- --[+ Unleash the Warp - Высвободи варп +]-- руоф Извергни варп
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_12_ext_ru",
-		-- {"loc_achievement_psyker_2_medium_2_name"}, {"ru"},
-			-- loc_text("Высвободи варп")),
-	-- --[+ Traditional Chinese 亞空間釋放 +]--
-	-- create_template("ach_class_psy_12_ext_tw",
-		-- {"loc_achievement_psyker_2_medium_2_name"}, {"zh-tw"},
-			-- loc_text("亞空間釋放")),
-
-	-- --[+ On Malice Threat or higher, kill 2500 enemies with Warp attacks. +]-- руоф При угрозе «Злоба» или выше убейте врагов (2500) варп-атаками.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_12_ext_desc_ru",
-		-- -- {"loc_achievement_psyker_2_medium_2_description"}, {"ru"},
-			-- -- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов варп-атаками."..TALENTS_Enh_desc_penances_ru.ED_Unleash_warp_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，使用亞空間攻擊擊殺2500個敵人。
-	-- -- create_template("ach_class_psy_12_ext_desc_tw",
-		-- -- {"loc_achievement_psyker_2_medium_2_description"}, {"zh-tw"},
-			-- -- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Damagewrp_a_rgb_tw").." 擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。"..TALENTS_Enh_desc_penances_tw.ED_Unleash_warp_rgb_tw)),
-
-	-- --[+ Keep Your Distance +]-- руоф Не подходи близко
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_13_ext_ru",
-		-- {"loc_achievement_psyker_2_hard_2_name"}, {"ru"},
-			-- loc_text("Держи дистанцию")),
-	-- --[+ Traditional Chinese 保持距離 +]--
-	-- create_template("ach_class_psy_13_ext_tw",
-		-- {"loc_achievement_psyker_2_hard_2_name"}, {"zh-tw"},
-			-- loc_text("保持距離")),
-
-	-- --[+ On Heresy Threat or higher, complete 3 full Missions without being hit in melee by an Elite enemy. +]-- руоф При угрозе «Ересь» или выше полностью выполните задание 3 р., чтобы элитный враг ни разу не попал по вам в ближнем бою.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_13_ext_desc_ru",
-		-- {"loc_achievement_psyker_2_hard_2_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, завершите полностью "..CNumb("{target}", "target_rgb").." миссии без получения ударов в ближнем бою от элитных врагов.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，不被精英敵人近戰命中的情況下完成3個任務。
-	-- create_template("ach_class_psy_13_ext_desc_tw",
-		-- {"loc_achievement_psyker_2_hard_2_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，\n完成 "..CNumb("{target}", "target_rgb").." 場任務，且未曾被精英敵人以近戰攻擊命中。")),
-
-	-- --[+ Cliffhanger +]-- руоф Не подходи близко
-	-- --[+ Russian +]--
-	-- create_template("ach_red_psy_3_ext_ru",
-		-- {"loc_achievement_psyker_2_edge_kills_last_2_sec_name"}, {"ru"},
-			-- loc_text("Неожиданный поворот")),
-	-- --[+ Traditional Chinese 懸崖邊緣 +]--
-	-- create_template("ach_red_psy_3_ext_tw",
-		-- {"loc_achievement_psyker_2_edge_kills_last_2_sec_name"}, {"zh-tw"},
-			-- loc_text("懸崖邊緣")),
-
-	-- --[+ Kill 7 enemies within 2s by knocking them off a ledge. +]-- руоф Убейте врагов (7) за 2 с., сбросив их с уступа.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_psy_3_ext_desc_ru",
-		-- -- {"loc_achievement_psyker_2_edge_kills_last_2_sec_description"}, {"ru"},
-			-- -- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов в течение "..COLORS_Numbers.time_wind_rgb").." секунд, сбросив их с уступа."..TALENTS_Enh_desc_penances_ru.ED_Cliffhanger_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在2秒內透過將敵人從邊緣擊落擊殺7名敵人。
-	-- -- create_template("ach_red_psy_3_ext_desc_tw",
-		-- -- {"loc_achievement_psyker_2_edge_kills_last_2_sec_description"}, {"zh-tw"},
-			-- -- loc_text("在 "..COLORS_Numbers.time_wind_rgb").." 秒內，將 "..CNumb("{target}", "target_rgb").." 名敵人推落邊緣擊殺。" .. TALENTS_Enh_desc_penances_tw.ED_Cliffhanger_rgb_tw)),
-
-	-- --[+ Lifeleech (1-5) +]-- руоф Похититель жизни (1-5)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_2_ext_ru",
-		-- -- {"loc_achievement_missions_psyker_2_1-5_name"}, {"ru"},
-			-- --loc_text("Похититель жизни (1-5)")),
-	-- --[+ Traditional Chinese 生命榨取 +]--
-	-- -- create_template("ach_class_psy_2_ext_tw",
-		-- -- {"loc_achievement_missions_psyker_2_1-5_name"}, {"zh-tw"},
-			-- --loc_text("生命榨取 (1-5)")),
-
-	-- --[+ Complete 100 Missions as a Psyker. +]-- руоф Выполнить Псайкером задания: 100.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_2_ext_desc_ru",
-		-- {"loc_achievement_missions_psyker_2_x_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("", "cls_psy2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用靈能者完成xx項任務。
-	-- create_template("ach_class_psy_2_ext_desc_tw",
-		-- {"loc_achievement_missions_psyker_2_x_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_psy2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Touch the Void (1-3) +]-- руоф Прикоснись к пустоте (1-3)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_3_ext_ru",
-		-- -- {"loc_achievement_missions_psyker_2_objective_1-3_name"}, {"ru"},
-			-- --loc_text("Коснись Пустоты (1-3)")),
-	-- --[+ Traditional Chinese 觸碰虛空 +]--
-	-- -- create_template("ach_class_psy_3_ext_tw",
-		-- -- {"loc_achievement_missions_psyker_2_objective_1-3_name"}, {"zh-tw"},
-			-- --loc_text("觸碰虛空 (1-3)")),
-
-	-- --[+ As a Psyker, complete a Mission of each type. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_3_1_ext_desc_ru",
-		-- {"loc_achievement_missions_psyker_2_objective_1_description"}, {"ru"},
-			-- loc_text("Завершите по одной миссии каждого типа "..CKWord("", "cls_psy2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用靈能者，完成每種類型的任務至少一項。
-	-- create_template("ach_class_psy_3_1_ext_desc_tw",
-		-- {"loc_achievement_missions_psyker_2_objective_1_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_psy2_rgb_tw").."，完成以下任務 "..COLORS_Numbers.n_1_rgb").." 次。")),
-
-	-- --[+ As a Psyker, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_3_2_ext_desc_ru",
-		-- {"loc_achievement_missions_psyker_2_objective_2_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, завершите по одной миссии каждого типа "..CKWord("", "cls_psy2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，使用靈能者完成每種類型的任務至少一項。
-	-- create_template("ach_class_psy_3_2_ext_desc_tw",
-		-- {"loc_achievement_missions_psyker_2_objective_2_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_psy2_rgb_tw").." ，\n在『"..CKWord("", "malice_rgb_tw").."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb").." 次。")),
-
-	-- --[+ As a Psyker, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_3_3_ext_desc_ru",
-		-- {"loc_achievement_missions_psyker_2_objective_3_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, завершите по одной миссии каждого типа "..CKWord("", "cls_psy2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，使用靈能者完成每種類型的任務至少一項。
-	-- create_template("ach_class_psy_3_3_ext_desc_tw",
-		-- {"loc_achievement_missions_psyker_2_objective_3_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_psy2_rgb_tw").." ，\n在『"..CKWord("", "heresy_rgb_tw").."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb").." 次。")),
-
-	-- --[+ Mind over Matter (1-6) +]-- руоф Разум превыше материи (1-6)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_1_ext_ru",
-		-- -- {"loc_achievement_rank_psyker_2_1-6_name"}, {"ru"},
-			-- --loc_text("Разум превыше материи (1-6)")),
-	-- --[+ Traditional Chinese 心勝於物 (1-6) +]--
-	-- -- create_template("ach_class_psy_1_ext_tw",
-		-- -- {"loc_achievement_rank_psyker_2_1-6_name"}, {"zh-tw"},
-			-- --loc_text("心勝於物 (1-6)")),
-
-	-- --[+ Reach Trust Level 30 as a Psyker. +]-- руоф Заслужить уровень доверия 30, играя за Псайкера.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_1_ext_desc_ru",
-		-- {"loc_achievement_rank_psyker_2_x_description"}, {"ru"},
-			-- loc_text("Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("", "cls_psy2_rgb_ru")..".")),
-	-- -- [+ Traditional Chinese +]--
-	-- -- 使用靈能者達到信任等級xx
-	-- create_template("ach_class_psy_1_ext_desc_tw",
-		-- {"loc_achievement_rank_psyker_2_x_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_psy2_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。")),
-
-	-- --[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_psy_1_ext_ru",
-		-- -- {"loc_missions_psyker_2_medium_difficulty_1-5_name"}, {"ru"},
-			-- -- loc_text("Сражайтесь достойно (1-5)")),
-	-- --[+ Traditional Chinese 為了正義而戰 +]--
-	-- -- create_template("ach_red_psy_1_ext_tw",
-		-- -- {"loc_missions_psyker_2_medium_difficulty_1-5_name"}, {"zh-tw"},
-			-- -- loc_text("為了正義而戰 (1-5)")),
-
-	-- --[+ Complete 5 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_psy_1_1_ext_desc_ru",
-		-- {"loc_missions_psyker_2_medium_difficulty_1_description"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_psy2_rgb_ru").." завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "sedition_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在騷亂威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_psy_1_1_ext_desc_tw",
-		-- {"loc_missions_psyker_2_medium_difficulty_1_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "sedition_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_psy2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_psy_1_2_ext_desc_ru",
-		-- {"loc_missions_psyker_2_medium_difficulty_2_description"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_psy2_rgb_ru").." завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "uprising_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在起義威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_psy_1_2_ext_desc_tw",
-		-- {"loc_missions_psyker_2_medium_difficulty_2_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "uprising_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_psy2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_psy_1_3_ext_desc_ru",
-		-- {"loc_missions_psyker_2_medium_difficulty_3_description"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_psy2_rgb_ru").." завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "malice_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_psy_1_3_ext_desc_tw",
-		-- {"loc_missions_psyker_2_medium_difficulty_3_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_psy2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_psy_1_4_ext_desc_ru",
-		-- {"loc_missions_psyker_2_medium_difficulty_4_description"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_psy2_rgb_ru").." завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "heresy_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_psy_1_4_ext_desc_tw",
-		-- {"loc_missions_psyker_2_medium_difficulty_4_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_psy2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_psy_1_5_ext_desc_ru",
-		-- {"loc_missions_psyker_2_medium_difficulty_5_description"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_psy2_rgb_ru").." завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "damnation_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在詛咒威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_psy_1_5_ext_desc_tw",
-		-- {"loc_missions_psyker_2_medium_difficulty_5_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "damnation_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_psy2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
--- --[+ +СПОСОБНОСТИ+ +]--
-	-- --[+ Charged with Purpose +]-- руоф Заряженные целью
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_7_ext_ru",
-		-- -- {"loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_name"}, {"ru"},
-			-- --loc_text("Заряженные целью")),
-	-- --[+ Traditional Chinese 壓倒性的存在 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_name"}, {"zh-tw"},
-			-- loc_text("壓倒性的存在")),
-
-	-- --[+ Kill 2500 enemies stunned by your Smite. Kills made by your Smite. Kills made by your team members also count. +]-- руоф Убейте врагов (2500), оглушенных вашим «Сокрушением». Убийства, совершенные членами команды, тоже учитываются.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_desc_ru",
-		-- {"loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов, оглушённых вашим блицом "..CKWord("", "smite_rgb_ru")..". Убийства, совершённые членами вашей команды, также учитываются.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 擊殺2500名受你懲戒眩暈的敵人。由小隊成員造成的擊殺也算。
-	-- create_template("ach_class_psy_7_ext_desc_tw",
-		-- {"loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_description"}, {"zh-tw"},
-			-- loc_text("擊殺 "..CNumb("{target}", "target_rgb").." 名被 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "smite_rgb_tw").."』"..CKWord("", "Staggers_rgb_tw").." 的敵人。\n由隊友擊殺的也會計算。")),
-
-	-- --[+ Defy Fate +]-- руоф Брось вызов судьбе
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_7_ext_ru",
-		-- -- {"loc_achievement_psyker_time_at_max_unnatural_name"}, {"ru"},
-			-- -- loc_text("Брось вызов судьбе")),
-	-- --[+ Traditional Chinese 抵抗命運 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_time_at_max_unnatural_name"}, {"zh-tw"},
-			-- loc_text("抵抗命運")),
-
-	-- --[+ Maintain 15 stacks or more of Disrupt Destiny for a total of 1800 seconds. +]-- руоф Удерживайте не менее 15 зарядов «Разрушенной судьбы» на протяжении 1800 с.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_desc_ru",
-		-- {"loc_achievement_psyker_time_at_max_unnatural_description"}, {"ru"},
-			-- loc_text("Поддерживайте не менее "..COLORS_Numbers.n_15_rgb").." зарядов "..CKWord("", "Precision_rgb_ru").." от ключевого таланта "..CKWord("", "disrdest_rgb_ru").." на протяжении "..CNumb("30", "n_30_rgb").." минут.")), -- 1800 секунд ("..CNumb("{target}", "target_rgb").." секунд)
-	-- --[+ Traditional Chinese +]--
-	-- -- 維持15層或更多層擾動命運至少1800秒。
-	-- create_template("ach_class_psy_7_ext_desc_tw",
-		-- {"loc_achievement_psyker_time_at_max_unnatural_description"}, {"zh-tw"},
-			-- loc_text("在 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "disrdest_rgb_tw").."』效果下，\n維持至少 "..COLORS_Numbers.n_15_rgb").." 層『"..CKWord("", "Precision_rgb_tw").."』狀態，累積達 "..CNumb("30", "n_30_rgb").." 分鐘。")),
-
-	-- --[+ Warp Battery +]-- руоф Варп-аккумулятор
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_psy_4_ext_ru",
-		-- -- {"loc_achievement_psyker_2_stay_at_max_souls_for_duration_name"}, {"ru"},
-			-- -- loc_text("Варп-аккумулятор")),
-	-- --[+ Traditional Chinese 亞空間電池 +]--
-	-- create_template("ach_red_psy_4_ext_tw",
-		-- {"loc_achievement_psyker_2_stay_at_max_souls_for_duration_name"}, {"zh-tw"},
-			-- loc_text("亞空間電池")),
-
-	-- --[+ While on Malice Threat or higher, in a single session maintain maximum Warp Charges for 120s. +]-- руоф При угрозе «Злоба» или выше в режиме одиночной игры поддерживайте максимум варп-зарядов в течение 120 с.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_psy_4_ext_desc_ru",
-		-- -- {"loc_achievement_psyker_2_stay_at_max_souls_for_duration_description"}, {"ru"},
-			-- -- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, в течение одной миссии сохраняйте максимальное количество зарядов варпа в течение "..CNumb("{target}", "target_rgb").." секунд."..TALENTS_Enh_desc_penances_ru.ED_Warp_battery_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，單個任務分段內保持最大亞空間充能120秒。
-	-- -- create_template("ach_red_psy_4_ext_desc_tw",
-		-- -- {"loc_achievement_psyker_2_stay_at_max_souls_for_duration_description"}, {"zh-tw"},
-			-- -- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，於單場任務中持續維持最高層數亞空間充能 "..CNumb("{target}", "target_rgb").." 秒。" .. TALENTS_Enh_desc_penances_tw.ED_Warp_battery_rgb_tw)),
-
-	-- --[+ Pick n' Mix +]-- руоф Выбирай и смешивай
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_psy_6_ext_ru",
-		-- -- {"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_name"}, {"ru"},
-			-- -- loc_text("Выбирай и смешивай")),
-	-- --[+ Traditional Chinese 每樣來點 +]--
-	-- create_template("ach_red_psy_6_ext_tw",
-		-- {"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_name"}, {"zh-tw"},
-			-- loc_text("每樣來點")),
-
-	-- --[+ While on Heresy Threat or higher, use Brain Burst to kill 4 different Elite or Specialist enemies within 12s. +]-- руоф При угрозе «Ересь» или выше используйте «Взрыв разума», чтобы убить различных врагов (4) ранга элита или специалист за 12 с.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_psy_6_ext_desc_ru",
-		-- -- {"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_description"}, {"ru"},
-			-- -- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, используйте блиц "..CKWord("", "bburst0_rgb_ru")..", чтобы убить "..CNumb("{target}", "target_rgb").." разных элитных врагов или специалистов в течение "..COLORS_Numbers.time_wind_rgb").." секунд."..TALENTS_Enh_desc_penances_ru.ED_Pick_n_mix_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，在12米內使用大腦爆裂擊殺4個不同的精英或專家敵人。
-	-- -- create_template("ach_red_psy_6_ext_desc_tw",
-		-- -- {"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_description"}, {"zh-tw"},
-			-- -- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』，\n在 "..COLORS_Numbers.time_wind_rgb").." 秒內擊殺 "..CNumb("{target}", "target_rgb").." 種不同的精英或專家敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Pick_n_mix_rgb_tw)),
-
-	-- --[+ Mind's Aegis +]-- руоф Защита разума
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_ru",
-		-- {"loc_achievement_psyker_damage_blocked_with_shield_name"}, {"ru"},
-			-- loc_text("Эгида разума")),
-	-- --[+ Traditional Chinese 心靈之盾 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_damage_blocked_with_shield_name"}, {"zh-tw"},
-			-- loc_text("心靈之盾")),
-
-	-- --[+ Absorb 150000 Damage with Telekine Shield. +]-- руоф Поглотите урон (150000) с помощью «Телекинетического щита».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_desc_ru",
-		-- {"loc_achievement_psyker_damage_blocked_with_shield_description"}, {"ru"},
-			-- loc_text("Поглотите "..CNumb("{target}", "target_rgb").." урона с помощью способности "..CKWord("", "telekshii_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用念力護頓吸收150000點傷害。
-	-- create_template("ach_class_psy_7_ext_desc_tw",
-		-- {"loc_achievement_psyker_damage_blocked_with_shield_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "telekshii_rgb_tw").."』防護 "..CNumb("{target}", "target_rgb").." 點傷害。")),
-
-	-- --[+ Skilled in Psykhana +]-- руоф Знаток Псайканы
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_7_ext_ru",
-		-- -- {"loc_achievement_psyker_kills_with_empowered_abilites_name"}, {"ru"},
-			-- -- loc_text("Знаток Псайканы")),
-	-- --[+ Traditional Chinese 熟練靈能 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_kills_with_empowered_abilites_name"}, {"zh-tw"},
-			-- loc_text("熟練靈能")),
-
-	-- --[+ Kill 250 Specialists or Elites using abilities empowered by Empowered Psionics. +]-- руоф Убейте особых или элитных врагов (250) с помощью способностей, улучшенных «Усиленными псиониками».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_desc_ru",
-		-- {"loc_achievement_psyker_kills_with_empowered_abilites_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью способностей, усиленных ключевым талантом "..CKWord("", "empsionics_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用以靈能強化提升過的技能擊殺250名專家或精英。
-	-- create_template("ach_class_psy_7_ext_desc_tw",
-		-- {"loc_achievement_psyker_kills_with_empowered_abilites_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "empsionics_rgb_tw").."』後的能力，\n擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。")),
-
-	-- --[+ Not Even Close +]-- руоф Как бы не так
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_psy_2_ext_ru",
-		-- -- {"loc_achievement_psyker_2_smite_hound_mid_leap_name"}, {"ru"},
-			-- -- loc_text("Как бы не так")),
-	-- --[+ Traditional Chinese 差的遠 +]--
-	-- create_template("ach_red_psy_2_ext_tw",
-		-- {"loc_achievement_psyker_2_smite_hound_mid_leap_name"}, {"zh-tw"},
-			-- loc_text("差的遠")),
-
-	-- --[+ Kill a pouncing Pox Hound with Brain Burst. +]-- руоф Убейте с помощью «Взрыва разума» Чумную Гончую, когда она набрасывается на вас.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_psy_2_ext_desc_ru",
-		-- {"loc_achievement_psyker_2_smite_hound_mid_leap_description"}, {"ru"},
-			-- loc_text("Убейте, прыгнувшую Чумную гончую, с помощью блица "..CKWord("", "bburst0_rgb_ru").." или "..CKWord("", "bburst1_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用顱腦爆裂殺死1之猛撲而來的瘟疫獵犬
-	-- create_template("ach_red_psy_2_ext_desc_tw",
-		-- {"loc_achievement_psyker_2_smite_hound_mid_leap_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』或『"..CKWord("", "bburst1_rgb_tw").."』，\n擊殺猛撲中的瘟疫獵犬。")),
-
-	-- --[+ Mind Lance - Копьё разума +]-- руоф Копье разума
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_ru",
-		-- {"loc_achievement_psyker_elite_or_special_kills_with_assail_name"}, {"ru"},
-			-- loc_text("Копьё разума")),
-	-- --[+ Traditional Chinese 心靈之槍 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_elite_or_special_kills_with_assail_name"}, {"zh-tw"},
-			-- loc_text("心靈之槍")),
-
-	-- --[+ Kill 250 Specialists and Elites using Assail. +]-- руоф Убейте особых или элитных врагов (250) с помощью «Нападения».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_desc_ru",
-		-- {"loc_achievement_psyker_elite_or_special_kills_with_assail_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью блица "..CKWord("", "assail_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用靈能攻擊擊殺250名專家或精英。
-	-- create_template("ach_class_psy_7_ext_desc_tw",
-		-- {"loc_achievement_psyker_elite_or_special_kills_with_assail_description"}, {"zh-tw"},
-			-- loc_text("使用『"..CKWord("", "assail_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。")),
-
-	-- --[+ Malleus Monstronum +]-- руоф Маллеус Монстронум
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_psy_7_ext_ru",
-		-- -- {"loc_achievement_psyker_2_kill_boss_solo_with_smite_name"}, {"ru"},
-			-- -- loc_text("Маллеус Монстронум")),
-	-- --[+ Traditional Chinese 憎惡之錘 +]--
-	-- create_template("ach_red_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_2_kill_boss_solo_with_smite_name"}, {"zh-tw"},
-			-- loc_text("憎惡之錘")),
-
-	-- --[+ While on Heresy Threat or higher kill a Monstrosity after damaging 50% of its health with your Brain Burst. (Private Game: Penance can only be completed in a private game) +]-- руоф При угрозе «Ересь» или выше снесите чудовищу 50% здоровья «Взрывом разума», а затем убейте его.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_psy_7_ext_desc_ru",
-		-- {"loc_achievement_psyker_2_kill_boss_solo_with_smite_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, убейте Монстра после того, как вы нанесли ему не менее "..CNumb("50%", "pc_50_rgb").." урона здоровью с помощью блица "..CKWord("", "bburst0_rgb_ru").." или "..CKWord("", "bburst1_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端或更高威脅度下，使用大腦爆裂對1頭巨獸造成其生命值50的傷害後將其擊殺
-	-- create_template("ach_red_psy_7_ext_desc_tw",
-		-- {"loc_achievement_psyker_2_kill_boss_solo_with_smite_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』或『"..CKWord("", "bburst1_rgb_tw").."』，\n對巨獸造成不少於 "..CNumb("50%", "pc_50_rgb").." 的生命值傷害，並將其擊殺。")),
-
-	-- --[+ Perilous Focus +]-- руоф Пагубная концентрация
-	-- ["loc_achievement_psyker_kills_during_overcharge_stance_name"] = {
-		-- en = "Perilous Focus",
-		-- ru = "Угрожающая концентрация",
-		-- fr = "",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
+	--[+ ++OGRYN - ОГРИН++ +]--
+	["loc_class_ogryn_title"] = {
+		en = CKWord("Ogryn", "cls_ogr_rgb"),
+		ru = CKWord("Огрин", "cls_ogr_rgb_ru"),
+		["zh-tw"] = CKWord("歐格林", "cls_ogr_rgb_ru"),
+	},
+		--[+ PROGRESSION - ПРОГРЕСС - 進度 +]--
+	--[+ Got a Bone to Pick (1-6) +]-- руоф Крепкий орешек (1-6)
+	["loc_achievement_rank_ogryn_2_x_name"] = {
+		ru = "Кость в горле ({tier})",
+		["zh-tw"] = "撿塊骨頭 ({tier})",
+	},
+		--[+ Reach Trust Level 30 as a Ogryn. +]-- руоф Получить уровень доверия 30, играя за Огрина.
+		["loc_achievement_rank_ogryn_2_x_description"] = {
+			en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Ogryn", "cls_ogr_rgb")..".",
+			ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Огрином", "cls_ogr2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("歐格林", "cls_ogr2_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+		},
+	--[+ Built Like a Tank (1) +]-- руоф Настоящий танк (1) -- 如坦克一般 (1)
+	["loc_achievement_missions_ogryn_2_x_name"] = {
+		ru = "Крепкий как танк ({tier})",
+		["zh-tw"] = "如坦克一般 ({tier})",
+	},
+		--[+ Complete 100 Missions as a Ogryn. +]-- руоф Выполнить Огрином задания: 100.
+		["loc_achievement_missions_ogryn_2_x_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Ogryn", "cls_ogr_rgb")..".",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Огрином", "cls_ogr2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("歐格林", "cls_ogr2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。",
+		},
+	--[+ Beat-em-Up (1) +]-- руоф Всех порву/Бей их всех (1) -- 揍扁他們 (1)
+	["loc_achievement_missions_ogryn_2_objective_1_name"] = {
+		en = "Beat-em-Up (1)",
+		ru = "Месилово (1)",
+		["zh-tw"] = "揍扁他們 (1)",
+	},
+		--[+ As a Ogryn, complete a Mission of each type. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
+		["loc_achievement_missions_ogryn_2_objective_1_description"] = {
+			en = "As a "..CKWord("Ogryn", "cls_ogr_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
+			ru = "Пройдите "..CKWord("Огрином", "cls_ogr2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
+		},
+	--[+ Beat-em-Up (2) +]-- руоф Всех порву/Бей их всех (2) -- 揍扁他們 (2)
+	["loc_achievement_missions_ogryn_2_objective_2_name"] = {
+		ru = "Месилово (2)",
+		["zh-tw"] = "揍扁他們 (2)",
+	},
+		--[+ As a Ogryn, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
+		["loc_achievement_missions_ogryn_2_objective_2_description"] = {
+			en = "As a "..CKWord("Ogryn", "cls_ogr_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Огрином", "cls_ogr2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+		},
+	--[+ Beat-em-Up (3) +]-- руоф Всех порву/Бей их всех (3) -- 揍扁他們 (3)
+	["loc_achievement_missions_ogryn_2_objective_3_name"] = {
+		ru = "Месилово (3)",
+		["zh-tw"] = "揍扁他們 (3)",
+	},
+		--[+ As a Ogryn, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
+		["loc_achievement_missions_ogryn_2_objective_3_description"] = {
+			en = "As a "..CKWord("Ogryn", "cls_ogr_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Heresy", "heresy_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Огрином", "cls_ogr2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
+		},
+	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5) -- 證明你的價值 (1-5)
+	--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5) -- 為正義而戰 (1-5)
+	--[+ First Steps (1-2) +]-- руоф Первые шаги (1-2) -- 首要步驟 (1-2)
+	--[+ Promotion Material (1-2) +]-- руоф Материалы пропаганды (1-2) -- 樹立榜樣 (1-2)
+	--[+ For The Emperor (1-3) +]-- руоф За императора (1-3) -- 為了皇帝 (1-3)
+		--[+ Complete the following Penances as the Zealot. +]-- руоф Выполнить следующие искупления за Изувера.
+		["loc_achievement_group_ogryn_2_description"] = {
+			en = "Complete the following Penances as the "..CKWord("Ogryn", "cls_ogr_rgb")..".",
+			ru = "Выполните следующие Искупления "..CKWord("Огрином", "cls_ogr2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("歐格林", "cls_ogr2_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+		},
+	--[+ Help Everyone +]-- руоф Спаси всех
+	["loc_achievement_ogryn_2_easy_1_name"] = {
+		ru = "Помогай всем",
+		["zh-tw"] = "樂於助人",
+	},
+		--[+ Revive or Assist 40 Knocked Down or Incapacitated allies. +]-- руоф Воскресите небоеспособных союзников или помогите союзникам, сбитым с ног, 40 р.
+		["loc_achievement_ogryn_2_easy_1_description"] = {
+			en = "Revive or Assist "..CNumb("{target}", "target_rgb").." Knocked Down or Incapacitated Allies.",
+			ru = "Возродите или поднимите "..CNumb("{target}", "target_rgb")..", выведенных из строя или сбитых с ног, союзников.",
+			["zh-tw"] = "救起或復活 "..CNumb("{target}", "target_rgb").." 名被擊倒或癱瘓的隊友。",
+		},
+	--[+ Keep Them Grounded +]-- руоф Вали их!
+	["loc_achievement_ogryn_2_easy_2_name"] = {
+		ru = "Не давай им встать",
+		["zh-tw"] = "全部打倒",
+	},
+		--[+ Knock Down 5000 enemies. +]-- руоф Сбейте с ног врагов 5000 р.
+		["loc_achievement_ogryn_2_easy_2_description"] = {
+			en = "Knock Down "..CNumb("{target}", "target_rgb").." enemies.",
+			ru = "Сбейте с ног "..CNumb("{target}", "target_rgb").." врагов.",
+			["zh-tw"] = "擊倒 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ Cleave Them Down +]-- руоф Порви их!
+	["loc_achievement_ogryn_2_medium_2_name"] = {
+		ru = "Кромсай их",
+		["zh-tw"] = "砍翻他們",
+	},
+		--[+ On Malice Threat or higher, kill 2 enemies with a single Melee Attack 250 times. +]-- руоф При угрозе «Злоба» или выше 250 р. убейте врагов (2) одной атакой ближнего бой.
+		["loc_achievement_ogryn_2_medium_2_description"] = {
+			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, kill "..CNumb("{amount}", "amount_var_rgb").." enemies with a single Melee Attack, "..CNumb("{target}", "target_rgb").." times.",
+			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{amount}", "amount_var_rgb").." врагов одной атакой ближнего боя "..CNumb("{target}", "target_rgb").." раз.",
+			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
+			.."單次近戰攻擊擊殺 "..CNumb("{amount}", "amount_var_rgb").." 名敵人，共達成 "..CNumb("{target}", "target_rgb").." 次。",
+		},
+	--[+ Keep Your Friends Close +]-- руоф Держи друзей близко
+		--[+ On Heresy Threat or higher, complete 3 full Missions without any allies being Knocked Down or Incapacitated for longer than 10 seconds, and without any allies dying. +]-- руоф При угрозе «Ересь» или выше полностью выполните задание 3 р., чтобы ни один союзник не умер и не был сбит с ног или небоестрособен дольше 10 с.
+		["loc_achievement_ogryn_2_hard_1_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, complete "..CNumb("{target}", "target_rgb").." full Missions without any Allies being Knocked Down or Incapacitated for longer than "..CNumb("{time}", "time_rgb").." seconds, and without any Allies dying.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, завершите полностью "..CNumb("{target}", "target_rgb").." миссии так, чтобы никто из союзников не был выведен из строя или сбит с ног более "..CNumb("{time}", "time_rgb").." секунд и чтобы никто из союзников не был убит.",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，完整完成 "..CNumb("{target}", "target_rgb").." 場任務，\n且期間無任何隊友陣亡，或被擊倒超過 "..CNumb("{time}", "time_rgb").." 秒。",
+		},
+	--[+ Bone 'ead (1) +]-- руоф Костяная башка (1)
+	["loc_achievement_group_class_ogryn_2_1_name"] = {
+		ru = "Башковитый (1)",
+		["zh-tw"] = "骨頭骨腦 (1)",
+	},
+	--[+ Bone 'ead (2) +]-- руоф Костяная башка (2)
+	["loc_achievement_group_class_ogryn_2_2_name"] = {
+		ru = "Башковитый (2)",
+		["zh-tw"] = "骨頭骨腦 (2)",
+	},
+	--[+ Bone 'ead (3) +]-- руоф Костяная башка (3)
+	["loc_achievement_group_class_ogryn_2_3_name"] = {
+		ru = "Башковитый (3)",
+		["zh-tw"] = "骨頭骨腦 (3)",
+	},
+		--[+ Complete the following Penances as the Ogryn. +]-- руоф Выполните следующие искупления за Огрина.
+		["loc_achievement_group_class_ogryn_2_description"] = {
+			en = "Complete the following Penances as the "..CKWord("Ogryn", "cls_ogr_rgb")..".",
+			ru = "Выполните следующие Искупления "..CKWord("Огрином", "cls_ogr2_rgb_ru")..".",
+		},
+	--[+ Friends Will be Friends +]-- руоф Друзья останутся друзьями -- 朋友永遠是朋友
+		--[+ Stay in Conherency with a living teammate at all times during a full Mission on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше постоянно оставайтесь под эффектом «Сплоченность» с живым товарищем по команде во время задания.
+		["loc_achievement_ogryn_2_win_with_coherency_all_alive_units_description"] = {
+			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, stay in "..CKWord("Conherency", "Coherency_rgb").." with a living teammate at all times during a full Mission.",
+			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, всегда оставайтесь под действием "..CKWord("сплочённости", "splochennosti_rgb_ru").." с живым союзником на всём протяжении миссии.",
+			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
+				-- .."整場任務期間始終與至少一名存活隊友保持在『"..CKWord("", "Coherency_rgb_tw").."』範圍內。",
+		},
+		--[+ ABILITIES - СПОСОБНОСТИ - 技能 +]--
+	--[+ Clear the Path +]-- руоф Расчисти путь -- 掃清道路
+		--[+ On Malice Threat or higher, knock down 3 Ranged enemies using Bull Rush or Indomitable, 25 times. +]-- руоф При угрозе «Злоба» или выше сбейте с ног врагов (3) с дистанционной атакой с помощью «Бычьего натиска» 25 р.
+		["loc_achievement_ogryn_2_medium_1_fix_description"] = {
+			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, knock down "..CNumb("{num_enemies}", "num_enemies_rgb").." Ranged enemies using "..CKWord("Bull Rush", "bull_rush_rgb").." or "..CKWord("Indomitable", "bull_rush4_rgb").." Ability, "..CNumb("{target}", "target_rgb").." times.",
+			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, "..CNumb("{target}", "target_rgb").." раз сбейте с ног "..CNumb("{num_enemies}", "num_enemies_rgb").." врагов с дальнобойным оружием, используя способность "..CKWord("Рывок быка", "bull_rush_rgb_ru").." или "..CKWord("Неукротимый", "bull_rush4_rgb_ru")..".",
+			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
+				-- .."使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n"
+				-- .."擊倒 "..CNumb("{num_enemies}", "num_enemies_rgb").." 名持遠程武器的敵人 "..CNumb("{target}", "target_rgb").." 次。",
+		},
+	--[+ Be Your Best +]-- руоф Будь лучшим -- 盡力而為
+		--[+ On Heresy Threat or higher, hit 4 consecutive Elite or Specialist enemies with Big Boxes of Hurt or Bombs Away, without missing. Do this 5 times. +]-- руоф При угрозе «Ересь» или выше попадите по элитным врагам или специалистам х4 подряд «Ящиком, полным боли", ни разу не промахиваясь. Повторите 5 р.
+		["loc_achievement_ogryn_2_hard_2_fix_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, hit "..CNumb("{amount}", "amount_var_rgb").." consecutive Elite or Specialist enemies with "..CKWord("Big Boxes of Hurt", "big_box_rgb").." or "..CKWord("Bombs Away!", "big_box2_rgb").." Blitz, without missing. Do this "..CNumb("{target}", "target_rgb").." times.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, попадите не промахиваясь последовательно по "..CNumb("{amount}", "amount_var_rgb").." элитным врагам или специалистам, используя блиц "..CKWord("Большая коробка боли", "big_box_rgb_ru").." или "..CKWord("Бросай бомбы!", "big_box2_rgb_ru")..". Повторите это задание "..CNumb("{target}", "target_rgb").." раз.",
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "big_box_rgb_tw").."』或『"..CKWord("", "big_box2_rgb_tw").."』，\n"
+				-- .."連續成功命中 "..CNumb("{amount}", "amount_var_rgb").." 名精英或專家敵人。需達成 "..CNumb("{target}", "target_rgb").." 次。",
+		},
+	--[+ Pick on Someone Your Own Size +]-- руоф Выбирай по размеру
+	["loc_achievement_ogryn_taunt_shout_hit_name"] = {
+		ru = "Выбери кого-то своего размера",
+		["zh-tw"] = "別欺負弱小",
+	},
+		--[+ Taunt 1000 Specialist or Elite enemies using Loyal Protector. +]-- руоф Спровоцируйте особых или элитных врагов (1000) с помощью «Верного защитника».
+		["loc_achievement_ogryn_taunt_shout_hit_description"] = {
+			en = "Taunt "..CNumb("{target}", "target_rgb").." Specialist or Elite enemies using "..CKWord("Loyal Protector", "loyalprot_rgb").." Ability.",
+			ru = "Спровоцируйте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью способности "..CKWord("Верный защитник", "loyalprot_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "loyalprot_rgb_tw").."』嘲諷，\n"
+				-- .."吸引 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
+		},
+	--[+ Eat This! +]-- руоф Получи!
+	["loc_achievement_ogryn_grenade_rock_elites_or_specialists_name"] = {
+		-- en = "",
+		ru = "На, подавись!",
+		["zh-tw"] = "嚐嚐這個！",
+	},
+		--[+ Kill 75 Specialists or Elites with the Big Friendly Rock. +]-- руоф Убейте особых или элитных врагов (75) с помощью «Большого дружелюбного валуна».
+		["loc_achievement_ogryn_grenade_rock_elites_or_specialists_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." Specialists or Elites with the "..CKWord("Big Friendly Rock", "bigfriendro_rgb")..".",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью блица "..CKWord("", "bigfriendro_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bigfriendro_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
+		},
+	--[+ Crowd Control +]-- руоф Сдерживание толпы
+	["loc_achievement_ogryn_grenade_frag_group_of_enemies_name"] = {
+		ru = "Сдерживание толп",
+		["zh-tw"] = "群體控制",
+	},
+		--[+ With one Frag Bomb kill 25 enemies, 25 times. +]-- руоф Убейте врагов (25) одной «Осколочной бомбой» 25 р.
+		["loc_achievement_ogryn_grenade_frag_group_of_enemies_description"] = {
+			en = "With one "..CKWord("Frag Bomb", "fragbomb_rgb").." kill "..CNumb("{amount}", "amount_var_rgb").." enemies, "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Убейте "..CNumb("{amount}", "amount_var_rgb").." врагов одной осколочной гранатой от блица "..CKWord("Фраг-бомба", "fragbomb_rgb_ru")..". Повторите это задание "..CNumb("{target}", "target_rgb").." раз.",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "fragbomb_rgb_tw").."』，單次擊殺 "..CNumb("{amount}", "amount_var_rgb").." 名敵人。\n"
+				-- .."共需達成 "..CNumb("{target}", "target_rgb").." 次。",
+		},
+	--[+ Onslaught +]-- руоф Сдерживание толпы
+	-- ["loc_achievement_ogryn_grenade_frag_group_of_enemies_name"] = {
+		-- ru = "Натиск",
 	-- },
-	["loc_achievement_psyker_kills_during_overcharge_stance_description"] = {
-		en = "Kill "..CNumb("{target}", "target_rgb").." enemies under the effects of a single "..CKWord("Scrier's Gaze", "Scriers_gaze_rgb").." activation.",
-		ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, находясь под эффектом способности "..CKWord("", "Scriers_gaze_rgb_ru")..", в течение однократного её применения.", -- руоф Убейте врагов (40), находясь под действием одного заряда «Взора Скрира».
-		-- fr = "",
-		-- ["zh-tw"] = "單次 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "scriersgaze_rgb_tw").."』期間，擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。", -- 於同一次賽爾凝視效果期間，擊殺40名敵人。
-		-- ["zh-cn"] = "",
+		--[+ Kill 5000 enemies with heavy attacks, while at Max Stacks of Heavy Hitter. +]--
+		["loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_new_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies with Heavy Attacks, while at Max Stacks of "..CKWord("Heavy Hitter", "heavyhitter_rgb").." Keystone.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов заряженными атаками, удерживая "..CNumb("5", "n_5_rgb").." зарядов ключевого таланта "..CKWord("Тяжёлый нападающий", "heavyhitter_rgb_ru")..".",
+			-- ["zh-tw"] = "維持 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "heavyhitter_rgb_tw").."』達到 "..CNumb("5", "n_5_rgb").." 層時，\n"
+				-- .."使用重擊擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ Spray and Pray (To the Emperor) +]-- руоф Стреляй и восхваляй (Императора)
+	["loc_achievement_ogryn_kills_during_barrage_threshold_name"] = {
+		-- en = "",
+		ru = "Стреляй и молись (Императору)",
+		["zh-tw"] = "掃射，然後向帝皇祈禱吧",
 	},
-
-		-- {"loc_achievement_psyker_kills_during_overcharge_stance_description"}, {"ru"},
-			-- loc_text("")),
-
-
-	-- --[+ Overwhelming Presence +]-- руоф Подавляющее присутствие
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_7_ext_ru",
-		-- -- {"loc_achievement_psyker_team_elite_aura_kills_name"}, {"ru"},
-			-- -- loc_text("Подавляющее присутствие")),
-	-- --[+ Traditional Chinese 壓倒性的存在 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_team_elite_aura_kills_name"}, {"zh-tw"},
-			-- loc_text("壓倒性的存在")),
-
-	-- --[+ Kill 2500 Elite or Specialist enemies while under the effect of Kinetic Presence. Kill made by any affected team member also count. +]-- руоф Убейте особых или элитных врагов (2500), находясь под действием «Кинетического присутствия». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_desc_ru",
-		-- {"loc_achievement_psyker_team_elite_aura_kills_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов, находясь под действием ауры "..CKWord("", "kinetpres_rgb_ru")..". Убийства, совершённые любым членом команды, находящимся под действием эффекта ауры, тоже учитываются.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在動能釋放效果啟動時擊殺2500名精英或專家敵人。由獲得效果的小隊成員造成的擊殺也算。
-	-- create_template("ach_class_psy_7_ext_desc_tw",
-		-- {"loc_achievement_psyker_team_elite_aura_kills_description"}, {"zh-tw"},
-			-- loc_text("處於 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "kinetpres_rgb_tw").."』期間，\n擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。\n隊友在此光環下的擊殺也會計算。")),
-
-	-- --[+ Power Up +]-- руоф Полный заряд
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_11_ext_ru",
-		-- -- {"loc_achievement_psyker_2_medium_1_name"}, {"ru"},
-			-- -- loc_text("Полный заряд")),
-	-- --[+ Traditional Chinese 能量提升 +]--
-	-- create_template("ach_class_psy_11_ext_tw",
-		-- {"loc_achievement_psyker_2_medium_1_name"}, {"zh-tw"},
-			-- loc_text("能量提升")),
-
-	-- --[+ On Malice Threat or higher, kill 100 Elite or Specialist enemies with Brain Burst while at maximum Warp Charges. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов или специалистов (100) «Взрывом разума» с максимальным количеством варп-зарядов.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_11_ext_desc_ru",
-		-- {"loc_achievement_psyker_2_medium_1_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью блица "..CKWord("", "bburst0_rgb_ru").." или "..CKWord("", "bburst1_rgb_ru").." пока у вас максимальное количество варп-зарядов.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，再亞空間充能層數達到最高後，使用顱腦爆裂擊殺100名精英或專家敵人。
-	-- create_template("ach_class_psy_11_ext_desc_tw",
-		-- {"loc_achievement_psyker_2_medium_1_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，\n當自身亞空間充能達最大時，\n使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』或『"..CKWord("", "bburst1_rgb_tw").."』，\n擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。")),
-
-	-- --[+ Prioritise Targets +]-- руоф Приоритетные цели
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_7_ext_ru",
-		-- -- {"loc_achievement_psyker_2_easy_1_name"}, {"ru"},
-			-- -- loc_text("Приоритетные цели")),
-	-- --[+ Traditional Chinese 優先目標 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_2_easy_1_name"}, {"zh-tw"},
-			-- loc_text("優先目標")),
-
-	-- --[+ Kill 200 Elite or Specialist enemies with Brain Burst. +]-- руоф Убейте элитных врагов или специалистов (200) «Взрывом разума».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_desc_ru",
-		-- {"loc_achievement_psyker_2_easy_1_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью блица "..CKWord("", "bburst0_rgb_ru").." или "..CKWord("", "bburst1_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用顱腦爆裂擊殺200名精英或專家敵人。
-	-- create_template("ach_class_psy_7_ext_desc_tw",
-		-- {"loc_achievement_psyker_2_easy_1_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』或『"..CKWord("", "bburst1_rgb_tw").."』，\n擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。")),
-
-	-- --[+ Shoot Fast +]-- руоф Стреляй от бедра
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_12_ext_ru",
-		-- {"loc_achievement_psyker_2_hard_1_name"}, {"ru"},
-			-- loc_text("Стреляй быстро")),
-	-- --[+ Traditional Chinese 快槍手 +]--
-	-- create_template("ach_class_psy_12_ext_tw",
-		-- {"loc_achievement_psyker_2_hard_1_name"}, {"zh-tw"},
-			-- loc_text("快槍手")),
-
-	-- --[+ On Heresy Threat or higher, kill 25 Pox Hounds, Mutants or Scab Trappers using Brain Burst before they incapacitate you or an ally. +]-- руоф При угрозе «Ересь» или выше убейте Чумных гончих, Мутантов или Скабов-Ловушечников (25) «Взрывом разума», пока они не успели обезвредить вас или союзника.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_12_ext_desc_ru",
-		-- {"loc_achievement_psyker_2_hard_1_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." Чумных гончих, Мутантов или Ловушечников, используя "..CKWord("", "bburst0_rgb_ru").." или "..CKWord("", "bburst1_rgb_ru").." до того как они вывели из строя вас или союзника.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，在瘟疫獵犬、變種人、或血痂陷阱兵使你或你的盟友無法行動前，擊殺25個此類敵人。
-	-- create_template("ach_class_psy_12_ext_desc_tw",
-		-- {"loc_achievement_psyker_2_hard_1_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』或『"..CKWord("", "bburst1_rgb_tw").."』，\n在瘟疫獵犬、突變者或陷阱兵使你或隊友癱瘓前，\n擊殺他們，共計 "..CNumb("{target}", "target_rgb").." 次。")),
-
-	-- --[+ Lucky BLow +]-- руоф Счастливый удар
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_ru",
-		-- {"loc_achievement_psyker_team_critical_hits_name"}, {"ru"},
-			-- loc_text("Удачный удар")),
-	-- --[+ Traditional Chinese 幸運一擊 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_team_critical_hits_name"}, {"zh-tw"},
-			-- loc_text("幸運一擊")),
-
-	-- --[+ Critically strike 7500 enemies while under the effects of Prescience. Critical strikes made by any affected team member also count. +]-- руоф Нанесите врагам критические удары (7500), находясь под действием «Предвидения». Критические удары любого члена команды под действием эффекта тоже учитываются.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_desc_ru",
-		-- {"loc_achievement_psyker_team_critical_hits_description"}, {"ru"},
-			-- loc_text("Нанесите врагам "..CNumb("{target}", "target_rgb").." критических ударов, находясь под действием ауры "..CKWord("", "prescience_rgb_ru")..". Критические удары любого члена команды, находящегося под действием эффекта ауры, тоже учитываются.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在預兆效果啟動時報及7500名敵人。由獲得效果的小隊成員造成的暴擊也算。
-	-- create_template("ach_class_psy_7_ext_desc_tw",
-		-- {"loc_achievement_psyker_team_critical_hits_description"}, {"zh-tw"},
-			-- loc_text("在 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "prescience_rgb_tw").."』期間，對敵人造成 "..CNumb("{target}", "target_rgb").." 次致命一擊。\n隊友在此光環下造成的致命一擊也會計算。")),
-
-	-- --[+ Blessed by Fate +]-- руоф Хранимый судьбой
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_8_ext_ru",
-		-- {"loc_achievement_psyker_2_easy_2_name"}, {"ru"},
-			-- loc_text("Благословенный судьбой")),
-	-- --[+ Traditional Chinese 命運保佑 +]--
-	-- create_template("ach_class_psy_8_ext_tw",
-		-- {"loc_achievement_psyker_2_easy_2_name"}, {"zh-tw"},
-			-- loc_text("命運保佑")),
-
-	-- --[+ Use Psykinetic's Wrath to survive Perils of the Warp 50 times. +]-- руоф Воспользуйтесь «Психокинетическим гневом» 50 р., чтобы не погибнуть от угозы варпа.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_8_ext_desc_ru",
-		-- {"loc_achievement_psyker_2_easy_2_description"}, {"ru"},
-			-- loc_text("Используйте "..CNumb("{target}", "target_rgb").." раз способность "..CKWord("", "psy_wrath_rgb_ru").." или "..CKWord("", "psy_wrath2_rgb_ru")..", чтобы избежать самоподрыва от превышения "..CNumb("100%", "pc_100_rgb").." уровня "..CKWord("", "Peril_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用靈能學者之怒在亞空間反噬中倖存50次。
-	-- create_template("ach_class_psy_8_ext_desc_tw",
-		-- {"loc_achievement_psyker_2_easy_2_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "psy_wrath_rgb_tw").."』或『"..CKWord("", "psy_wrath2_rgb_tw").."』技能，\n成功避免因『"..CKWord("", "Peril_rgb_tw").."』超過『"..CNumb("100%", "pc_100_rgb").."』而引發靈能爆炸。")),
-
-	-- --[+ Empyric Recovery +]-- руоф Эмпирическое восстановление
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_psy_7_ext_ru",
-		-- -- {"loc_achievement_psyker_team_cooldown_reduced_name"}, {"ru"},
-			-- -- loc_text("Эмпирическое восстановление")),
-	-- --[+ Traditional Chinese 經驗恢復 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_team_cooldown_reduced_name"}, {"zh-tw"},
-			-- loc_text("經驗恢復")),
-
-	-- --[+ Restore you or your allies' abilities a total of 2000 seconds faster, while under the effects of Seer's Presence. +]-- руоф Восстановите способности свои или союзников суммарно на 2000 с. быстрее, находясь под действием «Присутствия провидца».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_desc_ru",
-		-- {"loc_achievement_psyker_team_cooldown_reduced_description"}, {"ru"},
-			-- loc_text("Сократите, суммарно на "..CNumb("{target}", "target_rgb").." секунд, время восстановления способностей себе или вашим союзникам с помощью эффекта ауры "..CKWord("", "seerspres_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用先知之眼效果加快自身或盟友的技能恢復時間2000秒。
-	-- --[+ Traditional Chinese +]--
-	-- create_template("ach_class_psy_7_ext_desc_tw",
-		-- {"loc_achievement_psyker_team_cooldown_reduced_description"}, {"zh-tw"},
-			-- loc_text("透過 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "seerspres_rgb_tw").."』效果，\n為自己或隊友縮短技能冷卻時間達 "..CNumb("{target}", "target_rgb").." 秒。")),
-
-	-- --[+ Going Out With a Bang +]-- руоф Эффектный выход
-	-- --[+ Russian +]--
-	-- create_template("ach_red_psy_5_ext_ru",
-		-- {"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_name"}, {"ru"},
-			-- loc_text("Взрывной финал")),
-	-- --[+ Traditional Chinese 赫然死亡 +]--
-	-- create_template("ach_red_psy_5_ext_tw",
-		-- {"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_name"}, {"zh-tw"},
-			-- loc_text("赫然死亡")),
-	
-	-- --[+ While on Malice Threat or higher, kill 1 elite enemies with a single Perils of the Warp explosion. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов (1) за однократное применение угрозы от взрыва варпа.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_psy_5_ext_desc_ru",
-		-- {"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." элитного врага самоподрывом псайкера от превышения "..CNumb("100%", "pc_100_rgb").." уровня "..CKWord("", "Peril_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，使用亞空間反噬殺死1個精英敵人。
-	-- create_template("ach_red_psy_5_ext_desc_tw",
-		-- {"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，\n利用因『"..CKWord("", "Peril_rgb_tw").."』超過『"..CNumb("100%", "pc_100_rgb").."』而引發的靈能爆炸，\n擊殺 "..CNumb("{target}", "target_rgb").." 名精英敵人。")),
-
-	-- --[+ ++OGRYN - ОГРИН++ +]--
-		-- create_template("ach_class_ogr_0_ext_ru",
-		-- {"loc_class_ogryn_title"}, {"ru"},
-			-- loc_text(COLORS_KWords_ru.cls_ogr_rgb_ru)),
-		-- create_template("ach_class_ogr_0_ext_tw",
-		-- {"loc_class_ogryn_title"}, {"zh-tw"},
-			-- loc_text(COLORS_KWords_tw.cls_ogr_rgb_tw)),
-
-	-- --[+ ПРОГРЕСС +]--
-	-- --[+ Beat-em-Up (1-3) +]-- руоф Всех порву/Бей их всех (1-3)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_3_ext_ru",
-		-- -- {"loc_achievement_missions_ogryn_2_objective_3_name"}, {"ru"},
-			-- -- loc_text("Избей-их-всех (1-3)")),
-	-- --[+ Traditional Chinese 揍扁他們 +]--
-	-- -- create_template("ach_class_ogr_3_ext_tw",
-		-- -- {"loc_achievement_missions_ogryn_2_objective_3_name"}, {"zh-tw"},
-			-- -- loc_text("揍扁他們 (1-3)")),
-
-	-- --[+ As a Ogryn, complete a Mission of each type. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_3_1_ext_desc_ru",
-		-- {"loc_achievement_missions_ogryn_2_objective_1_description"}, {"ru"},
-			-- loc_text("Завершите по одной миссии каждого типа "..CKWord("", "cls_ogr2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用歐格林，完成每種類型的任務至少一項。
-	-- create_template("ach_class_ogr_3_1_ext_desc_tw",
-		-- {"loc_achievement_missions_ogryn_2_objective_1_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_ogr2_rgb_tw").."，完成以下任務 "..COLORS_Numbers.n_1_rgb").." 次。")),
-
-	-- --[+ As a Ogryn, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_3_3_ext_desc_ru",
-		-- {"loc_achievement_missions_ogryn_2_objective_2_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, завершите по одной миссии каждого типа "..CKWord("", "cls_ogr2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，使用狂信徒完成每種類型的任務至少一項。
-	-- create_template("ach_class_ogr_3_3_ext_desc_tw",
-		-- {"loc_achievement_missions_ogryn_2_objective_2_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_ogr2_rgb_tw").." ，\n在『"..CKWord("", "malice_rgb_tw").."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb").." 次。")),
-
-	-- --[+ As a Ogryn, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_3_4_ext_desc_ru",
-		-- {"loc_achievement_missions_ogryn_2_objective_3_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, завершите по одной миссии каждого типа "..CKWord("", "cls_ogr2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，使用狂信徒完成每種類型的任務至少一項。
-	-- create_template("ach_class_ogr_3_4_ext_desc_tw",
-		-- {"loc_achievement_missions_ogryn_2_objective_3_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_ogr2_rgb_tw").." ，\n在『"..CKWord("", "heresy_rgb_tw").."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb").." 次。")),
-
-	-- --[+ Keep Them Grounded +]-- руоф Вали их!
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_8_ext_ru",
-		-- -- {"loc_achievement_ogryn_2_easy_2_name"}, {"ru"},
-			-- -- loc_text("Вали их!")),
-	-- --[+ Traditional Chinese 全部打倒 +]--
-	-- create_template("ach_class_ogr_8_ext_tw",
-		-- {"loc_achievement_ogryn_2_easy_2_name"}, {"zh-tw"},
-			-- loc_text("全部打倒")),
-
-	-- --[+ Knock Down 5000 enemies. +]-- руоф Сбейте с ног врагов 5000 р.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_8_ext_desc_ru",
-		-- {"loc_achievement_ogryn_2_easy_2_description"}, {"ru"},
-			-- loc_text("Сбейте с ног "..CNumb("{target}", "target_rgb").." врагов.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 擊倒5000個敵人。
-	-- create_template("ach_class_ogr_8_ext_desc_tw",
-		-- {"loc_achievement_ogryn_2_easy_2_description"}, {"zh-tw"},
-			-- loc_text("擊倒 "..CNumb("{target}", "target_rgb").." 名敵人。")),
-
-	-- --[+ Keep Your Friends Close +]-- руоф Держи друзей близко
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_12_ext_ru",
-		-- -- {"loc_achievement_ogryn_2_hard_1_name"}, {"ru"},
-			-- -- loc_text("Держи друзей близко")),
-	-- --[+ Traditional Chinese 與朋友保持親密 +]--
-	-- create_template("ach_class_ogr_12_ext_tw",
-		-- {"loc_achievement_ogryn_2_hard_1_name"}, {"zh-tw"},
-			-- loc_text("與朋友保持親密")),
-
-	-- --[+ On Heresy Threat or higher, complete 3 full Missions without any allies being Knocked Down or Incapacitated for longer than 10 seconds, and without any allies dying. +]-- руоф При угрозе «Ересь» или выше полностью выполните задание 3 р., чтобы ни один союзник не умер и не был сбит с ног или небоестрособен дольше 10 с.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_12_ext_desc_ru",
-		-- {"loc_achievement_ogryn_2_hard_1_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, завершите полностью "..CNumb("{target}", "target_rgb").." миссии так, чтобы никто из союзников не был выведен из строя или сбит с ног более "..COLORS_Numbers.time_rgb").." секунд и чтобы никто из союзников не был убит.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，在沒有盟友被擊倒或無法行動超過30秒，且沒有盟友死亡的情況下完成3個完整任務。
-	-- create_template("ach_class_ogr_12_ext_desc_tw",
-		-- {"loc_achievement_ogryn_2_hard_1_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，完整完成 "..CNumb("{target}", "target_rgb").." 場任務，\n且期間無任何隊友陣亡，或被擊倒超過 "..COLORS_Numbers.time_rgb").." 秒。")),
-
-	-- --[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_4_ext_ru",
-		-- -- {"loc_missions_ogryn_2_easy_difficulty_1-5_name"}, {"ru"},
-			-- -- loc_text("Докажи, чего стоишь (1-5)")),
-	-- --[+ Traditional Chinese 證明你的價值 +]--
-	-- -- create_template("ach_class_ogr_4_ext_tw",
-		-- -- {"loc_missions_ogryn_2_easy_difficulty_1-5_name"}, {"zh-tw"},
-			-- -- loc_text("證明你的價值 (1-5)")),
-
-	-- --[+ Complete 1 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_4_1_ext_desc_ru",
-		-- {"loc_missions_ogryn_2_easy_difficulty_1_description"}, {"ru"},
-			-- loc_text(PHRS.cmpl_1_mssn_sedition_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在騷亂威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_ogr_4_1_ext_desc_tw",
-		-- {"loc_missions_ogryn_2_easy_difficulty_1_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_sedition_tw)),
-
-	-- --[+ Complete 1 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Восстание» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_4_2_ext_desc_ru",
-		-- {"loc_missions_ogryn_2_easy_difficulty_2_description"}, {"ru"},
-			-- loc_text(PHRS.cmpl_1_mssn_uprising_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在起義威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_ogr_4_2_ext_desc_tw",
-		-- {"loc_missions_ogryn_2_easy_difficulty_2_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_uprising_tw)),
-
-	-- --[+ Complete 1 Missions on Malice Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Злоба» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_4_3_ext_desc_ru",
-		-- {"loc_missions_ogryn_2_easy_difficulty_3_description"}, {"ru"},
-			-- loc_text(PHRS.cmpl_1_mssn_malice_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_ogr_4_3_ext_desc_tw",
-		-- {"loc_missions_ogryn_2_easy_difficulty_3_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_malice_tw)), 
-
-	-- --[+ Complete 1 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Ересь» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_4_4_ext_desc_ru",
-		-- {"loc_missions_ogryn_2_easy_difficulty_4_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссию на сложности "..CKWord("", "damnation_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下完成1個任務
-	-- create_template("ach_class_ogr_4_4_ext_desc_tw",
-		-- {"loc_missions_ogryn_2_easy_difficulty_4_description"}, {"zh-tw"},
-			-- loc_text(PHRS.cmpl_1_mssn_heresy_tw)),
-
-	-- --[+ Complete 1 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_4_5_ext_desc_ru",
-		-- -- {"loc_missions_ogryn_2_easy_difficulty_5_description"}, {"ru"},
-			-- -- loc_text(PHRS.cmpl_1_mssn_damnation_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在詛咒威脅度或更高難度下完成1個任務
-	-- -- create_template("ach_class_ogr_4_5_ext_desc_tw",
-		-- -- {"loc_missions_ogryn_2_easy_difficulty_5_description"}, {"zh-tw"},
-			-- -- loc_text(PHRS.cmpl_1_mssn_damnation_tw)),
-
-	-- --[+ Friends Will be Friends +]-- руоф Друзья останутся друзьями
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_4_ext_ru",
-		-- -- {"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_name"}, {"ru"},
-			-- -- loc_text("Друзья останутся друзьями")),
-	-- --[+ Traditional Chinese 朋友永遠是朋友 +]--
-	-- create_template("ach_red_ogr_4_ext_tw",
-		-- {"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_name"}, {"zh-tw"},
-			-- loc_text("朋友永遠是朋友")),
-
-	-- --[+ Stay in Conherency with a living teammate at all times during a full Mission on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше постоянно оставайтесь под эффектом «Сплоченность» с живым товарищем по команде во время задания.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_ogr_4_ext_desc_ru",
-		-- {"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, всегда оставайтесь под действием "..CKWord("", "Coherency_rgb_ru").." с живым союзником на всём протяжении миссии.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，在1次完整任務期間與1位存活的隊友始終保持協同。
-	-- create_template("ach_red_ogr_4_ext_desc_tw",
-		-- {"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，\n整場任務期間始終與至少一名存活隊友保持在『"..CKWord("", "Coherency_rgb_tw").."』範圍內。")),
-
-	-- --[+ Bone 'ead (1-3) +]-- руоф Костяная башка (1-3)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_14_ext_ru",
-		-- -- {"loc_achievement_group_class_ogryn_2_1-3_name"}, {"ru"},
-			-- -- loc_text("Костагаловый (1-3)")),
-	-- --[+ Traditional Chinese 骨頭骨腦 (1-3) +]--
-
-	-- --[+ Complete the following Penances as the Ogryn. +]-- руоф Выполните следующие искупления за Огрина.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_ogr_8_ext_desc_ru",
-		-- {"loc_group_class_challenges_ogryn_2_x_description", "loc_achievement_group_class_ogryn_2_description", "loc_group_ogryn_2_rank_4_difficulty_3_description", "loc_group_ogryn_2_rank_5_difficulty_4_description", "loc_group_ogryn_2_rank_1_difficulty_1_description", "loc_group_ogryn_2_rank_2_difficulty_2_description"}, {"ru"},
-			-- loc_text("Завершите следующие Искупления "..CKWord("", "cls_ogr2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用歐格林完成以下苦修。
-	-- create_template("ach_class_ogr_14_ext_desc_tw",
-		-- {"loc_achievement_group_class_ogryn_2_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_ogr2_rgb_tw").." 完成以下苦修。")),
-
-	-- --[+ Got a Bone to Pick (1) +]-- руоф Крепкий орешек (1)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_1_ext_ru",
-		-- -- {"loc_achievement_rank_ogryn_2_1_name"}, {"ru"},
-			-- -- loc_text("Мститель (1)")),
-	-- --[+ Traditional Chinese 撿塊骨頭 +]--
-	-- create_template("ach_class_ogr_1_ext_tw",
-		-- {"loc_achievement_rank_ogryn_2_1_name"}, {"zh-tw"},
-			-- loc_text("撿塊骨頭 (1)")),
-
-	-- --[+ Got a Bone to Pick (2) +]-- руоф Крепкий орешек (2)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_1_ext_ru",
-		-- -- {"loc_achievement_rank_ogryn_2_2_name"}, {"ru"},
-			-- -- loc_text("Мститель (2)")),
-	-- --[+ Traditional Chinese 撿塊骨頭 +]--
-	-- create_template("ach_class_ogr_1_ext_tw",
-		-- {"loc_achievement_rank_ogryn_2_2_name"}, {"zh-tw"},
-			-- loc_text("撿塊骨頭 (2)")),
-
-	-- --[+ Got a Bone to Pick (3) +]-- руоф Крепкий орешек (3)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_1_ext_ru",
-		-- -- {"loc_achievement_rank_ogryn_2_3_name"}, {"ru"},
-			-- -- loc_text("Мститель (3)")),
-	-- --[+ Traditional Chinese 撿塊骨頭 +]--
-	-- create_template("ach_class_ogr_1_ext_tw",
-		-- {"loc_achievement_rank_ogryn_2_3_name"}, {"zh-tw"},
-			-- loc_text("撿塊骨頭 (3)")),
-			
-	-- --[+ Got a Bone to Pick (4) +]-- руоф Крепкий орешек (4)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_1_ext_ru",
-		-- -- {"loc_achievement_rank_ogryn_2_4_name"}, {"ru"},
-			-- -- loc_text("Мститель (4)")),
-	-- --[+ Traditional Chinese 撿塊骨頭 +]--
-	-- create_template("ach_class_ogr_1_ext_tw",
-		-- {"loc_achievement_rank_ogryn_2_4_name"}, {"zh-tw"},
-			-- loc_text("撿塊骨頭 (4)")),
-	
-	-- --[+ Got a Bone to Pick (5) +]-- руоф Крепкий орешек (5)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_1_ext_ru",
-		-- -- {"loc_achievement_rank_ogryn_2_5_name"}, {"ru"},
-			-- -- loc_text("Мститель (5)")),
-	-- --[+ Traditional Chinese 撿塊骨頭 +]--
-	-- create_template("ach_class_ogr_1_ext_tw",
-		-- {"loc_achievement_rank_ogryn_2_5_name"}, {"zh-tw"},
-			-- loc_text("撿塊骨頭 (5)")),
-
-	-- --[+ Got a Bone to Pick (6) +]-- руоф Крепкий орешек (6)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_1_ext_ru",
-		-- -- {"loc_achievement_rank_ogryn_2_6_name"}, {"ru"},
-			-- -- loc_text("Мститель (6)")),
-	-- --[+ Traditional Chinese 撿塊骨頭 +]--
-	-- create_template("ach_class_ogr_1_ext_tw",
-		-- {"loc_achievement_rank_ogryn_2_6_name"}, {"zh-tw"},
-			-- loc_text("撿塊骨頭 (6)")),
-
-		-- --[+ Reach Trust Level 30 as a Ogryn. +]-- руоф Получить уровень доверия 30, играя за Огрина.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_1_ext_desc_ru",
-		-- {"loc_achievement_rank_ogryn_2_x_description"}, {"ru"},
-			-- loc_text("Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("", "cls_ogr2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用歐格林達到信任等級xx。
-	-- create_template("ach_class_ogr_1_ext_desc_tw",
-		-- {"loc_achievement_rank_ogryn_2_x_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_ogr2_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。")),
-
-	-- --[+ Built Like a Tank (1) +]-- руоф Настоящий танк (1)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_2_ext_ru",
-		-- -- {"loc_achievement_missions_ogryn_2_1_name"}, {"ru"},
-			-- -- loc_text("Крепкий как танк (1)")),
-	-- --[+ Traditional Chinese 如坦克一般 (1) +]--
-	-- create_template("ach_class_ogr_2_ext_tw",
-		-- {"loc_achievement_missions_ogryn_2_1_name"}, {"zh-tw"},
-			-- loc_text("如坦克一般 (1)")),
-
-	-- --[+ Built Like a Tank (2) +]-- руоф Настоящий танк (2)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_2_ext_ru",
-		-- -- {"loc_achievement_missions_ogryn_2_2_name"}, {"ru"},
-			-- -- loc_text("Крепкий как танк (2)")),
-	-- --[+ Traditional Chinese 如坦克一般 (2) +]--
-	-- create_template("ach_class_ogr_2_ext_tw",
-		-- {"loc_achievement_missions_ogryn_2_2_name"}, {"zh-tw"},
-			-- loc_text("如坦克一般 (2)")),
-
-	-- --[+ Built Like a Tank (3) +]-- руоф Настоящий танк (3)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_2_ext_ru",
-		-- -- {"loc_achievement_missions_ogryn_2_3_name"}, {"ru"},
-			-- -- loc_text("Крепкий как танк (3)")),
-	-- --[+ Traditional Chinese 如坦克一般 (3) +]--
-	-- create_template("ach_class_ogr_2_ext_tw",
-		-- {"loc_achievement_missions_ogryn_2_3_name"}, {"zh-tw"},
-			-- loc_text("如坦克一般 (3)")),
-
-	-- --[+ Built Like a Tank (4) +]-- руоф Настоящий танк (4)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_2_ext_ru",
-		-- -- {"loc_achievement_missions_ogryn_2_4_name"}, {"ru"},
-			-- -- loc_text("Крепкий как танк (4)")),
-	-- --[+ Traditional Chinese 如坦克一般 (4) +]--
-	-- create_template("ach_class_ogr_2_ext_tw",
-		-- {"loc_achievement_missions_ogryn_2_4_name"}, {"zh-tw"},
-			-- loc_text("如坦克一般 (4)")),
-
-	-- --[+ Built Like a Tank (5) +]-- руоф Настоящий танк (5)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_2_ext_ru",
-		-- -- {"loc_achievement_missions_ogryn_2_5_name"}, {"ru"},
-			-- -- loc_text("Крепкий как танк (5)")),
-	-- --[+ Traditional Chinese 如坦克一般 (5) +]--
-	-- create_template("ach_class_ogr_2_ext_tw",
-		-- {"loc_achievement_missions_ogryn_2_5_name"}, {"zh-tw"},
-			-- loc_text("如坦克一般 (5)")),
-
-	-- --[+ Complete 100 Missions as a Ogryn. +]-- руоф Выполнить Огрином задания: 100.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_2_ext_desc_ru",
-		-- {"loc_achievement_missions_ogryn_2_x_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("", "cls_ogr2_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用歐格林完成xx個任務。
-	-- create_template("ach_class_ogr_2_ext_desc_tw",
-		-- {"loc_achievement_missions_ogryn_2_x_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "cls_ogr2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Cleave Them Down +]-- руоф Порви их!
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_12_ext_ru",
-		-- -- {"loc_achievement_ogryn_2_medium_2_name"}, {"ru"},
-			-- -- loc_text("Рассеки их")),
-	-- --[+ Traditional Chinese 砍翻他們 +]--
-	-- create_template("ach_class_ogr_12_ext_tw",
-		-- {"loc_achievement_ogryn_2_medium_2_name"}, {"zh-tw"},
-			-- loc_text("砍翻他們")),
-
-	-- --[+ On Malice Threat or higher, kill 2 enemies with a single Melee Attack 250 times. +]-- руоф При угрозе «Злоба» или выше 250 р. убейте врагов (2) одной атакой ближнего бой.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_12_ext_desc_ru",
-		-- {"loc_achievement_ogryn_2_medium_2_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, убейте "..COLORS_Numbers.amount_var_rgb").." врагов одной атакой ближнего боя "..CNumb("{target}", "target_rgb").." раз.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意或更高難度下，使用一次近戰攻擊擊殺2個敵，需要達成250次。
-	-- create_template("ach_class_ogr_12_ext_desc_tw",
-		-- {"loc_achievement_ogryn_2_medium_2_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，\n單次近戰攻擊擊殺 "..COLORS_Numbers.amount_var_rgb").." 名敵人，共達成 "..CNumb("{target}", "target_rgb").." 次。")),
-
-	-- --[+ Help Everyone +]-- руоф Спаси всех
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_7_ext_ru",
-		-- {"loc_achievement_ogryn_2_easy_1_name"}, {"ru"},
-			-- loc_text("Помогай всем")),
-	-- --[+ Traditional Chinese 樂於助人 +]--
-	-- create_template("ach_class_ogr_7_ext_tw",
-		-- {"loc_achievement_ogryn_2_easy_1_name"}, {"zh-tw"},
-			-- loc_text("樂於助人")),
-
-	-- --[+ Revive or Assist 40 Knocked Down or Incapacitated allies. +]-- руоф Воскресите небоеспособных союзников или помогите союзникам, сбитым с ног, 40 р.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_7_ext_desc_ru",
-		-- {"loc_achievement_ogryn_2_easy_1_description"}, {"ru"},
-			-- loc_text("Возродите или поднимите "..CNumb("{target}", "target_rgb")..", выведенных из строя или сбитых с ног, союзников.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 復活或協助40個被擊倒或無法行動的盟友。
-	-- create_template("ach_class_ogr_7_ext_desc_tw",
-		-- {"loc_achievement_ogryn_2_easy_1_description"}, {"zh-tw"},
-			-- loc_text("救起或復活 "..CNumb("{target}", "target_rgb").." 名被擊倒或癱瘓的隊友。")),
-
-	-- --[+ Fight the Good Fight (1) +]-- руоф Сражайся достойно (1)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_1_ext_ru",
-		-- -- {"loc_missions_ogryn_2_medium_difficulty_1_name"}, {"ru"},
-			-- -- loc_text("Сражайся достойно (1)")),
-	-- --[+ Traditional Chinese 為正義而戰 (1) +]--
-	-- create_template("ach_red_ogr_1_ext_tw",
-		-- {"loc_missions_ogryn_2_medium_difficulty_1_name"}, {"zh-tw"},
-			-- loc_text("為正義而戰 (1)")),
-
-	-- --[+ Fight the Good Fight (2) +]-- руоф Сражайся достойно (2)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_1_ext_ru",
-		-- -- {"loc_missions_ogryn_2_medium_difficulty_2_name"}, {"ru"},
-			-- -- loc_text("Сражайся достойно (2)")),
-	-- --[+ Traditional Chinese 為正義而戰 (2) +]--
-	-- create_template("ach_red_ogr_1_ext_tw",
-		-- {"loc_missions_ogryn_2_medium_difficulty_2_name"}, {"zh-tw"},
-			-- loc_text("為正義而戰 (2)")),
-	
-	-- --[+ Fight the Good Fight (3) +]-- руоф Сражайся достойно (3)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_1_ext_ru",
-		-- -- {"loc_missions_ogryn_2_medium_difficulty_3_name"}, {"ru"},
-			-- -- loc_text("Сражайся достойно (3)")),
-	-- --[+ Traditional Chinese 為正義而戰 (3) +]--
-	-- create_template("ach_red_ogr_1_ext_tw",
-		-- {"loc_missions_ogryn_2_medium_difficulty_3_name"}, {"zh-tw"},
-			-- loc_text("為正義而戰 (3)")),
-
-	-- --[+ Fight the Good Fight (4) +]-- руоф Сражайся достойно (4)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_1_ext_ru",	
-		-- -- {"loc_missions_ogryn_2_medium_difficulty_4_name"}, {"ru"},
-			-- -- loc_text("Сражайся достойно (4)")),
-	-- --[+ Traditional Chinese 為正義而戰 (4) +]--
-	-- create_template("ach_red_ogr_1_ext_tw",
-		-- {"loc_missions_ogryn_2_medium_difficulty_4_name"}, {"zh-tw"},
-			-- loc_text("為正義而戰 (4)")),
-
-	-- ----[+ Fight the Good Fight (5) +]-- руоф Сражайся достойно (5)
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_1_ext_ru",
-		-- -- {"loc_missions_ogryn_2_medium_difficulty_5_name"}, {"ru"},
-			-- -- loc_text("Сражайся достойно (5)")),
-	-- --[+ Traditional Chinese 為正義而戰 (5) +]--
-	-- create_template("ach_red_ogr_1_ext_tw",
-		-- {"loc_missions_ogryn_2_medium_difficulty_5_name"}, {"zh-tw"},
-			-- loc_text("為正義而戰 (5)")),
-
-	-- --[+ Complete 5 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_ogr_1_1_ext_desc_ru",
-		-- {"loc_missions_ogryn_2_medium_difficulty_1_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "sedition_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在騷亂威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_ogr_1_1_ext_desc_tw",
-		-- {"loc_missions_ogryn_2_medium_difficulty_1_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "sedition_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_ogr2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_ogr_1_2_ext_desc_ru",
-		-- {"loc_missions_ogryn_2_medium_difficulty_2_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "uprising_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在起義威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_ogr_1_2_ext_desc_tw",
-		-- {"loc_missions_ogryn_2_medium_difficulty_2_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "uprising_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_ogr2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_ogr_1_3_ext_desc_ru",
-		-- {"loc_missions_ogryn_2_medium_difficulty_3_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "malice_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_ogr_1_3_ext_desc_tw",
-		-- {"loc_missions_ogryn_2_medium_difficulty_3_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_ogr2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_ogr_1_4_ext_desc_ru",
-		-- {"loc_missions_ogryn_2_medium_difficulty_4_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "heresy_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_ogr_1_4_ext_desc_tw",
-		-- {"loc_missions_ogryn_2_medium_difficulty_4_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_ogr2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_ogr_1_5_ext_desc_ru",
-		-- {"loc_missions_ogryn_2_medium_difficulty_5_description"}, {"ru"},
-			-- loc_text("Завершите "..CNumb("{target}", "target_rgb").." миссий на сложности "..CKWord("", "damnation_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在詛咒威脅度或更高難度下完成5個任務。
-	-- create_template("ach_red_ogr_1_5_ext_desc_tw",
-		-- {"loc_missions_ogryn_2_medium_difficulty_5_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "damnation_rgb_tw").."』或更高難度下，使用 "..CKWord("", "cls_ogr2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。")),
-
-	-- --[+ +СПОСОБНОСТИ+ +]--
-		-- --[+ Munitorum's Favour +]-- руоф Благосклонность Муниторума
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_11_ext_ru",
-		-- -- {"loc_achievement_ogryn_leadbelcher_free_shot_name"}, {"ru"},
-			-- -- loc_text("Благосклонность Муниторума")),
-	-- --[+ Traditional Chinese 軍務部的恩賜 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_leadbelcher_free_shot_name"}, {"zh-tw"},
-			-- loc_text("軍務部的恩賜")),
-
-	-- --[+ Shoot 4500 free rounds of ammo, courtesy of the Burst Limiter Override. +]-- руоф Стреляйте бесплатными боеприпасами (4500) благодаря «Взлому отсечки очереди».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_desc_ru",
-		-- {"loc_achievement_ogryn_leadbelcher_free_shot_description"}, {"ru"},
-			-- loc_text("Отстреляйте "..CNumb("{target}", "target_rgb").." бесплатных патронов, полученных с помощью ключевого таланта "..CKWord("", "burstlimo_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在爆限超載的效果下自由射擊4500發彈藥。
-	-- create_template("ach_class_ogr_11_ext_desc_tw",
-		-- {"loc_achievement_ogryn_leadbelcher_free_shot_description"}, {"zh-tw"},
-			-- loc_text("射出 "..CNumb("{target}", "target_rgb").." 發由 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "burstlimo_rgb_tw").."』所獲得的免費子彈。")),
-
-	-- --[+ Be Your Best +]-- руоф Будь лучшим
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_13_ext_ru",
-		-- -- {"loc_achievement_ogryn_2_hard_2_name"}, {"ru"},
-			-- -- loc_text("Будь лучшим")),
-	-- --[+ Traditional Chinese 盡力而為 +]--
-	-- create_template("ach_class_ogr_13_ext_tw",
-		-- {"loc_achievement_ogryn_2_hard_2_name"}, {"zh-tw"},
-			-- loc_text("盡力而為")),
-
-	-- --[+ On Heresy Threat or higher, hit 4 consecutive Elite or Specialist enemies with Big Boxes of Hurt, without missing. Do this 5 times. +]-- руоф При угрозе «Ересь» или выше попадите по элитным врагам или специалистам х4 подряд «Ящиком, полным боли", ни разу не промахиваясь. Повторите 5 р.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_13_ext_desc_ru",
-		-- {"loc_achievement_ogryn_2_hard_2_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, попадите не промахиваясь последовательно по "..COLORS_Numbers.amount_var_rgb").." элитным врагам или специалистам, используя блиц "..CKWord("", "big_box_rgb_ru").." или "..CKWord("", "big_box2_rgb_ru")..". Повторите это задание "..CNumb("{target}", "target_rgb").." раз.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端威脅度或更高難度下，使用大炸藥箱連續擊中4名精英或專家敵人，中途不能打空。累積完成5次。
-	-- create_template("ach_class_ogr_13_ext_desc_tw",
-		-- {"loc_achievement_ogryn_2_hard_2_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "big_box_rgb_tw").."』或『"..CKWord("", "big_box2_rgb_tw").."』，\n連續成功命中 "..COLORS_Numbers.amount_var_rgb").." 名精英或專家敵人。需達成 "..CNumb("{target}", "target_rgb").." 次。")),
-
-	-- --[+ Loyal Protector +]-- руоф Верный защитник
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_11_ext_ru",
-		-- -- {"loc_achievement_ogryn_team_toughness_restored_aura_name"}, {"ru"},
-			-- -- loc_text("Верный защитник")),
-	-- --[+ Traditional Chinese 忠誠守衛 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_team_toughness_restored_aura_name"}, {"zh-tw"},
-			-- loc_text("忠誠守衛")),
-
-	-- --[+ Restore a total of 15000 Toughness to you or allies in coherency with Stay Close. +]-- руоф Восстановите стойкость свою или союзников под действием «Сплоченности» (суммарно 15000) с помощью «Держись рядом».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_desc_ru",
-		-- {"loc_achievement_ogryn_team_toughness_restored_aura_description"}, {"ru"},
-			-- loc_text("Восстановите суммарно "..CNumb("{target}", "target_rgb").." "..CKWord("", "Toughness_rgb_ru").." себе или союзникам, находящимся под действием "..CKWord("", "Coherency_rgb_ru")..", с помощью эффекта ауры "..CKWord("", "stayclose_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用相互靠近恢復自身或協同中盟友總計15000點韌性。
-	-- create_template("ach_class_ogr_11_ext_desc_tw",
-		-- {"loc_achievement_ogryn_team_toughness_restored_aura_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "stayclose_rgb_tw").."』效果，\n為自己或處於『"..CKWord("", "Coherency_rgb_tw").."』範圍內的隊友，\n恢復累計 "..CNumb("{target}", "target_rgb").." 點『"..CKWord("", "Toughness_rgb_tw").."』。")),
-
-	-- --[+ Pick on Someone Your Own Size +]-- руоф Выбирай по размеру
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_ru",
-		-- {"loc_achievement_ogryn_taunt_shout_hit_name"}, {"ru"},
-			-- loc_text("Выбери кого-то своего размера")),
-	-- --[+ Traditional Chinese 別欺負弱小 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_taunt_shout_hit_name"}, {"zh-tw"},
-			-- loc_text("別欺負弱小")),
-
-	-- --[+ Taunt 1000 Specialist or Elite enemies using Loyal Protector. +]-- руоф Спровоцируйте особых или элитных врагов (1000) с помощью «Верного защитника».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_desc_ru",
-		-- {"loc_achievement_ogryn_taunt_shout_hit_description"}, {"ru"},
-			-- loc_text("Спровоцируйте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью способности "..CKWord("", "loyalprot_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用忠誠守衛嘲諷1000名專家或精英
-	-- create_template("ach_class_ogr_11_ext_desc_tw",
-		-- {"loc_achievement_ogryn_taunt_shout_hit_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "loyalprot_rgb_tw").."』嘲諷，\n吸引 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。")),
-
-	-- --[+ Gone Bowling +]-- руоф Играю в боулинг
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_5_ext_ru",
-		-- -- {"loc_achievement_ogryn_2_bull_rushed_100_enemies_name"}, {"ru"},
-			-- -- loc_text("Играю в боулинг")),
-	-- --[+ Traditional Chinese 全中 +]--
-	-- create_template("ach_red_ogr_5_ext_tw",
-		-- {"loc_achievement_ogryn_2_bull_rushed_100_enemies_name"}, {"zh-tw"},
-			-- loc_text("全中")),
-
-	-- --[+ Knock down 60 enemies with a single Bull Rush on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше сбейте с ног одним зарядом «Бычьего натиска» врагов: 60.
-	-- --[+ Russian +]--
-	-- create_template("ach_red_ogr_5_ext_desc_ru",
-		-- {"loc_achievement_ogryn_2_bull_rushed_100_enemies_description"}, {"ru"},
-			-- loc_text("Сбейте "..CNumb("{target}", "target_rgb").." врагов за одно использование способности "..CKWord("", "bull_rush_rgb_ru").." или "..CKWord("", "bull_rush4_rgb_ru").." на сложности "..CKWord("", "malice_rgb_ru").." или выше.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡毒或以上威脅度，用1次蠻牛衝撞擊倒60名敵人。
-	-- create_template("ach_red_ogr_5_ext_desc_tw",
-		-- {"loc_achievement_ogryn_2_bull_rushed_100_enemies_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n單次衝鋒擊倒 "..CNumb("{target}", "target_rgb").." 名敵人。")),
-
-	-- --[+ Don't Stop Me Now! +]-- руоф Меня не остановить!
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_6_ext_ru",
-		-- -- {"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_name"}, {"ru"},
-			-- -- loc_text("Меня не остановить!")),
-	-- --[+ Traditional Chinese 別讓我停下 +]--
-	-- create_template("ach_red_ogr_6_ext_tw",
-		-- {"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_name"}, {"zh-tw"},
-			-- loc_text("別讓我停下")),
-
-	-- --[+ Move 40 metres with Bull Rush in under 20s on Heresy Threat or higher. (Private Game: Penance can only be completed in a private game) +]-- руоф При угрозе «Ересь» или выше переместитесь на 40 м с помощью «Бычьего натиска» менее чем за 20 с.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_6_ext_desc_ru",
-		-- -- {"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_description"}, {"ru"},
-			-- -- loc_text("Переместитесь на "..CNumb("{target}", "target_rgb").." метров с помощью способности "..CKWord("", "bull_rush_rgb_ru").." или "..CKWord("", "bull_rush4_rgb_ru").." в течение "..COLORS_Numbers.time_wind_rgb").." секунд на сложности "..CKWord("", "heresy_rgb_ru").." или выше."..TALENTS_Enh_desc_penances_ru.ED_Dont_stop_me_now_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在異端或更高威脅度下，在20秒內使用蠻牛衝撞移動40公尺。
-	-- -- create_template("ach_red_ogr_6_ext_desc_tw",
-		-- -- {"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_description"}, {"zh-tw"},
-			-- -- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，\n於 "..COLORS_Numbers.time_wind_rgb").." 秒內，使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』技能移動累計 "..CNumb("{target}", "target_rgb").." 公尺。" ..TALENTS_Enh_desc_penances_tw.ED_Dont_stop_me_now_rgb_tw)),
-
-	-- --[+ Can't Catch Me! +]-- руоф Меня не поймать
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_ru",
-		-- {"loc_achievement_ogryn_ogryn_feel_no_pain_kills_at_max_name"}, {"ru"},
-			-- loc_text("Меня не поймать!")),
-	-- --[+ Traditional Chinese 抓不到我！ +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_ogryn_feel_no_pain_kills_at_max_name"}, {"zh-tw"},
-			-- loc_text("抓不到我！")),
-
-	-- --[+ Kill 2500 enemies while at 7 stacks or higher of Feel No Pain. +]-- руоф Убейте врагов (2500), сохраняя не менее 7 ед. заряда «Неболита».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_desc_ru",
-		-- {"loc_achievement_ogryn_feel_no_pain_kills_at_max_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов, имея не менее "..COLORS_Numbers.n_7_rgb").." зарядов ключевого таланта "..CKWord("", "feelnop_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在疊加了7或以上層數的麻木時擊殺2500名敵人。
-	-- create_template("ach_class_ogr_11_ext_desc_tw",
-		-- {"loc_achievement_ogryn_feel_no_pain_kills_at_max_description"}, {"zh-tw"},
-			-- loc_text("在擁有不少於 "..COLORS_Numbers.n_7_rgb").." 層"..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "feelnop_rgb_tw").."』效果時，擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。")),
-
-	-- --[+ Eat This! +]-- руоф Получи!
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_ru",
-		-- {"loc_achievement_ogryn_grenade_rock_elites_or_specialists_name"}, {"ru"},
-			-- loc_text("На, подавись!")),
-	-- --[+ Traditional Chinese 嚐嚐這個！ +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_grenade_rock_elites_or_specialists_name"}, {"zh-tw"},
-			-- loc_text("嚐嚐這個！")),
-
-	-- --[+ Kill 75 Specialists or Elites with the Big Friendly Rock. +]-- руоф Убейте особых или элитных врагов (75) с помощью «Большого дружелюбного валуна».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_desc_ru",
-		-- {"loc_achievement_ogryn_grenade_rock_elites_or_specialists_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью блица "..CKWord("", "bigfriendro_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用投石問路擊殺75名專家或精英。
-	-- create_template("ach_class_ogr_11_ext_desc_tw",
-		-- {"loc_achievement_ogryn_grenade_rock_elites_or_specialists_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bigfriendro_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。")),
-
-	-- --[+ Pile On +]-- руоф Навались
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_11_ext_ru",
-		-- -- {"loc_achievement_ogryn_team_heavy_aura_kills_name"}, {"ru"},
-			-- -- loc_text("Навались")),
-	-- --[+ Traditional Chinese 堆起來 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_team_heavy_aura_kills_name"}, {"zh-tw"},
-			-- loc_text("堆起來")),
-
-	-- --[+ Kill 5000 enemies with Heavy Attacks while under the effect of Bonebreaker's Aura. Heavy Attack kills made by your team members also count. +]-- руоф Убейте врагов (5000) мощными атаками, находясь под действием «Ауры костолома». Если члены команды убивают мощными атаками, это тоже учитывается.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_desc_ru",
-		-- {"loc_achievement_ogryn_team_heavy_aura_kills_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов заряженными атаками, находясь под действием ауры "..CKWord("", "bonebraura_rgb_ru")..". Убийства заряженными атаками, совершённые членами команды также засчитываются.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在碎骨者光環效果啟動時使用重攻擊擊殺5000名敵人。由小隊成員造成的重攻擊擊殺也算。
-	-- create_template("ach_class_ogr_11_ext_desc_tw",
-		-- {"loc_achievement_ogryn_team_heavy_aura_kills_description"}, {"zh-tw"},
-			-- loc_text("在 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "bonebraura_rgb_tw").."』效果內，\n以蓄力攻擊擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。\n隊友的蓄力擊殺也會計算。")),
-
-	-- --[+ Sustained Fire +]-- руоф Непрерывный огонь
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_ru",
-		-- {"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_name"}, {"ru"},
-			-- loc_text("Непрерывные удары")),
-	-- --[+ Traditional Chinese 猛攻 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_name"}, {"zh-tw"},
-			-- loc_text("猛攻")),
-
-	-- --[+ Kill 5000 enemies with heavy attacks, while maintaining 5 stacks of Heavy Hitter. +]-- руоф Убейте врагов (5000) мощными атаками, удерживая 5 зарядов «Тяжеловеса».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_desc_ru",
-		-- {"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов заряженными атаками, удерживая "..COLORS_Numbers.n_5_rgb").." зарядов ключевого таланта "..CKWord("", "heavyhitter_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在重拳出擊層數疊滿時，使用重擊擊殺5000名敵人。
-	-- create_template("ach_class_ogr_11_ext_desc_tw",
-		-- {"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_new_description"}, {"zh-tw"},
-			-- loc_text("維持 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "heavyhitter_rgb_tw").."』達到 "..COLORS_Numbers.n_5_rgb").." 層時，\n使用重擊擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。")),
-
-	-- --[+ Clear the Path +]-- руоф Расчисти путь
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_11_ext_ru",
-		-- -- {"loc_achievement_ogryn_2_medium_1_name"}, {"ru"},
-			-- -- loc_text("Расчисти путь")),
-	-- --[+ Traditional Chinese 掃清道路 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_2_medium_1_name"}, {"zh-tw"},
-			-- loc_text("掃清道路")),
-
-	-- --[+ On Malice Threat or higher, knock down 3 Ranged enemies using Bull Rush, 25 times. +]-- руоф При угрозе «Злоба» или выше сбейте с ног врагов (3) с дистанционной атакой с помощью «Бычьего натиска» 25 р.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_desc_ru",
-		-- {"loc_achievement_ogryn_2_medium_1_description"}, {"ru"},
-			-- loc_text("На сложности "..CKWord("", "malice_rgb_ru").." или выше, "..CNumb("{target}", "target_rgb").." раз сбейте с ног "..COLORS_Numbers.num_enemies_rgb").." врагов с дальнобойным оружием, используя способность "..CKWord("", "bull_rush_rgb_ru").." или "..CKWord("", "bull_rush4_rgb_ru")..".")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在惡意威脅度或更高難度下，使用蠻牛沖撞擊倒3個遠程敵人25次。
-	-- create_template("ach_class_ogr_11_ext_desc_tw",
-		-- {"loc_achievement_ogryn_2_medium_1_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n擊倒 "..COLORS_Numbers.num_enemies_rgb").." 名持遠程武器的敵人 "..CNumb("{target}", "target_rgb").." 次。")),
-
-	-- --[+ Crowd Control +]-- руоф Сдерживание толпы
-	-- --[+ Russian +]--
-	-- -- create_template("ach_class_ogr_11_ext_ru",
-		-- -- {"loc_achievement_ogryn_grenade_frag_group_of_enemies_name"}, {"ru"},
-			-- -- loc_text("Сдерживание толпы")),
-	-- --[+ Traditional Chinese 群體控制 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_grenade_frag_group_of_enemies_name"}, {"zh-tw"},
-			-- loc_text("群體控制")),
-
-	-- --[+ With one Frag Bomb kill 25 enemies, 25 times. +]-- руоф Убейте врагов (25) одной «Осколочной бомбой» 25 р.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_desc_ru",
-		-- {"loc_achievement_ogryn_grenade_frag_group_of_enemies_description"}, {"ru"},
-			-- loc_text("Убейте "..COLORS_Numbers.amount_var_rgb").." врагов одной осколочной гранатой от блица "..CKWord("", "fragbomb_rgb_ru")..". Повторите это задание "..CNumb("{target}", "target_rgb").." раз.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用一顆破片炸彈擊殺25名敵人25次。
-	-- create_template("ach_class_ogr_11_ext_desc_tw",
-		-- {"loc_achievement_ogryn_grenade_frag_group_of_enemies_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "fragbomb_rgb_tw").."』，單次擊殺 "..COLORS_Numbers.amount_var_rgb").." 名敵人。\n共需達成 "..CNumb("{target}", "target_rgb").." 次。")),
-
-	-- --[+ Spray and Pray (To the Emperor) +]-- руоф Стреляй и восхваляй (Императора)
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_ru",
-		-- {"loc_achievement_ogryn_kills_during_barrage_threshold_name"}, {"ru"},
-			-- loc_text("Стреляй и молись (Императору)")),
-	-- --[+ Traditional Chinese 掃射，然後向帝皇祈禱吧 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_kills_during_barrage_threshold_name"}, {"zh-tw"},
-			-- loc_text("掃射，然後向帝皇祈禱吧")),
-
-	-- --[+ Kill 25 enemies, 50 times, during a single activation of Point-Blank Barrage. +]-- руоф Убейте врагов (25) 50 р. во время однократной активации «Решительного натиска».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_desc_ru",
-		-- {"loc_achievement_ogryn_kills_during_barrage_threshold_description"}, {"ru"},
-			-- loc_text("Убейте "..COLORS_Numbers.amount_var_rgb").." врагов за однократное применение способности "..CKWord("", "pbbarrage_rgb_ru")..". Повторите это задание "..CNumb("{target}", "target_rgb").." раз.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 於同一次貼身火力效果期間，擊殺25名敵人50次。
-	-- create_template("ach_class_ogr_11_ext_desc_tw",
-		-- {"loc_achievement_ogryn_kills_during_barrage_threshold_description"}, {"zh-tw"},
-			-- loc_text("使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "pbbarrage_rgb_tw").."』一次擊殺 "..COLORS_Numbers.amount_var_rgb").." 名敵人。\n完成此目標共需達成 "..CNumb("{target}", "target_rgb").." 次。")),
-
-	-- --[+ You Can't Hide from Us! +]-- руоф От нас не спрятаться!
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_ru",
-		-- {"loc_achievement_ogryn_team_suppressed_aura_kills_name"}, {"ru"},
-			-- loc_text("Тебе от нас не спрятаться!")),
-	-- --[+ Traditional Chinese 你躲不掉的！ +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_team_suppressed_aura_kills_name"}, {"zh-tw"},
-			-- loc_text("你躲不掉的！")),
-
-	-- --[+ Kill 7500 suppressed enemies while under the effect of Coward Culling. Kills made by any affected team member also count. +]-- руоф Убейте ослабленных врагов (7500), находясь под действием «Трусливые отбросы». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
-	-- --[+ Russian +]--
-	-- create_template("ach_class_ogr_11_ext_desc_ru",
-		-- {"loc_achievement_ogryn_team_suppressed_aura_kills_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." подавленных врагов, находясь под эффектом ауры "..CKWord("", "cowculaura_rgb_ru")..". Убийства, совершённые любым членом команды под действием эффекта ауры, также учитываются.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 在優勝劣汰效果啟動時擊殺7500名被壓制的敵人。由獲得效果的小隊成員造成的擊殺也算。
-	-- create_template("ach_class_ogr_11_ext_desc_tw",
-		-- {"loc_achievement_ogryn_team_suppressed_aura_kills_description"}, {"zh-tw"},
-			-- loc_text("在 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "cowculaura_rgb_tw").."』效果內，擊殺 "..CNumb("{target}", "target_rgb").." 名被壓制的敵人。\n隊友在光環下所造成的擊殺同樣會被計算。")),
-
-	--[+ Something In Your Eye +]--
+		--[+ Kill 25 enemies, 50 times, during a single activation of Point-Blank Barrage. +]-- руоф Убейте врагов (25) 50 р. во время однократной активации «Решительного натиска».
+		["loc_achievement_ogryn_kills_during_barrage_threshold_description"] = {
+			en = "Kill "..CNumb("{amount}", "amount_var_rgb").." enemies during a single activation of "..CKWord("Point-Blank Barrage", "pbbarrage_rgb").." Ability, "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Убейте "..CNumb("{amount}", "amount_var_rgb").." врагов за однократное применение способности "..CKWord("Беспощадный обстрел в упор", "pbbarrage_rgb_ru")..". Повторите это задание "..CNumb("{target}", "target_rgb").." раз.",
+			-- ["zh-tw"] = "使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "pbbarrage_rgb_tw").."』一次擊殺 "..CNumb("{amount}", "amount_var_rgb").." 名敵人。\n"
+				-- .."完成此目標共需達成 "..CNumb("{target}", "target_rgb").." 次。",
+		},
+	--[+ Can't Catch Me! +]-- руоф Меня не поймать
+	["loc_achievement_ogryn_ogryn_feel_no_pain_kills_at_max_name"] = {
+		ru = "Меня не поймать!",
+		["zh-tw"] = "抓不到我！",
+	},
+		--[+ Kill 2500 enemies while at 7 stacks or higher of Feel No Pain. +]-- руоф Убейте врагов (2500), сохраняя не менее 7 ед. заряда «Неболита».
+		["loc_achievement_ogryn_feel_no_pain_kills_at_max_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies while at "..CNumb("7", "n_7_rgb").." Stacks or higher of "..CKWord("Feel No Pain", "feelnop_rgb").." Keystone.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, имея не менее "..CNumb("7", "n_7_rgb").." зарядов ключевого таланта "..CKWord("Неболит", "feelnop_rgb_ru")..".",
+			-- ["zh-tw"] = "在擁有不少於 "..CNumb("7", "n_7_rgb").." 層"..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "feelnop_rgb_tw").."』效果時，擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ Munitorum's Favour +]-- руоф Благосклонность Муниторума -- 軍務部的恩賜
+		--[+ Shoot 4500 free rounds of ammo, courtesy of the Burst Limiter Override. +]-- руоф Стреляйте бесплатными боеприпасами (4500) благодаря «Взлому отсечки очереди».
+		["loc_achievement_ogryn_leadbelcher_free_shot_description"] = {
+			en = "Shoot "..CNumb("{target}", "target_rgb").." free rounds of Ammo, courtesy of the "..CKWord("Burst Limiter Override", "burstlimo_rgb").." Keystone.",
+			ru = "Отстреляйте "..CNumb("{target}", "target_rgb").." бесплатных патронов, полученных с помощью ключевого таланта "..CKWord("Обход ограничителя очереди", "burstlimo_rgb_ru")..".",
+			-- ["zh-tw"] = "射出 "..CNumb("{target}", "target_rgb").." 發由 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "burstlimo_rgb_tw").."』所獲得的免費子彈。",
+		},
+	--[+ Pile On +]-- руоф Навались -- 堆起來
+		--[+ Kill 5000 enemies with Heavy Attacks while under the effect of Bonebreaker's Aura. Heavy Attack kills made by your team members also count. +]-- руоф Убейте врагов (5000) мощными атаками, находясь под действием «Ауры костолома». Если члены команды убивают мощными атаками, это тоже учитывается.
+		["loc_achievement_ogryn_team_heavy_aura_kills_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies with Heavy Attacks while under the effect of "..CKWord("Bonebreaker's Aura", "bonebraura_rgb")..". Heavy Attack kills made by your team members also count.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов заряженными атаками, находясь под действием ауры "..CKWord("", "bonebraura_rgb_ru")..". Убийства заряженными атаками, совершённые членами команды также учитываются.",
+			-- ["zh-tw"] = "在 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "bonebraura_rgb_tw").."』效果內，\n"
+				-- .."以蓄力攻擊擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。\n"
+				-- .."隊友的蓄力擊殺也會計算。",
+		},
+	--[+ You Can't Hide from Us! +]-- руоф От нас не спрятаться!
+	["loc_achievement_ogryn_team_suppressed_aura_kills_name"] = {
+		ru = "Тебе от нас не спрятаться!",
+		["zh-tw"] = "你躲不掉的！",
+	},
+		--[+ Kill 7500 suppressed enemies while under the effect of Coward Culling. Kills made by any affected team member also count. +]-- руоф Убейте ослабленных врагов (7500), находясь под действием «Трусливые отбросы». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
+		["loc_achievement_ogryn_team_suppressed_aura_kills_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." Suppressed enemies while under the effect of "..CKWord("Coward Culling", "cowculaura_rgb")..". Kills made by any affected team member also count.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." подавленных врагов, находясь под эффектом ауры "..CKWord("Отсев трусливых", "cowculaura_rgb_ru")..". Убийства, совершённые любым членом команды под действием эффекта ауры, также учитываются.",
+			-- ["zh-tw"] = "在 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "cowculaura_rgb_tw").."』效果內，擊殺 "..CNumb("{target}", "target_rgb").." 名被壓制的敵人。\n"
+				-- .."隊友在光環下所造成的擊殺同樣會被計算。",
+		},
+	--[+ Loyal Protector +]-- руоф Верный защитник -- 忠誠守衛
+		--[+ Restore a total of 15000 Toughness to you or allies in coherency with Stay Close. +]-- руоф Восстановите стойкость свою или союзников под действием «Сплоченности» (суммарно 15000) с помощью «Держись рядом».
+		["loc_achievement_ogryn_team_toughness_restored_aura_description"] = {
+			en = "Restore a total of "..CNumb("{target}", "target_rgb").." "..CKWord("Toughness", "Toughness_rgb").." to you or Allies in "..CKWord("Coherency", "Coherency_rgb").." with "..CKWord("Stay Close!", "stayclose_rgb").." Aura.",
+			ru = "Восстановите суммарно "..CNumb("{target}", "target_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." себе или союзникам, находящимся под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..", с помощью эффекта ауры "..CKWord("Держись рядом!", "stayclose_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "stayclose_rgb_tw").."』效果，\n"
+				-- .."為自己或處於『"..CKWord("", "Coherency_rgb_tw").."』範圍內的隊友，\n"
+				-- .."恢復累計 "..CNumb("{target}", "target_rgb").." 點『"..CKWord("", "Toughness_rgb_tw").."』。",
+		},
+	--[+ I'm in Charge +]-- руоф Я главнее
+	["loc_achievement_ogryn_2_bull_rushed_charging_ogryn_name"] = {
+		ru = "Я главный",
+		["zh-tw"] = "對衝",
+	},
+		--[+ Use Bull Rush or Indomitable to interrupt a Plague Ogryn's charge. +]-- руоф Используйте «Бычий натиск», чтобы прервать рывок Чумного Огрина.
+		["loc_achievement_ogryn_2_bull_rushed_charging_ogryn_fix_description"] = {
+			en = "Use "..CKWord("Bull Rush", "bull_rush_rgb").." or "..CKWord("Indomitable", "bull_rush4_rgb").." Ability to interrupt a Plague Ogryn's charge.",
+			ru = "Используйте способность "..CKWord("Рывок быка", "bull_rush_rgb_ru").." или "..CKWord("Неукротимый", "bull_rush4_rgb_ru")..", чтобы прервать рывок Чумного Огрина.",
+			-- ["zh-tw"] = "用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n"
+				-- .."中斷瘟疫歐格林的衝鋒。",
+		},
+	--[+ Something In Your Eye +]-- руоф Нечто в твоих глазах
 	["loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_name"] = {
-		ru = "У тебя что-то в глазу", -- У тебя что-то в глазу -- руоф Нечто в твоих глазах
-		-- ["zh-tw"] = "你眼睛裡有東西",
+		ru = "У тебя что-то в глазу",
+		["zh-tw"] = "你眼睛裡有東西",
 	},
-	--[+ Kill a Corruptor by hitting it in the eye with your grenade box. +]--
-	["loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_description"] = {
-		ru = "Убейте Осквернителя, попав ему ящиком с гранатами в глаз.", -- руоф Убейте осквернителя, попав ему в глаз гранатой.
-		-- ["zh-tw"] = "用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "big_box_rgb_tw").."』直接擊中腐蝕者眼睛將其擊殺。",
+		--[+ Kill a Corruptor by hitting it in the eye with your grenade box. +]-- руоф Убейте осквернителя, попав ему в глаз гранатой.
+		["loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_description"] = {
+			en = "Kill a Corruptor by hitting it in the eye with grenade box from "..CKWord("Big Boxes of Hurt", "big_box_rgb").." or "..CKWord("Bombs Away!", "big_box2_rgb").." Blitz.",
+			ru = "Убейте Осквернителя, попав ему в глаз ящиком блица "..CKWord("Большая коробка боли", "big_box_rgb_ru").." или "..CKWord("Бросай бомбы!", "big_box2_rgb_ru")..".",
+			-- ["zh-tw"] = "用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "big_box_rgb_tw").."』直接擊中腐蝕者眼睛將其擊殺。",
+		},
+	--[+ Gone Bowling +]-- руоф Играю в боулинг
+	["loc_achievement_ogryn_2_bull_rushed_100_enemies_name"] = {
+		ru = "Разметал как кегли",
+		["zh-tw"] = "全中",
+	},
+		--[+ Knock down 60 enemies with a single Bull Rush or Indomitable on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше сбейте с ног одним зарядом «Бычьего натиска» врагов: 60.
+		["loc_achievement_ogryn_2_bull_rushed_100_enemies_fix_description"] = {
+			en = "Knock down "..CNumb("{target}", "target_rgb").." enemies with a single "..CKWord("Bull Rush", "bull_rush_rgb").." or "..CKWord("Indomitable", "bull_rush4_rgb").." Ability on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
+			ru = "Сбейте "..CNumb("{target}", "target_rgb").." врагов за одно использование способности "..CKWord("Рывок быка", "bull_rush_rgb_ru").." или "..CKWord("Неукротимый", "bull_rush4_rgb_ru").." на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
+				-- .."使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n"
+				-- .."單次衝鋒擊倒 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	-- --[+ Don't Stop Me Now! +]-- руоф Меня не остановить!
+	["loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_name"] = {
+		ru = "Не останавливай меня!",
+		["zh-tw"] = "別讓我停下",
+	},
+		--[+ Move 40 metres with Bull Rush or Indomitable in under 20s on Heresy Threat or higher. +]-- руоф При угрозе «Ересь» или выше переместитесь на 40 м с помощью «Бычьего натиска» менее чем за 20 с.
+		["loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_fix_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, move "..CNumb("{target}", "target_rgb").." metres with "..CKWord("Bull Rush", "bull_rush_rgb").." or "..CKWord("Indomitable", "bull_rush4_rgb").." Ability in under "..CNumb("{time_window}", "time_wind_rgb").." seconds.",
+			ru = "Переместитесь на "..CNumb("{target}", "target_rgb").." метров с помощью способности "..CKWord("Рывок быка", "bull_rush_rgb_ru").." или "..CKWord("Неукротимый", "bull_rush4_rgb_ru").." в течение "..CNumb("{time_window}", "time_wind_rgb").." секунд на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
+				-- .."於 "..CNumb("{time_window}", "time_wind_rgb").." 秒內，使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』技能移動累計 "..CNumb("{target}", "target_rgb").." 公尺。",
+		},
+	--[+ Heavyweight Champion +]-- руоф Чемпион-тяжеловес -- 重量級冠軍
+		--[+ On Heresy Threat or higher, knock down 4 enemy Ogryns (Bulwarks, Crushers, Plague Ogryns, and/or Reapers) with a single Bull Rush or Indomitable charge. +]-- руоф При угрозе «Ересь» или выше сбейте с ног одним зарядом «Бычьего натиска» вражеских Огринов (Бастион, Дробитель, Чумной Огрин и/или Жнец): 4.
+		["loc_achievement_ogryn_2_bull_rushed_4_ogryns_fix_description"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, knock down "..CNumb("{target}", "target_rgb").." enemy Ogryns with a single "..CKWord("Bull Rush", "bull_rush_rgb").." or "..CKWord("Indomitable", "bull_rush4_rgb").." Ability charge. The Ogryns are: Bulwark, Crusher, Reaper, Pack Master, and Plague Ogryn.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, сбейте с ног "..CNumb("{target}", "target_rgb").." любых вражеских огрина одним зарядом способности "..CKWord("Рывок быка", "bull_rush_rgb_ru").." или "..CKWord("Неукротимый", "bull_rush4_rgb_ru")..". Огринами являются: Бастион, Дробитель, Жнец, Загонщик и Чумной огрин.",
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n單次衝鋒擊倒 "..CNumb("{target}", "target_rgb").." 名敵方歐格林。\n歐格林敵人包含：堡壘、粉碎者、收割者與瘟疫歐格林。",
+		},
+
+
+	--[+ +ARBITRATOR - АРБИТРАТОР+ +]--
+	["loc_class_adamant_title"] = {
+		en = CKWord("Arbitrator", "cls_arb_rgb"),
+		ru = CKWord("Арбитратор", "cls_arb_rgb_ru"),
+	},
+		--[+ PROGRESSION - ПРОГРЕСС - 進度 +]--
+	--[+ By the Lex, I am Witness! (1-6) +]-- руоф Именем Закона, я свидетель! (1-6)
+	-- ["loc_achievement_rank_adamant_2_x_name"] = {
+		-- ru = "Именем Закона, я свидетель! ({tier})",
+	-- },
+		--[+ Reach Trust Level __ as a Arbitrator. +]-- руоф Заслужить уровень доверия __, играя за Арбитратора.
+		["loc_achievement_rank_adamant_2_x_description"] = {
+			en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Arbitrator", "cls_arb_rgb")..".",
+			ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Арбитратором", "cls_arb2_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("仲裁官", "cls_arb_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+		},
+	--[+ Enforcer of the Lex (1-5) +]-- руоф  (1-5)
+	-- ["loc_achievement_missions_adamant_2_x_name"] = {
+		-- ru = "Блюститель Закона ({tier})",
+	-- },
+		--[+ Complete 100 Missions as a Arbitrator. +]-- руоф Выполнить Арбитратором задания: 100.
+		["loc_achievement_missions_adamant_2_x_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Arbitrator", "cls_arb_rgb")..".",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Арбитратором", "cls_arb2_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("仲裁官", "cls_arb_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 次任務。",
+		},
+	--[+ Diligent Patrol +]-- руоф 
+	["loc_achievement_missions_adamant_2_objective_1_name"] = {
+		en = "Diligent Patrol (1)",
+		ru = "Бдительный дозор (1)",
+	},
+		--[+ As a Arbitrator, complete at least one Mission of each type. +]-- руоф Выполнить Арбитратором по меньшей мере одно задание каждого типа.
+		["loc_achievement_missions_adamant_2_objective_1_description"] = {
+			en = "As a "..CKWord("Arbitrator", "cls_arb_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
+			ru = "Пройдите "..CKWord("Арбитратором", "cls_arb2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
+			-- ["zh-tw"] = "使用 "..CKWord("仲裁官", "cls_arb_rgb_tw").."完成以下任務 "..CNumb("1", "n_1_rgb").." 次。",
+		},
+	--[+ Diligent Patrol (2) +]-- руоф  (2)
+	["loc_achievement_missions_adamant_2_objective_2_name"] = {
+		ru = "Бдительный дозор (2)",
+	},
+		--[+ As a Arbitrator, complete a Mission of each type on Malice Threat or higher. +]--
+		["loc_achievement_missions_adamant_2_objective_2_description"] = {
+			en = "As a "..CKWord("Arbitrator", "cls_arb_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Арбитратором", "cls_arb2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+		},
+	--[+ Diligent Patrol (3) +]-- руоф  (3)
+	["loc_achievement_missions_adamant_2_objective_3_name"] = {
+		ru = "Бдительный дозор (3)",
+	},
+		--[+ As a Arbitrator, complete a Mission of each type on Heresy Threat or higher. +]--
+		["loc_achievement_missions_adamant_2_objective_3_description"] = {
+			en = "As a "..CKWord("Arbitrator", "cls_arb_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Heresy", "heresy_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Арбитратором", "cls_arb2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
+		},
+	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5) -- 證明你的價值 (1-5)
+	--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5) -- 為正義而戰 (1-5)
+	--[+ First Steps (1-2) +]-- руоф Первые шаги (1-2) -- 首要步驟 (1-2)
+	--[+ Promotion Material (1) +]-- руоф Материалы пропаганды (1)
+	--[+ For The Emperor (1-3) +]-- руоф За императора (1-3) -- 為了皇帝 (1-3)
+	--[+ Oathbound (1-3) +]-- руоф Связанный клятвой (1-3)
+		--[+ Complete the following Penances as the Arbitrator. +]-- руоф Выполнить следующие искупления за Арбитратора.
+		["loc_achievement_group_adamant_2_description"] = {
+			en = "Complete the following Penances as the "..CKWord("Arbitrator", "cls_arb_rgb")..".",
+			ru = "Выполните следующие Искупления "..CKWord("Арбитратором", "cls_arb2_rgb_ru")..".",
+			-- ["zh-tw"] = "使用 "..CKWord("老兵", "cls_arb_rgb_tw").." 完成以下苦修。",
+		},
+	--[+ Targeted Kills +]-- руоф 
+	-- ["loc_achievement_adamant_hunt_snipers"] = {
+		-- ru = "Целевые убийства",
+	-- },
+		--[+ Have your Cyber-Mastiff Pounce on 50 Bombers, Snipers, and Trappers. +]-- руоф 
+		["loc_achievement_adamant_hunt_snipers_desc"] = {
+			en = "Have your Cyber-Mastiff Pounce on "..CNumb("{amount:%s}", "amountp_var_rgb").." Bombers, Snipers, and Trappers.",
+			ru = "Заставьте вашего кибермастифа наброситься на "..CNumb("{amount:%s}", "amountp_var_rgb").." гренадёров, снайперов или ловушечников.",
+		},
+	--[+ Guard Command +]-- руоф 
+	-- ["loc_achievement_adamant_knock_chargers"] = {
+		-- ru = "Охраняй!",
+	-- },
+		--[+ Have your Cyber-Mastiff Knock Away 50 Mutants and Poxbusters. Counts once per Enemy. +]-- руоф 
+		["loc_achievement_adamant_knock_chargers_desc"] = {
+			en = "Have your Cyber-Mastiff Knock Away "..CNumb("{amount:%s}", "amountp_var_rgb").." Mutants and Poxbusters. Counts once per Enemy.",
+			ru = "Заставьте вашего кибермастифа сбить с ног "..CNumb("{amount:%s}", "amountp_var_rgb").." мутантов и поскбастеров. Засчитывается один раз за врага.",
+		},
+	--[+ Shoot'em When They're Down +]-- руоф 
+	-- ["loc_achievement_adamant_kill_pounced_enemies"] = {
+		-- ru = "Стреляй в них пока они лежат",
+	-- },
+		--[+ Kill 750 enemies pounced by your Cyber-Mastiff. +]-- руоф 
+		["loc_achievement_adamant_kill_pounced_enemies_desc"] = {
+			en = "Kill "..CNumb("{amount:%s}", "amountp_var_rgb").." enemies pounced by your Cyber-Mastiff.",
+			ru = "Уничтожьте "..CNumb("{amount:%s}", "amountp_var_rgb").." врагов, на которых набросился ваш кибермастифа.",
+		},
+	--[+ Voltaic Persecution +]-- руоф 
+	-- ["loc_achievement_adamant_kill_electrocuted"] = {
+		-- ru = "Вольтаическое преследование",
+	-- },
+		--[+ Kill 500 Electrocuted enemies. +]-- руоф 
+		["loc_achievement_adamant_kill_electrocuted_desc"] = {
+			en = "Kill "..CNumb("{amount:%s}", "amountp_var_rgb").." Electrocuted enemies.",
+			ru = "Убейте "..CNumb("{amount:%s}", "amountp_var_rgb").." врагов, поражённых электрошоком.",
+		},
+	--[+ Loyal Companion +]-- руоф 
+	-- ["loc_achievement_adamant_saved_from_dog"] = {
+		-- ru = "Верный компаньон",
+	-- },
+		--[+ Get Rescued from a Pox Hound that has pounced on you, by your Cyber-Mastiff. +]-- руоф 
+		-- ["loc_achievement_adamant_saved_from_dog_desc"] = {
+			-- en = "Get Rescued from a Pox Hound that has pounced on you, by your Cyber-Mastiff.",
+			-- ru = "Спаситесь от напавшей на вас Чумной гончей с помощью вашего кибермастифа.",
+		-- },
+	--[+ Good Killing Machine +]-- руоф 
+	-- ["loc_achievement_adamant_pet_dog"] = {
+		-- ru = "Хорошая машина для убийств",
+	-- },
+		--[+ Pet your Cyber-Mastiff. +]-- руоф 
+		-- ["loc_achievement_adamant_pet_dog_desc"] = {
+			-- en = "Pet your Cyber-Mastiff.",
+			-- ru = "Погладьте своего кибермастифа.",
+		-- },
+	--[+ The Lex Defiant +]-- руоф 
+	-- ["loc_achievement_adamant_block_enemies"] = {
+		-- ru = "Закон Непокорный",
+	-- },
+		--[+ Block Damage from 250 unique enemies. +]-- руоф 
+		["loc_achievement_adamant_block_enemies_desc"] = {
+			en = "Block "..CKWord("Damage", "Damage_rgb").." from "..CNumb("{amount:%s}", "amountp_var_rgb").." unique enemies.",
+			ru = "Заблокируйте "..CKWord("урон", "uron_rgb_ru").." от "..CNumb("{amount:%s}", "amountp_var_rgb").." уникальных врагов.",
+		},
+	--[+ Arbitrator Master of War +]-- руоф Арбитратор — знаток войны
+
+		--[+ ABILITIES - СПОСОБНОСТИ - 技能 +]--
+	--[+ Handing Out the Emperor's Judgement +]-- руоф 
+	-- ["loc_achievement_adamant_team_staggered_enemies_aura_kills_name"] = {
+		-- ru = "Вынесение императорского приговора",
+	-- },
+		--[+ Kill 5000 staggered enemies while under the effect of Breaking Dissent. Kill made by allies in coherency with you also count. +]-- руоф 
+		["loc_achievement_adamant_team_staggered_enemies_aura_kills_description"] = {
+			en = "Kill "..CNumb("{target:%s}", "target_rgb").." "..CKWord("Staggered", "Staggered_rgb").." enemies while under the effect of "..CKWord("Breaking Dissent", "BreaknDissent_rgb").." Aura. Kill made by Allies in "..CKWord("Coherency", "Coherency_rgb").." with you also count.",
+			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." "..CKWord("оглушённых", "oglushennyh_rgb_ru").." врагов, находящихся под действием ауры "..CKWord("Уничтожение инакомыслия", "BreaknDissent_rgb_ru")..". Убийства, совершённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." с вами, также учитываются.",
+		},
+	--[+ Efficient Execution +]-- руоф 
+	-- ["loc_achievement_adamant_team_wield_speed_aura_kills_name"] = {
+		-- ru = "Эффективное исполнение",
+	-- },
+		--[+ Kill 7500 enemies while under the effect of Ruthless Efficiency. Kills made by allies in coherency with you also count. +]-- руоф 
+		["loc_achievement_adamant_team_wield_speed_aura_kills_description"] = {
+			en = "Kill "..CNumb("{target:%s}", "target_rgb").." enemies while under the effect of "..CKWord("Ruthless Efficiency", "RuthlEffcy_rgb").." Aura. Kill made by Allies in "..CKWord("Coherency", "Coherency_rgb").." with you also count.",
+			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." врагов, находясь под действием ауры "..CKWord("Безжалостная эффективность", "RuthlEffcy_rgb_ru")..". Убийства, совершённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." с вами, также учитываются.",
+		},
+	--[+ Well Oiled Killteam +]-- руоф 
+	-- ["loc_achievement_adamant_team_companion_in_coherency_kills_name"] = {
+		-- ru = "Хорошо отлаженная команда убийц",
+	-- },
+		--[+ With Part of the Squad Aura active, kill 2500 enemies while in coherency with Cyber-Mastiff. Kills made by allies in coherency with your Cyber-Mastiff also count. +]-- руоф 
+		["loc_achievement_adamant_team_companion_in_coherency_kills_description"] = {
+			en = "Kill "..CNumb("{target:%s}", "target_rgb").." enemies while in "..CKWord("Coherency", "Coherency_rgb").." with Cyber-Mastiff under the effect of "..CKWord("Part of the Squad", "PartozSquad_rgb").." Aura. Kills made by Allies in "..CKWord("Coherency", "Coherency_rgb").." with your Cyber-Mastiff also count.",
+			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." врагов, находясь под действием ауры "..CKWord("Часть отряда", "PartozSquad_rgb_ru")..". Убийства, совершённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." с вашим кибермастифом, также учитываются.",
+		},
+	--[+ Voltaic Restraint +]-- руоф 
+	-- ["loc_achievement_adamant_time_enemies_electrocuted_by_shockmine_name"] = {
+		-- ru = "Вольтаическое ограничение",
+	-- },
+		--[+ Stun enemies using the Voltaic Shock Mine for a total duration of 5000 seconds. +]-- руоф 
+		["loc_achievement_adamant_time_enemies_electrocuted_by_shockmine_description"] = {
+			en = CKWord("Stun", "Stun_rgb").." enemies using the "..CKWord("Voltaic Shock Mine", "Electro_mine_rgb").." Blitz for a total duration of "..CNumb("{target:%s}", "target_rgb").." seconds.",
+			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." врагов используя блиц "..CKWord("Вольтаическая шоковая мина", "Electro_mine0_rgb_ru").." в общей сложности на "..CNumb("{target:%s}", "target_rgb").." секунд.",
+		},
+	--[+ Suppression Protocols +]-- руоф 
+	-- ["loc_achievement_adamant_enemies_affected_by_buff_drone_name"] = {
+		-- ru = "Протоколы подавления",
+	-- },
+		--[+ Debuff 2500 enemies using the Nuncio Aquila. +]-- руоф 
+		["loc_achievement_adamant_enemies_affected_by_buff_drone_description"] = {
+			en = "Debuff "..CNumb("{target:%s}", "target_rgb").." enemies using the "..CKWord("Nuncio Aquila", "Nuncio_aquila_rgb").." Ability.",
+			ru = "Ослабьте "..CNumb("{target:%s}", "target_rgb").." врагов с помощью способности "..CKWord("Нунцио-аквила", "Nuncio_aquila_rgb_ru")..".",
+		},
+	--[+ Fortifying Command +]-- руоф 
+	-- ["loc_achievement_adamant_time_allies_buffed_by_buff_drone_name"] = {
+		-- ru = "Укрепление командования",
+	-- },
+		--[+ Buff allies using the Nuncio Aquila for a total duration of 10000 seconds. +]-- руоф 
+		["loc_achievement_adamant_time_allies_buffed_by_buff_drone_description"] = {
+			en = "Buff Allies using the "..CKWord("Nuncio Aquila", "Nuncio_aquila_rgb").." Ability for a total duration of "..CNumb("{target:%s}", "target_rgb").." seconds.",
+			ru = "Усильте союзников с помощью способности "..CKWord("Нунцио-аквила", "Nuncio_aquila_rgb_ru").." в общей сложности на "..CNumb("{target:%s}", "target_rgb").." секунд.",
+		},
+	--[+ Sanction Redactus +]-- руоф 
+	-- ["loc_achievement_adamant_kill_during_stance"] = {
+		-- ru = "Санкция Редактус",
+	-- },
+		--[+ Kill 250 enemies during Castigator's Stance. +]-- руоф 
+		["loc_achievement_adamant_kill_during_stance_desc"] = {
+			en = "Kill "..CNumb("{target:%s}", "target_rgb").." enemies during "..CKWord("Castigator's Stance", "CastigatorSt_rgb").." Ability.",
+			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." врагов во время действия способности "..CKWord("Стойка карателя", "CastigatorSt_rgb_ru")..".",
+		},
+	--[+ Street Brawler +]-- руоф 
+	-- ["loc_achievement_adamant_stagger_elites_with_bash"] = {
+		-- ru = "Уличный боец",
+	-- },
+		--[+ Stagger 500 Elite or Specialist Enemies using Break the Line. +]-- руоф 
+		["loc_achievement_adamant_stagger_elites_with_bash_desc"] = {
+			en = CKWord("Stagger", "Stagger_rgb").." "..CNumb("{target:%s}", "target_rgb").." Elite or Specialist Enemies using "..CKWord("Break the Line", "BreakZLine_rgb").." Ability.",
+			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." "..CNumb("{target:%s}", "target_rgb").." элитных врагов или специалистов с помощью способности "..CKWord("Прорыв строя", "BreakZLine_rgb_ru")..".",
+		},
+	--[+ Abomination Protocols +]-- руоф 
+	-- ["loc_achievement_adamant_stagger_monster_detonation"] = {
+		-- ru = "Протоколы мерзостей",
+	-- },
+		--[+ Stagger a Monstrosity using Remote Detonation, 50 times. +]-- руоф 
+		["loc_achievement_adamant_stagger_monster_detonation_desc"] = {
+			en = CKWord("Stagger", "Stagger_rgb").." a Monstrosity using "..CKWord("Remote Detonation", "RemoteDeton_rgb").." Blitz, "..CNumb("{target:%s}", "target_rgb").." times.",
+			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." чудовище с помощью блица "..CKWord("Дистанционный подрыв", "RemoteDeton_rgb_ru")..". Выполните это задание "..CNumb("{target:%s}", "target_rgb").." раз.",
+		},
+	--[+ Efficient Demolition +]-- руоф 
+	-- ["loc_achievement_adamant_kill_cluster_with_grenade"] = {
+		-- ru = "Эффективный подрыв",
+	-- },
+		--[+ Kill 3 enemies with a single Arbites Grenade, 50 times. +]-- руоф 
+		["loc_achievement_adamant_kill_cluster_with_grenade_desc"] = {
+			en = "Kill "..CNumb("{target:%s}", "target_rgb").." enemies with a single "..CKWord("Arbites Grenade", "Arbites_gren_rgb")..", "..CNumb("{target:%s}", "target_rgb").." times.",
+			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." врагов одной "..CKWord("Гранатой арбитрес", "Arbites_grenoi_rgb_ru")..". Выполните это задание "..CNumb("{target:%s}", "target_rgb").." раз.",
+		},
+	--[+ Justice Dispensed +]-- руоф 
+	-- ["loc_achievement_adamant_kill_marked_enemies"] = {
+		-- ru = "Высвобождение правосудия",
+	-- },
+		--[+ On Heresy Threat or higher, Kill 750 enemies marked by Execution Order. +]-- руоф 
+		["loc_achievement_adamant_kill_marked_enemies_desc"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, Kill "..CNumb("{target}", "target_rgb").." enemies marked by "..CKWord("Execution Order", "ExecutOrder_rgb").." Keystone.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов, отмеченных ключевым талантом "..CKWord("Приказ на казнь", "ExecutOrder_rgb_ru")..".",
+		},
+	--[+ Castigator's Arrest +]-- руоф 
+	-- ["loc_achievement_adamant_kill_with_melee"] = {
+		-- ru = "Арест кастигатора",
+	-- },
+		--[+ On Heresy Threat or higher, Kill 2000 enemies with Melee Attacks while using Terminus Warrant. +]-- руоф 
+		["loc_achievement_adamant_kill_with_melee_desc"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, Kill "..CNumb("{target}", "target_rgb").." enemies with Melee Attacks while using "..CKWord("Terminus Warrant", "TerminusWarr_rgb").." Keystone.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов в ближнем бою с помощью ключевого таланта "..CKWord("Ордер Терминус", "TerminusWarr_rgb_ru")..".",
+		},
+	--[+ Arbites Gunner +]-- руоф 
+	-- ["loc_achievement_adamant_kill_with_ranged"] = {
+		-- ru = "Пулемётчик Арбитрес",
+	-- },
+		--[+ On Heresy Threat or higher, Kill 2000 enemies with Ranged Attacks while using Terminus Warrant. +]-- руоф 
+		["loc_achievement_adamant_kill_with_ranged_desc"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, Kill "..CNumb("{target}", "target_rgb").." enemies with Ranged Attacks while using "..CKWord("Terminus Warrant", "TerminusWarr_rgb").." Keystone.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов в дальнем бою с помощью ключевого таланта "..CKWord("Ордер Терминус", "TerminusWarr_rgb_ru")..".",
+		},
+	--[+ Full Force of the Lex +]-- руоф 
+	-- ["loc_achievement_adamant_time_in_forceful"] = {
+		-- ru = "Полная мощь Закона",
+	-- },
+		--[+ On Heresy Threat or higher, spend 3500s with Forceful active. +]-- руоф 
+		["loc_achievement_adamant_time_in_forceful_desc"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, spend "..CNumb("{target}", "target_rgb").." seconds with "..CKWord("Forceful", "Forceful_rgb").." Keystone active.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, проведите "..CNumb("{target}", "target_rgb").." секунд с активным ключевым талантом "..CKWord("Неудержимый", "Forceful_rgb_ru")..".",
+		},
+
+
+	--[+ +HIVE SCUM - ОТРЕБЬЕ УЛЬЯ+ +]--
+	["loc_class_broker_title"] = {
+		en = CKWord("Hive scum", "cls_scm_rgb"),
+		ru = CKWord("Отребье улья", "cls_scm_rgb_ru"),
+	},
+		--[+ PROGRESSION - ПРОГРЕСС - 進度 +]--
+	--[+ Trusted Cartel Member (1-6) +]-- руоф  (1-6)
+	-- ["loc_achievement_rank_broker_2_x_name"] = {
+		-- ru = "Доверенный член картеля ({tier})",
+	-- },
+		--[+ Reach Trust Level __ as a Hive Scum. +]-- руоф Заслужить уровень доверия __, играя за .
+		["loc_achievement_rank_broker_2_x_description"] = {
+			en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Hive Scum", "cls_scm_rgb")..".",
+			ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Отребьем улья", "cls_scm2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("蜂巢渣滓", "cls_scm_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+		},
+	--[+ Conclave's Will (1-5) +]-- руоф  (1-5)
+	-- ["loc_achievement_missions_broker_2_x_name"] = {
+		-- ru = "Воля Конклава ({tier})",
+	-- },
+		--[+ Complete 100 Missions as a Arbitrator. +]-- руоф Выполнить Арбитратором задания: 100.
+		["loc_achievement_missions_broker_2_x_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Hive Scum", "cls_scm_rgb")..".",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Отребьем улья", "cls_scm2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("蜂巢渣滓", "cls_scm_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 次任務。",
+		},
+	--[+ Savvy Operator +]-- руоф 
+	-- ["loc_achievement_missions_broker_2_objective_1_name"] = {
+		-- en = "Savvy Operator (1)",
+		-- ru = "Опытный оператор (1)",
+	-- },
+		--[+ As a Arbitrator, complete at least one Mission of each type. +]-- руоф Выполнить Арбитратором по меньшей мере одно задание каждого типа.
+		["loc_achievement_missions_broker_2_objective_1_description"] = {
+			en = "As a "..CKWord("Hive Scum", "cls_scm_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
+			ru = "Пройдите "..CKWord("Отребьем улья", "cls_scm2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
+			["zh-tw"] = "使用 "..CKWord("蜂巢渣滓", "cls_scm_rgb_tw").." 完成以下任務 "..CNumb("1", "n_1_rgb").." 次。",
+		},
+	--[+ Savvy Operator (2) +]-- руоф  (2)
+	-- ["loc_achievement_missions_broker_2_objective_2_name"] = {
+		-- ru = "Опытный оператор (2)",
+	-- },
+		--[+ As a Arbitrator, complete a Mission of each type on Malice Threat or higher. +]--
+		["loc_achievement_missions_broker_2_objective_2_description"] = {
+			en = "As a "..CKWord("Hive Scum", "cls_scm_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Отребьем улья", "cls_scm2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+		},
+	--[+ Savvy Operator (3) +]-- руоф  (3)
+	-- ["loc_achievement_missions_broker_2_objective_3_name"] = {
+		-- ru = "Опытный оператор (3)",
+	-- },
+		--[+ As a Arbitrator, complete a Mission of each type on Heresy Threat or higher. +]--
+		["loc_achievement_missions_broker_2_objective_3_description"] = {
+			en = "As a "..CKWord("Hive Scum", "cls_scm_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Heresy", "heresy_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Отребьем улья", "cls_scm2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
+		},
+	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5) -- 證明你的價值 (1-5)
+	--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5) -- 為正義而戰 (1-5)
+	--[+ First Steps (1-2) +]-- руоф Первые шаги (1-2) -- 首要步驟 (1-2)
+	--[+ Promotion Material (1) +]-- руоф Материалы пропаганды (1)
+	--[+ For The Emperor (1-3) +]-- руоф За императора (1-3) -- 為了皇帝 (1-3)
+	--[+ Hive Scum +]-- руоф Отребье улья
+	--[+ Hive Blooded +]-- руоф 
+	--[+ Hive Protector +]-- руоф 
+		--[+ Complete the following Penances as the Arbitrator. +]-- руоф Выполнить следующие искупления за Арбитратора.
+		["loc_achievement_group_broker_2_description"] = {
+			en = "Complete the following Penances as the "..CKWord("Hive Scum", "cls_scm_rgb")..".",
+			ru = "Выполните следующие Искупления "..CKWord("Отребьем улья", "cls_scm2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("蜂巢渣滓", "cls_scm_rgb_tw").." 完成以下苦修。",
+		},
+	--[+ Hive Scum Master of War +]-- руоф 
+
+		--[+ ABILITIES - СПОСОБНОСТИ - 技能 +]--
+	--[+ Generous +]-- руоф 
+	-- ["loc_achievement_broker_gunslinger_aura_name"] = {
+		-- ru = "Щедрый",
+	-- },
+		--[+ Share 3500 amount of ammo using Gunslinger. Ammo shared by allies in coherency also count. +]-- руоф 
+		["loc_achievement_broker_gunslinger_aura_description"] = {
+			en = "Share "..CNumb("{target}", "target_rgb").." amount of Ammo using "..CKWord("Gunslinger", "Gunslinger_rgb").." Aura. Ammo shared by Allies in "..CKWord("Coherency", "Coherency_rgb").." also count.",
+			ru = "Раздайте "..CNumb("{target}", "target_rgb").." патронов, используя ауру "..CKWord("Стрелок", "Gunslinger_rgb_ru")..". Патроны, которыми делятся союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru")..", также учитываются.",
+		},
+	--[+ Brawler +]-- руоф 
+	-- ["loc_achievement_broker_ruffian_aura_name"] = {
+		-- ru = "Драчун",
+	-- },
+		--[+ Kill 5000 enemies in melee while under the effects of Ruffian. Kills by allies in coherency also count. +]-- руоф 
+		["loc_achievement_broker_ruffian_aura_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies in Melee while under the effects of "..CKWord("Ruffian", "Ruffian_rgb").." Aura. Kills made by Allies in "..CKWord("Coherency", "Coherency_rgb").." also count.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов в ближнем бою под действием ауры "..CKWord("Хулиган", "Ruffian_rgb_ru")..". Убийства, совершённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru")..", также учитываются.",
+		},
+	--[+ Shooter +]-- руоф 
+	-- ["loc_achievement_broker_anarchist_aura_name"] = {
+		-- ru = "Стрелок",
+	-- },
+		--[+ Perform 1200 Critical Strikes while under the effect of Anarchist. Critical Strikes performed by allies in coherency also count. +]-- руоф 
+		["loc_achievement_broker_anarchist_aura_alt_description"] = {
+			en = "Perform "..CNumb("{target}", "target_rgb").." "..CKWord("Critical strikes", "Crit_strikes_rgb").." while under the effect of "..CKWord("Anarchist", "Anarchist_rgb").." Aura. "..CKWord("Critical strikes", "Crit_strikes_rgb").." performed by Allies in "..CKWord("Coherency", "Coherency_rgb").." also count.",
+			ru = "Нанесите "..CNumb("{target}", "target_rgb").." "..CKWord("критических ударов", "krit_udarov_rgb_ru")..", находясь под действием ауры "..CKWord("Анархист", "Anarchist_rgb_ru")..". "..CKWord("Критические удары", "Krit_udary_rgb_ru")..", нанесённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru")..", также учитываются.",
+		},
+	--[+ Blinding! +]-- руоф 
+	-- ["loc_achievement_broker_enemies_hit_by_flash_grenade_name"] = {
+		-- ru = "Ослепление!",
+	-- },
+	--[+ Played a Blinder +]-- руоф 
+	-- ["loc_achievement_broker_enemies_hit_by_flash_grenade_2_name"] = {
+		-- ru = "Ослепительная игра",
+	-- },
+		--[+ Stagger 3 enemies 50 times with a Blinder. +]-- руоф 
+		["loc_achievement_broker_enemies_hit_by_flash_grenade_description"] = {
+			en = CKWord("Stagger", "Stagger_rgb").." "..CNumb("{enemy_count}", "enemy_count_rgb").." enemies with a "..CKWord("Blinder", "Blinder_rgb").." Blitz, "..CNumb("{target}", "target_rgb").." times.",
+			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." "..CNumb("{enemy_count}", "enemy_count_rgb").." врагов "..CNumb("{target}", "target_rgb").." раз с помощью блица "..CKWord("Ослепитель", "Blinder_rgb_ru")..".",
+		},
+	--[+ Bring the Boom +]-- руоф 
+	-- ["loc_achievement_broker_enemies_killed_by_missile_launcher_name"] = {
+		-- ru = "Притащи Бабах",
+	-- },
+	--[+ Boom Brought +]-- руоф 
+	-- ["loc_achievement_broker_enemies_killed_by_missile_launcher_2_name"] = {
+		-- ru = "Притащил Бабах",
+	-- },
+		--[+ Kill 45 Elites/Monstrosities with the Boom Bringer. +]-- руоф 
+		["loc_achievement_broker_enemies_killed_by_missile_launcher_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." Elites or Monstrosities with the "..CKWord("Boom Bringer", "BoomBringer_rgb").." Blitz.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных противников или чудовищ с помощью блица "..CKWord("Бабахер", "BoomBringer_rgb_ru")..".",
+		},
+	--[+ Choke on This +]-- руоф 
+	-- ["loc_achievement_broker_enemies_affected_by_chem_bomb_name"] = {
+		-- ru = "На, подавись!",
+	-- },
+	--[+ 'Ave it! +]-- руоф 
+	-- ["loc_achievement_broker_enemies_affected_by_chem_bomb_2_name"] = {
+		-- ru = "Получи!",
+	-- },
+		--[+ Affect 400 unique enemies with a Chem Grenade. +]-- руоф 
+		["loc_achievement_broker_enemies_affected_by_chem_bomb_description"] = {
+			en = "Affect "..CNumb("{target}", "target_rgb").." unique enemies with a "..CKWord("Chem Grenade", "ChemGrenade_rgb").." Blitz.",
+			ru = "Воздействуйте на "..CNumb("{target}", "target_rgb").." уникальных врагов блицом "..CKWord("Хим-граната", "ChemGrenade_rgb_ru")..".",
+		},
+	--[+ Gun For Hire +]-- руоф 
+	-- ["loc_achievement_broker_enemies_killed_with_focus_mode_name"] = {
+		-- ru = "Наёмник",
+	-- },
+		--[+ Kill 1000 enemies while Desperado is active. +]-- руоф 
+		["loc_achievement_broker_enemies_killed_with_focus_mode_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies while "..CKWord("Desperado", "Desperad_rgb").." Ability is active.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов пока активна способность "..CKWord("Безбашенный", "Desperad_rgb_ru")..".",
+		},
+	--[+ Nimble +]-- руоф 
+	-- ["loc_achievement_broker_attacks_dodged_in_focus_mode_name"] = {
+		-- ru = "Ловкач",
+	-- },
+		--[+ Dodge 750 attacks while Desperado is active. +]-- руоф 
+		["loc_achievement_broker_attacks_dodged_in_focus_mode_description"] = {
+			en = "Dodge "..CNumb("{target}", "target_rgb").." attacks while "..CKWord("Desperado", "Desperad_rgb").." Ability is active.",
+			ru = "Уклонитесь от "..CNumb("{target}", "target_rgb").." атак, пока активна способность "..CKWord("Безбашенный", "Desperad_rgb_ru")..".",
+		},
+	--[+ Hive Streets of Rage +]-- руоф 
+	-- ["loc_achievement_broker_deal_damage_in_punk_rage_name"] = {
+		-- ru = "Улицы Ярости Улья",
+	-- },
+		--[+ Deal 60000 damage while Rampage! is active. +]-- руоф 
+		["loc_achievement_broker_deal_damage_in_punk_rage_description"] = {
+			en = "Deal "..CNumb("{target}", "target_rgb").." "..CKWord("Damage", "Damage_rgb").." while "..CKWord("Rampage!", "Rampag_rgb").." Ability is active.",
+			ru = "Нанесите "..CNumb("{target}", "target_rgb").." "..CKWord("урона", "urona_rgb_ru").." пока активна способность "..CKWord("Ярость!", "Rampag_rgb_ru"),
+		},
+	--[+ Rampager +]-- руоф 
+	-- ["loc_achievement_broker_stay_in_punk_rage_name"] = {
+		-- ru = "Буйный",
+	-- },
+		--[+ Spend 900 seconds with Rampage! active. +]-- руоф 
+		["loc_achievement_broker_stay_in_punk_rage_description"] = {
+			en = "Spend "..CNumb("{target}", "target_rgb").." seconds with "..CKWord("Rampage!", "Rampag_rgb").." Ability is active.",
+			ru = "Проведите "..CNumb("{target}", "target_rgb").." секунд пока активна способность "..CKWord("Ярость!", "Rampag_rgb_ru"),
+		},
+	--[+ Street Doctor +]-- руоф 
+	-- ["loc_achievement_broker_deploy_stimm_field_name"] = {
+		-- ru = "Уличный доктор",
+	-- },
+		--[+ Deploy the Stimm Supply 45 times. +]-- руоф 
+		["loc_achievement_broker_deploy_stimm_field_description"] = {
+			en = "Deploy the "..CKWord("Stimm Supply", "StimmSupply_rgb").." Ability "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Разверните способность "..CKWord("Стим-поддержка", "StimmSupply_rgb_ru").." "..CNumb("{target}", "target_rgb").." раз.",
+		},
+	--[+ Shared Benefits +]-- руоф 
+	-- ["loc_achievement_broker_buff_allies_chem_field_name"] = {
+		-- ru = "Разделённая выгода",
+	-- },
+		--[+ Buff allies for 2400 seconds with Stimm Supply. +]-- руоф 
+		["loc_achievement_broker_buff_allies_chem_field_description"] = {
+			en = "Buff Allies for "..CNumb("{target}", "target_rgb").." seconds with "..CKWord("Stimm Supply", "StimmSupply_rgb").." Ability.",
+			ru = "Усильте союзников на "..CNumb("{target}", "target_rgb").." секунд с помощью способности "..CKWord("Стим-поддержка", "StimmSupply_rgb_ru")..".",
+		},
+	--[+ Raptor's Eye +]-- руоф 
+	-- ["loc_achievement_broker_gunslinger_keystone_a_name"] = {
+		-- ru = "Взгляд хищника",
+	-- },
+		--[+ Gain 150 stacks of Vulture's Mark. +]-- руоф 
+		["loc_achievement_broker_gunslinger_keystone_a_description"] = {
+			en = "Gain "..CNumb("{target}", "target_rgb").." Stacks of "..CKWord("Vulture's Mark", "VulturesMark_rgb").." Keystone.",
+			ru = "Получите "..CNumb("{target}", "target_rgb").." зарядов ключевого таланта "..CKWord("Метка стервятника", "VulturesMark_rgb_ru")..".",
+		},
+	--[+ Raptor's Strike +]-- руоф 
+	-- ["loc_achievement_broker_gunslinger_keystone_b_name"] = {
+		-- ru = "Удар хищника",
+	-- },
+		--[+ Gain 300 stacks of Vulture's Mark. +]-- руоф 
+		["loc_achievement_broker_gunslinger_keystone_b_description"] = {
+			en = "Gain "..CNumb("{target}", "target_rgb").." Stacks of "..CKWord("Vulture's Mark", "VulturesMark_rgb").." Keystone.",
+			ru = "Получите "..CNumb("{target}", "target_rgb").." зарядов ключевого таланта "..CKWord("Метка стервятника", "VulturesMark_rgb_ru")..".",
+		},
+	--[+ What a Rush! +]-- руоф 
+	-- ["loc_achievement_broker_ruffian_keystone_a_name"] = {
+		-- ru = "",
+	-- },
+		--[+ Proc Adrenaline Frenzy 80 times. +]-- руоф 
+		["loc_achievement_broker_ruffian_keystone_a_description"] = {
+			en = "Trigger the "..CKWord("Adrenaline", "Adren_rgb").." effect from "..CKWord("Adrenaline Frenzy", "AdrenFrenz_rgb").." Keystone "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Активируйте "..CNumb("{target}", "target_rgb").." раз эффект "..CKWord("Адреналина", "Adren_rgb_ru").." от ключевого таланта "..CKWord("Адреналиновое безумие", "AdrenFrenz_rgb_ru")..".",
+		},
+	--[+ Battle Focussed +]-- руоф 
+	-- ["loc_achievement_broker_ruffian_keystone_b_name"] = {
+		-- ru = "Боевая сосредоточенность",
+	-- },
+		--[+ Proc Adrenaline Frenzy 160 times. +]-- руоф 
+		["loc_achievement_broker_ruffian_keystone_b_description"] = {
+			en = "Trigger the "..CKWord("Adrenaline", "Adren_rgb").." effect from "..CKWord("Adrenaline Frenzy", "AdrenFrenz_rgb").." Keystone "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Активируйте "..CNumb("{target}", "target_rgb").." раз эффект "..CKWord("Адреналина", "Adren_rgb_ru").." от ключевого таланта "..CKWord("Адреналиновое безумие", "AdrenFrenz_rgb_ru")..".",
+		},
+	--[+ Stimmed +]-- руоф 
+	-- ["loc_achievement_broker_anarchist_keystone_a_name"] = {
+		-- ru = "",
+	-- },
+		--[+ Remain at full stacks of Chemical Dependency for 1000s. +]-- руоф 
+		["loc_achievement_broker_anarchist_keystone_a_description"] = {
+			en = "Remain at full Stacks of "..CKWord("Chemical Dependency", "ChemDepend_rgb").." Keystone for "..CNumb("{target}", "target_rgb").." seconds.",
+			ru = "Поддерживайте полный заряд ключевого таланта "..CKWord("Хим-зависимость", "ChemDepend_rgb_ru").." в течение "..CNumb("{target}", "target_rgb").." секунд.",
+		},
+	--[+ Alchemist +]-- руоф 
+	-- ["loc_achievement_broker_anarchist_keystone_b_name"] = {
+		-- ru = "Алхимик",
+	-- },
+		--[+ Remain at full stacks of Chemical Dependency for 2000s. +]-- руоф 
+		["loc_achievement_broker_anarchist_keystone_b_description"] = {
+			en = "Remain at full Stacks of "..CKWord("Chemical Dependency", "ChemDepend_rgb").." Keystone for "..CNumb("{target}", "target_rgb").." seconds.",
+			ru = "Поддерживайте полный заряд ключевого таланта "..CKWord("Хим-зависимость", "ChemDepend_rgb_ru").." в течение "..CNumb("{target}", "target_rgb").." секунд.",
+		},
+	--[+ Speedster +]-- руоф 
+	-- ["loc_achievement_broker_stimm_celerity_potency_name"] = {
+		-- ru = "Быстрый",
+	-- },
+		--[+ Gain 3000% total attack speed with at least 50% Viscosity allocated in the Cartel Special. +]-- руоф 
+		["loc_achievement_broker_stimm_celerity_potency_description"] = {
+			en = "Gain "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." total Attack Speed with at least "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Viscosity", "Viscosity_rgb").." allocated in the "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb")..".",
+			ru = "Получите в общей сложности "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." к скорости атаки с минимум "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Вязкость", "Viscosity_rgb_ru")..", выбранной для "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".",
+		},
+	--[+ Clinical Assassin +]-- руоф 
+	-- ["loc_achievement_broker_stimm_hit_weakspots_name"] = {
+		-- ru = "Клинический убийца",
+	-- },
+		--[+ Hit weakspots while Cartel Special is active 2000 times. +]-- руоф 
+		["loc_achievement_broker_stimm_hit_weakspots_description"] = {
+			en = "Hit "..CKWord("Weakspots", "Weakspots_rgb").." while "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb").." is active "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Попадите "..CNumb("{target}", "target_rgb").." раз в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." пока активен "..CKWord("Особый стим Картеля", "Cartel_Stim_rgb_ru")..".",
+		},
+	--[+ Pugilist +]-- руоф 
+	-- ["loc_achievement_broker_stimm_combat_potency_name"] = {
+		-- ru = "Борец",
+	-- },
+		--[+ Gain 2000% total strength with at least 50% Viscosity allocated in the Cartel Special. +]-- руоф 
+		["loc_achievement_broker_stimm_combat_potency_description"] = {
+			en = "Gain "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." total "..CKWord("Strength", "Strength_rgb").." with at least "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Viscosity", "Viscosity_rgb").." allocated in the "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb")..".",
+			ru = "Получите в общей сложности "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." к "..CKWord("силе", "sile_rgb_ru").." с минимум "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Вязкость", "Viscosity_rgb_ru")..", выбранной для "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".",
+		},
+	--[+ Brutal Bludgeons +]-- руоф 
+	-- ["loc_achievement_broker_stimm_heavy_attack_kills_name"] = {
+		-- ru = "Жестокое избиение",
+	-- },
+		--[+ Kill enemies with heavy attacks while Cartel Special is active, 650 times. +]-- руоф 
+		["loc_achievement_broker_stimm_heavy_attack_kills_description"] = {
+			en = "Kill enemies with Heavy Attacks while "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb").." is active, "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов тяжёлыми атаками пока активен "..CKWord("Особый стим Картеля", "Cartel_Stim_rgb_ru")..".",
+		},
+	--[+ Enhanced +]-- руоф 
+	-- ["loc_achievement_broker_stimm_durability_potency_name"] = {
+		-- ru = "Улучшенный",
+	-- },
+		--[+ Replenish 1500 total Toughness with at least 50% Viscosity allocated in the Cartel Special. +]-- руоф 
+		["loc_achievement_broker_stimm_durability_potency_description"] = {
+			en = "Replenish "..CNumb("{target}", "target_rgb").." total "..CKWord("Toughness", "Toughness_rgb").." with at least "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Viscosity", "Viscosity_rgb").." allocated in the "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb")..".",
+			ru = "Восстановите в общей сложности "..CNumb("{target}", "target_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." с минимум "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Вязкость", "Viscosity_rgb_ru")..", выбранной для "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".",
+		},
+	--[+ Toxic Shock +]-- руоф 
+	-- ["loc_achievement_broker_stimm_apply_toxin_name"] = {
+		-- ru = "Токсический шок",
+	-- },
+		--[+ Apply stacks of Chem Toxin while Cartel Special is active, 1500 times. +]-- руоф 
+		["loc_achievement_broker_stimm_apply_toxin_description"] = {
+			en = "Apply Stacks of "..CKWord("Chem Toxin", "Chem_Tox_rgb").." while "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb").." is active, "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Наложите на врагов "..CNumb("{target}", "target_rgb").." зарядов "..CKWord("Хим-токсина", "Chem_Toxa_rgb_ru").." пока активен "..CKWord("Особый стим Картеля", "Cartel_Stim_rgb_ru")..".",
+		},
+
+
+--[+ +TACTICAL - ТАКТИЧЕСКИЕ - 戰術 + +]--
+	--[+ OFFENSIVE - АТАКА +]-- руоф Наступление
+	["loc_achievement_category_offensive_label"] = {
+		ru = "Атака",
+		["zh-tw"] = "攻擊",
 	},
 
-	-- --[+ Heavyweight Champion +]-- руоф Чемпион-тяжеловес
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_7_ext_ru",
-		-- -- {"loc_achievement_ogryn_2_bull_rushed_4_ogryns_name"}, {"ru"},
-			-- -- loc_text("Чемпион-тяжеловес")),
-	-- --[+ Traditional Chinese 重量級冠軍 +]--
-	-- create_template("ach_red_ogr_7_ext_tw",
-		-- {"loc_achievement_ogryn_2_bull_rushed_4_ogryns_name"}, {"zh-tw"},
-			-- loc_text("重量級冠軍")),
+	--[+ Situational Awarness +]-- руоф На примете
+	-- ["loc_achievement_enemies_killed_by_barrels_name"] = {
+		-- ru = "Ситуационная осведомленность",
+	-- },
+		--[+ Kill __ enemies by blowing up explosive barrels. +]-- руоф Убейте врагов (__) с помощью взрывных бочек.
+		["loc_achievement_enemies_killed_by_barrels_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies by blowing up Explosive barrels.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов с помощью подрыва взрывных бочек.",
+			-- ["zh-tw"] = "利用爆炸桶擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ The Enemy of my Enemy is my Friend +]-- руоф Враг моего врага - мой друг
+	["loc_achievement_enemies_killed_by_poxburster_name"] = {
+		["zh-tw"] = "敵人的敵人即朋友",
+	},
+		--[+ Kill 10 enemies by having a Poxbuster explode next to them. +]-- руоф Убейте врагов (10), уничтожив рядом с ними чумного Взрывуна.
+		["loc_achievement_enemies_killed_by_poxburster_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies by having a Poxbuster explode next to them.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, взорвав рядом с ними Чумного взрывника.",
+			-- ["zh-tw"] = "引爆瘟疫爆者以擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ No time to Bleed +]--
+	-- ["loc_code"] = {
+		-- en = "",
+		-- ru = "",
+		-- ["zh-tw"] = "",
+	-- },
+		--[+ As a team complete a mission on Heresy Threat or +]--
+		-- ["loc_code"] = {
+			-- en = "",
+			-- ru = "",
+			-- ["zh-tw"] = "",
+		-- },
 
-	-- --[+ On Heresy Threat or higher, knock down 4 enemy Ogryns (Bulwarks, Crushers, Plague Ogryns, and/or Reapers) with a single Bull Rush charge. +]-- руоф При угрозе «Ересь» или выше сбейте с ног одним зарядом «Бычьего натиска» вражеских Огринов (Бастион, Дробитель, Чумной Огрин и/или Жнец): 4.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_7_ext_desc_ru",
-		-- -- {"loc_achievement_ogryn_2_bull_rushed_4_ogryns_description"}, {"ru"},
-			-- -- loc_text("На сложности "..CKWord("", "heresy_rgb_ru").." или выше, сбейте с ног "..CNumb("{target}", "target_rgb").." любых вражеских огрина одним зарядом способности  "..CKWord("", "bull_rush_rgb_ru").." или "..CKWord("", "bull_rush4_rgb_ru")..". Огринами являются: Бастион, Дробитель, Жнец и Чумной огрин."..TALENTS_Enh_desc_penances_ru.ED_Heavyweight_champion_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 以異教徒或以上威脅度，用1次蠻牛衝撞擊倒4個歐格林敵人（堡壘、粉碎者、瘟疫歐格林和/或收割者）。
-	-- -- create_template("ach_red_ogr_7_ext_desc_tw",
-		-- -- {"loc_achievement_ogryn_2_bull_rushed_4_ogryns_description"}, {"zh-tw"},
-			-- -- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n單次衝鋒擊倒 "..CNumb("{target}", "target_rgb").." 名敵方歐格林。\n歐格林敵人包含：堡壘、粉碎者、收割者與瘟疫歐格林。" ..TALENTS_Enh_desc_penances_tw.ED_Heavyweight_champion_rgb_tw)),
 
-	-- --[+ I'm in Charge - Я главный +]-- руоф Я главнее
-	-- --[+ Russian +]--
-	-- create_template("ach_red_ogr_2_ext_ru",
-		-- {"loc_achievement_ogryn_2_bull_rushed_charging_ogryn_name"}, {"ru"},
-			-- loc_text("Я главный")),
-	-- --[+ Traditional Chinese 對衝 +]--
-	-- create_template("ach_red_ogr_2_ext_tw",
-		-- {"loc_achievement_ogryn_2_bull_rushed_charging_ogryn_name"}, {"zh-tw"},
-			-- loc_text("對衝")),
 
-	-- --[+ Use Bull Rush to interrupt a Plague Ogryn's charge. +]-- руоф Используйте «Бычий натиск», чтобы прервать рывок Чумного Огрина.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_2_ext_desc_ru",
-		-- -- {"loc_achievement_ogryn_2_bull_rushed_charging_ogryn_description"}, {"ru"},
-			-- -- loc_text("Используйте способность "..CKWord("", "bull_rush_rgb_ru").." или "..CKWord("", "bull_rush4_rgb_ru")..", чтобы прервать рывок Чумного Огрина."..TALENTS_Enh_desc_penances_ru.ED_Im_in_charge_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用蠻牛衝撞來中斷瘟疫歐格林的衝鋒。
-	-- -- create_template("ach_red_ogr_2_ext_desc_tw",
-		-- -- {"loc_achievement_ogryn_2_bull_rushed_charging_ogryn_description"}, {"zh-tw"},
-			-- -- loc_text("用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n中斷瘟疫歐格林的衝鋒。" ..TALENTS_Enh_desc_penances_tw.ED_Im_in_charge_rgb_tw)),
 
-	-- --[+ +TACTICAL - ТАКТИЧЕСКИЕ - 戰術 + +]--
-		-- --[+ OFFENSIVE - АТАКА +]--
-		-- --[+ Offensive +]-- руоф Наступление
-	-- --[+ Russian +]--
-	-- create_template("ach_off_0_ext_ru",
-		-- {"loc_achievement_category_offensive_label"}, {"ru"},
-			-- loc_text("Атака")),
-	-- --[+ Traditional Chinese 攻擊 +]--
-	-- create_template("ach_off_0_ext_tw",
-		-- {"loc_achievement_category_offensive_label"}, {"zh-tw"},
-			-- loc_text("攻擊")),
 
-	-- --[+	 +]-- руоф Враг моего врага - мой друг
-	-- --[+ Russian +]--
-	-- -- create_template("ach_off_1_ext_ru",
-		-- -- {"loc_achievement_enemies_killed_by_poxburster_name"}, {"ru"},
-			-- -- loc_text("Враг моего врага - мой друг")),
-	-- create_template("ach_off_1_ext_tw",
-		-- {"loc_achievement_enemies_killed_by_poxburster_name"}, {"zh-tw"},
-			-- loc_text("敵人的敵人即朋友")),
 
-	-- --[+	 +]-- руоф Убейте врагов (10), уничтожив рядом с ними чумного Взрывуна.
-	-- --[+ Russian +]--
-	-- create_template("ach_off_1_ext_desc_ru",
-		-- {"loc_achievement_enemies_killed_by_poxburster_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов, уничтожив рядом с ними Чумного взрывника.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用瘟疫爆者的爆炸即鯊100名敵人。
-	-- create_template("ach_off_1_ext_desc_tw",
-		-- {"loc_achievement_enemies_killed_by_poxburster_description"}, {"zh-tw"},
-			-- loc_text("引爆瘟疫爆者以擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。")),
 
 	-- --[+ Flyswatter +]-- руоф Мухобойка
 	-- --[+ Russian +]--
@@ -3504,27 +2065,6 @@ local penances_localizations = {
 	-- create_template("ach_off_5_ext_desc_tw",
 		-- {"loc_achievement_enemies_climbing_description"}, {"zh-tw"},
 			-- loc_text("擊殺 "..CNumb("{target}", "target_rgb").." 名正在攀爬中的敵人。")),
-
-	-- --[+	 +]-- руоф На примете 
-	-- --[+ Russian +]--
-	-- -- create_template("ach_off_1_ext_ru",
-		-- -- {"loc_achievement_enemies_killed_by_barrels_name"}, {"ru"},
-			-- -- loc_text("На примете")),
-	-- --[+ Traditional Chinese 狀態意識 +]--
-	-- create_template("ach_off_1_ext_tw",
-		-- {"loc_achievement_enemies_killed_by_barrels_name"}, {"zh-tw"},
-			-- loc_text("狀態意識")),
-
-	-- --[+ Kill 500000 enemies in total. +]-- руоф Убейте врагов (100) с помощью взрывных бочек.
-	-- --[+ Russian +]--
-	-- create_template("ach_off_1_ext_desc_ru",
-		-- {"loc_achievement_enemies_killed_by_barrels_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов с помощью взрывных бочек.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用爆炸統擊殺xx名敵人。
-	-- create_template("ach_off_1_ext_desc_tw",
-		-- {"loc_achievement_enemies_killed_by_barrels_description"}, {"zh-tw"},
-			-- loc_text("利用爆炸桶擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。")),
 
 	-- --[+ Attack, Attack, Attack! +]-- руоф Нападай, нападай!
 	-- --[+ Russian +]--
@@ -3584,12 +2124,12 @@ local penances_localizations = {
 	-- --[+ Russian +]--
 	-- create_template("ach_off_4_ext_desc_ru",
 		-- {"loc_achievement_fast_enemies_x_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов за "..COLORS_Numbers.time_wind_rgb").." секунд.")),
+			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов за "..CNumb("{time_window}", "time_wind_rgb").." секунд.")),
 	-- --[+ Traditional Chinese +]--
 	-- -- 在30秒內擊殺xx名敵人。
 	-- create_template("ach_off_4_ext_desc_tw",
 		-- {"loc_achievement_fast_enemies_x_description"}, {"zh-tw"},
-			-- loc_text("在 "..COLORS_Numbers.time_wind_rgb").." 秒內擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。")),
+			-- loc_text("在 "..CNumb("{time_window}", "time_wind_rgb").." 秒內擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。")),
 
 	-- --[+ Purge the Heretic (1-5) +]-- руоф Очистить еретиков (1-5)
 	-- --[+ Russian +]--
@@ -3760,12 +2300,12 @@ local penances_localizations = {
 	-- --[+ Russian +]--
 	-- create_template("ach_red_vet_3_ext_desc_ru",
 		-- {"loc_achievement_flawless_mission_x_description"}, {"ru"},
-			-- loc_text("Выполните "..CNumb("{target}", "target_rgb").." миссий подряд, не будучи ни разу сбитым с ног, на сложности "..CKWord("", "malice_rgb_ru").." или выше.")),
+			-- loc_text("Выполните "..CNumb("{target}", "target_rgb").." миссий подряд, не будучи ни разу сбитым с ног, на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.")),
 	-- --[+ Traditional Chinese +]--
 	-- -- 在惡毒或更高難度下，在不被擊倒的情況下連續完成x個任務。
 	-- create_template("ach_red_vet_3_ext_desc_tw",
 		-- {"loc_achievement_flawless_mission_x_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度中，連續完成 "..CNumb("{target}", "target_rgb").." 場任務且期間未曾被擊倒。")),
+			-- loc_text("在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，連續完成 "..CNumb("{target}", "target_rgb").." 場任務且期間未曾被擊倒。")),
 
 	-- --[+ Case for the Defence +]-- руоф Версия защиты
 	-- --[+ Russian +]--
@@ -3843,12 +2383,12 @@ local penances_localizations = {
 	-- --[+ Russian +]--
 	-- create_template("ach_red_vet_1_ext_desc_ru",
 		-- {"loc_achievement_fast_blocks_x_description"}, {"ru"},
-			-- loc_text("Заблокируйте "..CNumb("{target}", "target_rgb").." единиц урона за "..COLORS_Numbers.time_wind_rgb").." секунд.")),
+			-- loc_text("Заблокируйте "..CNumb("{target}", "target_rgb").." единиц урона за "..CNumb("{time_window}", "time_wind_rgb").." секунд.")),
 	-- --[+ Traditional Chinese +]--
 	-- -- 在xx秒內格檔xxx點傷害值。
 	-- create_template("ach_red_vet_1_ext_desc_tw",
 		-- {"loc_achievement_fast_blocks_x_description"}, {"zh-tw"},
-			-- loc_text("在 "..COLORS_Numbers.time_wind_rgb").." 秒內格擋 "..CNumb("{target}", "target_rgb").." 傷害。")),
+			-- loc_text("在 "..CNumb("{time_window}", "time_wind_rgb").." 秒內格擋 "..CNumb("{target}", "target_rgb").." 傷害。")),
 
 	-- --[+ Untouchable +]-- руоф Неприкасаемый
 	-- --[+ Russian +]--
@@ -5244,12 +3784,12 @@ local penances_localizations = {
 	-- --[+ Russian +]--
 	-- create_template("ach_mis_13_1_ext_desc_ru",
 		-- {"loc_achievement_mission_difficulty_objectives_3_description"}, {"ru"},
-			-- loc_text("Завершите каждый тип миссий на сложности "..CKWord("", "malice_rgb_ru").." или выше.")),
+			-- loc_text("Завершите каждый тип миссий на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.")),
 	-- --[+ Traditional Chinese +]--
 	-- -- 在惡意威脅度或更高級別下完成全部任務類型。
 	-- create_template("ach_mis_13_1_ext_desc_tw",
 		-- {"loc_achievement_mission_difficulty_objectives_3_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "malice_rgb_tw").."』或更高難度下，完成每種任務類型。")),
+			-- loc_text("在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度下，完成每種任務類型。")),
 
 	-- --[+ The Legend Grows? +]-- руоф Становление легенды:\nЛегенда Инквизиции
 	-- --[+ Russian +]--
@@ -5265,12 +3805,12 @@ local penances_localizations = {
 	-- --[+ Russian +]--
 	-- create_template("ach_mis_13_1_ext_desc_ru",
 		-- {"loc_achievement_mission_difficulty_objectives_4_description"}, {"ru"},
-			-- loc_text("Завершите каждый тип миссий на сложности "..CKWord("", "heresy_rgb_ru").." или выше.")),
+			-- loc_text("Завершите каждый тип миссий на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.")),
 	-- --[+ Traditional Chinese +]--
 	-- -- 在叛亂威脅度或更高級別下完成全部任務類型。
 	-- create_template("ach_mis_13_1_ext_desc_tw",
 		-- {"loc_achievement_mission_difficulty_objectives_4_description"}, {"zh-tw"},
-			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度下，完成每種任務類型。")),
+			-- loc_text("在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度下，完成每種任務類型。")),
 
 		-- -- I think this is redundant?; the penance only ranges from 1 to 4. 
 		-- --[+ The Legend Grows? +]-- руоф Становление легенды

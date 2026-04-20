@@ -52,6 +52,7 @@ local CONFIG = {
 
 		Crit_strike =	"Critical Strike",
 		Crit_strikes =	"Critical Strikes",
+		Crtcll_strk =	"Critically strike",
 		Crt_chnc_r =	"Critical Strike Chance",
 		Crt_strk_dmg =	"Critical Strike Damage",
 
@@ -149,7 +150,7 @@ local CONFIG = {
 		precision_text_colour = {
 			Precision =		"Precision",
 
-			Celerity_Stimm = "Celerity Stimm",
+				Celerity_Stimm = "Celerity Stimm",
 		},
 	-- Ogryn
 	class_ogryn_text_colour = {
@@ -159,17 +160,17 @@ local CONFIG = {
 		fnp_text_colour = {
 			Feel_no_pain =	"Feel No Pain",
 
-			Desperado =		"Desperado",			-- Hive Scum
+				Desperado =		"Desperado",			-- Hive Scum
 		},
 		luckyb_text_colour = {
 			Lucky_bullet =	"Lucky Bullet",
 
-			Tghnss_gold =	"Toughness",			-- Zealot
+				Tghnss_gold =	"Toughness",			-- Zealot
 		},
 		trample_text_colour = {
 			Trample =		"Trample",
 
-			Depend =		"Dependency",			-- Hive Scum
+				Depend =		"Dependency",			-- Hive Scum
 		},
 	-- Zealot
 	class_zealot_text_colour = {
@@ -179,7 +180,7 @@ local CONFIG = {
 		fury_text_colour = {
 			Fury =			"Fury",
 
-			Rampage =		"Rampage!",				-- Hive Scum
+				Rampage =		"Rampage!",				-- Hive Scum
 		},
 		momentum_text_colour = {
 			Momentum =		"Momentum",
@@ -188,14 +189,14 @@ local CONFIG = {
 			Taunted =		"Taunted",				-- Ogryn
 			Taunting =		"Taunting",				-- Ogryn
 
-			Adren =			"Adrenaline",			-- Hive Scum ???
-			AdrenFr =		"Adrenaline Frenzy",	-- Hive Scum
+				Adren =			"Adrenaline",			-- Hive Scum
+				AdrenFr =		"Adrenaline Frenzy",	-- Hive Scum
 		},
 		stealth_text_colour = {
 			Stealth =		"Stealth",
 
-			Psy_Mark =		"Marked",				-- Psyker
-			Psy_mark =		"marked",				-- Psyker
+				Psy_Mark =		"Marked",				-- Psyker
+				Psy_mark =		"marked",				-- Psyker
 		},
 	-- Veteran
 	class_veteran_text_colour = {
@@ -206,26 +207,26 @@ local CONFIG = {
 			Forceful =		"Forceful",
 			Focus =			"Focus",
 
-			Shout =			"Shout",				-- Hive Scum
+				Shout =			"Shout",				-- Hive Scum
 		},
 		focust_text_colour = {
 			Focus_Target =	"Focus Target",
 
-			Markedenemy =	"Marked Enemy",			-- Psyker
+				Markedenemy =	"Marked Enemy",			-- Psyker
 
-			VultsMark =		"Vulture's Mark",		-- Hive Scum
+				VultsMark =		"Vulture's Mark",		-- Hive Scum
 		},
 		meleespec_text_colour = {
 			Meleespec =		"Melee Specialist",
 
-			Meleejust =		"Melee Justice",		-- Arbites
+				Meleejust =		"Melee Justice",		-- Arbites
 
-			Exhausted =		"Exhausted",			-- Hive Scum
+				Exhausted =		"Exhausted",			-- Hive Scum
 		},
 		rangedspec_text_colour = {
 			Rangedspec =	"Ranged Specialist",
 
-			Rangedjust =	"Ranged Justice",		-- Arbites
+				Rangedjust =	"Ranged Justice",		-- Arbites
 		},
 	-- Arbitres
 	class_arbites_text_colour = {
@@ -240,103 +241,126 @@ local CONFIG = {
 		chemtox_text_colour = {
 			Chem_Tox =		"Chem Toxin",
 
-			Med_Stimm =		"Med Stimm",
+				Med_Stimm =		"Med Stimm",
 		},
 
 -- TALENTS
 	talents_text_colour = {
--- Zealot
-		Holy_relic =	"Holy relic",
-		Stun_gren =		"Stun Grenade",
--- Arbites
-		Arbites_gren =	"Arbites Grenade",
-		BreakZLine =	"Break the Line",
--- Psyker
-		Assail =		"Assail",
-		Brain_burst =	"Brain Burst",
-		Brain_rupture =	"Brain Rupture",
-		Enfeeble =		"Enfeeble",
-		Scrier_gaze =	"Scrier Gaze",
-		Scriers_gaze =	"Scrier's Gaze",
-		Smite =			"Smite",
--- Veteran
-		Frag_gren =		"Frag Grenade",
-		Fragm_gren =	"Fragmentation Grenade",
-		Rangd_stnc =	"Ranged Stance",
-		Duty_honor =	"Duty and Honour",
--- Ogryn
-		Att_Seeker =	"Attention Seeker",
+-- VETERAN
+		closenkill =		"Close and Kill",
+		Duty_honor =		"Duty and Honour",
+		exec_stan =			"Executioner's Stance",
+		fcs_trg =			"Focus Target!",
+		firetim =			"Fire Team",
+		Frag_gren =			"Frag Grenade",
+		frag_gr =			"Frag Grenade",
+		Fragm_gren =		"Fragmentation Grenade",
+		infiltr =			"Infiltrate",
+		krak_gr =			"Krak Grenade",
+		Rangd_stnc =		"Ranged Stance",
+		scavenger =			"Scavenger",
+		shfrag_gr =			"Shredder Frag Grenade",
+		snipcon =			"Marksman's Focus",
+		smok_gr =			"Smoke Grenade",
+		survivalist =		"Survivalist",
+		voiceoc =			"Voice of Command",
+		volley_fire =		"Volley Fire",
+		weapspec =			"Weapons Specialist",
+-- ZEALOT
+		beaconop =			"Beacon of Purity",
+		benedict =			"Benediction",
+		blazingp =			"Blazing Piety",
+		chast_wckd =		"Chastise the Wicked",
+		chorusosf =			"Chorus of Spiritual Fortitude",
+		fanrage =			"Fury",
+		fire_gren =			"Immolation Grenade",
+		fury_faithful =		"Fury of the Faithful",
+		Holy_relic =		"Holy relic",
+		holy_revenant =		"Holy Revenant",
+		inexor =			"Inexorable Judgement",
+		klinvery =			"Blades of Faith",
+		loner =				"Loner",
+		martydom =			"Martyrdom",
+		momentum =			"Momentum",
+		shock_gren =		"Stunstorm Grenade",
+		shock_grens =		"Stunstorm Grenades",
+		Stun_gren =			"Stun Grenade",
+		shock_gren1 =		"Stun Grenade",
+		shock_grens1 =		"Stun Grenades",
+		shroudf =			"Shroudfield",
+		zealous =			"Zealous",
+-- PSYKER
+		Assail =			"Assail",
+		assail =			"Assail",
+		Brain_burst =		"Brain Burst",
+		Brain_rupture =		"Brain Rupture",
+		bburst =			"Brain Burst",
+		bburst1 =			"Brain Rupture",
+		disrdest =			"Disrupt Destiny",
+		Enfeeble =			"Enfeeble",
+		empsionics =		"Empowered Psionics",
+		kinetpres =			"Kinetic Presence",
+		prescience =		"Prescience",
+		psy_wrath =			"Psykinetic's Wrath",
+		psy_wrath2 =		"Venting Shriek",
+		Scrier_gaze =		"Scrier Gaze",
+		Scriers_gaze =		"Scrier's Gaze",
+		scriersgaze =		"Scrier's Gaze",
+		seerspres =			"Seer's Presence",
+		Smite =				"Smite",
+		smite =				"Smite",
+		telekshii =			"Telekine Shield",
+-- OGRYN
+		Att_Seeker =		"Attention Seeker",
+		big_box =			"Big Box of Hurt",
+		big_box2 =			"Bombs Away!",
+		bigfriendro =		"Big Friendly Rock",
+		bonebraura =		"Bonebreaker's Aura",
+		bull_rush =			"Bull Rush",
+		bull_rush4 =		"Indomitable",
+		burstlimo =			"Burst Limiter Override",
+		cowculaura =		"Coward Culling",
+		feelnop =			"Feel No Pain",
+		fragbomb =			"Frag Bomb",
+		heavyhitter =		"Heavy Hitter",
+		loyalprot =			"Loyal Protector",
+		pbbarrage =			"Point-Blank Barrage",
+		stayclose =			"Stay Close!",
+-- ARBITES
+		Arbites_gren =		"Arbites Grenade",
+		BreakZLine =		"Break the Line",
+		BreaknDissent =		"Breaking Dissent",
+		CastigatorSt =		"Castigator's Stance",
+		Electro_mine =		"Voltaic Shock Mine",
+		ExecutOrder =		"Execution Order",
+		Forceful =			"Forceful",
+		Nuncio_aquila =		"Nuncio Aquila",
+		PartozSquad =		"Part of the Squad",
+		RemoteDeton =		"Remote Detonation",
+		RuthlEffcy =		"Ruthless Efficiency",
+		TerminusWarr =		"Terminus Warrant",
+-- HIVE SCUM
+		AdrenFrenz =		"Adrenaline Frenzy",
+		Anarchist =			"Anarchist",
+		Blinder =			"Blinder",
+		BoomBringer =		"Boom Bringer",
+		ChemDepend =		"Chemical Dependency",
+		ChemGrenade =		"Chem Grenade",
+		Desperad =			"Desperado",
+		Gunslinger =		"Gunslinger",
+		Rampag =			"Rampage!",
+		Ruffian =			"Ruffian",
+		StimmSupply =		"Stimm Supply",
+		VulturesMark =		"Vulture's Mark",
+		Viscosity =			"Viscosity",
 
 -- PENANCES
-		Base_tut_p =	"Basic Training",
-		Curio_p =		"Curio",
-		Omnissia_p =	"Shrine of the Omnissiah",
-		PthOTrst_p =	"Path of Trust",
-		Prologue_p =	"Prologue",
-		Sir_melk_p =	"Sire Melk's Requisitorium",
-
-	-- Psyker
-		assail =		"Assail",
-		bburst =		"Brain Burst",
-		bburst1 =		"Brain Rupture",
-		disrdest =		"Disrupt Destiny",
-		empsionics =	"Empowered Psionics",
-		kinetpres =		"Kinetic Presence",
-		prescience =	"Prescience",
-		psy_wrath =		"Psykinetic's Wrath",
-		psy_wrath2 =	"Venting Shriek",
-		scriersgaze =	"Scrier's Gaze",
-		seerspres =		"Seer's Presence",
-		smite =			"Smite",
-		telekshii =		"Telekine Shield",
-	-- Ogryn
-		big_box =		"Big Box of Hurt",
-		big_box2 =		"Bombs Away!",
-		bigfriendro =	"Big Friendly Rock",
-		bonebraura =	"Bonebreaker's Aura",
-		bull_rush =		"Bull Rush",
-		bull_rush4 =	"Indomitable",
-		burstlimo =		"Burst Limiter Override",
-		cowculaura =	"Coward Culling",
-		feelnop =		"Feel No Pain",
-		fragbomb =		"Frag Bomb",
-		heavyhitter =	"Heavy Hitter",
-		loyalprot =		"Loyal Protector",
-		pbbarrage =		"Point-Blank Barrage",
-		stayclose =		"Stay Close!",
-	-- Veteran
-		closenkill =	"Close and Kill",
-		exec_stan =		"Executioner's Stance",
-		fcs_trg =		"Focus Target!",
-		firetim =		"Fire Team",
-		frag_gr =		"Frag Grenade",
-		infiltr =		"Infiltrate",
-		krak_gr =		"Krak Grenade",
-		scavenger =		"Scavenger",
-		snipcon =		"Marksman's Focus",
-		smok_gr =		"Smoke Grenade",
-		survivalist =	"Survivalist",
-		voiceoc =		"Voice of Command",
-		volley_fire =	"Volley Fire",
-		weapspec =		"Weapons Specialist",
-	-- Zealot
-		beaconop =		"Beacon of Purity",
-		benedict =		"Benediction",
-		blazingp =		"Blazing Piety",
-		chast_wckd =	"Chastise the Wicked",
-		chorusosf =		"Chorus of Spiritual Fortitude",
-		fanrage =		"Fury",
-		fire_gren =		"Immolation Grenade",
-		fury_faithful =	"Fury of the Faithful",
-		holy_revenant =	"Holy Revenant",
-		inexor =		"Inexorable Judgement",
-		klinvery =		"Blades of Faith",
-		loner =			"Loner",
-		martydom =		"Martyrdom",
-		shock_gren =	"Stunstorm Grenade",
-		shock_gren1 =	"Stun Grenade",
-		shroudf =		"Shroudfield",
-		momentum =		"Momentum",
+		Base_tut_p =		"Basic Training",
+		Curio_p =			"Curio",
+		Omnissia_p =		"Shrine of the Omnissiah",
+		PthOTrst_p =		"Path of Trust",
+		Prologue_p =		"Prologue",
+		Sir_melk_p =		"Sire Melk's Requisitorium",
 	},
 
 -- DIFFICULTY
@@ -458,7 +482,8 @@ local function create_nts_en(colors_en)
 		Fns_note =				Dot_green.." "..CKWord("Finesse", "Finesse_rgb").." increases "..CKWord("Weakspot Damage", "Weakspot_dmg_rgb").." and "..CKWord("Crit Damage", "Crit_dmg_r_rgb")..".",
 		Impact_note =			Dot_green.." "..CKWord("Impact", "Impact_rgb").." increases the effectiveness of "..CKWord("Stagger", "Stagger_rgb").." on enemies.",
 		Pwr_note =				Dot_green.." "..CKWord("Strength", "Strength_rgb").." increases "..CKWord("Damage", "Damage_rgb")..", "..CKWord("Stagger", "Stagger_rgb").." and "..CKWord("Cleave", "Cleave_rgb")..".",
-		Rend_note =				Dot_green.." "..CKWord("Rending", "Rending_rgb").." increases your own "..CKWord("Damage", "Damage_rgb").."."
+		Rend_note =				Dot_green.." "..CKWord("Rending", "Rending_rgb").." increases your own "..CKWord("Damage", "Damage_rgb")..".",
+		Weaksp_note =			Dot_green.." "..CKWord("Weakspots", "Weakspots_rgb").." are heads. For the Beast of Nurgle, it's a Bubble on its back.",
 	}
 end
 
